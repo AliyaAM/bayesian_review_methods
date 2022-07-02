@@ -20,7 +20,7 @@ library(assertthat)
 library(RColorBrewer)
 
 ## Set the root directory to look for source code.
-SOURCE_ROOT = "//Users/aliyaamirova/proj/bayesian_meta_analysis/"
+SOURCE_ROOT = "/Users/aliyaamirova/proj/bayesian_meta_analysis/"
 ## Set the root location on the user's local machine to save output files.
 OUTPUT_ROOT = "/Users/aliyaamirova/proj/bayesian_meta_analysis/"
 
