@@ -35,6 +35,11 @@ print("check overleaf for to do list")
 SOURCE_ROOT = "/Users/aliyaamirova/proj/bayesian_review_methods/"
 #SOURCE_ROOT = "/Users/aliya/my_docs/proj/bayesian_review_methods/"
 
+
+DATA_ROOT = "/Users/aliyaamirova/proj/bayesian_review_methods/DATA/"
+#DATA_ROOT = "/Users/aliya/my_docs/proj/bayesian_review_methods/DATA/"
+
+
 ## Set the root location on the user's local machine to save output files.
 #OUTPUT_ROOT = "/Users/aliya/my_doc/sproj/bayesian_review_methods/"
 OUTPUT_ROOT = "/Users/aliyaamirova/proj/bayesian_review_methods/RESULTS/"
