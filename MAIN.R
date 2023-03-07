@@ -44,12 +44,12 @@ DATA_ROOT = "/Users/aliyaamirova/proj/bayesian_review_methods/DATA/"
 #OUTPUT_ROOT = "/Users/aliya/my_doc/sproj/bayesian_review_methods/"
 OUTPUT_ROOT = "/Users/aliyaamirova/proj/bayesian_review_methods/RESULTS/"
 
-#x = read.csv(paste(SOURCE_ROOT, "Test_data_bayes_chatGPT.csv", sep="")) # new qualitative data
-x = read.csv(paste(SOURCE_ROOT, "input_chatGPT.csv", sep="")) # new qualitative data
+#x = read.csv(paste(DATA_ROOT, "Test_data_bayes_chatGPT.csv", sep="")) # new qualitative data
+x = read.csv(paste(DATA_ROOT, "input_chatGPT.csv", sep="")) # new qualitative data
 
-#x = read.csv(paste(SOURCE_ROOT, "input.csv", sep="")) #to perform the analysis we require this data for all indexed functions which were indexed by the name of the included constructs (eg., self-efficacy, social support). This is done so the analysis is parsled out for each construct separately. 
-data = read.csv(paste(SOURCE_ROOT, "QuantData_CheckedForAccuracy_20March2020.csv", sep=""))  #data extracted from  the quantitative studies, the file lists all data including the data that was not used for the meta-analysis. the data not included in the meta-anslysis is for the cases when insufficient data was reported in the article for it to be pooled in the meta-analysis (for example mean but no SD or variance etc)
-JaarsmaInternationalStudy = read.csv(paste(SOURCE_ROOT, "HyperPriorData.csv", sep="")) #data used for eliciting the hyperprior (general physical activity levels in HF estimated from a large internaitonal study (Jaarsma et al., 2013)
+#x = read.csv(paste(DATA_ROOT, "input.csv", sep="")) #to perform the analysis we require this data for all indexed functions which were indexed by the name of the included constructs (eg., self-efficacy, social support). This is done so the analysis is parsled out for each construct separately. 
+data = read.csv(paste(DATA_ROOT, "QuantData_CheckedForAccuracy_20March2020.csv", sep=""))  #data extracted from  the quantitative studies, the file lists all data including the data that was not used for the meta-analysis. the data not included in the meta-anslysis is for the cases when insufficient data was reported in the article for it to be pooled in the meta-analysis (for example mean but no SD or variance etc)
+JaarsmaInternationalStudy = read.csv(paste(DATA_ROOT, "HyperPriorData.csv", sep="")) #data used for eliciting the hyperprior (general physical activity levels in HF estimated from a large internaitonal study (Jaarsma et al., 2013)
 
 
 
