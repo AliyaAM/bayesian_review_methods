@@ -66,6 +66,7 @@ Summary_Results = rbind(Summary_Results, Summary_Results_SelfEfficacy)
 
 
 Results_SocialSupport =   BayesUpdateStepByStep(x =x, Construct = "SocialSupport"  )
+
 Results_BayesianMeta_Analysis = rbind(Results_BayesianMeta_Analysis, Results_SocialSupport)
 
 
@@ -85,13 +86,13 @@ Summary_Results = rbind(Summary_Results, Summary_Results_Comorbidity)
 
 
 
-# Results_NegativeAttitude =   BayesUpdateStepByStep(x =x, Construct = "NegativeAttitude"  )
-# Results_BayesianMeta_Analysis = rbind(Results_BayesianMeta_Analysis, Results_NegativeAttitude)
+ Results_NegativeAttitude =   BayesUpdateStepByStep(x =x, Construct = "NegativeAttitude"  )
+ Results_BayesianMeta_Analysis = rbind(Results_BayesianMeta_Analysis, Results_NegativeAttitude)
 # 
 # 
 # 
-# Summary_Results_NegativeAttitude = Summary_stats_table_qual_and_quant(x =x, Construct = "NegativeAttitude")
-# Summary_Results = rbind(Summary_Results, Summary_Results_NegativeAttitude)
+ Summary_Results_NegativeAttitude = Summary_stats_table_qual_and_quant(x =x, Construct = "NegativeAttitude")
+ Summary_Results = rbind(Summary_Results, Summary_Results_NegativeAttitude)
 # 
 # 
 # 
@@ -105,14 +106,14 @@ Summary_Results = rbind(Summary_Results, Summary_Results_Comorbidity)
 # Summary_Results = rbind(Summary_Results, Summary_Results_PhysicalFunctioning)
 
 
-Results_PositiveAttitude =   BayesUpdateStepByStep(x =x, Construct = "PositiveAttitude"  )
-Results_BayesianMeta_Analysis = rbind(Results_BayesianMeta_Analysis, Results_PositiveAttitude)
+#Results_PositiveAttitude =   BayesUpdateStepByStep(x =x, Construct = "PositiveAttitude"  )
+#Results_BayesianMeta_Analysis = rbind(Results_BayesianMeta_Analysis, Results_PositiveAttitude)
 
 
 
 
-Summary_Results_PositiveAttitude = Summary_stats_table_qual_and_quant(x =x, Construct = "PositiveAttitude")
-Summary_Results = rbind(Summary_Results, Summary_Results_PositiveAttitude)
+#Summary_Results_PositiveAttitude = Summary_stats_table_qual_and_quant(x =x, Construct = "PositiveAttitude")
+#Summary_Results = rbind(Summary_Results, Summary_Results_PositiveAttitude)
 
 # from below positive attitude is a perfect match with the likelihood, self-efficacy is close, check age, comorbidity, and social support (prior/belief statements and think what it actually means)
 print("we should reduce to those constructs that are measured using perceived latent variables (self-efficacy, positive attitude, negative attitude, perceived social support (CHECK THIS ONE), symptom distress")
@@ -175,8 +176,8 @@ density_by_Construct = function(data, Construct){
 Age_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "Age")
 Comorbidity_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "Comorbidity")
 SocialSupport_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "SocialSupport")
-#NegativeAttitude_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "NegativeAttitude")
-PositiveAttitude_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "PositiveAttitude")
+NegativeAttitude_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "NegativeAttitude")
+#PositiveAttitude_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "PositiveAttitude")
 #SixMWT_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "6MWT")
 #PhysicalFunctioning_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "PhysicalFunctioning")
 #Symptoms_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "Symptoms")
@@ -199,8 +200,8 @@ length(height)
 density_ALL_Construct = rbind(Age_density_by_Construct,
                               Comorbidity_density_by_Construct,
                               SocialSupport_density_by_Construct,
-                              #NegativeAttitude_density_by_Construct,
-                              PositiveAttitude_density_by_Construct,
+                              NegativeAttitude_density_by_Construct,
+                              #PositiveAttitude_density_by_Construct,
                               #SixMWT_density_by_Construct, 
                               #PhysicalFunctioning_density_by_Construct,
                               #Symptoms_density_by_Construct,
