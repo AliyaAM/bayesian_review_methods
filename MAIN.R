@@ -22,21 +22,22 @@ library(RColorBrewer)
 ## Set the root directory to look for source code.
 #SOURCE_ROOT = "/Users/aliyaamirova/proj/bayesian_meta_analysis/"
 
+print("we should reduce to those constructs that are measured using perceived latent variables (self-efficacy, positive attitude, negative attitude, perceived social support (CHECK THIS ONE), symptom distress")
+print("consider how to deal with constructs with more than one belief statements (aggregate/average...?)")
 print("decide on the variance for the prior")
 print("include code for dealing with 0s in contingecy table for prior")
 print("systematically include all constructs from quant and from qual")
 print("plot prior from chatGPT and human prior next to each other")
 print("compare chatGPT and human prior using prior–data conflict determination using data agreement criterion")
-print("check overleaf for to do list, plot violin distributions for belief quotes etc...")
+print("plot violin distributions for belief quotes etc...")
+print("check overleaf for to do list")
 
+SOURCE_ROOT = "/Users/aliyaamirova/proj/bayesian_review_methods/"
+#SOURCE_ROOT = "/Users/aliya/my_docs/proj/bayesian_review_methods/"
 
-print("we should reduce to those constructs that are measured using perceived latent variables (self-efficacy, positive attitude, negative attitude, perceived social support (CHECK THIS ONE), symptom distress")
-print("consider how to deal with constructs with more than one belief statements (aggregate/average...?)")
-
-
-SOURCE_ROOT =  "/Users/aliya/my_docs/proj/bayesian_review_methods/"
 ## Set the root location on the user's local machine to save output files.
-OUTPUT_ROOT = "/Users/aliya/my_doc/sproj/bayesian_review_methods/"
+#OUTPUT_ROOT = "/Users/aliya/my_doc/sproj/bayesian_review_methods/"
+OUTPUT_ROOT = "/Users/aliyaamirova/proj/bayesian_review_methods/RESULTS/"
 
 #x = read.csv(paste(SOURCE_ROOT, "Test_data_bayes_chatGPT.csv", sep="")) # new qualitative data
 x = read.csv(paste(SOURCE_ROOT, "input_chatGPT.csv", sep="")) # new qualitative data
