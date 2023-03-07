@@ -1,0 +1,157 @@
+belief_statement,construct,active_k,sedentary_k,total_k,active_n,sedentary_n,total_n
+BR,BR,264,135,399,16,16,32
+BR+_from_bs,BR+,253,117,370,16,16,32
+Having a regular routine and consistency in physical activity helps me to stay on track,BR+_habit_consistency,96,32,128,16,11,27
+I adjust my activity level accordingly to how I feel in a given moment,BR+_impl_intent,31,6,37,14,3,17
+I also find that having a plan and schedule for my physical activity helps me to stay on track,BR+_action_planning_schedule,11,14,25,6,9,15
+I find safe and comfortable places where I can engage in physical activity when I am faced with a chalanging evironment,BR+_impl_intent_places,7,5,12,4,3,7
+I gradually increase the intensity or duration of activity can help make it more manageable,BR+_impl_intent_graded_tasks,2,4,6,2,4,6
+I have strategies for clearing my mind so I can focus on physical activity,BR+_impl_intent_clearmind,4,0,4,3,0,3
+I incorporate a variety of activities to keep it interesting and focusing on activities that are enjoyable,BR+_impl_intent_variety,7,0,7,4,0,4
+I make a plan for how I will achieve my physical activity goals,BR_action_planning,2,3,5,1,1,2
+"I set reminders for myself to stay active (scheduling a walk in calendar, setting an alarm)",BR+_reminders,8,7,15,7,6,13
+"I try to find activities that I enjoy doing, which helps me to stay engaged and motivated",BR+_impl_intent_find_joy,34,9,43,11,3,14
+"I try to make physical activity a part of my daily routine, so it becomes a habit",BR+_habit_routine,8,2,10,5,2,7
+"I try to make physical activity fun and enjoyable and easy to remember, so it becomes a habit",BR+_habit_find_joy,5,1,6,4,1,5
+I try to minimize distractions and create conductive environment to stay focused and motivated in being physically active,BR+_min_distract_impl_intent,1,0,1,1,0,1
+"Setting specific, realistic achievable goals for physical activity helps me in becoming more physically active",BR+_goal_setting,29,31,60,11,9,20
+"Sometimes I also feel tired or lazy and I just don't want to go out and be active, but I try to overcome that by reminding myself of the benefits of staying active",BR+_impl_intent_remind_benefit,7,4,11,5,3,8
+"When I have a specific plan for my physical activity, it's easier for me to stay motivated",BR+_action_planning_motivation,0,2,2,0,1,1
+"if it's too hot, too cold or raining I exercise in doors",BR+_impl_intent_weather,14,3,17,7,3,10
+tracking my progress helps me to stay motivated and focused,BR+_self_monitoring,5,1,6,4,1,5
+BR-_from_bs,BR-,11,18,29,5,8,13
+"I  monitor my heart rate and breathing during physical activity, which helps me to stay within safe limits and avoid overexerting myself",BR-_self_monitoring_HR_breathing,6,5,11,4,3,7
+I have learned how to pace myself and listen to my body to avoid overexerting myself,BR-_overexert,2,7,9,2,4,6
+I have to monitor my condition more carefully because of my cardiac implantable device,BR-_symptom_monitoring,1,0,1,1,0,1
+I monitor physical activity to make sure I do not over do it.,BR-_self_monitoring,2,1,3,2,1,3
+my sedentary lifestyle can make it hard to break the habit of being inactive,BR-_habit_discontinuity,0,6,6,0,2,2
+BaCap,BaCap,151,187,338,16,16,32
+BaCap+_from_bs,BaCap+,29,2,31,14,2,16
+I am able to engage in light and moderate physical activity,BaCap+_selfEfficacy,29,2,31,14,2,16
+BaCap-_from_bs,BaCap-,122,185,307,16,16,32
+"A flare-up of my heart failure symptoms, such as fatigue and shortness of breath limit my physical activity",BaCap-_selfEfficacy_prcvd_smptmsHF,33,15,48,10,8,18
+"Before I developed heart failure, I was more physically active than I am now",BaCap-_selfEfficacy_HF,10,30,40,9,16,25
+"Due to my heart condition, I have to be more cautious and limit my physical activity",BaCap-_selfEfficacy_heart,5,12,17,3,7,10
+Fatigue and pain caused by my health conditions can be an obstacle to being physically active,BaCap-_selfEfficacy_prcvd_smptms,36,43,79,10,11,21
+I also get tired easily and sometimes it's difficult to find the energy to move around,BaCap-_perceived_exertion,11,19,30,5,9,14
+"I find some types of physical activity too hard  due to my health condition (eg., strenuous activities, bending, kneeling)",BaCap-_selfEfficacy_hlth_cndtns_typePA,17,21,38,9,11,20
+My health conditions can make being physically active very difficult for me,BaCap-_selfEfficacy_ hlth_cndtns,11,32,43,7,10,17
+My physical activity is limitted by my older age which causes lack of energy and can make it hard for me to be active,BaCap-_selfEfficacy_older_age,0,17,17,0,5,5
+BaCon,BaCon,360,278,638,16,16,32
+BaCon+_from_bs,BaCon+,245,157,402,16,16,32
+"I believe that staying active is crucial for maintaining my overall health and well-being, both physically and mentally",BaCon+_pos_expctncy_health,166,99,265,16,16,32
+Physical activity can improve my mood,BaCon+_pos_expctncy_mood,37,15,52,13,11,24
+Physical activity helps me manage my heart failure symptoms,BaCon+_pos_expctncy_HFmanage,19,12,31,7,5,12
+Physical activity helps me manage rheumatoid arthritis symptoms,BaCon+_pos_expctncy_RAmanage,12,9,21,5,5,10
+"Physical activity helps me to maintain my mobility and balance,  and to prevent falls",BaCon+_pos_expctncy_mobility,5,4,9,3,3,6
+Physical activity improves my cardiovascular health,BaCon+_pos_expctncy_cardio_health,12,21,33,9,10,19
+BaCon-_from_bs,BaCon-,117,121,238,16,15,31
+I have to be more cautious and limit my activities to avoid putting too much strain on my heart,BaCon-_risk_heart,29,19,48,12,8,20
+I make sure that the activities I engage in are safe for me,BaCon-_risk_safety_exercise,8,15,23,4,8,12
+Pain and discomfort caused by physical activity as a result of my health conditions discourages me from being physically active,BaCon-_neg_expctncy_sympcomrbd,3,11,14,2,7,9
+Physical activity makes my symptoms worse,BaCon-_neg_expctncy_symptoms_HF,4,7,11,4,3,7
+The main barrier is the risk of overexerting myself and making my condition worse,BaCon-_risk_health_conditions,75,73,148,14,14,28
+ECR,ECR,135,120,255,16,16,32
+ECR+_from_bs,ECR+,78,21,99,15,10,25
+My environment provides me with many opportunities for physical activity,ECR+_environment,49,13,62,15,8,23
+"My home is also equipped with a stationary bike, which I can use in case the weather is bad or if I'm feeling particularly tired",ECR+_equipment,4,0,4,2,0,2
+"My home is designed for ease of movement and access, which helps me maintain my independence and ability to engage in my daily activities",ECR+_fascilities,4,2,6,3,1,4
+My implantable cardiac device gives me the confidence to stay active,ECR+_cardiac_device,9,0,9,1,0,1
+Programs or resources available in my community help me with my physical activity,ECR+_exercise_programmes,12,6,18,2,3,5
+ECR-_from_bs,ECR-,57,99,156,16,16,32
+I avoid activites that put too much strain on my implantable cardiac device,ECR-_cardiac_device,3,10,13,3,2,5
+"I consider the weather, if it's too hot or too cold, it can make it harder for me to engage in physical activity",ECR-_weather,46,50,96,14,13,27
+My home and neighborhood environment can limit my physical activity options,ECR-_environment,7,27,34,7,10,17
+"The area, where I live, makes it harder for me to access public transportation and other facilities that can promote physical activity like parks, gyms, or community centers",ECR-_lack_fascilities,1,12,13,1,7,8
+Emotion,Emotion,46,49,95,15,15,30
+Emotion+_from_bs,Emotion+,17,18,35,13,15,28
+"When I am feeling good and upbeat, I tend to have more energy and motivation to engage in physical activity",Emotion+_mood,17,18,35,13,15,28
+Emotion-_from_bs,Emotion-,29,31,60,15,15,30
+"If I have too much on my mind, stress or anxiety, it can be hard to focus on physical activity and make it difficult to get started",Emotion-_stress_anxiety,6,3,9,5,3,8
+It's also common to forget to be active when you're experiencing negative moods or emotions,Emotion-_negative_emotions,0,1,1,0,1,1
+"On bad days, I may feel frustrated or discouraged about my limitations and have less motivation to be active",Emotion-_frustration,0,2,2,0,1,1
+What distracts me from being physically active is my fear of overexerting myself and causing harm to my heart,Emotion-_fear,0,6,6,0,3,3
+"When I am feeling down, I may find it harder to be motivated to do physical activity",Emotion-_mood,23,19,42,14,14,28
+Goals,Goals,179,73,252,16,15,31
+Goals+_from_bs,Goals+,143,30,173,16,11,27
+Being physically active is a priority for me,Goals+_goal_priority,37,6,43,16,5,21
+Engaging in regular physical activity is important for maintaining my independence as I age,Goals+_goal_outcome_independ,42,12,54,10,6,16
+I engage in physical activity to prevent another heart attack,Goals+_goal_outcome_preventMI,2,0,2,1,0,1
+"I try to stay active, despite my health conditions",Goals+_goal_behaviour,47,7,54,14,5,19
+I'm staying physically active to ensure that I am taking care of my health,Goals+_goal_outcome_health,16,5,21,5,2,7
+Goals-_from_bs,Goals-,36,43,79,13,14,27
+I get caught up in my daily responsibilities and it's hard to make time for physical activity,Goals-_goal_conflict,33,41,74,12,14,26
+I try to maintain an active lifestyle within the limitations of my condition,Goals-_goal_behavioural,2,2,4,1,2,3
+Intention,Intention,6,14,20,6,9,15
+Intention+_from_bs,Intention+,6,14,20,6,9,15
+I am willing to make an effort to increase my physical activity levels,Intention+_to_increase,0,7,7,0,5,5
+"I plan to continue staying as active as possible, within the limits set by my doctor.",Intention+_maintain_HP,1,3,4,1,3,4
+I will try to maintain my current level of physical activity and do what I can within my limits,Intention+_maintain_within_ability,5,5,10,5,4,9
+Intention-_from_bs,Intention-,0,0,0,0,0,0
+Knowledge,Knowledge,15,13,28,6,8,14
+Knowledge+_from_bs,Knowledge+,13,10,23,6,7,13
+I have educated myself on how to engage in physical activity safely and appropriately for my condition,Knowledge+_ safety,6,0,6,4,0,4
+I know how to manage my symptoms and stay active and healthy,Knowledge+_ symptom_manage,2,1,3,2,1,3
+"I may feel some discomfort or aches during or after physical activity, but I consider it to be a normal part of exercise",Knowledge+_ somatic,2,0,2,1,0,1
+"I understand that physical activity is essential for maintaining my overall health and well-being, especially with my heart condition",Knowledge+_benefits,2,8,10,2,5,7
+"In the past, I have developed a certain level of knowledge and understanding about my arthritis and heart failure, which has helped me make informed decisions about my physical activity",Knowledge+_ disease,1,1,2,1,1,2
+Knowledge-_from_bs,Knowledge-,2,3,5,1,2,3
+I do not know how much physical activity and what activities are safe for me,Knowledge-_safety,0,3,3,0,2,2
+I would like to know more about how to best maintain my activity level as I age,Knowledge-_exercise techniques,2,0,2,1,0,1
+MADP,MADP,28,37,65,15,14,29
+MADP+_from_bs,MADP+,3,1,4,3,1,4
+I believe that the benefits of physical activity far outweigh the drawbacks,MADP+_pros/cons,3,1,4,3,1,4
+MADP-_from_bs,MADP-,25,36,61,13,14,27
+"Before deciding to engage in physical activity, I listen to my body and pay attention to my symptoms,  such as pain, fatigue, breathlessness or any other discomfort",MADP-_symptom hypervigilance,15,23,38,11,12,23
+"I get easily distracted by other things, such as TV or reading",MADP-_attention/distraction,1,2,3,1,2,3
+"I have to be mindful of any pain or discomfort that I might feel during physical activity, and I have to stop if it becomes too much",MADP-_symptom hypervigilance,5,6,11,4,2,6
+I sometimes forget to be physically active,MADP-_forgetfulness,5,6,11,5,5,10
+Optimism,Optimism,54,43,97,14,16,30
+Optimism+_from_bs,Optimism+,51,35,86,14,14,28
+Having a positive attitude towards physical activity helps me in being physically active,Optimism+_positive_attitude_PA,7,0,7,3,0,3
+I always try to keep my options open and consider new ways to stay active,Optimism+_new_ways_active,9,12,21,7,7,14
+I am optimistic that I will be able to continue to stay active and maintain a consistent physical activity routine,Optimism+_future_ability,4,6,10,4,5,9
+"I believe that with the right mindset and approach, it is possible to maintain an active lifestyle despite any challenges",Optimism+_positive_attitude,12,5,17,7,3,10
+"I try to focus on what I can do, rather than dwelling on what I can't do",Optimism+_positive_attitude,6,6,12,5,3,8
+I try to stay positive and focus on the benefits of physical activity,Optimism+_positive_attitude,13,6,19,7,5,12
+Optimism-_from_bs,Optimism-,3,8,11,2,7,9
+"I have to be realistic about my health condition and my limitations, and that can affect my optimismexpectations about physical activity at times",Optimism-_pesimistic_expectation,3,8,11,2,7,9
+Reinforcement,Reinforcement,80,21,101,14,13,27
+Reinforcement+_from_bs,Reinforcement+,80,19,99,14,12,26
+My doctor is usually the person that praise me for sticking to my physical activities and maintaining a healthy lifestyle,Reinforcement+_ extrinsic_reward_praise,1,0,1,1,0,1
+Physical activity is something that I enjoy doing,Reinforcement+_intrinsic_reward,29,2,31,12,1,13
+The sense of accomplishment I get from being active keeps me motivated to stay active,Reinforcement+_extrinsic_reward_accomplish,46,17,63,13,12,25
+"When I feel good, I am more likely to do physical activity, which in turns improves my mood and well-being",Reinforcement+_positive_feedback,4,0,4,2,0,2
+Reinforcement-_from_bs,Reinforcement-,0,2,2,0,2,2
+I get discouraged if I don't see immediate results,Reinforcement-_negative reward_progress,0,1,1,0,1,1
+I may feel discouraged if I am not able to complete a physical activity due to my health conditions,Reinforcement-_negative reward_completion,0,1,1,0,1,1
+SI,SI+,133,133,266,16,16,32
+SI+_from_bs,SI+,132,128,260,16,16,32
+"I find it helpful to have a partner or a friend to exercise with, as it keeps me motivated and accountable",SI+_social_support_practical_compan,4,18,22,3,6,9
+"I make sure to follow my doctor's advice and guidance to maintain my health and well-being, and that includes being physically active",SI+_clinical_advice,37,10,47,11,7,18
+My friends and family have been helpful in encouraging me to be physically active,SI+_social_support_emotional,48,51,99,15,16,31
+The advice and guidelines from my healthcare providers also help me to stay active in a safe way,SI+_clinical_advice_reassurance,38,33,71,11,15,26
+"Working with my healthcare team (eg., physiotherapist) to find an appropriate exercise plan that is tailored to my health conditions and preferences and is safe for me is helpful",SI+_social support_practical_clinical,4,16,20,4,4,8
+SI-_from_bs,SI-,1,5,6,1,3,4
+Health professionals have advised me to listen to my body and make sure that any activity I do is safe for me,SI-_clinical_advice,1,2,3,1,1,2
+My doctor has recommended that I avoid strenuous activities and to not push myself too hard,SI-_clinical_advice_typePA,0,1,1,0,1,1
+My family and friends discourage me from being physically active,SI-_social_influences,0,2,2,0,2,2
+SPR,SPR,9,8,17,6,6,12
+SPR+_from_bs,"
+SPR+",9,2,11,6,1,7
+Physical activity is a big part of who I am as a person,SPR+_perceived_identity,9,2,11,6,1,7
+SPR-_from_bs,SPR-,0,6,6,0,5,5
+Physical activity is not a defining aspect of my identity,SPR-_perceived_identity,0,6,6,0,5,5
+Skills,Skills,39,35,74,15,15,30
+Skills+_from_bs,Skills+,16,10,26,11,8,19
+I have developed some skills and understanding in the past that have helped me to be physically active safely and effectively,Skills+_safety,5,2,7,5,2,7
+"I have learned some techniques to manage my arthritis pain, which has helped me to be more active",Skills+_symptom_management,1,1,2,1,1,2
+I have learnt how to properly use any exercise equipment and how to perform exercises correctly to minimize the risk of injury,Skills+_equipment,3,2,5,3,2,5
+I have learnt new types of exercise techniques that are safe for me given my health conditions,Skills+_exercise_techniques,3,5,8,3,5,8
+"In the past, I have developed the skill of listening to my body, which is important in being able to stay active without overdoing it",Skills+_symptom_hypervigilance,4,0,4,3,0,3
+Skills-_from_bs,Skills-,23,25,48,14,15,29
+"As for the future, I think that learning some new techniques and exercises that are specifically geared towards managing heart failure and arthritis",Skills-_lack_skills_symptom_management,2,2,4,2,2,4
+I may also need to learn how to use new equipment or technology that can help me to stay active,Skills-_lack_skills _equipment,7,7,14,7,6,13
+"I might also need to learn how to monitor my heart rate, and how to avoid complications",Skills-_lack_skills_symptom_hypervigilance,0,3,3,0,2,2
+"In the future, as my health conditions change, I may need to learn new exercises or activities that are better suited to my abilities",Skills-_lack_exercise_techniques,18,18,36,13,13,26
+Total,,4532,3464,7996,16,16,32

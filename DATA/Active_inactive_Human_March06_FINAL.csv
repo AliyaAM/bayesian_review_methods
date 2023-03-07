@@ -1,0 +1,127 @@
+belief_statement,construct,active_k,sedentary_k,total_k,active_n,sedentary_n,total_n
+BR,BR,33,25,58,7,7,14
+BR+,BR+,31,21,52,7,7,14
+Engaging in physical activity is something I do automatically,BR+_auto,7,2,9,4,2,6
+I engage in physical activity compulsively,BR+_habit_routine,4,1,5,2,1,3
+I have a physical activity routine I follow,BR+_habit_consistency,9,0,9,3,0,3
+I know when and where I will engage in physical activity over the next week,BR+_action_planning_schedule,2,0,2,1,0,1
+I monitor intensity and or duration of physical activity to make sure I do enough,BR+_self_monitoring,2,2,4,1,2,3
+I pace my physical activity to match my physical ability,BR+_impl_intent,6,15,21,3,5,8
+"When weather is bad, I engage in physical activity indoors",BR+_impl_intent_weather,4,1,5,3,1,4
+BR-,BR-,2,4,6,1,1,2
+I monitor the intensity and duration of physical activity to make sure I do not overdo it,BR-_self_monitoring,2,4,6,1,1,2
+BaCap,BaCap,27,46,73,7,9,16
+BaCap+,BaCap+,2,0,2,2,0,2
+I am confident in my ability to engage in physical activity,BaCap+_selfEfficacy,2,0,2,2,0,2
+BaCap-,BaCap-,25,46,71,7,9,16
+I lack confidence in engaging in physical activity because of my heart condition,BaCap-_selfEfficacy_heart,6,1,7,4,1,5
+Illnesses other than heart failure limit my ability to engage in physical activity,BaCap-_selfEfficacy_ hlth_cndtns,9,17,26,5,7,12
+My limitations to engaging in physical activity is part of getting older,BaCap-_selfEfficacy_older_age,10,11,21,4,6,10
+Symptoms of my heart failure (e.g. breathlessness; tight chest; fatigue; swollen legs) limit my ability to engage in physical activity,BaCap-_selfEfficacy_prcvd_smptmsHF,1,17,18,1,5,6
+BaCon,BaCon,38,42,80,6,9,15
+BaCon+,BaCon+,33,14,47,6,7,13
+I engage in physical activity because it makes me feel more cheerful,BaCon+_pos_expctncy_mood,8,3,11,3,3,6
+Physical activity improves my general health,BaCon+_pos_expctncy_health,23,8,31,6,6,12
+Physical activity improves the condition of my heart,BaCon+_pos_expctncy_cardio_health,2,3,5,1,2,3
+BaCon-,BaCon-,5,28,33,3,6,9
+Physical activity Is dangerous because it puts my heart under strain,BaCon-_risk_heart,3,3,6,2,2,4
+"Physical activity brings on my symptoms (ie., fatigue)",BaCon-_neg_expctncy_symptoms_HF_fatigue,1,2,3,1,2,3
+"Physical activity brings on my symptoms (ie., heavy legs and arms)",BaCon-_neg_expctncy_symptoms_HF_oedema,0,3,3,0,1,1
+"Physical activity brings on my symptoms (ie., tight chest)",BaCon-_neg_expctncy_symptoms_HF_tightchest,0,3,3,0,1,1
+Physical activity brings on my symtoms (e. g. breathlessness),BaCon-_neg_expctncy_symptoms_HF_dyspnoea,1,13,14,1,4,5
+Physical activity does not bring any benefits for me,BaCon-_lack_pos_pos_expctncy,0,4,4,0,2,2
+ECR,ECR,34,46,80,6,9,15
+ECR+,ECR+,22,23,45,6,7,13
+Equipment (bike; treadmill) helps me in being active,ECR+_equipment,4,6,10,2,3,5
+"Fascilities (eg., local council) help me in being physically active",ECR+_fascilities,2,2,4,2,2,4
+Group programmes help me in being physically active,ECR+_exercise_programmes,4,3,7,3,2,5
+Having an implantable device reassures me when engaging in physical activity,ECR+_cardiac_device,2,6,8,1,2,3
+"My heart failure treatment (ie., medication) helps me in engaging in physical activity",ECR+_treatment,0,6,6,0,3,3
+My local environment is a useful resource for my physical activity engagement,ECR+_environment,4,0,4,4,0,4
+My physical activity levels Increased since a major life event,ECR+_life_event,2,0,2,1,0,1
+My physical activity levels increased since health-related event,ECR+_health_event,4,0,4,2,0,2
+ECR-,ECR-,12,24,36,4,8,12
+"My heart failure treatment (ie., medication) prevents me from engaging in physical activity",ECR-_treatment,4,5,9,1,1,2
+My implantable device can harm me if I engage in physical activity,ECR-_cardiac_device,4,0,4,2,0,2
+My local environment limits me in engaging in physical activity (incline (hills); crowds; traffic; pollution),ECR-_environment,1,9,10,1,4,5
+My physical activity levels decreased since a major life event,ECR-_life_event,0,2,2,0,2,2
+My physical activity levels decreased since health-related event,ECR-_health_event,3,8,11,2,5,7
+Emotion,Emotion,7,10,17,4,6,10
+Emotion+,Emotion+,0,0,0,0,0,0
+Emotion-,Emotion-,5,8,13,2,4,6
+I am too worried about the consequences of being active,Emotion-_fear,2,5,7,1,2,3
+I have to be in a mood to exercise,Emotion-_mood_conditional,1,1,2,1,1,2
+I only engage in physical activity when I am bored,Emotion-_boredom,2,0,2,1,0,1
+Low mood prevents me from engaging in physical activity,Emotion-_mood,0,2,2,0,2,2
+Goals,Goals,57,24,81,7,7,14
+Goals+,Goals+,43,7,50,7,3,10
+Engaging in physical activity is a priority for me,Goals+_goal_priority,26,2,28,6,2,8
+I engage in physical activity to be able to get on with life without help from others,Goals+_goal_outcome_independ,17,5,22,7,3,10
+Goals-,Goals-,15,17,32,4,6,10
+Engaging in physical activity is not a priority for me,Goals-_goal_conflict,1,8,9,1,6,7
+I already engage in as much physical activity as I am able to,Goals-_goal_behavioural_ability,7,0,7,2,0,2
+I have integrated an adequate amount of physical activity into my life,Goals-_goal_behavioural,7,9,16,4,3,7
+Intention,Intention,6,6,12,4,3,7
+Intention+,Intention+,4,1,5,3,1,4
+I try to engage in some form of physical activity every week,Intention+_to_increase,4,1,5,3,1,4
+Intention-,Intention-,2,5,7,2,3,5
+I do not intend to be active for the sake of being active,Intention-_lack,2,5,7,2,3,5
+Knowledge,Knowledge,7,8,15,4,6,10
+Knowledge+,Knowledge+,5,3,8,3,3,6
+I know how much physical activity I can safely do,Knowledge+_ safety,5,3,8,3,3,6
+Knowledge-,Knowledge-,2,5,7,2,5,7
+I don't know whether physical activity is safe for me,Knowledge-_safety,2,5,7,2,5,7
+MADP,MADP,10,3,13,4,3,7
+MADP+,MADP+,1,0,1,1,0,1
+"I do not normally forget about my scheduled exercise (eg., class, group activities, gym)",MADP+_remember,1,0,1,1,0,1
+MADP-,MADP-,9,3,12,4,3,7
+Engaging in physical activity requires a lot of thought and planning,MADP-_cognitive_load,4,1,5,2,1,3
+I am vigilant to my heart rate and chest sensations when I am exercising,MADP-_symptom_hypervigilance,2,1,3,1,1,2
+I sometimes forget to follow my physical activity routine,MADP-_forgetfulness,3,1,4,2,1,3
+Optimism,Optimism,10,4,14,7,3,10
+Optimism+,Optimism+,10,3,13,7,2,9
+I am optimistic about my ability to engage in physical activity,Optimism+_future_ability,1,0,1,1,0,1
+I am optimistic by nature,Optimism+_dispositional,6,1,7,4,1,5
+I am optimistic that I will engage in physical activity in the near future,Optimism+_behaviour,2,2,4,2,1,3
+I hope to remain physically active,Optimism+_hope,2,0,2,2,0,2
+Optimism-,Optimism-,0,1,1,0,1,1
+I am fairly pessimistic about my ability to engage in physical activity in the future,Optimism-_pesimistic_expectation,0,1,1,0,1,1
+Reinforcement,Reinforcement,24,15,39,6,6,12
+Reinforcement+,Reinforcement+,24,10,34,6,4,10
+I engage in physical activity because my doctor or other health professionals are pleased with me when I do,Reinforcement+_ extrinsic_reward_praise,1,0,1,1,0,1
+I engage in physical activity because people close to me are pleased with me when I do,Reinforcement+_ extrinsic_reward_praise_friends,2,0,2,1,0,1
+I enjoy engaging in physical activity,Reinforcement+_intrinsic_reward,10,7,17,5,2,7
+I exercise because I feel much better when I have done so,Reinforcement+_positive_feedback,12,1,13,3,1,4
+I feel pleased with myself when I have engaged in some physical activity,Reinforcement+_extrinsic_reward_accomplish,0,3,3,0,2,2
+Reinforcement-,Reinforcement-,0,5,5,0,4,4
+Negative consequences of PA (pain; getting out f breath) discourage me,Reinforcement-_punishment,0,3,3,0,2,2
+"Physical activity is not an enjoyment, it is an obligation",Reinforcement-_intrinsic_reward,0,2,2,0,2,2
+SI,SI,39,31,70,6,6,12
+SI+,SI+,29,22,51,5,5,10
+I am physically active because everyone I know closely is physically active,SI+_social_norm,2,0,2,1,0,1
+"I engage in physical activity because a health professional (e.g. GP, consultant, nurse, physiotherapist) has advised me to do so",SI+_clinical_advice,7,10,17,3,4,7
+I know others my age who do not engage in physical activity much and their health detoriated,SI+_social_learning,1,0,1,1,0,1
+I rely on other people to perform physical activity,SI+_social support_practical,2,5,7,1,3,4
+I would engage in physical activity if it involved being with others,SI+_social_support_practical_compan,4,5,9,1,2,3
+I would exercise with others if their level matched my capability,SI+_social_support_ability_compan,2,2,4,1,1,2
+Making plans with others encourage me to engage in physical activity,SI+_social_support_practical_compan,2,0,2,2,0,2
+People who are important to me encourage me to be physically active,SI+_social_support_emotional,3,0,3,3,0,3
+having a reassurance from a health professional that PA is safeencourage me to exercise,SI+_clinical_advice_reassurance,6,0,6,2,0,2
+SI-,SI-,7,9,16,2,5,7
+"I limit my physical activity because a health professional (e.g. GP, consultant, nurse, physiotherapist) has advised me to not overdo it",SI-_clinical_advice,0,5,5,0,2,2
+People who are important to me discourage me from engaging in physical activity,SI-_social_influences,7,4,11,2,3,5
+SPR,SPR,27,21,48,7,5,12
+SPR+,"
+SPR+",27,5,32,7,3,10
+Being physically active is a big part of my life,SPR+_perceived_identity,11,1,12,6,1,7
+I have always been an active person,SPR+_past_behaviour,16,4,20,5,3,8
+SPR-,SPR-,0,16,16,0,3,3
+I am not a particularly active person,SPR-_perceived_identity,0,9,9,0,2,2
+I am not an athletic person,SPR-_perceived_identity_athletic,0,7,7,0,3,3
+Skills,Skills,5,2,7,2,1,3
+Skills+,Skills+,2,2,4,2,1,3
+Being shown how to perform a form of physical activity helped me to become more physically active,Skills+_exercise_techniques,2,2,4,2,1,3
+Skills-,Skills-,3,0,3,2,0,2
+"After I have been hospitalised, I had to get used to walking again (I had to learn)",Skills-_lack_gait,2,0,2,1,0,1
+I require training to be able to perform physical activity,Skills-_lack_exercise_techniques,1,0,1,1,0,1
+Total,,980,852,1832,7,9,16
