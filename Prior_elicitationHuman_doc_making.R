@@ -553,14 +553,13 @@ input_Human_prior$logOR_prior_elicitation = c(social_support_ma$beta,
 
 
 
-input_Human_prior$variance_prior_elicitation = c(social_support_ma$tau2,
-                                                  negative_attitude_ma$tau2,
-                                                  positive_attitude_ma$tau2,
-                                                  symptom_distress_ma$tau2,
-                                                  self_efficacy_ma$tau2,
-                                                  perceived_symptoms_ma$tau2,
-                                                  dysphoria_ma$tau2)
-
+input_Human_prior$variance_prior_elicitation = c(social_support_ma$pval,
+                                                  negative_attitude_ma$pval,
+                                                  positive_attitude_ma$pval,
+                                                  symptom_distress_ma$pval,
+                                                  self_efficacy_ma$pval,
+                                                  perceived_symptoms_ma$pval,
+                                                  dysphoria_ma$pval)
 
 
 input_Human_prior$participant_source = rep("human", times = nrow(input_Human_prior))
