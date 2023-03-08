@@ -49,11 +49,10 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
   #Likewise, we calculated the number of physically active given the construct is absent (X = 0), ie  N – N_(PA=1;X=1 ). 
   # It is important to note that we used the entire set of data, meaning that the total pool of HF patients would equal to 30 scenarios multiplied by six different expert judgements (30 x 6).  
   
-  PriorExpert_N_PA_X = x[index,]$PriorExpert_N_PA_X
-  PriorExpert_N_noPA_noX = x[index,]$PriorExpert_N_noPA_noX
-  PriorExpert_N_noPA_X = x[index,]$PriorExpert_N_noPA_X
-  PriorExpert_N_PA_noX = x[index,]$PriorExpert_N_PA_noX
-  variance_prior_elicitation = x[index,]$variance
+  
+  variance_prior_elicitation = x[index,]$variance_prior_elicitation
+  logOR_prior_elicitation = x[index,]$logOR_prior_elicitation
+  
   
   #data for the LIKELIHOOD 
   #calculate the total N across quant studies, stratified by construct: 
@@ -75,7 +74,7 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
   k =  meta_data_likelihoodResults$k
   
   Summary_statistics_table_qual_quant = function(Construct, Total_N_hyperprior, Mean_probability_hyperprior, Variance_hyperprior, Log_Odds_hyperprior, 
-                                      PriorExpert_N_PA_X, PriorExpert_N_noPA_noX, PriorExpert_N_noPA_X, PriorExpert_N_PA_noX, variance_prior_elicitation,
+                                                 logOR_prior_elicitation, variance_prior_elicitation,
                                       LOGOdds_Ratio_quant, variance_quant) {
     
     Variance_hyperprior = Variance_hyperprior 
@@ -95,7 +94,7 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
     
 
     #On the basis of the results of the prior elicitation task we calculate the log OR for each construct
-    logOR_prior_elicitation = log(PriorExpert_N_PA_X*PriorExpert_N_noPA_noX)/(PriorExpert_N_noPA_X*PriorExpert_N_PA_noX)
+    logOR_prior_elicitation = logOR_prior_elicitation
     
     summary_data = cbind(summary_data, logOR_prior_elicitation)
     
@@ -152,10 +151,7 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
                                           Mean_probability_hyperprior = Mean_probability_hyperprior, 
                                           Variance_hyperprior = Variance_hyperprior,
                                           Log_Odds_hyperprior = Log_Odds_hyperprior, 
-                                          PriorExpert_N_PA_X = PriorExpert_N_PA_X, 
-                                          PriorExpert_N_noPA_noX = PriorExpert_N_noPA_noX, 
-                                          PriorExpert_N_noPA_X = PriorExpert_N_noPA_X,
-                                          PriorExpert_N_PA_noX = PriorExpert_N_PA_noX, 
+                                          logOR_prior_elicitation = logOR_prior_elicitation, 
                                           variance_prior_elicitation = variance_prior_elicitation,
                                           LOGOdds_Ratio_quant = LOGOdds_Ratio_quant, 
                                           variance_quant = variance_quant)
