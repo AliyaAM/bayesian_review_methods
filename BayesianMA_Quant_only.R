@@ -72,11 +72,11 @@ ResultsBayesianUpdateQuant = rbind(ResultsBayesianUpdateQuant, QuantUpdate_Physi
 Summary_stats_table_PhysicalFunctioning= Summary_stats_table(data = data, Construct = "PhysicalFunctioning")
 Summary_statistics_table_quant_only = rbind(Summary_statistics_table_quant_only, Summary_stats_table_PhysicalFunctioning)
 
-QuantUpdate_Symptoms= BayesUpdate_Quant(data = data, Construct = "Symptoms")
+QuantUpdate_Symptoms= BayesUpdate_Quant(data = data, Construct = "fewerPerceivedSymptoms")
 ResultsBayesianUpdateQuant = rbind(ResultsBayesianUpdateQuant, QuantUpdate_Symptoms)
 
 
-Summary_stats_table_Symptoms = Summary_stats_table(data = data, Construct = "Symptoms")
+Summary_stats_table_Symptoms = Summary_stats_table(data = data, Construct = "fewerPerceivedSymptoms")
 Summary_statistics_table_quant_only = rbind(Summary_statistics_table_quant_only, Summary_stats_table_Symptoms)
 
 
@@ -339,7 +339,7 @@ NegativeAttitude_density_by_Construct = density_by_Construct(data = data, Constr
 PositiveAttitude_density_by_Construct = density_by_Construct(data = data, Construct = "PositiveAttitude")
 SixMWT_density_by_Construct = density_by_Construct(data = data, Construct = "6MWT")
 PhysicalFunctioning_density_by_Construct = density_by_Construct(data = data, Construct = "PhysicalFunctioning")
-Symptoms_density_by_Construct = density_by_Construct(data = data, Construct = "Symptoms")
+Symptoms_density_by_Construct = density_by_Construct(data = data, Construct = "fewerPerceivedSymptoms")
 LVEF_density_by_Construct = density_by_Construct(data = data, Construct = "LVEF")
 SelfEfficacy_density_by_Construct = density_by_Construct(data = data, Construct = "SelfEfficacy")
 Depression_density_by_Construct = density_by_Construct(data = data, Construct = "Depression")
@@ -488,7 +488,7 @@ Plot_Likelihood = ggplot(density_ALL_Construct_quant_only, aes(x = logOddsRatio,
                             "PositiveAttitude"=  "Positive Attitude",
                             "6MWT"= "6MWT",
                             "PhysicalFunctioning"="Physical Functioning",
-                            "Symptoms"= "Perceived Symptoms",
+                            "fewerPerceivedSymptoms"= "Fewer Perceived Symptoms",
                             "LVEF"="LVEF",
                             "SelfEfficacy"="Self-efficacy",
                             "Depression"="Depression",
