@@ -43,16 +43,13 @@ BayesUpdateStepByStep = function(x, Construct) {
   Log_Odds_hyperprior = log(JaarsmaInternationalStudy$N_highPA[20]/JaarsmaInternationalStudy$N_lowPA[20])
   
   
-
- 
   #data for PRIOR 
-  #Six experts completed the expert elicitation task. 
-  #The reviewers made a judgement on whether the hypothetical HF patient met the recommended levels of physical activity or not. 
-  #The number of scenarios where the construct was present (ie., X = 1) and the experts judged them as being likely to be physically active based on the qualitative studies they read (PA = 1) was expressed as N when PA = 1 and X = 1 (ie., physically active given the construct). 
-  #Likewise, we calculated the number of physically active given the construct is absent (X = 0), ie  N – N_(PA=1;X=1 ). 
-  # It is important to note that we used the entire set of data, meaning that the total pool of HF patients would equal to 30 scenarios multiplied by six different expert judgements (30 x 6).  
   
+  #see: Prior_elicitationHuman_doc_making.R or Prior_elicitationChatGPT_doc_making.R
 
+  variance_prior_elicitation = x[index,]$variance_prior_elicitation
+  logOR_prior_elicitation = x[index,]$logOR_prior_elicitation
+  
   
   #data for the LIKELIHOOD 
   #calculate the total N across quant studies, stratified by construct: 
