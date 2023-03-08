@@ -192,13 +192,13 @@ self_efficacy_logOR$pooled_construct_item = rep("self_efficacy_ma", times = nrow
 ##########
 ##########
 
+# check: Active_inactive_ChatGPT$construct ==  "SI+_social_support_practical_compan" ~ "SI+_social_support_practical_compan",
 
 
 Active_inactive_ChatGPT_social_support_practical = data.frame(Active_inactive_ChatGPT)
 
 
-Active_inactive_ChatGPT_social_support_practical$construct_item = case_when(Active_inactive_ChatGPT$construct ==  "SI+_social_support_practical_compan" ~ "SI+_social_support_practical_compan",
-                                                                          Active_inactive_ChatGPT$construct ==  "SI+_social_support_emotional" ~ "SI+_social_support_emotional") 
+Active_inactive_ChatGPT_social_support_practical$construct_item = case_when(Active_inactive_ChatGPT$construct ==  "SI+_social_support_emotional" ~ "SI+_social_support_emotional") 
 
 
 x_ChatGPT_social_support_practical = Active_inactive_ChatGPT_social_support_practical[complete.cases(Active_inactive_ChatGPT_social_support_practical), ]
@@ -451,7 +451,8 @@ perceived_symptoms_logOR$pooled_construct_item = rep("fewer_perceived_symptoms_m
 Active_inactive_ChatGPT_dysphoria = data.frame(Active_inactive_ChatGPT)
 
 
-Active_inactive_ChatGPT_dysphoria$construct_item = case_when(Active_inactive_ChatGPT$construct == "Emotion-_mood" ~ "Emotion-_mood")
+Active_inactive_ChatGPT_dysphoria$construct_item = case_when(Active_inactive_ChatGPT$construct == "Emotion-_negative_emotions" ~ "Emotion-_negative_emotions", 
+                                                             Active_inactive_ChatGPT$construct == "Emotion-_mood" ~ "Emotion-_mood")
 
 
 x_ChatGPT_dysphoria = Active_inactive_ChatGPT_dysphoria[complete.cases(Active_inactive_ChatGPT_dysphoria), ]
