@@ -112,8 +112,8 @@ density_by_Construct = function(data, Construct){
   
   # the results of the expert elicitation task 
   Prior_qual_density = dnorm(logOddsRatio,
-                             filtered_data$logOR_expert_elicitation_task, 
-                             filtered_data$variance_expert_elicitation_task)
+                             filtered_data$logOR_prior_elicitation, 
+                             filtered_data$variance_prior_elicitation)
   
   # posterior resulted from updating hyperprior with the results of the expert elicitaiton task 
    Posterior_qual_only = dnorm(logOddsRatio, 
