@@ -1,6 +1,0 @@
-Construct,median,variance,NoX_median,NoX_variance,PriorExpert_N_PA_X,PriorExpert_N_PA_noX,PriorExpert_N_noPA_X,PriorExpert_N_noPA_noX
-Age,,0.1,,,0.5,16.5,5.5,11.5
-SelfEfficacy,,0.1,,,14,2,2,14
-SocialSupport,,0.1,,,15.5,1.5,16.5,0.5
-Comorbidity,,0.1,,,7,9,10,6
-PositiveAttitude,,0.1,,,7.5,0.5,9.5,16.5
