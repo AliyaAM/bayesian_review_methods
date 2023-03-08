@@ -101,10 +101,10 @@ SI+,SI+,29,22,51,5,5,10
 I am physically active because everyone I know closely is physically active,SI+_social_norm,2,0,2,1,0,1
 "I engage in physical activity because a health professional (e.g. GP, consultant, nurse, physiotherapist) has advised me to do so",SI+_clinical_advice,7,10,17,3,4,7
 I know others my age who do not engage in physical activity much and their health detoriated,SI+_social_learning,1,0,1,1,0,1
-I rely on other people to perform physical activity,SI+_social support_practical,2,5,7,1,3,4
-I would engage in physical activity if it involved being with others,SI+_social_support_practical_compan,4,5,9,1,2,3
-I would exercise with others if their level matched my capability,SI+_social_support_ability_compan,2,2,4,1,1,2
-Making plans with others encourage me to engage in physical activity,SI+_social_support_practical_compan,2,0,2,2,0,2
+I rely on other people to perform physical activity,SI-_social_support_practical,2,5,7,1,3,4
+I would engage in physical activity if it involved being with others,SI-_social_support_practical_compan,4,5,9,1,2,3
+I would exercise with others if their level matched my capability,SI-_social_support_ability_compan,2,2,4,1,1,2
+Making plans with others encourage me to engage in physical activity,SI+_social_support_practical_plan,2,0,2,2,0,2
 People who are important to me encourage me to be physically active,SI+_social_support_emotional,3,0,3,3,0,3
 having a reassurance from a health professional that PA is safeencourage me to exercise,SI+_clinical_advice_reassurance,6,0,6,2,0,2
 SI-,SI-,7,9,16,2,5,7

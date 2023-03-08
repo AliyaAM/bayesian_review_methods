@@ -126,15 +126,15 @@ print(ORs)
 # head(Results)
 # 
 # 
-# write.table(Results_BayesianMeta_Analysis, file = paste(OUTPUT_ROOT, "Results_BayesianMeta_Analysis_data_qual_quant.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
-#             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
-#             col.names = TRUE, qmethod = c("escape", "double"),
-#             fileEncoding = "" )
-# 
-# write.table(Summary_Results, file = paste(OUTPUT_ROOT, "Summary_Results_BayesianMeta_Analysis_data_qual_quant.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
-#             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
-#             col.names = TRUE, qmethod = c("escape", "double"),
-#             fileEncoding = "" )
+write.table(Results_BayesianMeta_Analysis, file = paste(OUTPUT_ROOT, "Results_BayesianMeta_Analysis_data_qual_quant.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+            eol = "\r", na = "NA", dec = ".", row.names = FALSE,
+            col.names = TRUE, qmethod = c("escape", "double"),
+            fileEncoding = "" )
+
+write.table(Summary_Results, file = paste(OUTPUT_ROOT, "Summary_Results_BayesianMeta_Analysis_data_qual_quant.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+            eol = "\r", na = "NA", dec = ".", row.names = FALSE,
+            col.names = TRUE, qmethod = c("escape", "double"),
+            fileEncoding = "" )
 
 
 density_by_Construct = function(data, Construct){

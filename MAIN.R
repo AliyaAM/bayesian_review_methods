@@ -22,6 +22,9 @@ library(RColorBrewer)
 ## Set the root directory to look for source code.
 #SOURCE_ROOT = "/Users/aliyaamirova/proj/bayesian_meta_analysis/"
 
+print("include mean quote as the statitic for the prior contingency table")
+print("check carefully for quotes on how much physical activty each participant did")
+
 print("we should reduce to those constructs that are measured using perceived latent variables (self-efficacy, positive attitude, negative attitude, perceived social support (CHECK THIS ONE), symptom distress")
 print("consider how to deal with constructs with more than one belief statements (aggregate/average...?)")
 print("decide on the variance for the prior")
@@ -34,8 +37,8 @@ print("check overleaf for to do list")
 
 ########### DIRECTORY
 
-directory = "/Users/aliyaamirova/"
-#directory = "/Users/aliya/my_docs/"
+#directory = "/Users/aliyaamirova/"
+directory = "/Users/aliya/my_docs/"
 
 ###########  source root 
 SOURCE_ROOT = paste(directory, "proj/bayesian_review_methods/", sep = "")
@@ -49,41 +52,6 @@ OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/", sep = ""
 #x = read.csv(paste(DATA_ROOT, "Test_data_bayes_chatGPT.csv", sep="")) # new qualitative data
 #x = read.csv(paste(DATA_ROOT, "input_chatGPT.csv", sep="")) # new qualitative data
 
-
-Active_inactive_Human = read.csv(paste(DATA_ROOT, "Active_inactive_Human_March06_FINAL.csv", sep =""))
-
-
-Active_inactive_Human$active_n #construct present in active PA_X
-Active_inactive_Human$sedentary_n #construct present in sedentary noPA_X
-Active_inactive_Human$total_n #construct present X
-
-#total active = 7
-#total sedentary = 9
-
-Active_inactive_Human$active_noX_n = 7 - Active_inactive_Human$active_n
-Active_inactive_Human$sedentary_noX_n = 9 - Active_inactive_Human$sedentary_n
-Active_inactive_Human$noX_n =   16 - Active_inactive_Human$total_n
-
-
-#############
-Active_inactive_Human$Construct = case_when(Active_inactive_Human$construct == "BaCap+_selfEfficacy" ~ "SelfEfficacy", 
-                        Active_inactive_Human$construct ==  "BaCap-_selfEfficacy_ hlth_cndtns" ~ "Comorbidity", 
-                        Active_inactive_Human$construct ==  "BaCap-_selfEfficacy_older_age" ~ "Age", 
-                        #Active_inactive_Human$construct ==  "NA" ~ "PositiveAttitude", # no data from human prior
-                        Active_inactive_Human$construct ==  "SI+_social_support_emotional" ~ "SocialSupport",  
-                        Active_inactive_Human$construct ==  "Emotion-" ~ "NegativeAttitude")
-
-
-x = Active_inactive_Human[complete.cases(Active_inactive_Human), ]
-print(x)
-
-x$PriorExpert_N_PA_X   =   x$active_n + 0.5
-x$PriorExpert_N_PA_noX =   x$active_noX_n + 0.5
-x$PriorExpert_N_noPA_X =   x$sedentary_n + 0.5
-x$PriorExpert_N_noPA_noX = x$sedentary_noX_n + 0.5
-
-print("decide on the variance for the prior")
-x$variance = 0.1
 
 print(x)
 
@@ -106,8 +74,6 @@ print(x)
 print(x)
 
 
-
-stop
 
 #x = read.csv(paste(DATA_ROOT, "input.csv", sep="")) #to perform the analysis we require this data for all indexed functions which were indexed by the name of the included constructs (eg., self-efficacy, social support). This is done so the analysis is parsled out for each construct separately. 
 data = read.csv(paste(DATA_ROOT, "QuantData_CheckedForAccuracy_20March2020.csv", sep=""))  #data extracted from  the quantitative studies, the file lists all data including the data that was not used for the meta-analysis. the data not included in the meta-anslysis is for the cases when insufficient data was reported in the article for it to be pooled in the meta-analysis (for example mean but no SD or variance etc)
