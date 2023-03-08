@@ -14,41 +14,34 @@ All_constructs_likelihood = select(density_ALL_Construct, logOddsRatio, Construc
 All_constructs_posterior = select(density_ALL_Construct, logOddsRatio, Construct, posterior_QualplusQuant) 
 
 
-Age_density_prior = All_constructs_prior  %>% filter(Construct == 'Age')
-Comorbidity_density_prior =  All_constructs_prior  %>% filter(Construct == 'Comorbidity')
+
+
 SocialSupport_density_prior =  All_constructs_prior  %>% filter(Construct == "SocialSupport")
+Dysphoria_density_prior =  All_constructs_prior  %>% filter(Construct == "Dysphoria")
 NegativeAttitude_density_prior = All_constructs_prior  %>% filter(Construct == "NegativeAttitude")
-#PositiveAttitude_density_prior = All_constructs_prior  %>% filter(Construct == "PositiveAttitude")
-#SixMWT_density_prior = All_constructs_prior  %>% filter(Construct == "6MWT")
-#PhysicalFunctioning_density_prior = All_constructs_prior  %>% filter(Construct == "PhysicalFunctioning")
-#Symptoms_density_prior = All_constructs_prior  %>% filter(Construct== "Symptoms")
-#LVEF_density_prior = All_constructs_prior  %>% filter(Construct == "LVEF")
+PositiveAttitude_density_prior = All_constructs_prior  %>% filter(Construct == "PositiveAttitude")
+Symptoms_distress_density_prior = All_constructs_prior  %>% filter(Construct== "Symptoms_distress")
+Symptoms_density_prior = All_constructs_prior  %>% filter(Construct== "Symptoms")
 SelfEfficacy_density_prior = All_constructs_prior  %>% filter(Construct == "SelfEfficacy")
 
 
+SocialSupport_density_likelihood  =  All_constructs_likelihood  %>% filter(Construct == "SocialSupport")
+Dysphoria_density_likelihood  =  All_constructs_likelihood  %>% filter(Construct == "Dysphoria")
+NegativeAttitude_density_likelihood  = All_constructs_likelihood  %>% filter(Construct == "NegativeAttitude")
+PositiveAttitude_density_likelihood  = All_constructs_likelihood  %>% filter(Construct == "PositiveAttitude")
+Symptoms_distress_density_likelihood  = All_constructs_likelihood  %>% filter(Construct== "Symptoms_distress")
+Symptoms_density_likelihood  = All_constructs_likelihood  %>% filter(Construct== "Symptoms")
+SelfEfficacy_density_likelihood  = All_constructs_likelihood  %>% filter(Construct == "SelfEfficacy")
 
-Age_density_likelihood = All_constructs_likelihood  %>% filter(Construct  == "Age")
-Comorbidity_density_likelihood = All_constructs_likelihood  %>% filter(Construct  == "Comorbidity")
-SocialSupport_density_likelihood = All_constructs_likelihood  %>% filter(Construct  == "SocialSupport")
-NegativeAttitude_density_likelihood = All_constructs_likelihood  %>% filter(Construct  == "NegativeAttitude")
-#PositiveAttitude_density_likelihood = All_constructs_likelihood  %>% filter(Construct  == "PositiveAttitude")
-#SixMWT_density_likelihood = All_constructs_likelihood  %>% filter(Construct  == "6MWT")
-#PhysicalFunctioning_density_likelihood = All_constructs_likelihood  %>% filter(Construct  == "PhysicalFunctioning")
-#Symptoms_density_likelihood = All_constructs_likelihood  %>% filter(Construct  == "Symptoms")
-#LVEF_density_likelihood = All_constructs_likelihood  %>% filter(Construct  == "LVEF")
-SelfEfficacy_density_likelihood = All_constructs_likelihood  %>% filter(Construct  == "SelfEfficacy")
 
-                                      
-Age_density_posterior = All_constructs_posterior  %>% filter(Construct  == "Age")
-Comorbidity_density_posterior = All_constructs_posterior  %>% filter(Construct  == "Comorbidity")
-SocialSupport_density_posterior = All_constructs_posterior  %>% filter(Construct  == "SocialSupport")
-NegativeAttitude_density_posterior = All_constructs_posterior  %>% filter(Construct  == "NegativeAttitude")
-#PositiveAttitude_density_posterior = All_constructs_posterior  %>% filter(Construct  == "PositiveAttitude")
-#SixMWT_density_posterior = All_constructs_posterior  %>% filter(Construct == "6MWT")
-#PhysicalFunctioning_density_posterior = All_constructs_posterior  %>% filter(Construct  == "PhysicalFunctioning")
-#Symptoms_density_posterior =All_constructs_posterior  %>% filter(Construct  == "Symptoms")
-#LVEF_density_posterior = All_constructs_posterior  %>% filter(Construct == "LVEF")
-SelfEfficacy_density_posterior = All_constructs_posterior  %>% filter(Construct  == "SelfEfficacy")
+SocialSupport_density_posterior =  All_constructs_posterior  %>% filter(Construct == "SocialSupport")
+Dysphoria_density_posterior =  All_constructs_posterior  %>% filter(Construct == "Dysphoria")
+NegativeAttitude_density_posterior = All_constructs_posterior  %>% filter(Construct == "NegativeAttitude")
+PositiveAttitude_density_posterior  = All_constructs_posterior  %>% filter(Construct == "PositiveAttitude")
+Symptoms_distress_density_posterior = All_constructs_posterior  %>% filter(Construct== "Symptoms_distress")
+Symptoms_density_posterior = All_constructs_posterior  %>% filter(Construct== "Symptoms")
+SelfEfficacy_density_posterior  = All_constructs_posterior  %>% filter(Construct == "SelfEfficacy")
+
 
 
 prior_name = rep("Qualitative evidence", times = 1000)
@@ -75,13 +68,13 @@ height = c(rep(10, 1000),
            rep(120, 1000), 
            rep(130, 1000), 
            rep(140, 1000), 
-           rep(150, 1000)) 
-           # rep(160, 1000), 
-           # rep(170, 1000), 
-           # rep(180, 1000), 
-           # rep(190, 1000),
-           # rep(200, 1000), 
-           # rep(210, 1000),
+           rep(150, 1000),
+           rep(160, 1000),
+           rep(170, 1000),
+           rep(180, 1000),
+           rep(190, 1000),
+           rep(200, 1000),
+           rep(210, 1000))
            #  rep(220, 1000), 
            #  rep(230, 1000), 
            #  rep(240, 1000), 
@@ -97,93 +90,72 @@ height = c(rep(10, 1000),
 
 d <- data.frame(
   logOddsRatio = density_ALL_Construct$logOddsRatio, 
-  Construct = c(Age_density_prior$Construct,
-                        Age_density_likelihood$Construct,
-                        Age_density_posterior$Construct,
-                        
-                        Comorbidity_density_prior$Construct,
-                        Comorbidity_density_likelihood$Construct,
-                        Comorbidity_density_posterior$Construct,
-                        
-                        
-                        SocialSupport_density_prior$Construct,
+  
+   Construct = c(SocialSupport_density_prior$Construct,
                         SocialSupport_density_likelihood$Construct,
                         SocialSupport_density_posterior$Construct,
                         
+                 
+                 Dysphoria_density_prior$Construct,
+                 Dysphoria_density_likelihood$Construct,
+                 Dysphoria_density_posterior$Construct,
                         
                         NegativeAttitude_density_prior$Construct,
                         NegativeAttitude_density_likelihood$Construct,
                         NegativeAttitude_density_posterior$Construct, 
                         
-                        # PositiveAttitude_density_prior$Construct,
-                        # PositiveAttitude_density_likelihood$Construct,
-                        # PositiveAttitude_density_posterior$Construct,
-                        # 
-                        # 
-                        # SixMWT_density_prior$Construct,
-                        # SixMWT_density_likelihood$Construct,
-                        # SixMWT_density_posterior$Construct,
-                        # 
-                        # PhysicalFunctioning_density_prior$Construct,
-                        # PhysicalFunctioning_density_likelihood$Construct,
-                        # PhysicalFunctioning_density_posterior$Construct,
-                        # 
-                        # Symptoms_density_prior$Construct,
-                        # Symptoms_density_likelihood$Construct,
-                        # Symptoms_density_posterior$Construct,
-                        # 
-                        # LVEF_density_prior$Construct, 
-                        # LVEF_density_likelihood$Construct,
-                        # LVEF_density_posterior$Construct,
+                        PositiveAttitude_density_prior$Construct,
+                        PositiveAttitude_density_likelihood$Construct,
+                        PositiveAttitude_density_posterior$Construct,
+                 
+                 Symptoms_distress_density_prior$Construct,
+                 Symptoms_distress_density_likelihood$Construct,
+                 Symptoms_distress_density_posterior$Construct,
+          
+                        Symptoms_density_prior$Construct,
+                        Symptoms_density_likelihood$Construct,
+                        Symptoms_density_posterior$Construct,
+ 
                         
                         SelfEfficacy_density_prior$Construct,
                         SelfEfficacy_density_likelihood$Construct,
                         SelfEfficacy_density_posterior$Construct),
   
-  y = c(Age_density_prior$Prior_qual_density,
-        Age_density_likelihood$Likelihood,
-        Age_density_posterior$posterior_QualplusQuant,
-        
-        Comorbidity_density_prior$Prior_qual_density,
-        Comorbidity_density_likelihood$Likelihood,
-        Comorbidity_density_posterior$posterior_QualplusQuant,
-        
-        
-        SocialSupport_density_prior$Prior_qual_density,
+
+  
+  y = c(SocialSupport_density_prior$Prior_qual_density,
         SocialSupport_density_likelihood$Likelihood,
         SocialSupport_density_posterior$posterior_QualplusQuant,
+        
+        
+        Dysphoria_density_prior$Prior_qual_density,
+        Dysphoria_density_likelihood$Likelihood,
+        Dysphoria_density_posterior$posterior_QualplusQuant,
         
         
         NegativeAttitude_density_prior$Prior_qual_density,
         NegativeAttitude_density_likelihood$Likelihood,
         NegativeAttitude_density_posterior$posterior_QualplusQuant, 
         
-        # PositiveAttitude_density_prior$Prior_qual_density, 
-        # 
-        # PositiveAttitude_density_likelihood$Likelihood,
-        # 
-        # PositiveAttitude_density_posterior$posterior_QualplusQuant,
-        # 
-        # 
-        # SixMWT_density_prior$Prior_qual_density,
-        # SixMWT_density_likelihood$Likelihood,
-        # SixMWT_density_posterior$posterior_QualplusQuant,
-        # 
-        # PhysicalFunctioning_density_prior$Prior_qual_density,
-        # PhysicalFunctioning_density_likelihood$Likelihood,
-        # PhysicalFunctioning_density_posterior$posterior_QualplusQuant,
-        # 
-        # Symptoms_density_prior$Prior_qual_density,
-        # Symptoms_density_likelihood$Likelihood,
-        # Symptoms_density_posterior$posterior_QualplusQuant,
-        # 
-        # LVEF_density_prior$Prior_qual_density, 
-        # LVEF_density_likelihood$Likelihood,
-        # LVEF_density_posterior$posterior_QualplusQuant,
+        PositiveAttitude_density_prior$Prior_qual_density,
+        PositiveAttitude_density_likelihood$Likelihood,
+        PositiveAttitude_density_posterior$posterior_QualplusQuant,
         
+        Symptoms_distress_density_prior$Prior_qual_density,
+        Symptoms_distress_density_likelihood$Likelihood,
+        Symptoms_distress_density_posterior$posterior_QualplusQuant,
+        
+
+        Symptoms_density_prior$Prior_qual_density,
+        Symptoms_density_likelihood$Likelihood,
+        Symptoms_density_posterior$posterior_QualplusQuant,
+
         SelfEfficacy_density_prior$Prior_qual_density,
         SelfEfficacy_density_likelihood$Likelihood,
         SelfEfficacy_density_posterior$posterior_QualplusQuant),
+  
+
+
   
   distribution = distribution, 
   
@@ -240,16 +212,20 @@ Compare_distributions_plot = ggplot(d, aes(x = logOddsRatio,
   
   #xlim(-3,3) +
   
-  scale_y_discrete(labels=c("Age" =  "Age",
-                            "Comorbidity" =  "Comorbidity",
+  scale_y_discrete(labels=c(#"Age" =  "Age",
+                            #"Comorbidity" =  "Comorbidity",
                             "SocialSupport"=  "Social Support",
+                            "Dysphoria" = "Dysphoria", 
                             "NegativeAttitude"=  "Negative Attitude",
-                            # "PositiveAttitude"=  "Positive Attitude",
+                            "PositiveAttitude"=  "Positive Attitude",
+                            "Symptoms_distress" = "Symptoms distress", 
                             # "6MWT"= "6MWT",
                             # "PhysicalFunctioning"="Physical Functioning",
-                            # "Symptoms"= "Perceived Symptoms",
+                            "Symptoms"= "Perceived Symptoms",
                             # "LVEF"="LVEF",
-                            "SelfEfficacy"="Self-efficacy"))   + 
+                            "SelfEfficacy"="Self-efficacy"
+
+                            ))   + 
   
   theme(legend.position = c("top"),
         legend.justification = c("right", "top"),
@@ -267,7 +243,9 @@ Compare_distributions_plot = ggplot(d, aes(x = logOddsRatio,
  
 
 
+
 print(Compare_distributions_plot)
+
 
 
 ggsave(file = paste(OUTPUT_ROOT, "/Compare_distributions_plot.pdf",  sep=""),Compare_distributions_plot, width=6, height=2, units="in", scale=1)
