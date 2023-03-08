@@ -481,15 +481,6 @@ self_efficacy_ma <- rma(yi = logOR, vi = variance,
 
 
 
-self_efficacy_ma <- rma(yi = logOR, vi = variance, 
-                        data=Human_input_data_for_prior, 
-                        method = "REML", 
-                        subset=(pooled_construct_item=="self_efficacy_ma"))
-
-
-self_efficacy_ma$beta
-self_efficacy_ma$tau2
-
 
 
 perceived_symptoms_ma <- rma(yi = logOR, vi = variance, 
@@ -498,8 +489,6 @@ perceived_symptoms_ma <- rma(yi = logOR, vi = variance,
                         subset=(pooled_construct_item=="perceived_symptoms_ma"))
 
 
-perceived_symptoms_ma$beta
-perceived_symptoms_ma$tau2
 
 
 
@@ -509,20 +498,12 @@ dysphoria_ma <- rma(yi = logOR, vi = variance,
                              subset=(pooled_construct_item=="dysphoria_ma"))
 
 
-dysphoria_ma$beta
-dysphoria_ma$tau2
-
-
 
 
 symptom_distress_ma <- rma(yi = logOR, vi = variance, 
                     data=Human_input_data_for_prior, 
                     method = "REML", 
                     subset=(pooled_construct_item=="symptom_distress_ma"))
-
-
-symptom_distress_ma$beta
-symptom_distress_ma$tau2
 
 
 
@@ -535,10 +516,6 @@ positive_attitude_ma <- rma(yi = logOR, vi = variance,
                            subset=(pooled_construct_item=="positive_attitude_ma"))
 
 
-positive_attitude_ma$beta
-positive_attitude_ma$tau2
-
-
 
 
 negative_attitude_ma <- rma(yi = logOR, vi = variance, 
@@ -547,9 +524,6 @@ negative_attitude_ma <- rma(yi = logOR, vi = variance,
                             subset=(pooled_construct_item=="negative_attitude_ma"))
 
 
-negative_attitude_ma$beta
-negative_attitude_ma$tau2
-
 
 social_support_ma <- rma(yi = logOR, vi = variance, 
                             data=Human_input_data_for_prior, 
@@ -557,8 +531,34 @@ social_support_ma <- rma(yi = logOR, vi = variance,
                             subset=(pooled_construct_item=="social_support_ma"))
 
 
-social_support_ma$beta
-social_support_ma$tau2
+Construct = c("SocialSupport",
+              "NegativeAttitude",
+              "PositiveAttitude", 
+              "Symptoms_distress",
+              "SelfEfficacy",
+              "Symptoms", 
+              "Dysphoria")
+
+
+logOR = c(social_support_ma$beta,
+          negative_attitude_ma$beta,
+          positive_attitude_ma$beta,
+          symptom_distress_ma$beta,
+          self_efficacy_ma$beta,
+          perceived_symptoms_ma$beta,
+          dysphoria_ma$beta)
+
+
+variance = c(social_support_ma$tau2,
+            negative_attitude_ma$tau2,
+            positive_attitude_ma$tau2,
+            symptom_distress_ma$tau2,
+            self_efficacy_ma$tau2,
+            perceived_symptoms_ma$tau2,
+            dysphoria_ma$tau2)
+
+
+
 
 
 
