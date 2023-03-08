@@ -52,11 +52,7 @@ BayesUpdateStepByStep = function(x, Construct) {
   #Likewise, we calculated the number of physically active given the construct is absent (X = 0), ie  N – N_(PA=1;X=1 ). 
   # It is important to note that we used the entire set of data, meaning that the total pool of HF patients would equal to 30 scenarios multiplied by six different expert judgements (30 x 6).  
   
-  PriorExpert_N_PA_X = x[index,]$PriorExpert_N_PA_X
-  PriorExpert_N_noPA_noX = x[index,]$PriorExpert_N_noPA_noX
-  PriorExpert_N_noPA_X = x[index,]$PriorExpert_N_noPA_X
-  PriorExpert_N_PA_noX = x[index,]$PriorExpert_N_PA_noX
-  variance_expert_elicitation_task = x[index,]$variance
+
   
   #data for the LIKELIHOOD 
   #calculate the total N across quant studies, stratified by construct: 
@@ -78,7 +74,7 @@ BayesUpdateStepByStep = function(x, Construct) {
   k =  meta_data_likelihoodResults$k
   
   BayesUpdate_func = function(Construct, Total_N_hyperprior, Mean_probability_hyperprior, Variance_hyperprior, Log_Odds_hyperprior, 
-                              PriorExpert_N_PA_X, PriorExpert_N_noPA_noX, PriorExpert_N_noPA_X, PriorExpert_N_PA_noX, variance_expert_elicitation_task,
+                              logOR_prior_elicitation, variance_prior_elicitation,
                               LOGOdds_Ratio_quant, variance_quant) {
     
     Probability = seq( 0 , 1 , length=1000)
@@ -105,24 +101,23 @@ BayesUpdateStepByStep = function(x, Construct) {
     
     #elicit PRIOR 
     #On the basis of the results of the prior elicitation task we calculate the log OR for each construct
-    data$logOR_expert_elicitation_task = log(PriorExpert_N_PA_X*PriorExpert_N_noPA_noX)/(PriorExpert_N_noPA_X*PriorExpert_N_PA_noX)
-    #the density distribution for probability for physical activity given a construct according to the experts is centred around the logOR elicited from expert responses 
-    data$variance_expert_elicitation_task = variance_expert_elicitation_task
+    data$logOR_prior_elicitation = data$logOR_prior_elicitation
+    data$variance_prior_elicitation = variance_prior_elicitation
     #prior distribution 
-    data$Prior_qual_density = dnorm(logOddsRatio, data$logOR_expert_elicitation_task,  data$variance_expert_elicitation_task, log = FALSE)
+    data$Prior_qual_density = dnorm(logOddsRatio, data$logOR_prior_elicitation,  data$variance_prior_elicitation, log = FALSE)
     #normalise prior density distribution
     data$Prior_qual_density = data$Prior_qual_density/sum(data$Prior_qual_density)
     data$Prior_qual_density_cumsum=cumsum(data$Prior_qual_density)
     data$Prior_qual_density_CI=ifelse(data$Prior_qual_density_cumsum<0.025|data$Prior_qual_density_cumsum>0.975, "outside CI", "inside CI")
-    data$p_Prior_qual = pnorm(logOddsRatio, data$logOR_expert_elicitation_task, data$variance_expert_elicitation_task, lower.tail = TRUE, log.p = FALSE)
+    data$p_Prior_qual = pnorm(logOddsRatio, data$logOR_prior_elicitation, data$variance_prior_elicitation, lower.tail = TRUE, log.p = FALSE)
     #Credible Intervals: prior distribution 
-    data$Prior_qual_quantile_0.05 = qnorm(0.05, data$logOR_expert_elicitation_task, data$variance_expert_elicitation_task, lower.tail = TRUE, log.p = FALSE)
-    data$Prior_qual_quantile_0.95 = qnorm(0.95,  data$logOR_expert_elicitation_task, data$variance_expert_elicitation_task, lower.tail = TRUE, log.p = FALSE)
+    data$Prior_qual_quantile_0.05 = qnorm(0.05, data$logOR_prior_elicitation, data$variance_prior_elicitation, lower.tail = TRUE, log.p = FALSE)
+    data$Prior_qual_quantile_0.95 = qnorm(0.95,  data$logOR_prior_elicitation, data$variance_prior_elicitation, lower.tail = TRUE, log.p = FALSE)
     
     
     #to update the hyperprior with the qualitative results we use formula from Spiegelhalter et al., p 63: 
-    data$Posterior_qual_only_mean = (data$Log_Odds_hyperprior/data$Variance_hyperprior + data$logOR_expert_elicitation_task/data$variance_expert_elicitation_task)/(1/data$Variance_hyperprior + 1/data$variance_expert_elicitation_task)
-    data$Posterior_qual_only_variance = 1/(1/data$Variance_hyperprior +1/data$variance_expert_elicitation_task)
+    data$Posterior_qual_only_mean = (data$Log_Odds_hyperprior/data$Variance_hyperprior + data$logOR_prior_elicitation/data$variance_prior_elicitation)/(1/data$Variance_hyperprior + 1/data$variance_prior_elicitation)
+    data$Posterior_qual_only_variance = 1/(1/data$Variance_hyperprior +1/data$variance_prior_elicitation)
     #posterior distribution for updating hyperprior with prior 
     data$Posterior_qual_only = dnorm(logOddsRatio, data$Posterior_qual_only_mean, data$Posterior_qual_only_variance, log = FALSE)
     data$Posterior_qual_only = data$Posterior_qual_only/sum(data$Posterior_qual_only)
@@ -151,8 +146,8 @@ BayesUpdateStepByStep = function(x, Construct) {
   
     #POSTERIOR
     #Formula from Spiegelhalter p 63: updating prior with likelihood using the following mean and variance for the distribution: 
-    data$posterior_QualplusQuant_mean = (data$logOR_expert_elicitation_task/data$variance_expert_elicitation_task + data$LOGOdds_Ratio_quant/data$variance_quant)/(1/data$variance_expert_elicitation_task+1/data$variance_quant)
-    data$posterior_QualplusQuant_variance =1/(1/data$variance_expert_elicitation_task+1/data$variance_quant)
+    data$posterior_QualplusQuant_mean = (data$logOR_prior_elicitation/data$variance_prior_elicitation + data$LOGOdds_Ratio_quant/data$variance_quant)/(1/data$variance_prior_elicitation+1/data$variance_quant)
+    data$posterior_QualplusQuant_variance =1/(1/data$variance_prior_elicitation+1/data$variance_quant)
     #posterior distribution for updating prior with likelihood  
     data$Posterior_QualplusQuant = dnorm(logOddsRatio, data$posterior_QualplusQuant_mean,  data$posterior_QualplusQuant_variance, log = FALSE)
     #normalise posterior density distribution
@@ -182,11 +177,8 @@ BayesUpdateStepByStep = function(x, Construct) {
                         Mean_probability_hyperprior = Mean_probability_hyperprior, 
                         Variance_hyperprior = Variance_hyperprior,
                         Log_Odds_hyperprior = Log_Odds_hyperprior, 
-                        PriorExpert_N_PA_X = PriorExpert_N_PA_X, 
-                        PriorExpert_N_noPA_noX = PriorExpert_N_noPA_noX, 
-                        PriorExpert_N_noPA_X = PriorExpert_N_noPA_X,
-                        PriorExpert_N_PA_noX = PriorExpert_N_PA_noX, 
-                        variance_expert_elicitation_task = variance_expert_elicitation_task,
+                        logOR_prior_elicitation = logOR_prior_elicitation, 
+                        variance_prior_elicitation = variance_prior_elicitation,
                         LOGOdds_Ratio_quant = LOGOdds_Ratio_quant, 
                         variance_quant = variance_quant)
   

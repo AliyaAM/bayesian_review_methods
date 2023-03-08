@@ -540,22 +540,33 @@ Construct = c("SocialSupport",
               "Dysphoria")
 
 
-logOR = c(social_support_ma$beta,
-          negative_attitude_ma$beta,
-          positive_attitude_ma$beta,
-          symptom_distress_ma$beta,
-          self_efficacy_ma$beta,
-          perceived_symptoms_ma$beta,
-          dysphoria_ma$beta)
+input_Human_prior = data.frame(Construct)
 
 
-variance = c(social_support_ma$tau2,
-            negative_attitude_ma$tau2,
-            positive_attitude_ma$tau2,
-            symptom_distress_ma$tau2,
-            self_efficacy_ma$tau2,
-            perceived_symptoms_ma$tau2,
-            dysphoria_ma$tau2)
+input_Human_prior$logOR_prior_elicitation = c(social_support_ma$beta,
+                                              negative_attitude_ma$beta,
+                                              positive_attitude_ma$beta,
+                                              symptom_distress_ma$beta,
+                                              self_efficacy_ma$beta,
+                                              perceived_symptoms_ma$beta,
+                                              dysphoria_ma$beta)
+
+
+
+input_Human_prior$variance_prior_elicitation = c(social_support_ma$tau2,
+                                                  negative_attitude_ma$tau2,
+                                                  positive_attitude_ma$tau2,
+                                                  symptom_distress_ma$tau2,
+                                                  self_efficacy_ma$tau2,
+                                                  perceived_symptoms_ma$tau2,
+                                                  dysphoria_ma$tau2)
+
+
+
+input_Human_prior$participant_source = rep("human", times = nrow(input_Human_prior))
+
+write.csv(input_Human_prior, file = paste(DATA_ROOT, "input_Human_prior.csv", sep="")) # new qualitative data human
+
 
 
 
