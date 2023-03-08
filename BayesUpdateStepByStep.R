@@ -98,7 +98,7 @@ BayesUpdateStepByStep = function(x, Construct) {
     
     #elicit PRIOR 
     #On the basis of the results of the prior elicitation task we calculate the log OR for each construct
-    data$logOR_prior_elicitation = data$logOR_prior_elicitation
+    data$logOR_prior_elicitation = logOR_prior_elicitation
     data$variance_prior_elicitation = variance_prior_elicitation
     #prior distribution 
     data$Prior_qual_density = dnorm(logOddsRatio, data$logOR_prior_elicitation,  data$variance_prior_elicitation, log = FALSE)
