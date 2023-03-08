@@ -53,7 +53,7 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
   PriorExpert_N_noPA_noX = x[index,]$PriorExpert_N_noPA_noX
   PriorExpert_N_noPA_X = x[index,]$PriorExpert_N_noPA_X
   PriorExpert_N_PA_noX = x[index,]$PriorExpert_N_PA_noX
-  variance_expert_elicitation_task = x[index,]$variance
+  variance_prior_elicitation = x[index,]$variance
   
   #data for the LIKELIHOOD 
   #calculate the total N across quant studies, stratified by construct: 
@@ -75,7 +75,7 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
   k =  meta_data_likelihoodResults$k
   
   Summary_statistics_table_qual_quant = function(Construct, Total_N_hyperprior, Mean_probability_hyperprior, Variance_hyperprior, Log_Odds_hyperprior, 
-                                      PriorExpert_N_PA_X, PriorExpert_N_noPA_noX, PriorExpert_N_noPA_X, PriorExpert_N_PA_noX, variance_expert_elicitation_task,
+                                      PriorExpert_N_PA_X, PriorExpert_N_noPA_noX, PriorExpert_N_noPA_X, PriorExpert_N_PA_noX, variance_prior_elicitation,
                                       LOGOdds_Ratio_quant, variance_quant) {
     
     Variance_hyperprior = Variance_hyperprior 
@@ -95,21 +95,21 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
     
 
     #On the basis of the results of the prior elicitation task we calculate the log OR for each construct
-    logOR_expert_elicitation_task = log(PriorExpert_N_PA_X*PriorExpert_N_noPA_noX)/(PriorExpert_N_noPA_X*PriorExpert_N_PA_noX)
+    logOR_prior_elicitation = log(PriorExpert_N_PA_X*PriorExpert_N_noPA_noX)/(PriorExpert_N_noPA_X*PriorExpert_N_PA_noX)
     
-    summary_data = cbind(summary_data, logOR_expert_elicitation_task)
+    summary_data = cbind(summary_data, logOR_prior_elicitation)
     
     
     #the density distribution for probability for physical activity given a construct according to the experts is centred around the logOR elicited from expert responses 
-    variance_expert_elicitation_task = variance_expert_elicitation_task
-    summary_data = cbind(summary_data, variance_expert_elicitation_task)
+    variance_prior_elicitation = variance_prior_elicitation
+    summary_data = cbind(summary_data, variance_prior_elicitation)
     
-    Prior_qual_quantile_0.50 = qnorm(0.50, logOR_expert_elicitation_task, variance_expert_elicitation_task, lower.tail = TRUE, log.p = FALSE)
+    Prior_qual_quantile_0.50 = qnorm(0.50, logOR_prior_elicitation, variance_prior_elicitation, lower.tail = TRUE, log.p = FALSE)
     summary_data = cbind(summary_data, Prior_qual_quantile_0.50)
     
     #Credible Intervals: prior distribution 
-    Prior_qual_quantile_0.05 = qnorm(0.05, logOR_expert_elicitation_task, variance_expert_elicitation_task, lower.tail = TRUE, log.p = FALSE)
-    Prior_qual_quantile_0.95 = qnorm(0.95,  logOR_expert_elicitation_task, variance_expert_elicitation_task, lower.tail = TRUE, log.p = FALSE)
+    Prior_qual_quantile_0.05 = qnorm(0.05, logOR_prior_elicitation, variance_prior_elicitation, lower.tail = TRUE, log.p = FALSE)
+    Prior_qual_quantile_0.95 = qnorm(0.95,  logOR_prior_elicitation, variance_prior_elicitation, lower.tail = TRUE, log.p = FALSE)
     
     summary_data = cbind(summary_data, Prior_qual_quantile_0.05)
     summary_data = cbind(summary_data, Prior_qual_quantile_0.95)
@@ -130,8 +130,8 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
     
     #POSTERIOR
     #Formula from Spiegelhalter p 63: updating prior with likelihood using the following mean and variance for the distribution: 
-    posterior_QualplusQuant_mean = (logOR_expert_elicitation_task/variance_expert_elicitation_task + LOGOdds_Ratio_quant/variance_quant)/(1/variance_expert_elicitation_task+1/variance_quant)
-    posterior_QualplusQuant_variance =1/(1/variance_expert_elicitation_task+1/variance_quant)
+    posterior_QualplusQuant_mean = (logOR_prior_elicitation/variance_prior_elicitation + LOGOdds_Ratio_quant/variance_quant)/(1/variance_prior_elicitation+1/variance_quant)
+    posterior_QualplusQuant_variance =1/(1/variance_prior_elicitation+1/variance_quant)
     summary_data = cbind(summary_data, posterior_QualplusQuant_mean)
     summary_data = cbind(summary_data, posterior_QualplusQuant_variance)
     
@@ -156,7 +156,7 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
                                           PriorExpert_N_noPA_noX = PriorExpert_N_noPA_noX, 
                                           PriorExpert_N_noPA_X = PriorExpert_N_noPA_X,
                                           PriorExpert_N_PA_noX = PriorExpert_N_PA_noX, 
-                                          variance_expert_elicitation_task = variance_expert_elicitation_task,
+                                          variance_prior_elicitation = variance_prior_elicitation,
                                           LOGOdds_Ratio_quant = LOGOdds_Ratio_quant, 
                                           variance_quant = variance_quant)
   
