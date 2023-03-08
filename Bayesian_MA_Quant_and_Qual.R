@@ -32,11 +32,11 @@ source(paste(SOURCE_ROOT, "Summary_stats_table_qual_and_quant.R", sep=""), local
 # "SelfEfficacy"
 
 
-
 Results_SocialSupport =   BayesUpdateStepByStep(x =x, Construct = "SocialSupport")
-Results_BayesianMeta_Analysis = rbind(Results_BayesianMeta_Analysis, Results_SocialSupport)
-Summary_Results_SocialSupport= Summary_stats_table_qual_and_quant(x =x, Construct = "SocialSupport")
-Summary_Results = rbind(Summary_Results, Summary_Results_SocialSupport)
+Results_BayesianMeta_Analysis = rbind(Results_SocialSupport)
+Summary_Results_SocialSupport = Summary_stats_table_qual_and_quant(x =x, Construct = "SocialSupport")
+Summary_Results = rbind(Summary_Results_SocialSupport)
+
 
 
 Results_Dysphoria =   BayesUpdateStepByStep(x =x, Construct = "Dysphoria")
