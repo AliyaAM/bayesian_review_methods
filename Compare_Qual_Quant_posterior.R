@@ -21,7 +21,7 @@ Dysphoria_density_prior =  All_constructs_prior  %>% filter(Construct == "Dyspho
 NegativeAttitude_density_prior = All_constructs_prior  %>% filter(Construct == "NegativeAttitude")
 PositiveAttitude_density_prior = All_constructs_prior  %>% filter(Construct == "PositiveAttitude")
 Symptoms_distress_density_prior = All_constructs_prior  %>% filter(Construct== "Symptoms_distress")
-Symptoms_density_prior = All_constructs_prior  %>% filter(Construct== "Symptoms")
+Symptoms_density_prior = All_constructs_prior  %>% filter(Construct== "fewerPerceivedSymptoms")
 SelfEfficacy_density_prior = All_constructs_prior  %>% filter(Construct == "SelfEfficacy")
 
 
@@ -30,7 +30,7 @@ Dysphoria_density_likelihood  =  All_constructs_likelihood  %>% filter(Construct
 NegativeAttitude_density_likelihood  = All_constructs_likelihood  %>% filter(Construct == "NegativeAttitude")
 PositiveAttitude_density_likelihood  = All_constructs_likelihood  %>% filter(Construct == "PositiveAttitude")
 Symptoms_distress_density_likelihood  = All_constructs_likelihood  %>% filter(Construct== "Symptoms_distress")
-Symptoms_density_likelihood  = All_constructs_likelihood  %>% filter(Construct== "Symptoms")
+Symptoms_density_likelihood  = All_constructs_likelihood  %>% filter(Construct== "fewerPerceivedSymptoms")
 SelfEfficacy_density_likelihood  = All_constructs_likelihood  %>% filter(Construct == "SelfEfficacy")
 
 
@@ -39,7 +39,7 @@ Dysphoria_density_posterior =  All_constructs_posterior  %>% filter(Construct ==
 NegativeAttitude_density_posterior = All_constructs_posterior  %>% filter(Construct == "NegativeAttitude")
 PositiveAttitude_density_posterior  = All_constructs_posterior  %>% filter(Construct == "PositiveAttitude")
 Symptoms_distress_density_posterior = All_constructs_posterior  %>% filter(Construct== "Symptoms_distress")
-Symptoms_density_posterior = All_constructs_posterior  %>% filter(Construct== "Symptoms")
+Symptoms_density_posterior = All_constructs_posterior  %>% filter(Construct== "fewerPerceivedSymptoms")
 SelfEfficacy_density_posterior  = All_constructs_posterior  %>% filter(Construct == "SelfEfficacy")
 
 
@@ -221,7 +221,7 @@ Compare_distributions_plot = ggplot(d, aes(x = logOddsRatio,
                             "Symptoms_distress" = "Symptoms distress", 
                             # "6MWT"= "6MWT",
                             # "PhysicalFunctioning"="Physical Functioning",
-                            "Symptoms"= "Perceived Symptoms",
+                            "fewerPerceivedSymptoms"= "Fewer Perceived Symptoms",
                             # "LVEF"="LVEF",
                             "SelfEfficacy"="Self-efficacy"
 

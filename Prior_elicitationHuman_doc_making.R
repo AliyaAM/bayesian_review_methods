@@ -397,7 +397,7 @@ perceived_symptoms_logOR <- escalc(measure="OR", ai=PriorExpert_N_PA_X, bi=Prior
 
 perceived_symptoms_logOR$yi
 # we need to invert the OR from belief statements that are phrased negatively 
-perceived_symptoms_logOR$logOR = perceived_symptoms_logOR$yi
+perceived_symptoms_logOR$logOR = c(perceived_symptoms_logOR$yi[1]/-1)
 perceived_symptoms_logOR$variance = perceived_symptoms_logOR$vi
 
 
@@ -409,7 +409,7 @@ perceived_symptoms_logOR$variance
 perceived_symptoms_logOR$logOR
 
 
-perceived_symptoms_logOR$pooled_construct_item = rep("perceived_symptoms_ma", times = nrow(perceived_symptoms_logOR))
+perceived_symptoms_logOR$pooled_construct_item = rep("fewer_perceived_symptoms_ma", times = nrow(perceived_symptoms_logOR))
 
 #######
 #######
@@ -486,7 +486,7 @@ self_efficacy_ma <- rma(yi = logOR, vi = variance,
 perceived_symptoms_ma <- rma(yi = logOR, vi = variance, 
                         data=Human_input_data_for_prior, 
                         method = "REML", 
-                        subset=(pooled_construct_item=="perceived_symptoms_ma"))
+                        subset=(pooled_construct_item=="fewer_perceived_symptoms_ma"))
 
 
 
@@ -536,7 +536,7 @@ Construct = c("SocialSupport",
               "PositiveAttitude", 
               "Symptoms_distress",
               "SelfEfficacy",
-              "Symptoms", 
+              "fewerPerceivedSymptoms", 
               "Dysphoria")
 
 
