@@ -1,0 +1,1345 @@
+"","Cases","human","PA_status","quotes","construct","valence","total_quotes","percent_quotes"
+"1","Participant01","Human participants",1,3,"BR+","Enabler",79,3.79746835443038
+"49","Participant01","Human participants",1,0,"BaCap+","Enabler",79,0
+"97","Participant01","Human participants",1,8,"BaCon+","Enabler",79,10.126582278481
+"145","Participant01","Human participants",1,9,"ECR+","Enabler",79,11.3924050632911
+"193","Participant01","Human participants",1,0,"Emotion+","Enabler",79,0
+"241","Participant01","Human participants",1,6,"Goals+","Enabler",79,7.59493670886076
+"289","Participant01","Human participants",1,0,"Intention+","Enabler",79,0
+"337","Participant01","Human participants",1,1,"Knowledge+","Enabler",79,1.26582278481013
+"385","Participant01","Human participants",1,0,"MADP+","Enabler",79,0
+"433","Participant01","Human participants",1,1,"Optimism+","Enabler",79,1.26582278481013
+"481","Participant01","Human participants",1,11,"Reinforcement+","Enabler",79,13.9240506329114
+"529","Participant01","Human participants",1,9,"SI+","Enabler",79,11.3924050632911
+"577","Participant01","Human participants",1,1,"SPR+","Enabler",79,1.26582278481013
+"625","Participant01","Human participants",1,1,"Skills+","Enabler",79,1.26582278481013
+"673","Participant01","Human participants",1,0,"BR-","Barrier",79,0
+"721","Participant01","Human participants",1,4,"BaCap-","Barrier",79,5.06329113924051
+"769","Participant01","Human participants",1,2,"BaCon-","Barrier",79,2.53164556962025
+"817","Participant01","Human participants",1,2,"ECR-","Barrier",79,2.53164556962025
+"865","Participant01","Human participants",1,4,"Emotion-","Barrier",79,5.06329113924051
+"913","Participant01","Human participants",1,4,"Goals-","Barrier",79,5.06329113924051
+"961","Participant01","Human participants",1,1,"Intention-","Barrier",79,1.26582278481013
+"1009","Participant01","Human participants",1,0,"Knowledge-","Barrier",79,0
+"1057","Participant01","Human participants",1,3,"MADP-","Barrier",79,3.79746835443038
+"1105","Participant01","Human participants",1,0,"Optimism-","Barrier",79,0
+"1153","Participant01","Human participants",1,0,"Reinforcement-","Barrier",79,0
+"1201","Participant01","Human participants",1,8,"SI-","Barrier",79,10.126582278481
+"1249","Participant01","Human participants",1,0,"SPR-","Barrier",79,0
+"1297","Participant01","Human participants",1,1,"Skills-","Barrier",79,1.26582278481013
+"2","Participant02","Human participants",1,1,"BR+","Enabler",41,2.4390243902439
+"50","Participant02","Human participants",1,1,"BaCap+","Enabler",41,2.4390243902439
+"98","Participant02","Human participants",1,0,"BaCon+","Enabler",41,0
+"146","Participant02","Human participants",1,0,"ECR+","Enabler",41,0
+"194","Participant02","Human participants",1,0,"Emotion+","Enabler",41,0
+"242","Participant02","Human participants",1,10,"Goals+","Enabler",41,24.390243902439
+"290","Participant02","Human participants",1,0,"Intention+","Enabler",41,0
+"338","Participant02","Human participants",1,0,"Knowledge+","Enabler",41,0
+"386","Participant02","Human participants",1,1,"MADP+","Enabler",41,2.4390243902439
+"434","Participant02","Human participants",1,2,"Optimism+","Enabler",41,4.8780487804878
+"482","Participant02","Human participants",1,2,"Reinforcement+","Enabler",41,4.8780487804878
+"530","Participant02","Human participants",1,9,"SI+","Enabler",41,21.9512195121951
+"578","Participant02","Human participants",1,2,"SPR+","Enabler",41,4.8780487804878
+"626","Participant02","Human participants",1,0,"Skills+","Enabler",41,0
+"674","Participant02","Human participants",1,2,"BR-","Barrier",41,4.8780487804878
+"722","Participant02","Human participants",1,2,"BaCap-","Barrier",41,4.8780487804878
+"770","Participant02","Human participants",1,0,"BaCon-","Barrier",41,0
+"818","Participant02","Human participants",1,0,"ECR-","Barrier",41,0
+"866","Participant02","Human participants",1,0,"Emotion-","Barrier",41,0
+"914","Participant02","Human participants",1,0,"Goals-","Barrier",41,0
+"962","Participant02","Human participants",1,0,"Intention-","Barrier",41,0
+"1010","Participant02","Human participants",1,1,"Knowledge-","Barrier",41,2.4390243902439
+"1058","Participant02","Human participants",1,3,"MADP-","Barrier",41,7.31707317073171
+"1106","Participant02","Human participants",1,0,"Optimism-","Barrier",41,0
+"1154","Participant02","Human participants",1,0,"Reinforcement-","Barrier",41,0
+"1202","Participant02","Human participants",1,5,"SI-","Barrier",41,12.1951219512195
+"1250","Participant02","Human participants",1,0,"SPR-","Barrier",41,0
+"1298","Participant02","Human participants",1,0,"Skills-","Barrier",41,0
+"3","Participant03","Human participants",0,3,"BR+","Enabler",35,8.57142857142857
+"51","Participant03","Human participants",0,0,"BaCap+","Enabler",35,0
+"99","Participant03","Human participants",0,1,"BaCon+","Enabler",35,2.85714285714286
+"147","Participant03","Human participants",0,0,"ECR+","Enabler",35,0
+"195","Participant03","Human participants",0,0,"Emotion+","Enabler",35,0
+"243","Participant03","Human participants",0,0,"Goals+","Enabler",35,0
+"291","Participant03","Human participants",0,0,"Intention+","Enabler",35,0
+"339","Participant03","Human participants",0,0,"Knowledge+","Enabler",35,0
+"387","Participant03","Human participants",0,0,"MADP+","Enabler",35,0
+"435","Participant03","Human participants",0,0,"Optimism+","Enabler",35,0
+"483","Participant03","Human participants",0,2,"Reinforcement+","Enabler",35,5.71428571428571
+"531","Participant03","Human participants",0,5,"SI+","Enabler",35,14.2857142857143
+"579","Participant03","Human participants",0,0,"SPR+","Enabler",35,0
+"627","Participant03","Human participants",0,0,"Skills+","Enabler",35,0
+"675","Participant03","Human participants",0,4,"BR-","Barrier",35,11.4285714285714
+"723","Participant03","Human participants",0,5,"BaCap-","Barrier",35,14.2857142857143
+"771","Participant03","Human participants",0,0,"BaCon-","Barrier",35,0
+"819","Participant03","Human participants",0,1,"ECR-","Barrier",35,2.85714285714286
+"867","Participant03","Human participants",0,0,"Emotion-","Barrier",35,0
+"915","Participant03","Human participants",0,7,"Goals-","Barrier",35,20
+"963","Participant03","Human participants",0,1,"Intention-","Barrier",35,2.85714285714286
+"1011","Participant03","Human participants",0,0,"Knowledge-","Barrier",35,0
+"1059","Participant03","Human participants",0,1,"MADP-","Barrier",35,2.85714285714286
+"1107","Participant03","Human participants",0,0,"Optimism-","Barrier",35,0
+"1155","Participant03","Human participants",0,1,"Reinforcement-","Barrier",35,2.85714285714286
+"1203","Participant03","Human participants",0,4,"SI-","Barrier",35,11.4285714285714
+"1251","Participant03","Human participants",0,0,"SPR-","Barrier",35,0
+"1299","Participant03","Human participants",0,0,"Skills-","Barrier",35,0
+"4","Participant04","Human participants",0,2,"BR+","Enabler",55,3.63636363636364
+"52","Participant04","Human participants",0,0,"BaCap+","Enabler",55,0
+"100","Participant04","Human participants",0,5,"BaCon+","Enabler",55,9.09090909090909
+"148","Participant04","Human participants",0,5,"ECR+","Enabler",55,9.09090909090909
+"196","Participant04","Human participants",0,0,"Emotion+","Enabler",55,0
+"244","Participant04","Human participants",0,0,"Goals+","Enabler",55,0
+"292","Participant04","Human participants",0,0,"Intention+","Enabler",55,0
+"340","Participant04","Human participants",0,0,"Knowledge+","Enabler",55,0
+"388","Participant04","Human participants",0,0,"MADP+","Enabler",55,0
+"436","Participant04","Human participants",0,0,"Optimism+","Enabler",55,0
+"484","Participant04","Human participants",0,5,"Reinforcement+","Enabler",55,9.09090909090909
+"532","Participant04","Human participants",0,4,"SI+","Enabler",55,7.27272727272727
+"580","Participant04","Human participants",0,3,"SPR+","Enabler",55,5.45454545454545
+"628","Participant04","Human participants",0,0,"Skills+","Enabler",55,0
+"676","Participant04","Human participants",0,0,"BR-","Barrier",55,0
+"724","Participant04","Human participants",0,11,"BaCap-","Barrier",55,20
+"772","Participant04","Human participants",0,0,"BaCon-","Barrier",55,0
+"820","Participant04","Human participants",0,5,"ECR-","Barrier",55,9.09090909090909
+"868","Participant04","Human participants",0,2,"Emotion-","Barrier",55,3.63636363636364
+"916","Participant04","Human participants",0,3,"Goals-","Barrier",55,5.45454545454545
+"964","Participant04","Human participants",0,0,"Intention-","Barrier",55,0
+"1012","Participant04","Human participants",0,1,"Knowledge-","Barrier",55,1.81818181818182
+"1060","Participant04","Human participants",0,0,"MADP-","Barrier",55,0
+"1108","Participant04","Human participants",0,0,"Optimism-","Barrier",55,0
+"1156","Participant04","Human participants",0,0,"Reinforcement-","Barrier",55,0
+"1204","Participant04","Human participants",0,6,"SI-","Barrier",55,10.9090909090909
+"1252","Participant04","Human participants",0,3,"SPR-","Barrier",55,5.45454545454545
+"1300","Participant04","Human participants",0,0,"Skills-","Barrier",55,0
+"5","Participant05","Human participants",0,1,"BR+","Enabler",24,4.16666666666667
+"53","Participant05","Human participants",0,0,"BaCap+","Enabler",24,0
+"101","Participant05","Human participants",0,3,"BaCon+","Enabler",24,12.5
+"149","Participant05","Human participants",0,2,"ECR+","Enabler",24,8.33333333333333
+"197","Participant05","Human participants",0,0,"Emotion+","Enabler",24,0
+"245","Participant05","Human participants",0,0,"Goals+","Enabler",24,0
+"293","Participant05","Human participants",0,0,"Intention+","Enabler",24,0
+"341","Participant05","Human participants",0,0,"Knowledge+","Enabler",24,0
+"389","Participant05","Human participants",0,0,"MADP+","Enabler",24,0
+"437","Participant05","Human participants",0,2,"Optimism+","Enabler",24,8.33333333333333
+"485","Participant05","Human participants",0,0,"Reinforcement+","Enabler",24,0
+"533","Participant05","Human participants",0,2,"SI+","Enabler",24,8.33333333333333
+"581","Participant05","Human participants",0,1,"SPR+","Enabler",24,4.16666666666667
+"629","Participant05","Human participants",0,2,"Skills+","Enabler",24,8.33333333333333
+"677","Participant05","Human participants",0,0,"BR-","Barrier",24,0
+"725","Participant05","Human participants",0,2,"BaCap-","Barrier",24,8.33333333333333
+"773","Participant05","Human participants",0,0,"BaCon-","Barrier",24,0
+"821","Participant05","Human participants",0,3,"ECR-","Barrier",24,12.5
+"869","Participant05","Human participants",0,1,"Emotion-","Barrier",24,4.16666666666667
+"917","Participant05","Human participants",0,1,"Goals-","Barrier",24,4.16666666666667
+"965","Participant05","Human participants",0,0,"Intention-","Barrier",24,0
+"1013","Participant05","Human participants",0,0,"Knowledge-","Barrier",24,0
+"1061","Participant05","Human participants",0,1,"MADP-","Barrier",24,4.16666666666667
+"1109","Participant05","Human participants",0,0,"Optimism-","Barrier",24,0
+"1157","Participant05","Human participants",0,1,"Reinforcement-","Barrier",24,4.16666666666667
+"1205","Participant05","Human participants",0,2,"SI-","Barrier",24,8.33333333333333
+"1253","Participant05","Human participants",0,0,"SPR-","Barrier",24,0
+"1301","Participant05","Human participants",0,0,"Skills-","Barrier",24,0
+"6","Participant06","Human participants",0,0,"BR+","Enabler",33,0
+"54","Participant06","Human participants",0,0,"BaCap+","Enabler",33,0
+"102","Participant06","Human participants",0,1,"BaCon+","Enabler",33,3.03030303030303
+"150","Participant06","Human participants",0,3,"ECR+","Enabler",33,9.09090909090909
+"198","Participant06","Human participants",0,0,"Emotion+","Enabler",33,0
+"246","Participant06","Human participants",0,0,"Goals+","Enabler",33,0
+"294","Participant06","Human participants",0,1,"Intention+","Enabler",33,3.03030303030303
+"342","Participant06","Human participants",0,1,"Knowledge+","Enabler",33,3.03030303030303
+"390","Participant06","Human participants",0,0,"MADP+","Enabler",33,0
+"438","Participant06","Human participants",0,0,"Optimism+","Enabler",33,0
+"486","Participant06","Human participants",0,0,"Reinforcement+","Enabler",33,0
+"534","Participant06","Human participants",0,0,"SI+","Enabler",33,0
+"582","Participant06","Human participants",0,0,"SPR+","Enabler",33,0
+"630","Participant06","Human participants",0,0,"Skills+","Enabler",33,0
+"678","Participant06","Human participants",0,0,"BR-","Barrier",33,0
+"726","Participant06","Human participants",0,4,"BaCap-","Barrier",33,12.1212121212121
+"774","Participant06","Human participants",0,1,"BaCon-","Barrier",33,3.03030303030303
+"822","Participant06","Human participants",0,2,"ECR-","Barrier",33,6.06060606060606
+"870","Participant06","Human participants",0,0,"Emotion-","Barrier",33,0
+"918","Participant06","Human participants",0,2,"Goals-","Barrier",33,6.06060606060606
+"966","Participant06","Human participants",0,2,"Intention-","Barrier",33,6.06060606060606
+"1014","Participant06","Human participants",0,1,"Knowledge-","Barrier",33,3.03030303030303
+"1062","Participant06","Human participants",0,0,"MADP-","Barrier",33,0
+"1110","Participant06","Human participants",0,0,"Optimism-","Barrier",33,0
+"1158","Participant06","Human participants",0,0,"Reinforcement-","Barrier",33,0
+"1206","Participant06","Human participants",0,3,"SI-","Barrier",33,9.09090909090909
+"1254","Participant06","Human participants",0,12,"SPR-","Barrier",33,36.3636363636364
+"1302","Participant06","Human participants",0,0,"Skills-","Barrier",33,0
+"7","Participant07","Human participants",1,7,"BR+","Enabler",41,17.0731707317073
+"55","Participant07","Human participants",1,0,"BaCap+","Enabler",41,0
+"103","Participant07","Human participants",1,1,"BaCon+","Enabler",41,2.4390243902439
+"151","Participant07","Human participants",1,2,"ECR+","Enabler",41,4.8780487804878
+"199","Participant07","Human participants",1,0,"Emotion+","Enabler",41,0
+"247","Participant07","Human participants",1,11,"Goals+","Enabler",41,26.8292682926829
+"295","Participant07","Human participants",1,0,"Intention+","Enabler",41,0
+"343","Participant07","Human participants",1,0,"Knowledge+","Enabler",41,0
+"391","Participant07","Human participants",1,0,"MADP+","Enabler",41,0
+"439","Participant07","Human participants",1,2,"Optimism+","Enabler",41,4.8780487804878
+"487","Participant07","Human participants",1,1,"Reinforcement+","Enabler",41,2.4390243902439
+"535","Participant07","Human participants",1,2,"SI+","Enabler",41,4.8780487804878
+"583","Participant07","Human participants",1,8,"SPR+","Enabler",41,19.5121951219512
+"631","Participant07","Human participants",1,0,"Skills+","Enabler",41,0
+"679","Participant07","Human participants",1,0,"BR-","Barrier",41,0
+"727","Participant07","Human participants",1,5,"BaCap-","Barrier",41,12.1951219512195
+"775","Participant07","Human participants",1,0,"BaCon-","Barrier",41,0
+"823","Participant07","Human participants",1,2,"ECR-","Barrier",41,4.8780487804878
+"871","Participant07","Human participants",1,0,"Emotion-","Barrier",41,0
+"919","Participant07","Human participants",1,0,"Goals-","Barrier",41,0
+"967","Participant07","Human participants",1,0,"Intention-","Barrier",41,0
+"1015","Participant07","Human participants",1,0,"Knowledge-","Barrier",41,0
+"1063","Participant07","Human participants",1,0,"MADP-","Barrier",41,0
+"1111","Participant07","Human participants",1,0,"Optimism-","Barrier",41,0
+"1159","Participant07","Human participants",1,0,"Reinforcement-","Barrier",41,0
+"1207","Participant07","Human participants",1,0,"SI-","Barrier",41,0
+"1255","Participant07","Human participants",1,0,"SPR-","Barrier",41,0
+"1303","Participant07","Human participants",1,0,"Skills-","Barrier",41,0
+"8","Participant08","Human participants",1,5,"BR+","Enabler",44,11.3636363636364
+"56","Participant08","Human participants",1,1,"BaCap+","Enabler",44,2.27272727272727
+"104","Participant08","Human participants",1,7,"BaCon+","Enabler",44,15.9090909090909
+"152","Participant08","Human participants",1,2,"ECR+","Enabler",44,4.54545454545455
+"200","Participant08","Human participants",1,0,"Emotion+","Enabler",44,0
+"248","Participant08","Human participants",1,6,"Goals+","Enabler",44,13.6363636363636
+"296","Participant08","Human participants",1,0,"Intention+","Enabler",44,0
+"344","Participant08","Human participants",1,0,"Knowledge+","Enabler",44,0
+"392","Participant08","Human participants",1,0,"MADP+","Enabler",44,0
+"440","Participant08","Human participants",1,2,"Optimism+","Enabler",44,4.54545454545455
+"488","Participant08","Human participants",1,6,"Reinforcement+","Enabler",44,13.6363636363636
+"536","Participant08","Human participants",1,1,"SI+","Enabler",44,2.27272727272727
+"584","Participant08","Human participants",1,9,"SPR+","Enabler",44,20.4545454545455
+"632","Participant08","Human participants",1,0,"Skills+","Enabler",44,0
+"680","Participant08","Human participants",1,0,"BR-","Barrier",44,0
+"728","Participant08","Human participants",1,1,"BaCap-","Barrier",44,2.27272727272727
+"776","Participant08","Human participants",1,1,"BaCon-","Barrier",44,2.27272727272727
+"824","Participant08","Human participants",1,0,"ECR-","Barrier",44,0
+"872","Participant08","Human participants",1,0,"Emotion-","Barrier",44,0
+"920","Participant08","Human participants",1,1,"Goals-","Barrier",44,2.27272727272727
+"968","Participant08","Human participants",1,0,"Intention-","Barrier",44,0
+"1016","Participant08","Human participants",1,0,"Knowledge-","Barrier",44,0
+"1064","Participant08","Human participants",1,2,"MADP-","Barrier",44,4.54545454545455
+"1112","Participant08","Human participants",1,0,"Optimism-","Barrier",44,0
+"1160","Participant08","Human participants",1,0,"Reinforcement-","Barrier",44,0
+"1208","Participant08","Human participants",1,0,"SI-","Barrier",44,0
+"1256","Participant08","Human participants",1,0,"SPR-","Barrier",44,0
+"1304","Participant08","Human participants",1,0,"Skills-","Barrier",44,0
+"9","Participant09","Human participants",0,0,"BR+","Enabler",17,0
+"57","Participant09","Human participants",0,0,"BaCap+","Enabler",17,0
+"105","Participant09","Human participants",0,0,"BaCon+","Enabler",17,0
+"153","Participant09","Human participants",0,0,"ECR+","Enabler",17,0
+"201","Participant09","Human participants",0,0,"Emotion+","Enabler",17,0
+"249","Participant09","Human participants",0,0,"Goals+","Enabler",17,0
+"297","Participant09","Human participants",0,0,"Intention+","Enabler",17,0
+"345","Participant09","Human participants",0,0,"Knowledge+","Enabler",17,0
+"393","Participant09","Human participants",0,0,"MADP+","Enabler",17,0
+"441","Participant09","Human participants",0,0,"Optimism+","Enabler",17,0
+"489","Participant09","Human participants",0,0,"Reinforcement+","Enabler",17,0
+"537","Participant09","Human participants",0,0,"SI+","Enabler",17,0
+"585","Participant09","Human participants",0,0,"SPR+","Enabler",17,0
+"633","Participant09","Human participants",0,0,"Skills+","Enabler",17,0
+"681","Participant09","Human participants",0,0,"BR-","Barrier",17,0
+"729","Participant09","Human participants",0,5,"BaCap-","Barrier",17,29.4117647058824
+"777","Participant09","Human participants",0,1,"BaCon-","Barrier",17,5.88235294117647
+"825","Participant09","Human participants",0,7,"ECR-","Barrier",17,41.1764705882353
+"873","Participant09","Human participants",0,3,"Emotion-","Barrier",17,17.6470588235294
+"921","Participant09","Human participants",0,0,"Goals-","Barrier",17,0
+"969","Participant09","Human participants",0,0,"Intention-","Barrier",17,0
+"1017","Participant09","Human participants",0,1,"Knowledge-","Barrier",17,5.88235294117647
+"1065","Participant09","Human participants",0,0,"MADP-","Barrier",17,0
+"1113","Participant09","Human participants",0,0,"Optimism-","Barrier",17,0
+"1161","Participant09","Human participants",0,0,"Reinforcement-","Barrier",17,0
+"1209","Participant09","Human participants",0,0,"SI-","Barrier",17,0
+"1257","Participant09","Human participants",0,0,"SPR-","Barrier",17,0
+"1305","Participant09","Human participants",0,0,"Skills-","Barrier",17,0
+"10","Participant10","Human participants",0,5,"BR+","Enabler",35,14.2857142857143
+"58","Participant10","Human participants",0,0,"BaCap+","Enabler",35,0
+"106","Participant10","Human participants",0,1,"BaCon+","Enabler",35,2.85714285714286
+"154","Participant10","Human participants",0,2,"ECR+","Enabler",35,5.71428571428571
+"202","Participant10","Human participants",0,0,"Emotion+","Enabler",35,0
+"250","Participant10","Human participants",0,3,"Goals+","Enabler",35,8.57142857142857
+"298","Participant10","Human participants",0,0,"Intention+","Enabler",35,0
+"346","Participant10","Human participants",0,0,"Knowledge+","Enabler",35,0
+"394","Participant10","Human participants",0,0,"MADP+","Enabler",35,0
+"442","Participant10","Human participants",0,0,"Optimism+","Enabler",35,0
+"490","Participant10","Human participants",0,1,"Reinforcement+","Enabler",35,2.85714285714286
+"538","Participant10","Human participants",0,0,"SI+","Enabler",35,0
+"586","Participant10","Human participants",0,0,"SPR+","Enabler",35,0
+"634","Participant10","Human participants",0,0,"Skills+","Enabler",35,0
+"682","Participant10","Human participants",0,0,"BR-","Barrier",35,0
+"730","Participant10","Human participants",0,2,"BaCap-","Barrier",35,5.71428571428571
+"778","Participant10","Human participants",0,13,"BaCon-","Barrier",35,37.1428571428571
+"826","Participant10","Human participants",0,2,"ECR-","Barrier",35,5.71428571428571
+"874","Participant10","Human participants",0,0,"Emotion-","Barrier",35,0
+"922","Participant10","Human participants",0,3,"Goals-","Barrier",35,8.57142857142857
+"970","Participant10","Human participants",0,0,"Intention-","Barrier",35,0
+"1018","Participant10","Human participants",0,0,"Knowledge-","Barrier",35,0
+"1066","Participant10","Human participants",0,0,"MADP-","Barrier",35,0
+"1114","Participant10","Human participants",0,1,"Optimism-","Barrier",35,2.85714285714286
+"1162","Participant10","Human participants",0,1,"Reinforcement-","Barrier",35,2.85714285714286
+"1210","Participant10","Human participants",0,1,"SI-","Barrier",35,2.85714285714286
+"1258","Participant10","Human participants",0,0,"SPR-","Barrier",35,0
+"1306","Participant10","Human participants",0,0,"Skills-","Barrier",35,0
+"11","Participant11","Human participants",1,5,"BR+","Enabler",28,17.8571428571429
+"59","Participant11","Human participants",1,0,"BaCap+","Enabler",28,0
+"107","Participant11","Human participants",1,4,"BaCon+","Enabler",28,14.2857142857143
+"155","Participant11","Human participants",1,3,"ECR+","Enabler",28,10.7142857142857
+"203","Participant11","Human participants",1,0,"Emotion+","Enabler",28,0
+"251","Participant11","Human participants",1,5,"Goals+","Enabler",28,17.8571428571429
+"299","Participant11","Human participants",1,2,"Intention+","Enabler",28,7.14285714285714
+"347","Participant11","Human participants",1,0,"Knowledge+","Enabler",28,0
+"395","Participant11","Human participants",1,0,"MADP+","Enabler",28,0
+"443","Participant11","Human participants",1,1,"Optimism+","Enabler",28,3.57142857142857
+"491","Participant11","Human participants",1,1,"Reinforcement+","Enabler",28,3.57142857142857
+"539","Participant11","Human participants",1,0,"SI+","Enabler",28,0
+"587","Participant11","Human participants",1,2,"SPR+","Enabler",28,7.14285714285714
+"635","Participant11","Human participants",1,0,"Skills+","Enabler",28,0
+"683","Participant11","Human participants",1,0,"BR-","Barrier",28,0
+"731","Participant11","Human participants",1,5,"BaCap-","Barrier",28,17.8571428571429
+"779","Participant11","Human participants",1,0,"BaCon-","Barrier",28,0
+"827","Participant11","Human participants",1,0,"ECR-","Barrier",28,0
+"875","Participant11","Human participants",1,0,"Emotion-","Barrier",28,0
+"923","Participant11","Human participants",1,0,"Goals-","Barrier",28,0
+"971","Participant11","Human participants",1,0,"Intention-","Barrier",28,0
+"1019","Participant11","Human participants",1,0,"Knowledge-","Barrier",28,0
+"1067","Participant11","Human participants",1,0,"MADP-","Barrier",28,0
+"1115","Participant11","Human participants",1,0,"Optimism-","Barrier",28,0
+"1163","Participant11","Human participants",1,0,"Reinforcement-","Barrier",28,0
+"1211","Participant11","Human participants",1,0,"SI-","Barrier",28,0
+"1259","Participant11","Human participants",1,0,"SPR-","Barrier",28,0
+"1307","Participant11","Human participants",1,0,"Skills-","Barrier",28,0
+"12","Participant12","Human participants",0,2,"BR+","Enabler",9,22.2222222222222
+"60","Participant12","Human participants",0,0,"BaCap+","Enabler",9,0
+"108","Participant12","Human participants",0,0,"BaCon+","Enabler",9,0
+"156","Participant12","Human participants",0,1,"ECR+","Enabler",9,11.1111111111111
+"204","Participant12","Human participants",0,0,"Emotion+","Enabler",9,0
+"252","Participant12","Human participants",0,0,"Goals+","Enabler",9,0
+"300","Participant12","Human participants",0,0,"Intention+","Enabler",9,0
+"348","Participant12","Human participants",0,0,"Knowledge+","Enabler",9,0
+"396","Participant12","Human participants",0,0,"MADP+","Enabler",9,0
+"444","Participant12","Human participants",0,0,"Optimism+","Enabler",9,0
+"492","Participant12","Human participants",0,0,"Reinforcement+","Enabler",9,0
+"540","Participant12","Human participants",0,0,"SI+","Enabler",9,0
+"588","Participant12","Human participants",0,0,"SPR+","Enabler",9,0
+"636","Participant12","Human participants",0,0,"Skills+","Enabler",9,0
+"684","Participant12","Human participants",0,0,"BR-","Barrier",9,0
+"732","Participant12","Human participants",0,1,"BaCap-","Barrier",9,11.1111111111111
+"780","Participant12","Human participants",0,4,"BaCon-","Barrier",9,44.4444444444444
+"828","Participant12","Human participants",0,0,"ECR-","Barrier",9,0
+"876","Participant12","Human participants",0,0,"Emotion-","Barrier",9,0
+"924","Participant12","Human participants",0,0,"Goals-","Barrier",9,0
+"972","Participant12","Human participants",0,0,"Intention-","Barrier",9,0
+"1020","Participant12","Human participants",0,1,"Knowledge-","Barrier",9,11.1111111111111
+"1068","Participant12","Human participants",0,0,"MADP-","Barrier",9,0
+"1116","Participant12","Human participants",0,0,"Optimism-","Barrier",9,0
+"1164","Participant12","Human participants",0,0,"Reinforcement-","Barrier",9,0
+"1212","Participant12","Human participants",0,0,"SI-","Barrier",9,0
+"1260","Participant12","Human participants",0,0,"SPR-","Barrier",9,0
+"1308","Participant12","Human participants",0,0,"Skills-","Barrier",9,0
+"13","Participant13","Human participants",0,6,"BR+","Enabler",38,15.7894736842105
+"61","Participant13","Human participants",0,0,"BaCap+","Enabler",38,0
+"109","Participant13","Human participants",0,2,"BaCon+","Enabler",38,5.26315789473684
+"157","Participant13","Human participants",0,5,"ECR+","Enabler",38,13.1578947368421
+"205","Participant13","Human participants",0,0,"Emotion+","Enabler",38,0
+"253","Participant13","Human participants",0,3,"Goals+","Enabler",38,7.89473684210526
+"301","Participant13","Human participants",0,0,"Intention+","Enabler",38,0
+"349","Participant13","Human participants",0,1,"Knowledge+","Enabler",38,2.63157894736842
+"397","Participant13","Human participants",0,0,"MADP+","Enabler",38,0
+"445","Participant13","Human participants",0,0,"Optimism+","Enabler",38,0
+"493","Participant13","Human participants",0,2,"Reinforcement+","Enabler",38,5.26315789473684
+"541","Participant13","Human participants",0,1,"SI+","Enabler",38,2.63157894736842
+"589","Participant13","Human participants",0,0,"SPR+","Enabler",38,0
+"637","Participant13","Human participants",0,0,"Skills+","Enabler",38,0
+"685","Participant13","Human participants",0,0,"BR-","Barrier",38,0
+"733","Participant13","Human participants",0,4,"BaCap-","Barrier",38,10.5263157894737
+"781","Participant13","Human participants",0,1,"BaCon-","Barrier",38,2.63157894736842
+"829","Participant13","Human participants",0,3,"ECR-","Barrier",38,7.89473684210526
+"877","Participant13","Human participants",0,2,"Emotion-","Barrier",38,5.26315789473684
+"925","Participant13","Human participants",0,0,"Goals-","Barrier",38,0
+"973","Participant13","Human participants",0,2,"Intention-","Barrier",38,5.26315789473684
+"1021","Participant13","Human participants",0,1,"Knowledge-","Barrier",38,2.63157894736842
+"1069","Participant13","Human participants",0,1,"MADP-","Barrier",38,2.63157894736842
+"1117","Participant13","Human participants",0,0,"Optimism-","Barrier",38,0
+"1165","Participant13","Human participants",0,0,"Reinforcement-","Barrier",38,0
+"1213","Participant13","Human participants",0,3,"SI-","Barrier",38,7.89473684210526
+"1261","Participant13","Human participants",0,1,"SPR-","Barrier",38,2.63157894736842
+"1309","Participant13","Human participants",0,0,"Skills-","Barrier",38,0
+"14","Participant14","Human participants",0,2,"BR+","Enabler",36,5.55555555555556
+"62","Participant14","Human participants",0,0,"BaCap+","Enabler",36,0
+"110","Participant14","Human participants",0,1,"BaCon+","Enabler",36,2.77777777777778
+"158","Participant14","Human participants",0,5,"ECR+","Enabler",36,13.8888888888889
+"206","Participant14","Human participants",0,0,"Emotion+","Enabler",36,0
+"254","Participant14","Human participants",0,1,"Goals+","Enabler",36,2.77777777777778
+"302","Participant14","Human participants",0,0,"Intention+","Enabler",36,0
+"350","Participant14","Human participants",0,1,"Knowledge+","Enabler",36,2.77777777777778
+"398","Participant14","Human participants",0,0,"MADP+","Enabler",36,0
+"446","Participant14","Human participants",0,1,"Optimism+","Enabler",36,2.77777777777778
+"494","Participant14","Human participants",0,0,"Reinforcement+","Enabler",36,0
+"542","Participant14","Human participants",0,0,"SI+","Enabler",36,0
+"590","Participant14","Human participants",0,1,"SPR+","Enabler",36,2.77777777777778
+"638","Participant14","Human participants",0,0,"Skills+","Enabler",36,0
+"686","Participant14","Human participants",0,0,"BR-","Barrier",36,0
+"734","Participant14","Human participants",0,12,"BaCap-","Barrier",36,33.3333333333333
+"782","Participant14","Human participants",0,8,"BaCon-","Barrier",36,22.2222222222222
+"830","Participant14","Human participants",0,1,"ECR-","Barrier",36,2.77777777777778
+"878","Participant14","Human participants",0,0,"Emotion-","Barrier",36,0
+"926","Participant14","Human participants",0,1,"Goals-","Barrier",36,2.77777777777778
+"974","Participant14","Human participants",0,0,"Intention-","Barrier",36,0
+"1022","Participant14","Human participants",0,0,"Knowledge-","Barrier",36,0
+"1070","Participant14","Human participants",0,0,"MADP-","Barrier",36,0
+"1118","Participant14","Human participants",0,0,"Optimism-","Barrier",36,0
+"1166","Participant14","Human participants",0,2,"Reinforcement-","Barrier",36,5.55555555555556
+"1214","Participant14","Human participants",0,0,"SI-","Barrier",36,0
+"1262","Participant14","Human participants",0,0,"SPR-","Barrier",36,0
+"1310","Participant14","Human participants",0,0,"Skills-","Barrier",36,0
+"15","Participant15","Human participants",1,5,"BR+","Enabler",39,12.8205128205128
+"63","Participant15","Human participants",1,0,"BaCap+","Enabler",39,0
+"111","Participant15","Human participants",1,6,"BaCon+","Enabler",39,15.3846153846154
+"159","Participant15","Human participants",1,3,"ECR+","Enabler",39,7.69230769230769
+"207","Participant15","Human participants",1,0,"Emotion+","Enabler",39,0
+"255","Participant15","Human participants",1,2,"Goals+","Enabler",39,5.12820512820513
+"303","Participant15","Human participants",1,1,"Intention+","Enabler",39,2.56410256410256
+"351","Participant15","Human participants",1,2,"Knowledge+","Enabler",39,5.12820512820513
+"399","Participant15","Human participants",1,0,"MADP+","Enabler",39,0
+"447","Participant15","Human participants",1,1,"Optimism+","Enabler",39,2.56410256410256
+"495","Participant15","Human participants",1,0,"Reinforcement+","Enabler",39,0
+"543","Participant15","Human participants",1,2,"SI+","Enabler",39,5.12820512820513
+"591","Participant15","Human participants",1,2,"SPR+","Enabler",39,5.12820512820513
+"639","Participant15","Human participants",1,0,"Skills+","Enabler",39,0
+"687","Participant15","Human participants",1,0,"BR-","Barrier",39,0
+"735","Participant15","Human participants",1,4,"BaCap-","Barrier",39,10.2564102564103
+"783","Participant15","Human participants",1,2,"BaCon-","Barrier",39,5.12820512820513
+"831","Participant15","Human participants",1,2,"ECR-","Barrier",39,5.12820512820513
+"879","Participant15","Human participants",1,1,"Emotion-","Barrier",39,2.56410256410256
+"927","Participant15","Human participants",1,5,"Goals-","Barrier",39,12.8205128205128
+"975","Participant15","Human participants",1,0,"Intention-","Barrier",39,0
+"1023","Participant15","Human participants",1,0,"Knowledge-","Barrier",39,0
+"1071","Participant15","Human participants",1,1,"MADP-","Barrier",39,2.56410256410256
+"1119","Participant15","Human participants",1,0,"Optimism-","Barrier",39,0
+"1167","Participant15","Human participants",1,0,"Reinforcement-","Barrier",39,0
+"1215","Participant15","Human participants",1,0,"SI-","Barrier",39,0
+"1263","Participant15","Human participants",1,0,"SPR-","Barrier",39,0
+"1311","Participant15","Human participants",1,0,"Skills-","Barrier",39,0
+"16","Participant16","Human participants",1,5,"BR+","Enabler",48,10.4166666666667
+"64","Participant16","Human participants",1,0,"BaCap+","Enabler",48,0
+"112","Participant16","Human participants",1,7,"BaCon+","Enabler",48,14.5833333333333
+"160","Participant16","Human participants",1,3,"ECR+","Enabler",48,6.25
+"208","Participant16","Human participants",1,0,"Emotion+","Enabler",48,0
+"256","Participant16","Human participants",1,3,"Goals+","Enabler",48,6.25
+"304","Participant16","Human participants",1,1,"Intention+","Enabler",48,2.08333333333333
+"352","Participant16","Human participants",1,2,"Knowledge+","Enabler",48,4.16666666666667
+"400","Participant16","Human participants",1,0,"MADP+","Enabler",48,0
+"448","Participant16","Human participants",1,1,"Optimism+","Enabler",48,2.08333333333333
+"496","Participant16","Human participants",1,3,"Reinforcement+","Enabler",48,6.25
+"544","Participant16","Human participants",1,0,"SI+","Enabler",48,0
+"592","Participant16","Human participants",1,3,"SPR+","Enabler",48,6.25
+"640","Participant16","Human participants",1,1,"Skills+","Enabler",48,2.08333333333333
+"688","Participant16","Human participants",1,0,"BR-","Barrier",48,0
+"736","Participant16","Human participants",1,4,"BaCap-","Barrier",48,8.33333333333333
+"784","Participant16","Human participants",1,0,"BaCon-","Barrier",48,0
+"832","Participant16","Human participants",1,6,"ECR-","Barrier",48,12.5
+"880","Participant16","Human participants",1,0,"Emotion-","Barrier",48,0
+"928","Participant16","Human participants",1,5,"Goals-","Barrier",48,10.4166666666667
+"976","Participant16","Human participants",1,1,"Intention-","Barrier",48,2.08333333333333
+"1024","Participant16","Human participants",1,1,"Knowledge-","Barrier",48,2.08333333333333
+"1072","Participant16","Human participants",1,0,"MADP-","Barrier",48,0
+"1120","Participant16","Human participants",1,0,"Optimism-","Barrier",48,0
+"1168","Participant16","Human participants",1,0,"Reinforcement-","Barrier",48,0
+"1216","Participant16","Human participants",1,0,"SI-","Barrier",48,0
+"1264","Participant16","Human participants",1,0,"SPR-","Barrier",48,0
+"1312","Participant16","Human participants",1,2,"Skills-","Barrier",48,4.16666666666667
+"17","Participant10_William_active_version3","Chat GPT characters",1,18,"BR+","Enabler",102,17.6470588235294
+"65","Participant10_William_active_version3","Chat GPT characters",1,1,"BaCap+","Enabler",102,0.980392156862745
+"113","Participant10_William_active_version3","Chat GPT characters",1,12,"BaCon+","Enabler",102,11.7647058823529
+"161","Participant10_William_active_version3","Chat GPT characters",1,10,"ECR+","Enabler",102,9.80392156862745
+"209","Participant10_William_active_version3","Chat GPT characters",1,1,"Emotion+","Enabler",102,0.980392156862745
+"257","Participant10_William_active_version3","Chat GPT characters",1,20,"Goals+","Enabler",102,19.6078431372549
+"305","Participant10_William_active_version3","Chat GPT characters",1,0,"Intention+","Enabler",102,0
+"353","Participant10_William_active_version3","Chat GPT characters",1,0,"Knowledge+","Enabler",102,0
+"401","Participant10_William_active_version3","Chat GPT characters",1,0,"MADP+","Enabler",102,0
+"449","Participant10_William_active_version3","Chat GPT characters",1,0,"Optimism+","Enabler",102,0
+"497","Participant10_William_active_version3","Chat GPT characters",1,1,"Reinforcement+","Enabler",102,0.980392156862745
+"545","Participant10_William_active_version3","Chat GPT characters",1,7,"SI+","Enabler",102,6.86274509803922
+"593","Participant10_William_active_version3","Chat GPT characters",1,0,"SPR+","Enabler",102,0
+"641","Participant10_William_active_version3","Chat GPT characters",1,1,"Skills+","Enabler",102,0.980392156862745
+"689","Participant10_William_active_version3","Chat GPT characters",1,0,"BR-","Barrier",102,0
+"737","Participant10_William_active_version3","Chat GPT characters",1,9,"BaCap-","Barrier",102,8.82352941176471
+"785","Participant10_William_active_version3","Chat GPT characters",1,11,"BaCon-","Barrier",102,10.7843137254902
+"833","Participant10_William_active_version3","Chat GPT characters",1,3,"ECR-","Barrier",102,2.94117647058824
+"881","Participant10_William_active_version3","Chat GPT characters",1,1,"Emotion-","Barrier",102,0.980392156862745
+"929","Participant10_William_active_version3","Chat GPT characters",1,3,"Goals-","Barrier",102,2.94117647058824
+"977","Participant10_William_active_version3","Chat GPT characters",1,0,"Intention-","Barrier",102,0
+"1025","Participant10_William_active_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",102,0
+"1073","Participant10_William_active_version3","Chat GPT characters",1,2,"MADP-","Barrier",102,1.96078431372549
+"1121","Participant10_William_active_version3","Chat GPT characters",1,0,"Optimism-","Barrier",102,0
+"1169","Participant10_William_active_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",102,0
+"1217","Participant10_William_active_version3","Chat GPT characters",1,0,"SI-","Barrier",102,0
+"1265","Participant10_William_active_version3","Chat GPT characters",1,0,"SPR-","Barrier",102,0
+"1313","Participant10_William_active_version3","Chat GPT characters",1,2,"Skills-","Barrier",102,1.96078431372549
+"18","Participant10_William_sedentary_version3","Chat GPT characters",0,8,"BR+","Enabler",92,8.69565217391304
+"66","Participant10_William_sedentary_version3","Chat GPT characters",0,0,"BaCap+","Enabler",92,0
+"114","Participant10_William_sedentary_version3","Chat GPT characters",0,16,"BaCon+","Enabler",92,17.3913043478261
+"162","Participant10_William_sedentary_version3","Chat GPT characters",0,0,"ECR+","Enabler",92,0
+"210","Participant10_William_sedentary_version3","Chat GPT characters",0,1,"Emotion+","Enabler",92,1.08695652173913
+"258","Participant10_William_sedentary_version3","Chat GPT characters",0,4,"Goals+","Enabler",92,4.34782608695652
+"306","Participant10_William_sedentary_version3","Chat GPT characters",0,2,"Intention+","Enabler",92,2.17391304347826
+"354","Participant10_William_sedentary_version3","Chat GPT characters",0,0,"Knowledge+","Enabler",92,0
+"402","Participant10_William_sedentary_version3","Chat GPT characters",0,0,"MADP+","Enabler",92,0
+"450","Participant10_William_sedentary_version3","Chat GPT characters",0,3,"Optimism+","Enabler",92,3.26086956521739
+"498","Participant10_William_sedentary_version3","Chat GPT characters",0,1,"Reinforcement+","Enabler",92,1.08695652173913
+"546","Participant10_William_sedentary_version3","Chat GPT characters",0,15,"SI+","Enabler",92,16.304347826087
+"594","Participant10_William_sedentary_version3","Chat GPT characters",0,0,"SPR+","Enabler",92,0
+"642","Participant10_William_sedentary_version3","Chat GPT characters",0,0,"Skills+","Enabler",92,0
+"690","Participant10_William_sedentary_version3","Chat GPT characters",0,3,"BR-","Barrier",92,3.26086956521739
+"738","Participant10_William_sedentary_version3","Chat GPT characters",0,12,"BaCap-","Barrier",92,13.0434782608696
+"786","Participant10_William_sedentary_version3","Chat GPT characters",0,10,"BaCon-","Barrier",92,10.8695652173913
+"834","Participant10_William_sedentary_version3","Chat GPT characters",0,8,"ECR-","Barrier",92,8.69565217391304
+"882","Participant10_William_sedentary_version3","Chat GPT characters",0,1,"Emotion-","Barrier",92,1.08695652173913
+"930","Participant10_William_sedentary_version3","Chat GPT characters",0,1,"Goals-","Barrier",92,1.08695652173913
+"978","Participant10_William_sedentary_version3","Chat GPT characters",0,0,"Intention-","Barrier",92,0
+"1026","Participant10_William_sedentary_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",92,0
+"1074","Participant10_William_sedentary_version3","Chat GPT characters",0,0,"MADP-","Barrier",92,0
+"1122","Participant10_William_sedentary_version3","Chat GPT characters",0,1,"Optimism-","Barrier",92,1.08695652173913
+"1170","Participant10_William_sedentary_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",92,0
+"1218","Participant10_William_sedentary_version3","Chat GPT characters",0,2,"SI-","Barrier",92,2.17391304347826
+"1266","Participant10_William_sedentary_version3","Chat GPT characters",0,2,"SPR-","Barrier",92,2.17391304347826
+"1314","Participant10_William_sedentary_version3","Chat GPT characters",0,2,"Skills-","Barrier",92,2.17391304347826
+"19","Participant11_Richard_active_version3","Chat GPT characters",1,8,"BR+","Enabler",83,9.63855421686747
+"67","Participant11_Richard_active_version3","Chat GPT characters",1,0,"BaCap+","Enabler",83,0
+"115","Participant11_Richard_active_version3","Chat GPT characters",1,16,"BaCon+","Enabler",83,19.2771084337349
+"163","Participant11_Richard_active_version3","Chat GPT characters",1,3,"ECR+","Enabler",83,3.6144578313253
+"211","Participant11_Richard_active_version3","Chat GPT characters",1,2,"Emotion+","Enabler",83,2.40963855421687
+"259","Participant11_Richard_active_version3","Chat GPT characters",1,5,"Goals+","Enabler",83,6.02409638554217
+"307","Participant11_Richard_active_version3","Chat GPT characters",1,1,"Intention+","Enabler",83,1.20481927710843
+"355","Participant11_Richard_active_version3","Chat GPT characters",1,0,"Knowledge+","Enabler",83,0
+"403","Participant11_Richard_active_version3","Chat GPT characters",1,0,"MADP+","Enabler",83,0
+"451","Participant11_Richard_active_version3","Chat GPT characters",1,6,"Optimism+","Enabler",83,7.2289156626506
+"499","Participant11_Richard_active_version3","Chat GPT characters",1,12,"Reinforcement+","Enabler",83,14.4578313253012
+"547","Participant11_Richard_active_version3","Chat GPT characters",1,8,"SI+","Enabler",83,9.63855421686747
+"595","Participant11_Richard_active_version3","Chat GPT characters",1,0,"SPR+","Enabler",83,0
+"643","Participant11_Richard_active_version3","Chat GPT characters",1,0,"Skills+","Enabler",83,0
+"691","Participant11_Richard_active_version3","Chat GPT characters",1,0,"BR-","Barrier",83,0
+"739","Participant11_Richard_active_version3","Chat GPT characters",1,12,"BaCap-","Barrier",83,14.4578313253012
+"787","Participant11_Richard_active_version3","Chat GPT characters",1,1,"BaCon-","Barrier",83,1.20481927710843
+"835","Participant11_Richard_active_version3","Chat GPT characters",1,4,"ECR-","Barrier",83,4.81927710843374
+"883","Participant11_Richard_active_version3","Chat GPT characters",1,1,"Emotion-","Barrier",83,1.20481927710843
+"931","Participant11_Richard_active_version3","Chat GPT characters",1,1,"Goals-","Barrier",83,1.20481927710843
+"979","Participant11_Richard_active_version3","Chat GPT characters",1,0,"Intention-","Barrier",83,0
+"1027","Participant11_Richard_active_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",83,0
+"1075","Participant11_Richard_active_version3","Chat GPT characters",1,1,"MADP-","Barrier",83,1.20481927710843
+"1123","Participant11_Richard_active_version3","Chat GPT characters",1,0,"Optimism-","Barrier",83,0
+"1171","Participant11_Richard_active_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",83,0
+"1219","Participant11_Richard_active_version3","Chat GPT characters",1,0,"SI-","Barrier",83,0
+"1267","Participant11_Richard_active_version3","Chat GPT characters",1,0,"SPR-","Barrier",83,0
+"1315","Participant11_Richard_active_version3","Chat GPT characters",1,2,"Skills-","Barrier",83,2.40963855421687
+"20","Participant11_sedentary_Richard_version3","Chat GPT characters",0,3,"BR+","Enabler",64,4.6875
+"68","Participant11_sedentary_Richard_version3","Chat GPT characters",0,0,"BaCap+","Enabler",64,0
+"116","Participant11_sedentary_Richard_version3","Chat GPT characters",0,7,"BaCon+","Enabler",64,10.9375
+"164","Participant11_sedentary_Richard_version3","Chat GPT characters",0,2,"ECR+","Enabler",64,3.125
+"212","Participant11_sedentary_Richard_version3","Chat GPT characters",0,1,"Emotion+","Enabler",64,1.5625
+"260","Participant11_sedentary_Richard_version3","Chat GPT characters",0,0,"Goals+","Enabler",64,0
+"308","Participant11_sedentary_Richard_version3","Chat GPT characters",0,1,"Intention+","Enabler",64,1.5625
+"356","Participant11_sedentary_Richard_version3","Chat GPT characters",0,1,"Knowledge+","Enabler",64,1.5625
+"404","Participant11_sedentary_Richard_version3","Chat GPT characters",0,0,"MADP+","Enabler",64,0
+"452","Participant11_sedentary_Richard_version3","Chat GPT characters",0,0,"Optimism+","Enabler",64,0
+"500","Participant11_sedentary_Richard_version3","Chat GPT characters",0,0,"Reinforcement+","Enabler",64,0
+"548","Participant11_sedentary_Richard_version3","Chat GPT characters",0,5,"SI+","Enabler",64,7.8125
+"596","Participant11_sedentary_Richard_version3","Chat GPT characters",0,0,"SPR+","Enabler",64,0
+"644","Participant11_sedentary_Richard_version3","Chat GPT characters",0,0,"Skills+","Enabler",64,0
+"692","Participant11_sedentary_Richard_version3","Chat GPT characters",0,0,"BR-","Barrier",64,0
+"740","Participant11_sedentary_Richard_version3","Chat GPT characters",0,18,"BaCap-","Barrier",64,28.125
+"788","Participant11_sedentary_Richard_version3","Chat GPT characters",0,11,"BaCon-","Barrier",64,17.1875
+"836","Participant11_sedentary_Richard_version3","Chat GPT characters",0,4,"ECR-","Barrier",64,6.25
+"884","Participant11_sedentary_Richard_version3","Chat GPT characters",0,2,"Emotion-","Barrier",64,3.125
+"932","Participant11_sedentary_Richard_version3","Chat GPT characters",0,2,"Goals-","Barrier",64,3.125
+"980","Participant11_sedentary_Richard_version3","Chat GPT characters",0,0,"Intention-","Barrier",64,0
+"1028","Participant11_sedentary_Richard_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",64,0
+"1076","Participant11_sedentary_Richard_version3","Chat GPT characters",0,1,"MADP-","Barrier",64,1.5625
+"1124","Participant11_sedentary_Richard_version3","Chat GPT characters",0,2,"Optimism-","Barrier",64,3.125
+"1172","Participant11_sedentary_Richard_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",64,0
+"1220","Participant11_sedentary_Richard_version3","Chat GPT characters",0,2,"SI-","Barrier",64,3.125
+"1268","Participant11_sedentary_Richard_version3","Chat GPT characters",0,1,"SPR-","Barrier",64,1.5625
+"1316","Participant11_sedentary_Richard_version3","Chat GPT characters",0,1,"Skills-","Barrier",64,1.5625
+"21","Participant12_Johan_sedentary_version3","Chat GPT characters",0,3,"BR+","Enabler",70,4.28571428571429
+"69","Participant12_Johan_sedentary_version3","Chat GPT characters",0,0,"BaCap+","Enabler",70,0
+"117","Participant12_Johan_sedentary_version3","Chat GPT characters",0,17,"BaCon+","Enabler",70,24.2857142857143
+"165","Participant12_Johan_sedentary_version3","Chat GPT characters",0,1,"ECR+","Enabler",70,1.42857142857143
+"213","Participant12_Johan_sedentary_version3","Chat GPT characters",0,1,"Emotion+","Enabler",70,1.42857142857143
+"261","Participant12_Johan_sedentary_version3","Chat GPT characters",0,4,"Goals+","Enabler",70,5.71428571428571
+"309","Participant12_Johan_sedentary_version3","Chat GPT characters",0,0,"Intention+","Enabler",70,0
+"357","Participant12_Johan_sedentary_version3","Chat GPT characters",0,0,"Knowledge+","Enabler",70,0
+"405","Participant12_Johan_sedentary_version3","Chat GPT characters",0,1,"MADP+","Enabler",70,1.42857142857143
+"453","Participant12_Johan_sedentary_version3","Chat GPT characters",0,2,"Optimism+","Enabler",70,2.85714285714286
+"501","Participant12_Johan_sedentary_version3","Chat GPT characters",0,1,"Reinforcement+","Enabler",70,1.42857142857143
+"549","Participant12_Johan_sedentary_version3","Chat GPT characters",0,7,"SI+","Enabler",70,10
+"597","Participant12_Johan_sedentary_version3","Chat GPT characters",0,2,"SPR+","Enabler",70,2.85714285714286
+"645","Participant12_Johan_sedentary_version3","Chat GPT characters",0,0,"Skills+","Enabler",70,0
+"693","Participant12_Johan_sedentary_version3","Chat GPT characters",0,0,"BR-","Barrier",70,0
+"741","Participant12_Johan_sedentary_version3","Chat GPT characters",0,10,"BaCap-","Barrier",70,14.2857142857143
+"789","Participant12_Johan_sedentary_version3","Chat GPT characters",0,7,"BaCon-","Barrier",70,10
+"837","Participant12_Johan_sedentary_version3","Chat GPT characters",0,5,"ECR-","Barrier",70,7.14285714285714
+"885","Participant12_Johan_sedentary_version3","Chat GPT characters",0,1,"Emotion-","Barrier",70,1.42857142857143
+"933","Participant12_Johan_sedentary_version3","Chat GPT characters",0,2,"Goals-","Barrier",70,2.85714285714286
+"981","Participant12_Johan_sedentary_version3","Chat GPT characters",0,0,"Intention-","Barrier",70,0
+"1029","Participant12_Johan_sedentary_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",70,0
+"1077","Participant12_Johan_sedentary_version3","Chat GPT characters",0,4,"MADP-","Barrier",70,5.71428571428571
+"1125","Participant12_Johan_sedentary_version3","Chat GPT characters",0,0,"Optimism-","Barrier",70,0
+"1173","Participant12_Johan_sedentary_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",70,0
+"1221","Participant12_Johan_sedentary_version3","Chat GPT characters",0,1,"SI-","Barrier",70,1.42857142857143
+"1269","Participant12_Johan_sedentary_version3","Chat GPT characters",0,0,"SPR-","Barrier",70,0
+"1317","Participant12_Johan_sedentary_version3","Chat GPT characters",0,1,"Skills-","Barrier",70,1.42857142857143
+"22","Participant12_active_Johan_version3","Chat GPT characters",1,12,"BR+","Enabler",98,12.2448979591837
+"70","Participant12_active_Johan_version3","Chat GPT characters",1,1,"BaCap+","Enabler",98,1.02040816326531
+"118","Participant12_active_Johan_version3","Chat GPT characters",1,13,"BaCon+","Enabler",98,13.265306122449
+"166","Participant12_active_Johan_version3","Chat GPT characters",1,5,"ECR+","Enabler",98,5.10204081632653
+"214","Participant12_active_Johan_version3","Chat GPT characters",1,2,"Emotion+","Enabler",98,2.04081632653061
+"262","Participant12_active_Johan_version3","Chat GPT characters",1,7,"Goals+","Enabler",98,7.14285714285714
+"310","Participant12_active_Johan_version3","Chat GPT characters",1,1,"Intention+","Enabler",98,1.02040816326531
+"358","Participant12_active_Johan_version3","Chat GPT characters",1,0,"Knowledge+","Enabler",98,0
+"406","Participant12_active_Johan_version3","Chat GPT characters",1,1,"MADP+","Enabler",98,1.02040816326531
+"454","Participant12_active_Johan_version3","Chat GPT characters",1,3,"Optimism+","Enabler",98,3.06122448979592
+"502","Participant12_active_Johan_version3","Chat GPT characters",1,7,"Reinforcement+","Enabler",98,7.14285714285714
+"550","Participant12_active_Johan_version3","Chat GPT characters",1,14,"SI+","Enabler",98,14.2857142857143
+"598","Participant12_active_Johan_version3","Chat GPT characters",1,1,"SPR+","Enabler",98,1.02040816326531
+"646","Participant12_active_Johan_version3","Chat GPT characters",1,0,"Skills+","Enabler",98,0
+"694","Participant12_active_Johan_version3","Chat GPT characters",1,0,"BR-","Barrier",98,0
+"742","Participant12_active_Johan_version3","Chat GPT characters",1,6,"BaCap-","Barrier",98,6.12244897959184
+"790","Participant12_active_Johan_version3","Chat GPT characters",1,18,"BaCon-","Barrier",98,18.3673469387755
+"838","Participant12_active_Johan_version3","Chat GPT characters",1,2,"ECR-","Barrier",98,2.04081632653061
+"886","Participant12_active_Johan_version3","Chat GPT characters",1,3,"Emotion-","Barrier",98,3.06122448979592
+"934","Participant12_active_Johan_version3","Chat GPT characters",1,0,"Goals-","Barrier",98,0
+"982","Participant12_active_Johan_version3","Chat GPT characters",1,0,"Intention-","Barrier",98,0
+"1030","Participant12_active_Johan_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",98,0
+"1078","Participant12_active_Johan_version3","Chat GPT characters",1,1,"MADP-","Barrier",98,1.02040816326531
+"1126","Participant12_active_Johan_version3","Chat GPT characters",1,0,"Optimism-","Barrier",98,0
+"1174","Participant12_active_Johan_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",98,0
+"1222","Participant12_active_Johan_version3","Chat GPT characters",1,0,"SI-","Barrier",98,0
+"1270","Participant12_active_Johan_version3","Chat GPT characters",1,0,"SPR-","Barrier",98,0
+"1318","Participant12_active_Johan_version3","Chat GPT characters",1,1,"Skills-","Barrier",98,1.02040816326531
+"23","Participant13_Patricia_active_version3","Chat GPT characters",1,10,"BR+","Enabler",71,14.0845070422535
+"71","Participant13_Patricia_active_version3","Chat GPT characters",1,4,"BaCap+","Enabler",71,5.63380281690141
+"119","Participant13_Patricia_active_version3","Chat GPT characters",1,15,"BaCon+","Enabler",71,21.1267605633803
+"167","Participant13_Patricia_active_version3","Chat GPT characters",1,6,"ECR+","Enabler",71,8.45070422535211
+"215","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"Emotion+","Enabler",71,0
+"263","Participant13_Patricia_active_version3","Chat GPT characters",1,4,"Goals+","Enabler",71,5.63380281690141
+"311","Participant13_Patricia_active_version3","Chat GPT characters",1,1,"Intention+","Enabler",71,1.40845070422535
+"359","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"Knowledge+","Enabler",71,0
+"407","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"MADP+","Enabler",71,0
+"455","Participant13_Patricia_active_version3","Chat GPT characters",1,1,"Optimism+","Enabler",71,1.40845070422535
+"503","Participant13_Patricia_active_version3","Chat GPT characters",1,6,"Reinforcement+","Enabler",71,8.45070422535211
+"551","Participant13_Patricia_active_version3","Chat GPT characters",1,2,"SI+","Enabler",71,2.8169014084507
+"599","Participant13_Patricia_active_version3","Chat GPT characters",1,2,"SPR+","Enabler",71,2.8169014084507
+"647","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"Skills+","Enabler",71,0
+"695","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"BR-","Barrier",71,0
+"743","Participant13_Patricia_active_version3","Chat GPT characters",1,4,"BaCap-","Barrier",71,5.63380281690141
+"791","Participant13_Patricia_active_version3","Chat GPT characters",1,8,"BaCon-","Barrier",71,11.2676056338028
+"839","Participant13_Patricia_active_version3","Chat GPT characters",1,3,"ECR-","Barrier",71,4.22535211267606
+"887","Participant13_Patricia_active_version3","Chat GPT characters",1,2,"Emotion-","Barrier",71,2.8169014084507
+"935","Participant13_Patricia_active_version3","Chat GPT characters",1,2,"Goals-","Barrier",71,2.8169014084507
+"983","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"Intention-","Barrier",71,0
+"1031","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",71,0
+"1079","Participant13_Patricia_active_version3","Chat GPT characters",1,1,"MADP-","Barrier",71,1.40845070422535
+"1127","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"Optimism-","Barrier",71,0
+"1175","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",71,0
+"1223","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"SI-","Barrier",71,0
+"1271","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"SPR-","Barrier",71,0
+"1319","Participant13_Patricia_active_version3","Chat GPT characters",1,0,"Skills-","Barrier",71,0
+"24","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,5,"BR+","Enabler",67,7.46268656716418
+"72","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"BaCap+","Enabler",67,0
+"120","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,5,"BaCon+","Enabler",67,7.46268656716418
+"168","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"ECR+","Enabler",67,0
+"216","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,1,"Emotion+","Enabler",67,1.49253731343284
+"264","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,3,"Goals+","Enabler",67,4.47761194029851
+"312","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"Intention+","Enabler",67,0
+"360","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,1,"Knowledge+","Enabler",67,1.49253731343284
+"408","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"MADP+","Enabler",67,0
+"456","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,2,"Optimism+","Enabler",67,2.98507462686567
+"504","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,1,"Reinforcement+","Enabler",67,1.49253731343284
+"552","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,6,"SI+","Enabler",67,8.95522388059701
+"600","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"SPR+","Enabler",67,0
+"648","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"Skills+","Enabler",67,0
+"696","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"BR-","Barrier",67,0
+"744","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,7,"BaCap-","Barrier",67,10.4477611940298
+"792","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,18,"BaCon-","Barrier",67,26.865671641791
+"840","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,9,"ECR-","Barrier",67,13.4328358208955
+"888","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,2,"Emotion-","Barrier",67,2.98507462686567
+"936","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,3,"Goals-","Barrier",67,4.47761194029851
+"984","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"Intention-","Barrier",67,0
+"1032","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",67,0
+"1080","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,1,"MADP-","Barrier",67,1.49253731343284
+"1128","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,1,"Optimism-","Barrier",67,1.49253731343284
+"1176","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",67,0
+"1224","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"SI-","Barrier",67,0
+"1272","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,0,"SPR-","Barrier",67,0
+"1320","Participant13_Patricia_sedentary_version3","Chat GPT characters",0,2,"Skills-","Barrier",67,2.98507462686567
+"25","Participant14_Thomas_active_version3","Chat GPT characters",1,13,"BR+","Enabler",91,14.2857142857143
+"73","Participant14_Thomas_active_version3","Chat GPT characters",1,2,"BaCap+","Enabler",91,2.1978021978022
+"121","Participant14_Thomas_active_version3","Chat GPT characters",1,15,"BaCon+","Enabler",91,16.4835164835165
+"169","Participant14_Thomas_active_version3","Chat GPT characters",1,4,"ECR+","Enabler",91,4.3956043956044
+"217","Participant14_Thomas_active_version3","Chat GPT characters",1,1,"Emotion+","Enabler",91,1.0989010989011
+"265","Participant14_Thomas_active_version3","Chat GPT characters",1,6,"Goals+","Enabler",91,6.59340659340659
+"313","Participant14_Thomas_active_version3","Chat GPT characters",1,0,"Intention+","Enabler",91,0
+"361","Participant14_Thomas_active_version3","Chat GPT characters",1,0,"Knowledge+","Enabler",91,0
+"409","Participant14_Thomas_active_version3","Chat GPT characters",1,0,"MADP+","Enabler",91,0
+"457","Participant14_Thomas_active_version3","Chat GPT characters",1,0,"Optimism+","Enabler",91,0
+"505","Participant14_Thomas_active_version3","Chat GPT characters",1,12,"Reinforcement+","Enabler",91,13.1868131868132
+"553","Participant14_Thomas_active_version3","Chat GPT characters",1,5,"SI+","Enabler",91,5.49450549450549
+"601","Participant14_Thomas_active_version3","Chat GPT characters",1,1,"SPR+","Enabler",91,1.0989010989011
+"649","Participant14_Thomas_active_version3","Chat GPT characters",1,2,"Skills+","Enabler",91,2.1978021978022
+"697","Participant14_Thomas_active_version3","Chat GPT characters",1,3,"BR-","Barrier",91,3.2967032967033
+"745","Participant14_Thomas_active_version3","Chat GPT characters",1,7,"BaCap-","Barrier",91,7.69230769230769
+"793","Participant14_Thomas_active_version3","Chat GPT characters",1,10,"BaCon-","Barrier",91,10.989010989011
+"841","Participant14_Thomas_active_version3","Chat GPT characters",1,2,"ECR-","Barrier",91,2.1978021978022
+"889","Participant14_Thomas_active_version3","Chat GPT characters",1,1,"Emotion-","Barrier",91,1.0989010989011
+"937","Participant14_Thomas_active_version3","Chat GPT characters",1,4,"Goals-","Barrier",91,4.3956043956044
+"985","Participant14_Thomas_active_version3","Chat GPT characters",1,0,"Intention-","Barrier",91,0
+"1033","Participant14_Thomas_active_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",91,0
+"1081","Participant14_Thomas_active_version3","Chat GPT characters",1,2,"MADP-","Barrier",91,2.1978021978022
+"1129","Participant14_Thomas_active_version3","Chat GPT characters",1,0,"Optimism-","Barrier",91,0
+"1177","Participant14_Thomas_active_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",91,0
+"1225","Participant14_Thomas_active_version3","Chat GPT characters",1,0,"SI-","Barrier",91,0
+"1273","Participant14_Thomas_active_version3","Chat GPT characters",1,0,"SPR-","Barrier",91,0
+"1321","Participant14_Thomas_active_version3","Chat GPT characters",1,1,"Skills-","Barrier",91,1.0989010989011
+"26","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,5,"BR+","Enabler",86,5.81395348837209
+"74","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,0,"BaCap+","Enabler",86,0
+"122","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,11,"BaCon+","Enabler",86,12.7906976744186
+"170","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,2,"ECR+","Enabler",86,2.32558139534884
+"218","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,1,"Emotion+","Enabler",86,1.16279069767442
+"266","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,1,"Goals+","Enabler",86,1.16279069767442
+"314","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,0,"Intention+","Enabler",86,0
+"362","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,0,"Knowledge+","Enabler",86,0
+"410","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,0,"MADP+","Enabler",86,0
+"458","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,5,"Optimism+","Enabler",86,5.81395348837209
+"506","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,1,"Reinforcement+","Enabler",86,1.16279069767442
+"554","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,14,"SI+","Enabler",86,16.2790697674419
+"602","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,0,"SPR+","Enabler",86,0
+"650","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,1,"Skills+","Enabler",86,1.16279069767442
+"698","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,2,"BR-","Barrier",86,2.32558139534884
+"746","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,8,"BaCap-","Barrier",86,9.30232558139535
+"794","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,13,"BaCon-","Barrier",86,15.1162790697674
+"842","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,7,"ECR-","Barrier",86,8.13953488372093
+"890","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,4,"Emotion-","Barrier",86,4.65116279069767
+"938","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,5,"Goals-","Barrier",86,5.81395348837209
+"986","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,0,"Intention-","Barrier",86,0
+"1034","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",86,0
+"1082","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,3,"MADP-","Barrier",86,3.48837209302326
+"1130","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,1,"Optimism-","Barrier",86,1.16279069767442
+"1178","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",86,0
+"1226","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,0,"SI-","Barrier",86,0
+"1274","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,1,"SPR-","Barrier",86,1.16279069767442
+"1322","Participant14_Thomas_sedentary_version3","Chat GPT characters",0,1,"Skills-","Barrier",86,1.16279069767442
+"27","Participant15_active_Fares_version3","Chat GPT characters",1,23,"BR+","Enabler",101,22.7722772277228
+"75","Participant15_active_Fares_version3","Chat GPT characters",1,1,"BaCap+","Enabler",101,0.99009900990099
+"123","Participant15_active_Fares_version3","Chat GPT characters",1,19,"BaCon+","Enabler",101,18.8118811881188
+"171","Participant15_active_Fares_version3","Chat GPT characters",1,4,"ECR+","Enabler",101,3.96039603960396
+"219","Participant15_active_Fares_version3","Chat GPT characters",1,1,"Emotion+","Enabler",101,0.99009900990099
+"267","Participant15_active_Fares_version3","Chat GPT characters",1,7,"Goals+","Enabler",101,6.93069306930693
+"315","Participant15_active_Fares_version3","Chat GPT characters",1,0,"Intention+","Enabler",101,0
+"363","Participant15_active_Fares_version3","Chat GPT characters",1,1,"Knowledge+","Enabler",101,0.99009900990099
+"411","Participant15_active_Fares_version3","Chat GPT characters",1,1,"MADP+","Enabler",101,0.99009900990099
+"459","Participant15_active_Fares_version3","Chat GPT characters",1,2,"Optimism+","Enabler",101,1.98019801980198
+"507","Participant15_active_Fares_version3","Chat GPT characters",1,2,"Reinforcement+","Enabler",101,1.98019801980198
+"555","Participant15_active_Fares_version3","Chat GPT characters",1,12,"SI+","Enabler",101,11.8811881188119
+"603","Participant15_active_Fares_version3","Chat GPT characters",1,0,"SPR+","Enabler",101,0
+"651","Participant15_active_Fares_version3","Chat GPT characters",1,0,"Skills+","Enabler",101,0
+"699","Participant15_active_Fares_version3","Chat GPT characters",1,0,"BR-","Barrier",101,0
+"747","Participant15_active_Fares_version3","Chat GPT characters",1,9,"BaCap-","Barrier",101,8.91089108910891
+"795","Participant15_active_Fares_version3","Chat GPT characters",1,11,"BaCon-","Barrier",101,10.8910891089109
+"843","Participant15_active_Fares_version3","Chat GPT characters",1,3,"ECR-","Barrier",101,2.97029702970297
+"891","Participant15_active_Fares_version3","Chat GPT characters",1,2,"Emotion-","Barrier",101,1.98019801980198
+"939","Participant15_active_Fares_version3","Chat GPT characters",1,2,"Goals-","Barrier",101,1.98019801980198
+"987","Participant15_active_Fares_version3","Chat GPT characters",1,0,"Intention-","Barrier",101,0
+"1035","Participant15_active_Fares_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",101,0
+"1083","Participant15_active_Fares_version3","Chat GPT characters",1,0,"MADP-","Barrier",101,0
+"1131","Participant15_active_Fares_version3","Chat GPT characters",1,0,"Optimism-","Barrier",101,0
+"1179","Participant15_active_Fares_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",101,0
+"1227","Participant15_active_Fares_version3","Chat GPT characters",1,0,"SI-","Barrier",101,0
+"1275","Participant15_active_Fares_version3","Chat GPT characters",1,0,"SPR-","Barrier",101,0
+"1323","Participant15_active_Fares_version3","Chat GPT characters",1,1,"Skills-","Barrier",101,0.99009900990099
+"28","Participant15_sedentary_Fares_version3","Chat GPT characters",0,3,"BR+","Enabler",65,4.61538461538462
+"76","Participant15_sedentary_Fares_version3","Chat GPT characters",0,1,"BaCap+","Enabler",65,1.53846153846154
+"124","Participant15_sedentary_Fares_version3","Chat GPT characters",0,15,"BaCon+","Enabler",65,23.0769230769231
+"172","Participant15_sedentary_Fares_version3","Chat GPT characters",0,1,"ECR+","Enabler",65,1.53846153846154
+"220","Participant15_sedentary_Fares_version3","Chat GPT characters",0,1,"Emotion+","Enabler",65,1.53846153846154
+"268","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"Goals+","Enabler",65,0
+"316","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"Intention+","Enabler",65,0
+"364","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"Knowledge+","Enabler",65,0
+"412","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"MADP+","Enabler",65,0
+"460","Participant15_sedentary_Fares_version3","Chat GPT characters",0,1,"Optimism+","Enabler",65,1.53846153846154
+"508","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"Reinforcement+","Enabler",65,0
+"556","Participant15_sedentary_Fares_version3","Chat GPT characters",0,12,"SI+","Enabler",65,18.4615384615385
+"604","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"SPR+","Enabler",65,0
+"652","Participant15_sedentary_Fares_version3","Chat GPT characters",0,1,"Skills+","Enabler",65,1.53846153846154
+"700","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"BR-","Barrier",65,0
+"748","Participant15_sedentary_Fares_version3","Chat GPT characters",0,11,"BaCap-","Barrier",65,16.9230769230769
+"796","Participant15_sedentary_Fares_version3","Chat GPT characters",0,3,"BaCon-","Barrier",65,4.61538461538462
+"844","Participant15_sedentary_Fares_version3","Chat GPT characters",0,7,"ECR-","Barrier",65,10.7692307692308
+"892","Participant15_sedentary_Fares_version3","Chat GPT characters",0,1,"Emotion-","Barrier",65,1.53846153846154
+"940","Participant15_sedentary_Fares_version3","Chat GPT characters",0,1,"Goals-","Barrier",65,1.53846153846154
+"988","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"Intention-","Barrier",65,0
+"1036","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",65,0
+"1084","Participant15_sedentary_Fares_version3","Chat GPT characters",0,3,"MADP-","Barrier",65,4.61538461538462
+"1132","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"Optimism-","Barrier",65,0
+"1180","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",65,0
+"1228","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"SI-","Barrier",65,0
+"1276","Participant15_sedentary_Fares_version3","Chat GPT characters",0,0,"SPR-","Barrier",65,0
+"1324","Participant15_sedentary_Fares_version3","Chat GPT characters",0,4,"Skills-","Barrier",65,6.15384615384615
+"29","Participant16_Mark_sedentary_version3","Chat GPT characters",0,6,"BR+","Enabler",59,10.1694915254237
+"77","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"BaCap+","Enabler",59,0
+"125","Participant16_Mark_sedentary_version3","Chat GPT characters",0,6,"BaCon+","Enabler",59,10.1694915254237
+"173","Participant16_Mark_sedentary_version3","Chat GPT characters",0,1,"ECR+","Enabler",59,1.69491525423729
+"221","Participant16_Mark_sedentary_version3","Chat GPT characters",0,1,"Emotion+","Enabler",59,1.69491525423729
+"269","Participant16_Mark_sedentary_version3","Chat GPT characters",0,2,"Goals+","Enabler",59,3.38983050847458
+"317","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"Intention+","Enabler",59,0
+"365","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"Knowledge+","Enabler",59,0
+"413","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"MADP+","Enabler",59,0
+"461","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"Optimism+","Enabler",59,0
+"509","Participant16_Mark_sedentary_version3","Chat GPT characters",0,3,"Reinforcement+","Enabler",59,5.08474576271187
+"557","Participant16_Mark_sedentary_version3","Chat GPT characters",0,8,"SI+","Enabler",59,13.5593220338983
+"605","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"SPR+","Enabler",59,0
+"653","Participant16_Mark_sedentary_version3","Chat GPT characters",0,1,"Skills+","Enabler",59,1.69491525423729
+"701","Participant16_Mark_sedentary_version3","Chat GPT characters",0,1,"BR-","Barrier",59,1.69491525423729
+"749","Participant16_Mark_sedentary_version3","Chat GPT characters",0,14,"BaCap-","Barrier",59,23.728813559322
+"797","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"BaCon-","Barrier",59,0
+"845","Participant16_Mark_sedentary_version3","Chat GPT characters",0,12,"ECR-","Barrier",59,20.3389830508475
+"893","Participant16_Mark_sedentary_version3","Chat GPT characters",0,1,"Emotion-","Barrier",59,1.69491525423729
+"941","Participant16_Mark_sedentary_version3","Chat GPT characters",0,1,"Goals-","Barrier",59,1.69491525423729
+"989","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"Intention-","Barrier",59,0
+"1037","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",59,0
+"1085","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"MADP-","Barrier",59,0
+"1133","Participant16_Mark_sedentary_version3","Chat GPT characters",0,1,"Optimism-","Barrier",59,1.69491525423729
+"1181","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",59,0
+"1229","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"SI-","Barrier",59,0
+"1277","Participant16_Mark_sedentary_version3","Chat GPT characters",0,0,"SPR-","Barrier",59,0
+"1325","Participant16_Mark_sedentary_version3","Chat GPT characters",0,1,"Skills-","Barrier",59,1.69491525423729
+"30","Participant16_active_mark_version3","Chat GPT characters",1,13,"BR+","Enabler",64,20.3125
+"78","Participant16_active_mark_version3","Chat GPT characters",1,1,"BaCap+","Enabler",64,1.5625
+"126","Participant16_active_mark_version3","Chat GPT characters",1,12,"BaCon+","Enabler",64,18.75
+"174","Participant16_active_mark_version3","Chat GPT characters",1,3,"ECR+","Enabler",64,4.6875
+"222","Participant16_active_mark_version3","Chat GPT characters",1,1,"Emotion+","Enabler",64,1.5625
+"270","Participant16_active_mark_version3","Chat GPT characters",1,5,"Goals+","Enabler",64,7.8125
+"318","Participant16_active_mark_version3","Chat GPT characters",1,0,"Intention+","Enabler",64,0
+"366","Participant16_active_mark_version3","Chat GPT characters",1,0,"Knowledge+","Enabler",64,0
+"414","Participant16_active_mark_version3","Chat GPT characters",1,0,"MADP+","Enabler",64,0
+"462","Participant16_active_mark_version3","Chat GPT characters",1,1,"Optimism+","Enabler",64,1.5625
+"510","Participant16_active_mark_version3","Chat GPT characters",1,0,"Reinforcement+","Enabler",64,0
+"558","Participant16_active_mark_version3","Chat GPT characters",1,6,"SI+","Enabler",64,9.375
+"606","Participant16_active_mark_version3","Chat GPT characters",1,0,"SPR+","Enabler",64,0
+"654","Participant16_active_mark_version3","Chat GPT characters",1,1,"Skills+","Enabler",64,1.5625
+"702","Participant16_active_mark_version3","Chat GPT characters",1,1,"BR-","Barrier",64,1.5625
+"750","Participant16_active_mark_version3","Chat GPT characters",1,11,"BaCap-","Barrier",64,17.1875
+"798","Participant16_active_mark_version3","Chat GPT characters",1,5,"BaCon-","Barrier",64,7.8125
+"846","Participant16_active_mark_version3","Chat GPT characters",1,1,"ECR-","Barrier",64,1.5625
+"894","Participant16_active_mark_version3","Chat GPT characters",1,1,"Emotion-","Barrier",64,1.5625
+"942","Participant16_active_mark_version3","Chat GPT characters",1,0,"Goals-","Barrier",64,0
+"990","Participant16_active_mark_version3","Chat GPT characters",1,0,"Intention-","Barrier",64,0
+"1038","Participant16_active_mark_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",64,0
+"1086","Participant16_active_mark_version3","Chat GPT characters",1,1,"MADP-","Barrier",64,1.5625
+"1134","Participant16_active_mark_version3","Chat GPT characters",1,0,"Optimism-","Barrier",64,0
+"1182","Participant16_active_mark_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",64,0
+"1230","Participant16_active_mark_version3","Chat GPT characters",1,0,"SI-","Barrier",64,0
+"1278","Participant16_active_mark_version3","Chat GPT characters",1,0,"SPR-","Barrier",64,0
+"1326","Participant16_active_mark_version3","Chat GPT characters",1,1,"Skills-","Barrier",64,1.5625
+"31","Participant1_active_Robert_version3","Chat GPT characters",1,16,"BR+","Enabler",125,12.8
+"79","Participant1_active_Robert_version3","Chat GPT characters",1,3,"BaCap+","Enabler",125,2.4
+"127","Participant1_active_Robert_version3","Chat GPT characters",1,25,"BaCon+","Enabler",125,20
+"175","Participant1_active_Robert_version3","Chat GPT characters",1,14,"ECR+","Enabler",125,11.2
+"223","Participant1_active_Robert_version3","Chat GPT characters",1,3,"Emotion+","Enabler",125,2.4
+"271","Participant1_active_Robert_version3","Chat GPT characters",1,12,"Goals+","Enabler",125,9.6
+"319","Participant1_active_Robert_version3","Chat GPT characters",1,0,"Intention+","Enabler",125,0
+"367","Participant1_active_Robert_version3","Chat GPT characters",1,1,"Knowledge+","Enabler",125,0.8
+"415","Participant1_active_Robert_version3","Chat GPT characters",1,0,"MADP+","Enabler",125,0
+"463","Participant1_active_Robert_version3","Chat GPT characters",1,3,"Optimism+","Enabler",125,2.4
+"511","Participant1_active_Robert_version3","Chat GPT characters",1,5,"Reinforcement+","Enabler",125,4
+"559","Participant1_active_Robert_version3","Chat GPT characters",1,6,"SI+","Enabler",125,4.8
+"607","Participant1_active_Robert_version3","Chat GPT characters",1,1,"SPR+","Enabler",125,0.8
+"655","Participant1_active_Robert_version3","Chat GPT characters",1,2,"Skills+","Enabler",125,1.6
+"703","Participant1_active_Robert_version3","Chat GPT characters",1,0,"BR-","Barrier",125,0
+"751","Participant1_active_Robert_version3","Chat GPT characters",1,18,"BaCap-","Barrier",125,14.4
+"799","Participant1_active_Robert_version3","Chat GPT characters",1,6,"BaCon-","Barrier",125,4.8
+"847","Participant1_active_Robert_version3","Chat GPT characters",1,1,"ECR-","Barrier",125,0.8
+"895","Participant1_active_Robert_version3","Chat GPT characters",1,2,"Emotion-","Barrier",125,1.6
+"943","Participant1_active_Robert_version3","Chat GPT characters",1,3,"Goals-","Barrier",125,2.4
+"991","Participant1_active_Robert_version3","Chat GPT characters",1,0,"Intention-","Barrier",125,0
+"1039","Participant1_active_Robert_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",125,0
+"1087","Participant1_active_Robert_version3","Chat GPT characters",1,3,"MADP-","Barrier",125,2.4
+"1135","Participant1_active_Robert_version3","Chat GPT characters",1,0,"Optimism-","Barrier",125,0
+"1183","Participant1_active_Robert_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",125,0
+"1231","Participant1_active_Robert_version3","Chat GPT characters",1,0,"SI-","Barrier",125,0
+"1279","Participant1_active_Robert_version3","Chat GPT characters",1,0,"SPR-","Barrier",125,0
+"1327","Participant1_active_Robert_version3","Chat GPT characters",1,1,"Skills-","Barrier",125,0.8
+"32","Participant1_sedentary_Robert_version3","Chat GPT characters",0,9,"BR+","Enabler",67,13.4328358208955
+"80","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"BaCap+","Enabler",67,0
+"128","Participant1_sedentary_Robert_version3","Chat GPT characters",0,3,"BaCon+","Enabler",67,4.47761194029851
+"176","Participant1_sedentary_Robert_version3","Chat GPT characters",0,2,"ECR+","Enabler",67,2.98507462686567
+"224","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"Emotion+","Enabler",67,0
+"272","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"Goals+","Enabler",67,0
+"320","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"Intention+","Enabler",67,0
+"368","Participant1_sedentary_Robert_version3","Chat GPT characters",0,1,"Knowledge+","Enabler",67,1.49253731343284
+"416","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"MADP+","Enabler",67,0
+"464","Participant1_sedentary_Robert_version3","Chat GPT characters",0,2,"Optimism+","Enabler",67,2.98507462686567
+"512","Participant1_sedentary_Robert_version3","Chat GPT characters",0,1,"Reinforcement+","Enabler",67,1.49253731343284
+"560","Participant1_sedentary_Robert_version3","Chat GPT characters",0,7,"SI+","Enabler",67,10.4477611940298
+"608","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"SPR+","Enabler",67,0
+"656","Participant1_sedentary_Robert_version3","Chat GPT characters",0,1,"Skills+","Enabler",67,1.49253731343284
+"704","Participant1_sedentary_Robert_version3","Chat GPT characters",0,4,"BR-","Barrier",67,5.97014925373134
+"752","Participant1_sedentary_Robert_version3","Chat GPT characters",0,13,"BaCap-","Barrier",67,19.4029850746269
+"800","Participant1_sedentary_Robert_version3","Chat GPT characters",0,6,"BaCon-","Barrier",67,8.95522388059701
+"848","Participant1_sedentary_Robert_version3","Chat GPT characters",0,10,"ECR-","Barrier",67,14.9253731343284
+"896","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"Emotion-","Barrier",67,0
+"944","Participant1_sedentary_Robert_version3","Chat GPT characters",0,4,"Goals-","Barrier",67,5.97014925373134
+"992","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"Intention-","Barrier",67,0
+"1040","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",67,0
+"1088","Participant1_sedentary_Robert_version3","Chat GPT characters",0,2,"MADP-","Barrier",67,2.98507462686567
+"1136","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"Optimism-","Barrier",67,0
+"1184","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",67,0
+"1232","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"SI-","Barrier",67,0
+"1280","Participant1_sedentary_Robert_version3","Chat GPT characters",0,0,"SPR-","Barrier",67,0
+"1328","Participant1_sedentary_Robert_version3","Chat GPT characters",0,2,"Skills-","Barrier",67,2.98507462686567
+"33","Participant2_James_active_version3","Chat GPT characters",1,21,"BR+","Enabler",111,18.9189189189189
+"81","Participant2_James_active_version3","Chat GPT characters",1,2,"BaCap+","Enabler",111,1.8018018018018
+"129","Participant2_James_active_version3","Chat GPT characters",1,13,"BaCon+","Enabler",111,11.7117117117117
+"177","Participant2_James_active_version3","Chat GPT characters",1,3,"ECR+","Enabler",111,2.7027027027027
+"225","Participant2_James_active_version3","Chat GPT characters",1,1,"Emotion+","Enabler",111,0.900900900900901
+"273","Participant2_James_active_version3","Chat GPT characters",1,12,"Goals+","Enabler",111,10.8108108108108
+"321","Participant2_James_active_version3","Chat GPT characters",1,0,"Intention+","Enabler",111,0
+"369","Participant2_James_active_version3","Chat GPT characters",1,0,"Knowledge+","Enabler",111,0
+"417","Participant2_James_active_version3","Chat GPT characters",1,0,"MADP+","Enabler",111,0
+"465","Participant2_James_active_version3","Chat GPT characters",1,9,"Optimism+","Enabler",111,8.10810810810811
+"513","Participant2_James_active_version3","Chat GPT characters",1,9,"Reinforcement+","Enabler",111,8.10810810810811
+"561","Participant2_James_active_version3","Chat GPT characters",1,12,"SI+","Enabler",111,10.8108108108108
+"609","Participant2_James_active_version3","Chat GPT characters",1,0,"SPR+","Enabler",111,0
+"657","Participant2_James_active_version3","Chat GPT characters",1,1,"Skills+","Enabler",111,0.900900900900901
+"705","Participant2_James_active_version3","Chat GPT characters",1,2,"BR-","Barrier",111,1.8018018018018
+"753","Participant2_James_active_version3","Chat GPT characters",1,3,"BaCap-","Barrier",111,2.7027027027027
+"801","Participant2_James_active_version3","Chat GPT characters",1,4,"BaCon-","Barrier",111,3.6036036036036
+"849","Participant2_James_active_version3","Chat GPT characters",1,8,"ECR-","Barrier",111,7.20720720720721
+"897","Participant2_James_active_version3","Chat GPT characters",1,1,"Emotion-","Barrier",111,0.900900900900901
+"945","Participant2_James_active_version3","Chat GPT characters",1,3,"Goals-","Barrier",111,2.7027027027027
+"993","Participant2_James_active_version3","Chat GPT characters",1,0,"Intention-","Barrier",111,0
+"1041","Participant2_James_active_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",111,0
+"1089","Participant2_James_active_version3","Chat GPT characters",1,3,"MADP-","Barrier",111,2.7027027027027
+"1137","Participant2_James_active_version3","Chat GPT characters",1,2,"Optimism-","Barrier",111,1.8018018018018
+"1185","Participant2_James_active_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",111,0
+"1233","Participant2_James_active_version3","Chat GPT characters",1,0,"SI-","Barrier",111,0
+"1281","Participant2_James_active_version3","Chat GPT characters",1,0,"SPR-","Barrier",111,0
+"1329","Participant2_James_active_version3","Chat GPT characters",1,2,"Skills-","Barrier",111,1.8018018018018
+"34","Participant2_sedentary_james_version3","Chat GPT characters",0,7,"BR+","Enabler",88,7.95454545454545
+"82","Participant2_sedentary_james_version3","Chat GPT characters",0,0,"BaCap+","Enabler",88,0
+"130","Participant2_sedentary_james_version3","Chat GPT characters",0,10,"BaCon+","Enabler",88,11.3636363636364
+"178","Participant2_sedentary_james_version3","Chat GPT characters",0,0,"ECR+","Enabler",88,0
+"226","Participant2_sedentary_james_version3","Chat GPT characters",0,3,"Emotion+","Enabler",88,3.40909090909091
+"274","Participant2_sedentary_james_version3","Chat GPT characters",0,2,"Goals+","Enabler",88,2.27272727272727
+"322","Participant2_sedentary_james_version3","Chat GPT characters",0,2,"Intention+","Enabler",88,2.27272727272727
+"370","Participant2_sedentary_james_version3","Chat GPT characters",0,0,"Knowledge+","Enabler",88,0
+"418","Participant2_sedentary_james_version3","Chat GPT characters",0,0,"MADP+","Enabler",88,0
+"466","Participant2_sedentary_james_version3","Chat GPT characters",0,3,"Optimism+","Enabler",88,3.40909090909091
+"514","Participant2_sedentary_james_version3","Chat GPT characters",0,2,"Reinforcement+","Enabler",88,2.27272727272727
+"562","Participant2_sedentary_james_version3","Chat GPT characters",0,8,"SI+","Enabler",88,9.09090909090909
+"610","Participant2_sedentary_james_version3","Chat GPT characters",0,0,"SPR+","Enabler",88,0
+"658","Participant2_sedentary_james_version3","Chat GPT characters",0,0,"Skills+","Enabler",88,0
+"706","Participant2_sedentary_james_version3","Chat GPT characters",0,2,"BR-","Barrier",88,2.27272727272727
+"754","Participant2_sedentary_james_version3","Chat GPT characters",0,21,"BaCap-","Barrier",88,23.8636363636364
+"802","Participant2_sedentary_james_version3","Chat GPT characters",0,10,"BaCon-","Barrier",88,11.3636363636364
+"850","Participant2_sedentary_james_version3","Chat GPT characters",0,7,"ECR-","Barrier",88,7.95454545454545
+"898","Participant2_sedentary_james_version3","Chat GPT characters",0,2,"Emotion-","Barrier",88,2.27272727272727
+"946","Participant2_sedentary_james_version3","Chat GPT characters",0,4,"Goals-","Barrier",88,4.54545454545455
+"994","Participant2_sedentary_james_version3","Chat GPT characters",0,0,"Intention-","Barrier",88,0
+"1042","Participant2_sedentary_james_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",88,0
+"1090","Participant2_sedentary_james_version3","Chat GPT characters",0,1,"MADP-","Barrier",88,1.13636363636364
+"1138","Participant2_sedentary_james_version3","Chat GPT characters",0,0,"Optimism-","Barrier",88,0
+"1186","Participant2_sedentary_james_version3","Chat GPT characters",0,1,"Reinforcement-","Barrier",88,1.13636363636364
+"1234","Participant2_sedentary_james_version3","Chat GPT characters",0,0,"SI-","Barrier",88,0
+"1282","Participant2_sedentary_james_version3","Chat GPT characters",0,0,"SPR-","Barrier",88,0
+"1330","Participant2_sedentary_james_version3","Chat GPT characters",0,3,"Skills-","Barrier",88,3.40909090909091
+"35","Participant3_David_active_version3","Chat GPT characters",1,19,"BR+","Enabler",100,19
+"83","Participant3_David_active_version3","Chat GPT characters",1,2,"BaCap+","Enabler",100,2
+"131","Participant3_David_active_version3","Chat GPT characters",1,17,"BaCon+","Enabler",100,17
+"179","Participant3_David_active_version3","Chat GPT characters",1,4,"ECR+","Enabler",100,4
+"227","Participant3_David_active_version3","Chat GPT characters",1,1,"Emotion+","Enabler",100,1
+"275","Participant3_David_active_version3","Chat GPT characters",1,10,"Goals+","Enabler",100,10
+"323","Participant3_David_active_version3","Chat GPT characters",1,0,"Intention+","Enabler",100,0
+"371","Participant3_David_active_version3","Chat GPT characters",1,0,"Knowledge+","Enabler",100,0
+"419","Participant3_David_active_version3","Chat GPT characters",1,0,"MADP+","Enabler",100,0
+"467","Participant3_David_active_version3","Chat GPT characters",1,3,"Optimism+","Enabler",100,3
+"515","Participant3_David_active_version3","Chat GPT characters",1,6,"Reinforcement+","Enabler",100,6
+"563","Participant3_David_active_version3","Chat GPT characters",1,6,"SI+","Enabler",100,6
+"611","Participant3_David_active_version3","Chat GPT characters",1,0,"SPR+","Enabler",100,0
+"659","Participant3_David_active_version3","Chat GPT characters",1,1,"Skills+","Enabler",100,1
+"707","Participant3_David_active_version3","Chat GPT characters",1,0,"BR-","Barrier",100,0
+"755","Participant3_David_active_version3","Chat GPT characters",1,12,"BaCap-","Barrier",100,12
+"803","Participant3_David_active_version3","Chat GPT characters",1,6,"BaCon-","Barrier",100,6
+"851","Participant3_David_active_version3","Chat GPT characters",1,2,"ECR-","Barrier",100,2
+"899","Participant3_David_active_version3","Chat GPT characters",1,4,"Emotion-","Barrier",100,4
+"947","Participant3_David_active_version3","Chat GPT characters",1,3,"Goals-","Barrier",100,3
+"995","Participant3_David_active_version3","Chat GPT characters",1,0,"Intention-","Barrier",100,0
+"1043","Participant3_David_active_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",100,0
+"1091","Participant3_David_active_version3","Chat GPT characters",1,1,"MADP-","Barrier",100,1
+"1139","Participant3_David_active_version3","Chat GPT characters",1,0,"Optimism-","Barrier",100,0
+"1187","Participant3_David_active_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",100,0
+"1235","Participant3_David_active_version3","Chat GPT characters",1,0,"SI-","Barrier",100,0
+"1283","Participant3_David_active_version3","Chat GPT characters",1,0,"SPR-","Barrier",100,0
+"1331","Participant3_David_active_version3","Chat GPT characters",1,3,"Skills-","Barrier",100,3
+"36","Participant3_David_sedentary_version3","Chat GPT characters",0,6,"BR+","Enabler",55,10.9090909090909
+"84","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"BaCap+","Enabler",55,0
+"132","Participant3_David_sedentary_version3","Chat GPT characters",0,8,"BaCon+","Enabler",55,14.5454545454545
+"180","Participant3_David_sedentary_version3","Chat GPT characters",0,3,"ECR+","Enabler",55,5.45454545454545
+"228","Participant3_David_sedentary_version3","Chat GPT characters",0,1,"Emotion+","Enabler",55,1.81818181818182
+"276","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"Goals+","Enabler",55,0
+"324","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"Intention+","Enabler",55,0
+"372","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"Knowledge+","Enabler",55,0
+"420","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"MADP+","Enabler",55,0
+"468","Participant3_David_sedentary_version3","Chat GPT characters",0,4,"Optimism+","Enabler",55,7.27272727272727
+"516","Participant3_David_sedentary_version3","Chat GPT characters",0,3,"Reinforcement+","Enabler",55,5.45454545454545
+"564","Participant3_David_sedentary_version3","Chat GPT characters",0,4,"SI+","Enabler",55,7.27272727272727
+"612","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"SPR+","Enabler",55,0
+"660","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"Skills+","Enabler",55,0
+"708","Participant3_David_sedentary_version3","Chat GPT characters",0,1,"BR-","Barrier",55,1.81818181818182
+"756","Participant3_David_sedentary_version3","Chat GPT characters",0,7,"BaCap-","Barrier",55,12.7272727272727
+"804","Participant3_David_sedentary_version3","Chat GPT characters",0,6,"BaCon-","Barrier",55,10.9090909090909
+"852","Participant3_David_sedentary_version3","Chat GPT characters",0,3,"ECR-","Barrier",55,5.45454545454545
+"900","Participant3_David_sedentary_version3","Chat GPT characters",0,1,"Emotion-","Barrier",55,1.81818181818182
+"948","Participant3_David_sedentary_version3","Chat GPT characters",0,4,"Goals-","Barrier",55,7.27272727272727
+"996","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"Intention-","Barrier",55,0
+"1044","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",55,0
+"1092","Participant3_David_sedentary_version3","Chat GPT characters",0,2,"MADP-","Barrier",55,3.63636363636364
+"1140","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"Optimism-","Barrier",55,0
+"1188","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",55,0
+"1236","Participant3_David_sedentary_version3","Chat GPT characters",0,0,"SI-","Barrier",55,0
+"1284","Participant3_David_sedentary_version3","Chat GPT characters",0,1,"SPR-","Barrier",55,1.81818181818182
+"1332","Participant3_David_sedentary_version3","Chat GPT characters",0,1,"Skills-","Barrier",55,1.81818181818182
+"37","Participant4_Nancy_active_version3","Chat GPT characters",1,15,"BR+","Enabler",68,22.0588235294118
+"85","Participant4_Nancy_active_version3","Chat GPT characters",1,1,"BaCap+","Enabler",68,1.47058823529412
+"133","Participant4_Nancy_active_version3","Chat GPT characters",1,11,"BaCon+","Enabler",68,16.1764705882353
+"181","Participant4_Nancy_active_version3","Chat GPT characters",1,2,"ECR+","Enabler",68,2.94117647058824
+"229","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"Emotion+","Enabler",68,0
+"277","Participant4_Nancy_active_version3","Chat GPT characters",1,4,"Goals+","Enabler",68,5.88235294117647
+"325","Participant4_Nancy_active_version3","Chat GPT characters",1,1,"Intention+","Enabler",68,1.47058823529412
+"373","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"Knowledge+","Enabler",68,0
+"421","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"MADP+","Enabler",68,0
+"469","Participant4_Nancy_active_version3","Chat GPT characters",1,1,"Optimism+","Enabler",68,1.47058823529412
+"517","Participant4_Nancy_active_version3","Chat GPT characters",1,2,"Reinforcement+","Enabler",68,2.94117647058824
+"565","Participant4_Nancy_active_version3","Chat GPT characters",1,6,"SI+","Enabler",68,8.82352941176471
+"613","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"SPR+","Enabler",68,0
+"661","Participant4_Nancy_active_version3","Chat GPT characters",1,3,"Skills+","Enabler",68,4.41176470588235
+"709","Participant4_Nancy_active_version3","Chat GPT characters",1,2,"BR-","Barrier",68,2.94117647058824
+"757","Participant4_Nancy_active_version3","Chat GPT characters",1,6,"BaCap-","Barrier",68,8.82352941176471
+"805","Participant4_Nancy_active_version3","Chat GPT characters",1,7,"BaCon-","Barrier",68,10.2941176470588
+"853","Participant4_Nancy_active_version3","Chat GPT characters",1,4,"ECR-","Barrier",68,5.88235294117647
+"901","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"Emotion-","Barrier",68,0
+"949","Participant4_Nancy_active_version3","Chat GPT characters",1,2,"Goals-","Barrier",68,2.94117647058824
+"997","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"Intention-","Barrier",68,0
+"1045","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",68,0
+"1093","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"MADP-","Barrier",68,0
+"1141","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"Optimism-","Barrier",68,0
+"1189","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",68,0
+"1237","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"SI-","Barrier",68,0
+"1285","Participant4_Nancy_active_version3","Chat GPT characters",1,0,"SPR-","Barrier",68,0
+"1333","Participant4_Nancy_active_version3","Chat GPT characters",1,1,"Skills-","Barrier",68,1.47058823529412
+"38","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,9,"BR+","Enabler",65,13.8461538461538
+"86","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"BaCap+","Enabler",65,0
+"134","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,10,"BaCon+","Enabler",65,15.3846153846154
+"182","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"ECR+","Enabler",65,0
+"230","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,1,"Emotion+","Enabler",65,1.53846153846154
+"278","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,3,"Goals+","Enabler",65,4.61538461538462
+"326","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,1,"Intention+","Enabler",65,1.53846153846154
+"374","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"Knowledge+","Enabler",65,0
+"422","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"MADP+","Enabler",65,0
+"470","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,3,"Optimism+","Enabler",65,4.61538461538462
+"518","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,1,"Reinforcement+","Enabler",65,1.53846153846154
+"566","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,9,"SI+","Enabler",65,13.8461538461538
+"614","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"SPR+","Enabler",65,0
+"662","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,1,"Skills+","Enabler",65,1.53846153846154
+"710","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"BR-","Barrier",65,0
+"758","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,9,"BaCap-","Barrier",65,13.8461538461538
+"806","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,8,"BaCon-","Barrier",65,12.3076923076923
+"854","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,5,"ECR-","Barrier",65,7.69230769230769
+"902","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,1,"Emotion-","Barrier",65,1.53846153846154
+"950","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,1,"Goals-","Barrier",65,1.53846153846154
+"998","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"Intention-","Barrier",65,0
+"1046","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",65,0
+"1094","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,1,"MADP-","Barrier",65,1.53846153846154
+"1142","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"Optimism-","Barrier",65,0
+"1190","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",65,0
+"1238","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"SI-","Barrier",65,0
+"1286","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,0,"SPR-","Barrier",65,0
+"1334","Participant4_Nancy_sedentary_version3","Chat GPT characters",0,2,"Skills-","Barrier",65,3.07692307692308
+"39","Participant5_active_Michael_verison3","Chat GPT characters",1,16,"BR+","Enabler",117,13.6752136752137
+"87","Participant5_active_Michael_verison3","Chat GPT characters",1,4,"BaCap+","Enabler",117,3.41880341880342
+"135","Participant5_active_Michael_verison3","Chat GPT characters",1,13,"BaCon+","Enabler",117,11.1111111111111
+"183","Participant5_active_Michael_verison3","Chat GPT characters",1,12,"ECR+","Enabler",117,10.2564102564103
+"231","Participant5_active_Michael_verison3","Chat GPT characters",1,1,"Emotion+","Enabler",117,0.854700854700855
+"279","Participant5_active_Michael_verison3","Chat GPT characters",1,10,"Goals+","Enabler",117,8.54700854700855
+"327","Participant5_active_Michael_verison3","Chat GPT characters",1,1,"Intention+","Enabler",117,0.854700854700855
+"375","Participant5_active_Michael_verison3","Chat GPT characters",1,4,"Knowledge+","Enabler",117,3.41880341880342
+"423","Participant5_active_Michael_verison3","Chat GPT characters",1,0,"MADP+","Enabler",117,0
+"471","Participant5_active_Michael_verison3","Chat GPT characters",1,4,"Optimism+","Enabler",117,3.41880341880342
+"519","Participant5_active_Michael_verison3","Chat GPT characters",1,4,"Reinforcement+","Enabler",117,3.41880341880342
+"567","Participant5_active_Michael_verison3","Chat GPT characters",1,10,"SI+","Enabler",117,8.54700854700855
+"615","Participant5_active_Michael_verison3","Chat GPT characters",1,0,"SPR+","Enabler",117,0
+"663","Participant5_active_Michael_verison3","Chat GPT characters",1,1,"Skills+","Enabler",117,0.854700854700855
+"711","Participant5_active_Michael_verison3","Chat GPT characters",1,3,"BR-","Barrier",117,2.56410256410256
+"759","Participant5_active_Michael_verison3","Chat GPT characters",1,6,"BaCap-","Barrier",117,5.12820512820513
+"807","Participant5_active_Michael_verison3","Chat GPT characters",1,9,"BaCon-","Barrier",117,7.69230769230769
+"855","Participant5_active_Michael_verison3","Chat GPT characters",1,7,"ECR-","Barrier",117,5.98290598290598
+"903","Participant5_active_Michael_verison3","Chat GPT characters",1,2,"Emotion-","Barrier",117,1.70940170940171
+"951","Participant5_active_Michael_verison3","Chat GPT characters",1,4,"Goals-","Barrier",117,3.41880341880342
+"999","Participant5_active_Michael_verison3","Chat GPT characters",1,0,"Intention-","Barrier",117,0
+"1047","Participant5_active_Michael_verison3","Chat GPT characters",1,2,"Knowledge-","Barrier",117,1.70940170940171
+"1095","Participant5_active_Michael_verison3","Chat GPT characters",1,2,"MADP-","Barrier",117,1.70940170940171
+"1143","Participant5_active_Michael_verison3","Chat GPT characters",1,0,"Optimism-","Barrier",117,0
+"1191","Participant5_active_Michael_verison3","Chat GPT characters",1,0,"Reinforcement-","Barrier",117,0
+"1239","Participant5_active_Michael_verison3","Chat GPT characters",1,0,"SI-","Barrier",117,0
+"1287","Participant5_active_Michael_verison3","Chat GPT characters",1,0,"SPR-","Barrier",117,0
+"1335","Participant5_active_Michael_verison3","Chat GPT characters",1,2,"Skills-","Barrier",117,1.70940170940171
+"40","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,5,"BR+","Enabler",71,7.04225352112676
+"88","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,0,"BaCap+","Enabler",71,0
+"136","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,12,"BaCon+","Enabler",71,16.9014084507042
+"184","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,5,"ECR+","Enabler",71,7.04225352112676
+"232","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,1,"Emotion+","Enabler",71,1.40845070422535
+"280","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,5,"Goals+","Enabler",71,7.04225352112676
+"328","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,2,"Intention+","Enabler",71,2.8169014084507
+"376","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,0,"Knowledge+","Enabler",71,0
+"424","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,0,"MADP+","Enabler",71,0
+"472","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,1,"Optimism+","Enabler",71,1.40845070422535
+"520","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,0,"Reinforcement+","Enabler",71,0
+"568","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,7,"SI+","Enabler",71,9.85915492957746
+"616","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,0,"SPR+","Enabler",71,0
+"664","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,3,"Skills+","Enabler",71,4.22535211267606
+"712","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,0,"BR-","Barrier",71,0
+"760","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,11,"BaCap-","Barrier",71,15.4929577464789
+"808","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,4,"BaCon-","Barrier",71,5.63380281690141
+"856","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,5,"ECR-","Barrier",71,7.04225352112676
+"904","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,4,"Emotion-","Barrier",71,5.63380281690141
+"952","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,0,"Goals-","Barrier",71,0
+"1000","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,0,"Intention-","Barrier",71,0
+"1048","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,2,"Knowledge-","Barrier",71,2.8169014084507
+"1096","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,2,"MADP-","Barrier",71,2.8169014084507
+"1144","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,1,"Optimism-","Barrier",71,1.40845070422535
+"1192","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",71,0
+"1240","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,0,"SI-","Barrier",71,0
+"1288","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,0,"SPR-","Barrier",71,0
+"1336","Participant5_sedentary_ Michael_version3","Chat GPT characters",0,1,"Skills-","Barrier",71,1.40845070422535
+"41","Participant6_Linda_sedentary_version3","Chat GPT characters",0,12,"BR+","Enabler",76,15.7894736842105
+"89","Participant6_Linda_sedentary_version3","Chat GPT characters",0,0,"BaCap+","Enabler",76,0
+"137","Participant6_Linda_sedentary_version3","Chat GPT characters",0,8,"BaCon+","Enabler",76,10.5263157894737
+"185","Participant6_Linda_sedentary_version3","Chat GPT characters",0,2,"ECR+","Enabler",76,2.63157894736842
+"233","Participant6_Linda_sedentary_version3","Chat GPT characters",0,1,"Emotion+","Enabler",76,1.31578947368421
+"281","Participant6_Linda_sedentary_version3","Chat GPT characters",0,1,"Goals+","Enabler",76,1.31578947368421
+"329","Participant6_Linda_sedentary_version3","Chat GPT characters",0,1,"Intention+","Enabler",76,1.31578947368421
+"377","Participant6_Linda_sedentary_version3","Chat GPT characters",0,1,"Knowledge+","Enabler",76,1.31578947368421
+"425","Participant6_Linda_sedentary_version3","Chat GPT characters",0,0,"MADP+","Enabler",76,0
+"473","Participant6_Linda_sedentary_version3","Chat GPT characters",0,3,"Optimism+","Enabler",76,3.94736842105263
+"521","Participant6_Linda_sedentary_version3","Chat GPT characters",0,2,"Reinforcement+","Enabler",76,2.63157894736842
+"569","Participant6_Linda_sedentary_version3","Chat GPT characters",0,10,"SI+","Enabler",76,13.1578947368421
+"617","Participant6_Linda_sedentary_version3","Chat GPT characters",0,0,"SPR+","Enabler",76,0
+"665","Participant6_Linda_sedentary_version3","Chat GPT characters",0,1,"Skills+","Enabler",76,1.31578947368421
+"713","Participant6_Linda_sedentary_version3","Chat GPT characters",0,1,"BR-","Barrier",76,1.31578947368421
+"761","Participant6_Linda_sedentary_version3","Chat GPT characters",0,10,"BaCap-","Barrier",76,13.1578947368421
+"809","Participant6_Linda_sedentary_version3","Chat GPT characters",0,3,"BaCon-","Barrier",76,3.94736842105263
+"857","Participant6_Linda_sedentary_version3","Chat GPT characters",0,6,"ECR-","Barrier",76,7.89473684210526
+"905","Participant6_Linda_sedentary_version3","Chat GPT characters",0,2,"Emotion-","Barrier",76,2.63157894736842
+"953","Participant6_Linda_sedentary_version3","Chat GPT characters",0,7,"Goals-","Barrier",76,9.21052631578947
+"1001","Participant6_Linda_sedentary_version3","Chat GPT characters",0,0,"Intention-","Barrier",76,0
+"1049","Participant6_Linda_sedentary_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",76,0
+"1097","Participant6_Linda_sedentary_version3","Chat GPT characters",0,4,"MADP-","Barrier",76,5.26315789473684
+"1145","Participant6_Linda_sedentary_version3","Chat GPT characters",0,0,"Optimism-","Barrier",76,0
+"1193","Participant6_Linda_sedentary_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",76,0
+"1241","Participant6_Linda_sedentary_version3","Chat GPT characters",0,0,"SI-","Barrier",76,0
+"1289","Participant6_Linda_sedentary_version3","Chat GPT characters",0,0,"SPR-","Barrier",76,0
+"1337","Participant6_Linda_sedentary_version3","Chat GPT characters",0,1,"Skills-","Barrier",76,1.31578947368421
+"42","Participant7_Mary_sedentary_version3","Chat GPT characters",0,23,"BR+","Enabler",104,22.1153846153846
+"90","Participant7_Mary_sedentary_version3","Chat GPT characters",0,0,"BaCap+","Enabler",104,0
+"138","Participant7_Mary_sedentary_version3","Chat GPT characters",0,10,"BaCon+","Enabler",104,9.61538461538462
+"186","Participant7_Mary_sedentary_version3","Chat GPT characters",0,2,"ECR+","Enabler",104,1.92307692307692
+"234","Participant7_Mary_sedentary_version3","Chat GPT characters",0,2,"Emotion+","Enabler",104,1.92307692307692
+"282","Participant7_Mary_sedentary_version3","Chat GPT characters",0,4,"Goals+","Enabler",104,3.84615384615385
+"330","Participant7_Mary_sedentary_version3","Chat GPT characters",0,3,"Intention+","Enabler",104,2.88461538461538
+"378","Participant7_Mary_sedentary_version3","Chat GPT characters",0,3,"Knowledge+","Enabler",104,2.88461538461538
+"426","Participant7_Mary_sedentary_version3","Chat GPT characters",0,0,"MADP+","Enabler",104,0
+"474","Participant7_Mary_sedentary_version3","Chat GPT characters",0,2,"Optimism+","Enabler",104,1.92307692307692
+"522","Participant7_Mary_sedentary_version3","Chat GPT characters",0,2,"Reinforcement+","Enabler",104,1.92307692307692
+"570","Participant7_Mary_sedentary_version3","Chat GPT characters",0,7,"SI+","Enabler",104,6.73076923076923
+"618","Participant7_Mary_sedentary_version3","Chat GPT characters",0,0,"SPR+","Enabler",104,0
+"666","Participant7_Mary_sedentary_version3","Chat GPT characters",0,1,"Skills+","Enabler",104,0.961538461538462
+"714","Participant7_Mary_sedentary_version3","Chat GPT characters",0,4,"BR-","Barrier",104,3.84615384615385
+"762","Participant7_Mary_sedentary_version3","Chat GPT characters",0,19,"BaCap-","Barrier",104,18.2692307692308
+"810","Participant7_Mary_sedentary_version3","Chat GPT characters",0,6,"BaCon-","Barrier",104,5.76923076923077
+"858","Participant7_Mary_sedentary_version3","Chat GPT characters",0,6,"ECR-","Barrier",104,5.76923076923077
+"906","Participant7_Mary_sedentary_version3","Chat GPT characters",0,2,"Emotion-","Barrier",104,1.92307692307692
+"954","Participant7_Mary_sedentary_version3","Chat GPT characters",0,3,"Goals-","Barrier",104,2.88461538461538
+"1002","Participant7_Mary_sedentary_version3","Chat GPT characters",0,0,"Intention-","Barrier",104,0
+"1050","Participant7_Mary_sedentary_version3","Chat GPT characters",0,1,"Knowledge-","Barrier",104,0.961538461538462
+"1098","Participant7_Mary_sedentary_version3","Chat GPT characters",0,2,"MADP-","Barrier",104,1.92307692307692
+"1146","Participant7_Mary_sedentary_version3","Chat GPT characters",0,1,"Optimism-","Barrier",104,0.961538461538462
+"1194","Participant7_Mary_sedentary_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",104,0
+"1242","Participant7_Mary_sedentary_version3","Chat GPT characters",0,0,"SI-","Barrier",104,0
+"1290","Participant7_Mary_sedentary_version3","Chat GPT characters",0,0,"SPR-","Barrier",104,0
+"1338","Participant7_Mary_sedentary_version3","Chat GPT characters",0,1,"Skills-","Barrier",104,0.961538461538462
+"43","Participant7_active_Mary_version3","Chat GPT characters",1,19,"BR+","Enabler",103,18.4466019417476
+"91","Participant7_active_Mary_version3","Chat GPT characters",1,3,"BaCap+","Enabler",103,2.9126213592233
+"139","Participant7_active_Mary_version3","Chat GPT characters",1,23,"BaCon+","Enabler",103,22.3300970873786
+"187","Participant7_active_Mary_version3","Chat GPT characters",1,3,"ECR+","Enabler",103,2.9126213592233
+"235","Participant7_active_Mary_version3","Chat GPT characters",1,0,"Emotion+","Enabler",103,0
+"283","Participant7_active_Mary_version3","Chat GPT characters",1,12,"Goals+","Enabler",103,11.6504854368932
+"331","Participant7_active_Mary_version3","Chat GPT characters",1,0,"Intention+","Enabler",103,0
+"379","Participant7_active_Mary_version3","Chat GPT characters",1,4,"Knowledge+","Enabler",103,3.88349514563107
+"427","Participant7_active_Mary_version3","Chat GPT characters",1,0,"MADP+","Enabler",103,0
+"475","Participant7_active_Mary_version3","Chat GPT characters",1,3,"Optimism+","Enabler",103,2.9126213592233
+"523","Participant7_active_Mary_version3","Chat GPT characters",1,2,"Reinforcement+","Enabler",103,1.94174757281553
+"571","Participant7_active_Mary_version3","Chat GPT characters",1,7,"SI+","Enabler",103,6.79611650485437
+"619","Participant7_active_Mary_version3","Chat GPT characters",1,0,"SPR+","Enabler",103,0
+"667","Participant7_active_Mary_version3","Chat GPT characters",1,2,"Skills+","Enabler",103,1.94174757281553
+"715","Participant7_active_Mary_version3","Chat GPT characters",1,0,"BR-","Barrier",103,0
+"763","Participant7_active_Mary_version3","Chat GPT characters",1,4,"BaCap-","Barrier",103,3.88349514563107
+"811","Participant7_active_Mary_version3","Chat GPT characters",1,2,"BaCon-","Barrier",103,1.94174757281553
+"859","Participant7_active_Mary_version3","Chat GPT characters",1,6,"ECR-","Barrier",103,5.8252427184466
+"907","Participant7_active_Mary_version3","Chat GPT characters",1,1,"Emotion-","Barrier",103,0.970873786407767
+"955","Participant7_active_Mary_version3","Chat GPT characters",1,4,"Goals-","Barrier",103,3.88349514563107
+"1003","Participant7_active_Mary_version3","Chat GPT characters",1,0,"Intention-","Barrier",103,0
+"1051","Participant7_active_Mary_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",103,0
+"1099","Participant7_active_Mary_version3","Chat GPT characters",1,4,"MADP-","Barrier",103,3.88349514563107
+"1147","Participant7_active_Mary_version3","Chat GPT characters",1,1,"Optimism-","Barrier",103,0.970873786407767
+"1195","Participant7_active_Mary_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",103,0
+"1243","Participant7_active_Mary_version3","Chat GPT characters",1,0,"SI-","Barrier",103,0
+"1291","Participant7_active_Mary_version3","Chat GPT characters",1,0,"SPR-","Barrier",103,0
+"1339","Participant7_active_Mary_version3","Chat GPT characters",1,3,"Skills-","Barrier",103,2.9126213592233
+"44","Participant8_active_John_version3","Chat GPT characters",1,15,"BR+","Enabler",69,21.7391304347826
+"92","Participant8_active_John_version3","Chat GPT characters",1,2,"BaCap+","Enabler",69,2.89855072463768
+"140","Participant8_active_John_version3","Chat GPT characters",1,13,"BaCon+","Enabler",69,18.8405797101449
+"188","Participant8_active_John_version3","Chat GPT characters",1,1,"ECR+","Enabler",69,1.44927536231884
+"236","Participant8_active_John_version3","Chat GPT characters",1,1,"Emotion+","Enabler",69,1.44927536231884
+"284","Participant8_active_John_version3","Chat GPT characters",1,6,"Goals+","Enabler",69,8.69565217391304
+"332","Participant8_active_John_version3","Chat GPT characters",1,1,"Intention+","Enabler",69,1.44927536231884
+"380","Participant8_active_John_version3","Chat GPT characters",1,1,"Knowledge+","Enabler",69,1.44927536231884
+"428","Participant8_active_John_version3","Chat GPT characters",1,0,"MADP+","Enabler",69,0
+"476","Participant8_active_John_version3","Chat GPT characters",1,6,"Optimism+","Enabler",69,8.69565217391304
+"524","Participant8_active_John_version3","Chat GPT characters",1,0,"Reinforcement+","Enabler",69,0
+"572","Participant8_active_John_version3","Chat GPT characters",1,6,"SI+","Enabler",69,8.69565217391304
+"620","Participant8_active_John_version3","Chat GPT characters",1,2,"SPR+","Enabler",69,2.89855072463768
+"668","Participant8_active_John_version3","Chat GPT characters",1,1,"Skills+","Enabler",69,1.44927536231884
+"716","Participant8_active_John_version3","Chat GPT characters",1,0,"BR-","Barrier",69,0
+"764","Participant8_active_John_version3","Chat GPT characters",1,3,"BaCap-","Barrier",69,4.34782608695652
+"812","Participant8_active_John_version3","Chat GPT characters",1,4,"BaCon-","Barrier",69,5.79710144927536
+"860","Participant8_active_John_version3","Chat GPT characters",1,1,"ECR-","Barrier",69,1.44927536231884
+"908","Participant8_active_John_version3","Chat GPT characters",1,2,"Emotion-","Barrier",69,2.89855072463768
+"956","Participant8_active_John_version3","Chat GPT characters",1,3,"Goals-","Barrier",69,4.34782608695652
+"1004","Participant8_active_John_version3","Chat GPT characters",1,0,"Intention-","Barrier",69,0
+"1052","Participant8_active_John_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",69,0
+"1100","Participant8_active_John_version3","Chat GPT characters",1,1,"MADP-","Barrier",69,1.44927536231884
+"1148","Participant8_active_John_version3","Chat GPT characters",1,0,"Optimism-","Barrier",69,0
+"1196","Participant8_active_John_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",69,0
+"1244","Participant8_active_John_version3","Chat GPT characters",1,0,"SI-","Barrier",69,0
+"1292","Participant8_active_John_version3","Chat GPT characters",1,0,"SPR-","Barrier",69,0
+"1340","Participant8_active_John_version3","Chat GPT characters",1,0,"Skills-","Barrier",69,0
+"45","Participant8_sedentary_john_version3","Chat GPT characters",0,6,"BR+","Enabler",50,12
+"93","Participant8_sedentary_john_version3","Chat GPT characters",0,1,"BaCap+","Enabler",50,2
+"141","Participant8_sedentary_john_version3","Chat GPT characters",0,8,"BaCon+","Enabler",50,16
+"189","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"ECR+","Enabler",50,0
+"237","Participant8_sedentary_john_version3","Chat GPT characters",0,1,"Emotion+","Enabler",50,2
+"285","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"Goals+","Enabler",50,0
+"333","Participant8_sedentary_john_version3","Chat GPT characters",0,1,"Intention+","Enabler",50,2
+"381","Participant8_sedentary_john_version3","Chat GPT characters",0,2,"Knowledge+","Enabler",50,4
+"429","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"MADP+","Enabler",50,0
+"477","Participant8_sedentary_john_version3","Chat GPT characters",0,2,"Optimism+","Enabler",50,4
+"525","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"Reinforcement+","Enabler",50,0
+"573","Participant8_sedentary_john_version3","Chat GPT characters",0,5,"SI+","Enabler",50,10
+"621","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"SPR+","Enabler",50,0
+"669","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"Skills+","Enabler",50,0
+"717","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"BR-","Barrier",50,0
+"765","Participant8_sedentary_john_version3","Chat GPT characters",0,5,"BaCap-","Barrier",50,10
+"813","Participant8_sedentary_john_version3","Chat GPT characters",0,7,"BaCon-","Barrier",50,14
+"861","Participant8_sedentary_john_version3","Chat GPT characters",0,2,"ECR-","Barrier",50,4
+"909","Participant8_sedentary_john_version3","Chat GPT characters",0,5,"Emotion-","Barrier",50,10
+"957","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"Goals-","Barrier",50,0
+"1005","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"Intention-","Barrier",50,0
+"1053","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",50,0
+"1101","Participant8_sedentary_john_version3","Chat GPT characters",0,3,"MADP-","Barrier",50,6
+"1149","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"Optimism-","Barrier",50,0
+"1197","Participant8_sedentary_john_version3","Chat GPT characters",0,1,"Reinforcement-","Barrier",50,2
+"1245","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"SI-","Barrier",50,0
+"1293","Participant8_sedentary_john_version3","Chat GPT characters",0,1,"SPR-","Barrier",50,2
+"1341","Participant8_sedentary_john_version3","Chat GPT characters",0,0,"Skills-","Barrier",50,0
+"46","Participant9_Muhammad_active_version3","Chat GPT characters",1,19,"BR+","Enabler",102,18.6274509803922
+"94","Participant9_Muhammad_active_version3","Chat GPT characters",1,2,"BaCap+","Enabler",102,1.96078431372549
+"142","Participant9_Muhammad_active_version3","Chat GPT characters",1,13,"BaCon+","Enabler",102,12.7450980392157
+"190","Participant9_Muhammad_active_version3","Chat GPT characters",1,0,"ECR+","Enabler",102,0
+"238","Participant9_Muhammad_active_version3","Chat GPT characters",1,1,"Emotion+","Enabler",102,0.980392156862745
+"286","Participant9_Muhammad_active_version3","Chat GPT characters",1,12,"Goals+","Enabler",102,11.7647058823529
+"334","Participant9_Muhammad_active_version3","Chat GPT characters",1,0,"Intention+","Enabler",102,0
+"382","Participant9_Muhammad_active_version3","Chat GPT characters",1,0,"Knowledge+","Enabler",102,0
+"430","Participant9_Muhammad_active_version3","Chat GPT characters",1,1,"MADP+","Enabler",102,0.980392156862745
+"478","Participant9_Muhammad_active_version3","Chat GPT characters",1,3,"Optimism+","Enabler",102,2.94117647058824
+"526","Participant9_Muhammad_active_version3","Chat GPT characters",1,4,"Reinforcement+","Enabler",102,3.92156862745098
+"574","Participant9_Muhammad_active_version3","Chat GPT characters",1,15,"SI+","Enabler",102,14.7058823529412
+"622","Participant9_Muhammad_active_version3","Chat GPT characters",1,2,"SPR+","Enabler",102,1.96078431372549
+"670","Participant9_Muhammad_active_version3","Chat GPT characters",1,1,"Skills+","Enabler",102,0.980392156862745
+"718","Participant9_Muhammad_active_version3","Chat GPT characters",1,0,"BR-","Barrier",102,0
+"766","Participant9_Muhammad_active_version3","Chat GPT characters",1,7,"BaCap-","Barrier",102,6.86274509803922
+"814","Participant9_Muhammad_active_version3","Chat GPT characters",1,10,"BaCon-","Barrier",102,9.80392156862745
+"862","Participant9_Muhammad_active_version3","Chat GPT characters",1,5,"ECR-","Barrier",102,4.90196078431373
+"910","Participant9_Muhammad_active_version3","Chat GPT characters",1,2,"Emotion-","Barrier",102,1.96078431372549
+"958","Participant9_Muhammad_active_version3","Chat GPT characters",1,2,"Goals-","Barrier",102,1.96078431372549
+"1006","Participant9_Muhammad_active_version3","Chat GPT characters",1,0,"Intention-","Barrier",102,0
+"1054","Participant9_Muhammad_active_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",102,0
+"1102","Participant9_Muhammad_active_version3","Chat GPT characters",1,0,"MADP-","Barrier",102,0
+"1150","Participant9_Muhammad_active_version3","Chat GPT characters",1,0,"Optimism-","Barrier",102,0
+"1198","Participant9_Muhammad_active_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",102,0
+"1246","Participant9_Muhammad_active_version3","Chat GPT characters",1,1,"SI-","Barrier",102,0.980392156862745
+"1294","Participant9_Muhammad_active_version3","Chat GPT characters",1,0,"SPR-","Barrier",102,0
+"1342","Participant9_Muhammad_active_version3","Chat GPT characters",1,2,"Skills-","Barrier",102,1.96078431372549
+"47","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,7,"BR+","Enabler",72,9.72222222222222
+"95","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"BaCap+","Enabler",72,0
+"143","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,11,"BaCon+","Enabler",72,15.2777777777778
+"191","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"ECR+","Enabler",72,0
+"239","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,1,"Emotion+","Enabler",72,1.38888888888889
+"287","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,1,"Goals+","Enabler",72,1.38888888888889
+"335","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,1,"Intention+","Enabler",72,1.38888888888889
+"383","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,1,"Knowledge+","Enabler",72,1.38888888888889
+"431","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"MADP+","Enabler",72,0
+"479","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,2,"Optimism+","Enabler",72,2.77777777777778
+"527","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,1,"Reinforcement+","Enabler",72,1.38888888888889
+"575","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,9,"SI+","Enabler",72,12.5
+"623","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"SPR+","Enabler",72,0
+"671","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"Skills+","Enabler",72,0
+"719","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"BR-","Barrier",72,0
+"767","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,10,"BaCap-","Barrier",72,13.8888888888889
+"815","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,9,"BaCon-","Barrier",72,12.5
+"863","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,3,"ECR-","Barrier",72,4.16666666666667
+"911","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,2,"Emotion-","Barrier",72,2.77777777777778
+"959","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,5,"Goals-","Barrier",72,6.94444444444444
+"1007","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"Intention-","Barrier",72,0
+"1055","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"Knowledge-","Barrier",72,0
+"1103","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,7,"MADP-","Barrier",72,9.72222222222222
+"1151","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"Optimism-","Barrier",72,0
+"1199","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"Reinforcement-","Barrier",72,0
+"1247","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"SI-","Barrier",72,0
+"1295","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,0,"SPR-","Barrier",72,0
+"1343","Participant9_sedentary_Muhammad_version3","Chat GPT characters",0,2,"Skills-","Barrier",72,2.77777777777778
+"48","Participant_6_Linda_active_version3","Chat GPT characters",1,16,"BR+","Enabler",97,16.4948453608247
+"96","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"BaCap+","Enabler",97,0
+"144","Participant_6_Linda_active_version3","Chat GPT characters",1,15,"BaCon+","Enabler",97,15.4639175257732
+"192","Participant_6_Linda_active_version3","Chat GPT characters",1,4,"ECR+","Enabler",97,4.12371134020619
+"240","Participant_6_Linda_active_version3","Chat GPT characters",1,1,"Emotion+","Enabler",97,1.03092783505155
+"288","Participant_6_Linda_active_version3","Chat GPT characters",1,11,"Goals+","Enabler",97,11.340206185567
+"336","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"Intention+","Enabler",97,0
+"384","Participant_6_Linda_active_version3","Chat GPT characters",1,2,"Knowledge+","Enabler",97,2.06185567010309
+"432","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"MADP+","Enabler",97,0
+"480","Participant_6_Linda_active_version3","Chat GPT characters",1,6,"Optimism+","Enabler",97,6.18556701030928
+"528","Participant_6_Linda_active_version3","Chat GPT characters",1,8,"Reinforcement+","Enabler",97,8.24742268041237
+"576","Participant_6_Linda_active_version3","Chat GPT characters",1,11,"SI+","Enabler",97,11.340206185567
+"624","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"SPR+","Enabler",97,0
+"672","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"Skills+","Enabler",97,0
+"720","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"BR-","Barrier",97,0
+"768","Participant_6_Linda_active_version3","Chat GPT characters",1,5,"BaCap-","Barrier",97,5.15463917525773
+"816","Participant_6_Linda_active_version3","Chat GPT characters",1,5,"BaCon-","Barrier",97,5.15463917525773
+"864","Participant_6_Linda_active_version3","Chat GPT characters",1,5,"ECR-","Barrier",97,5.15463917525773
+"912","Participant_6_Linda_active_version3","Chat GPT characters",1,4,"Emotion-","Barrier",97,4.12371134020619
+"960","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"Goals-","Barrier",97,0
+"1008","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"Intention-","Barrier",97,0
+"1056","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"Knowledge-","Barrier",97,0
+"1104","Participant_6_Linda_active_version3","Chat GPT characters",1,3,"MADP-","Barrier",97,3.09278350515464
+"1152","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"Optimism-","Barrier",97,0
+"1200","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"Reinforcement-","Barrier",97,0
+"1248","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"SI-","Barrier",97,0
+"1296","Participant_6_Linda_active_version3","Chat GPT characters",1,0,"SPR-","Barrier",97,0
+"1344","Participant_6_Linda_active_version3","Chat GPT characters",1,1,"Skills-","Barrier",97,1.03092783505155
