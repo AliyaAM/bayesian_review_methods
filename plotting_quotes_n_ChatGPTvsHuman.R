@@ -13,7 +13,7 @@ SOURCE_ROOT = paste(directory, "proj/bayesian_review_methods/", sep = "")
 DATA_ROOT = paste(directory, "proj/bayesian_review_methods/DATA/", sep = "")
 
 ########### Set the root location on the user's local machine to save output files.
-OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/", sep = "")
+OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/CHatGPTvsHuman/", sep = "")
 
 #x = read.csv(paste(DATA_ROOT, "Test_data_bayes_chatGPT.csv", sep="")) # new qualitative data
 #x = read.csv(paste(DATA_ROOT, "input_chatGPT.csv", sep="")) # new qualitative data
@@ -85,9 +85,9 @@ data_domains = subset(data, data$construct %in% c(construct_list_enablers))
 
 
 
-ggplot(data_domains, aes(y= reorder(construct, +quotes), x = quotes)) +
-  geom_col(aes(fill = PA_status), position = "dodge") + 
-  facet_wrap(~human, nrow=1)
+Enablers_plot = ggplot(data_domains, aes(y= reorder(construct, +quotes), x = quotes)) +
+                       geom_col(aes(fill = PA_status), position = "dodge") + 
+                       facet_wrap(~human, nrow=1)
 
 
 
@@ -118,6 +118,6 @@ data_domains_barriers = subset(data, data$construct %in% c(construct_list_barrie
 
 
 
-ggplot(data_domains_barriers, aes(y= reorder(construct, +quotes), x = quotes)) +
-  geom_col(aes(fill = PA_status), position = "dodge") + 
-  facet_wrap(~human, nrow=1)
+Barriers_plot = ggplot(data_domains_barriers, aes(y= reorder(construct, +quotes), x = quotes)) +
+                       geom_col(aes(fill = PA_status), position = "dodge") + 
+                       facet_wrap(~human, nrow=1)
