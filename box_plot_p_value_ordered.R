@@ -140,12 +140,145 @@ Enablers_plot = plot + facet_grid(vars(human_factor),
 
 
                                  
-Enablers_plot = Enablers_plot + theme(strip.text = element_text(size=6))
+Enablers_plot = Enablers_plot + theme(strip.text = element_text(size=5.4))
 
                           
 
-ggsave(file = paste(OUTPUT_ROOT, "/Enablers_plot.pdf",  sep=""), Enablers_plot, 
+# ggsave(file = paste(OUTPUT_ROOT, "/Enablers_plot.pdf",  sep=""), Enablers_plot, 
+#        #width=6, height=2, units="in", 
+#        scale=1)
+
+
+
+
+###########
+###########
+###########
+
+
+
+############## plotting enablers ############## 
+############## plotting enablers ############## 
+############## plotting enablers ############## 
+############## plotting enablers ############## 
+############## plotting enablers ############## 
+
+barriers_data = subset(data_per_domain_per_case, valence == "Barrier")
+
+
+barriers_data$construct_name = case_when(barriers_data$construct == "BR-" ~ "Behavioural regulation", 
+                                         barriers_data$construct ==  "BaCap-" ~ "Beliefs about capabilities", 
+                                         barriers_data$construct ==  "BaCon-" ~ "Beliefs about consequences", 
+                                         barriers_data$construct ==   "ECR-" ~ "Environmental context and resources", 
+                                         barriers_data$construct ==  "Emotion-"  ~ "Emotion", 
+                                         barriers_data$construct ==  "Goals-" ~ "Goals", 
+                                         barriers_data$construct ==  "Intention-" ~ "Intentions", 
+                                         barriers_data$construct == "Knowledge-" ~ "Knowledge", 
+                                         barriers_data$construct ==  "MADP-" ~ "Memory, attention, and decision processes", 
+                                         barriers_data$construct ==  "Optimism-" ~ "Optimism", 
+                                         barriers_data$construct == "Reinforcement-" ~ "Reinforcement", 
+                                         barriers_data$construct ==  "SI-" ~ "Social influences", 
+                                         barriers_data$construct == "SPR-" ~ "Social, professional role and identity", 
+                                         barriers_data$construct ==  "Skills-" ~ "Skills") 
+
+
+
+barriers_data$PA_status_factor = case_when(barriers_data$PA_status == 1 ~ "Active", 
+                                           barriers_data$PA_status == 0 ~ "Sedentary")
+
+
+barriers_data$PA_status_factor = as.factor(barriers_data$PA_status_factor)
+
+barriers_data$human_factor = case_when(barriers_data$human == "Human participants" ~ "Human", 
+                                       barriers_data$human == "Chat GPT characters" ~ "ChatGPT")
+
+
+barriers_data$human_factor = as.factor(barriers_data$human_factor)
+
+
+################ 
+################ 
+################ 
+################ 
+################ 
+################ Add t-test between Active/sedentary per domains: 
+
+
+stat_test_barrier <- barriers_data %>%
+  group_by(human_factor, construct_name) %>%
+  t_test(percent_quotes ~ PA_status_factor) %>%
+  adjust_pvalue(method = "bonferroni") %>%
+  add_significance()
+stat_test_barrier 
+
+
+stat_test_barrier <- stat_test_barrier %>% add_xy_position(x = "PA_status_factor")
+barriers_data$percent_quotes
+barriers_data$PA_status_factor
+
+################ 
+################ 
+################ 
+################ 
+################  plot barriers: 
+
+plot_barrier = ggboxplot(barriers_data, x = "PA_status_factor", y = "percent_quotes", fill = "PA_status_factor") 
+plot_barrier = plot_barrier + stat_pvalue_manual(stat_test_barrier, hide.ns = TRUE)        
+
+# adding ticks of the axis
+plot_barrier = plot_barrier +  scale_y_continuous(limits=c(0, 30), breaks = c(0, 5, 10, 15, 20, 25, 30))
+plot_barrier = plot_barrier +  scale_x_discrete( breaks = "")
+
+#labeling axis
+plot_barrier = plot_barrier + ggtitle("barriers") + ylab("% of quotes per case, k") + xlab("")
+
+#labeling legend
+plot_barrier = plot_barrier + guides(fill=guide_legend(title=""))
+
+# changing palette 
+plot_barrier = plot_barrier + scale_fill_brewer(palette = "Set1")+ scale_color_brewer(palette = "Set1")
+
+
+
+# arrange in a grid and also make sure the labels' text is wrapped 
+
+wrap_text <- function(x, chars = 5) {
+  x <- gsub("_", "", x)
+  stringr::str_wrap(x, chars)
+}
+
+
+
+Barriers_plot = plot_barrier + facet_grid(vars(human_factor), 
+                                  vars(factor(construct_name, levels = c("Beliefs about capabilities", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Beliefs about consequences", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Environmental context and resources", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Goals",  # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Memory, attention, and decision processes", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Emotion", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Skills", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Behavioural regulation", # order the grid columns by percent quote (from largest to smallest) 
+                                                                         "Social, professional role and identity", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Social influences", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Optimism", # order the grid columns by percent quote (from largest to smallest) 
+                                                                         "Knowledge", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Reinforcement", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Intentions"))), # order the grid columns by percent quote (from largest to smallest)
+                                                  
+                                  
+                                  labeller = as_labeller(wrap_text), as.table = TRUE)
+
+
+
+
+
+Barriers_plot = Barriers_plot + theme(strip.text = element_text(size=5.4))
+
+
+
+ggsave(file = paste(OUTPUT_ROOT, "/Barriers_plot.pdf",  sep=""), Barriers_plot, 
        #width=6, height=2, units="in", 
        scale=1)
+
 
 
