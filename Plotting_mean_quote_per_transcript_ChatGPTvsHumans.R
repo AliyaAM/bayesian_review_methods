@@ -107,136 +107,341 @@ per_bot_ChatGPT_domain =  select(per_bot_ChatGPT, c("Cases",
                                                     "Skillsbrrier"))
 
 
-head(per_participant_Human_domain)
-head(per_bot_ChatGPT_domain)
+
+
+#DATA: #DATA: #DATA: #DATA: #DATA: 
+#DATA: #DATA: #DATA: #DATA: #DATA: 
+#DATA: #DATA: #DATA: #DATA: #DATA: 
+#DATA: #DATA: #DATA: #DATA: #DATA: 
+#DATA: #DATA: #DATA: #DATA: #DATA: 
+#DATA: #DATA: #DATA: #DATA: #DATA: 
+
+data_domain = rbind(per_participant_Human_domain, per_bot_ChatGPT_domain)
+data_human = subset(data_domain, human == "Human participants")
+data_ChatGPT = subset(data_domain, human == "Chat GPT characters")
+
+
+
+########### # # # # # # perform t-test for each category
+########### BR (Enabler)
+# # human
+compare_means(BRenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(BRenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+
+########### # # # # # # perform t-test for each category
+########### BaCap (Enabler)
+# # human
+compare_means(BaCapenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(BaCapenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+
+########### # # # # # # perform t-test for each category
+########### BaCon (Enabler)
+# # human
+compare_means(BaConenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(BaConenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+########### # # # # # # perform t-test for each category
+########### ECR (Enabler)
+# # human
+compare_means(ECRenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(ECRenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+########### # # # # # # perform t-test for each category
+########### Emotion (Enabler)
+per_participant_Human_domain$Emotionenblr
+
+# # human
+#### Emotion enabler domain had 0 quotes for humans
+
+# # ChatGPT
+compare_means(Emotionenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+
+########### # # # # # # perform t-test for each category
+########### Goals (Enabler)
+# # human
+compare_means(Goalsenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(Goalsenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+
+########### # # # # # # perform t-test for each category
+########### Intention (Enabler)
+# # human
+compare_means(Intentionenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(Intentionenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+########### # # # # # # perform t-test for each category
+########### Knowledge (Enabler)
+# # human
+compare_means(Knowledgeenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(Knowledgeenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+########### # # # # # # perform t-test for each category
+########### MADP (Enabler)
+# # human
+compare_means(MADPenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(MADPenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+########### # # # # # # perform t-test for each category
+########### Optimism (Enabler)
+# # human
+compare_means(Optimismenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(Optimismenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+
+########### # # # # # # perform t-test for each category
+########### Reinforcement (Enabler)
+# # human
+compare_means(Reinforcementenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(Reinforcementenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+
+########### # # # # # # perform t-test for each category
+########### SI (Enabler)
+# # human
+compare_means(SIenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(SIenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+########### # # # # # # perform t-test for each category
+########### SPR (Enabler)
+# # human
+compare_means(X.SPRenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(X.SPRenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
+
+
+
+########### # # # # # # perform t-test for each category
+########### Skills (Enabler)
+# # human
+compare_means(Skillsenblr ~ PA_status,  data = data_human,
+              ref.group = "0", method = "t.test")
+
+# # ChatGPT
+compare_means(Skillsenblr ~ PA_status,  data = data_ChatGPT,
+              ref.group = "0", method = "t.test")
 
 
 
 
 
-#########
-#########
-#########
-#########
-
-######### data enablers 
-
-per_participant_Human_enblr =  select(per_participant_Human, c("Cases", 
-                                                                
-                                                                "human", 
-                                                                
-                                                                "PA_status", 
-                                                                
-                                                                "BRenblr", 
-                                                                "BaCapenblr",
-                                                                "BaConenblr",
-                                                                "ECRenblr",
-                                                                "Emotionenblr",
-                                                                "Goalsenblr",
-                                                                "Intentionenblr",
-                                                                "Knowledgeenblr",
-                                                                "MADPenblr",
-                                                                "Optimismenblr",
-                                                                "Reinforcementenblr",
-                                                                "SIenblr",
-                                                                "X.SPRenblr",
-                                                                "Skillsenblr"))
-
-
-
-per_bot_ChatGPT_enblr =  select(per_bot_ChatGPT, c("Cases", 
-                                                    
-                                                    "human",
-                                                    
-                                                    "PA_status",
-                                                    
-                                                    "BRenblr", 
-                                                    "BaCapenblr",
-                                                    "BaConenblr",
-                                                    "ECRenblr",
-                                                    "Emotionenblr",
-                                                    "Goalsenblr",
-                                                    "Intentionenblr",
-                                                    "Knowledgeenblr",
-                                                    "MADPenblr",
-                                                    "Optimismenblr",
-                                                    "Reinforcementenblr",
-                                                    "SIenblr",
-                                                    "X.SPRenblr",
-                                                    "Skillsenblr"))
-
-
-head(per_participant_Human_enblr)
-head(per_bot_ChatGPT_enblr)
-
-
-data_enblr = rbind(per_participant_Human_enblr, per_bot_ChatGPT_enblr)
+geom_violin
 
 
 
 
-#########
-#########
-#########
-#########
-
-######### data barriers 
-
-
-
-per_participant_Human_brrier =  select(per_participant_Human, c("Cases", 
-                                                                
-                                                                "human", 
-                                                                
-                                                                "PA_status", 
-                                                                
-                                                               
-                                                                "BRbrrier", 
-                                                                "BaCapbrrier",
-                                                                "BaConbrrier",
-                                                                "ECRbrrier",
-                                                                "Emotionbrrier",
-                                                                "Goalsbrrier",
-                                                                "Intentionbrrier",
-                                                                "Knowledgebrrier",
-                                                                "MADPbrrier",
-                                                                "Optimismbrrier",
-                                                                "Reinforcementbrrier",
-                                                                "SIbrrier",
-                                                                "SPRbrrier",
-                                                                "Skillsbrrier"))
+# "BRbrrier", 
+# "BaCapbrrier",
+# "BaConbrrier",
+# "ECRbrrier",
+# "Emotionbrrier",
+# "Goalsbrrier",
+# "Intentionbrrier",
+# "Knowledgebrrier",
+# "MADPbrrier",
+# "Optimismbrrier",
+# "Reinforcementbrrier",
+# "SIbrrier",
+# "SPRbrrier",
+# "Skillsbrrier"
 
 
 
-per_bot_ChatGPT_brrier =  select(per_bot_ChatGPT, c("Cases", 
-                                                    
-                                                    "human",
-                                                    
-                                                    "PA_status",
-                                                    
-                                              
-                                                    
-                                                    "BRbrrier", 
-                                                    "BaCapbrrier",
-                                                    "BaConbrrier",
-                                                    "ECRbrrier",
-                                                    "Emotionbrrier",
-                                                    "Goalsbrrier",
-                                                    "Intentionbrrier",
-                                                    "Knowledgebrrier",
-                                                    "MADPbrrier",
-                                                    "Optimismbrrier",
-                                                    "Reinforcementbrrier",
-                                                    "SIbrrier",
-                                                    "SPRbrrier",
-                                                    "Skillsbrrier"))
-
-
-
-head(per_participant_Human_brrier)
-head(per_bot_ChatGPT_brrier)
-
-
-data_brrier = rbind(per_participant_Human_brrier, per_bot_ChatGPT_brrier)
-
+# ########
+# ########
+# 
+# 
+# ######### data enablers 
+# 
+# per_participant_Human_enblr =  select(per_participant_Human, c("Cases", 
+#                                                                
+#                                                                "human", 
+#                                                                
+#                                                                "PA_status", 
+#                                                                
+#                                                                "BRenblr", 
+#                                                                "BaCapenblr",
+#                                                                "BaConenblr",
+#                                                                "ECRenblr",
+#                                                                "Emotionenblr",
+#                                                                "Goalsenblr",
+#                                                                "Intentionenblr",
+#                                                                "Knowledgeenblr",
+#                                                                "MADPenblr",
+#                                                                "Optimismenblr",
+#                                                                "Reinforcementenblr",
+#                                                                "SIenblr",
+#                                                                "X.SPRenblr",
+#                                                                "Skillsenblr"))
+# 
+# 
+# 
+# per_bot_ChatGPT_enblr =  select(per_bot_ChatGPT, c("Cases", 
+#                                                    
+#                                                    "human",
+#                                                    
+#                                                    "PA_status",
+#                                                    
+#                                                    "BRenblr", 
+#                                                    "BaCapenblr",
+#                                                    "BaConenblr",
+#                                                    "ECRenblr",
+#                                                    "Emotionenblr",
+#                                                    "Goalsenblr",
+#                                                    "Intentionenblr",
+#                                                    "Knowledgeenblr",
+#                                                    "MADPenblr",
+#                                                    "Optimismenblr",
+#                                                    "Reinforcementenblr",
+#                                                    "SIenblr",
+#                                                    "X.SPRenblr",
+#                                                    "Skillsenblr"))
+# 
+# 
+# head(per_participant_Human_enblr)
+# head(per_bot_ChatGPT_enblr)
+# 
+# 
+# data_enblr = rbind(per_participant_Human_enblr, per_bot_ChatGPT_enblr)
+# 
+# 
+# 
+# 
+# #########
+# #########
+# #########
+# #########
+# 
+# ######### data barriers 
+# 
+# 
+# 
+# per_participant_Human_brrier =  select(per_participant_Human, c("Cases", 
+#                                                                 
+#                                                                 "human", 
+#                                                                 
+#                                                                 "PA_status", 
+#                                                                 
+#                                                                 
+#                                                                 "BRbrrier", 
+#                                                                 "BaCapbrrier",
+#                                                                 "BaConbrrier",
+#                                                                 "ECRbrrier",
+#                                                                 "Emotionbrrier",
+#                                                                 "Goalsbrrier",
+#                                                                 "Intentionbrrier",
+#                                                                 "Knowledgebrrier",
+#                                                                 "MADPbrrier",
+#                                                                 "Optimismbrrier",
+#                                                                 "Reinforcementbrrier",
+#                                                                 "SIbrrier",
+#                                                                 "SPRbrrier",
+#                                                                 "Skillsbrrier"))
+# 
+# 
+# 
+# per_bot_ChatGPT_brrier =  select(per_bot_ChatGPT, c("Cases", 
+#                                                     
+#                                                     "human",
+#                                                     
+#                                                     "PA_status",
+#                                                     
+#                                                     
+#                                                     
+#                                                     "BRbrrier", 
+#                                                     "BaCapbrrier",
+#                                                     "BaConbrrier",
+#                                                     "ECRbrrier",
+#                                                     "Emotionbrrier",
+#                                                     "Goalsbrrier",
+#                                                     "Intentionbrrier",
+#                                                     "Knowledgebrrier",
+#                                                     "MADPbrrier",
+#                                                     "Optimismbrrier",
+#                                                     "Reinforcementbrrier",
+#                                                     "SIbrrier",
+#                                                     "SPRbrrier",
+#                                                     "Skillsbrrier"))
+# 
+# 
+# 
+# head(per_participant_Human_brrier)
+# head(per_bot_ChatGPT_brrier)
+# 
+# 
+# data_brrier = rbind(per_participant_Human_brrier, per_bot_ChatGPT_brrier)
 
