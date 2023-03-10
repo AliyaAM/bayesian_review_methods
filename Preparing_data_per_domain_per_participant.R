@@ -618,35 +618,4 @@ data_per_domain_per_participant = rbind(data_domain_BRenblr,
 write.csv(data_per_domain_per_participant, file = paste(DATA_ROOT, "data_per_domain_per_participant.csv", sep =""))
 
           
-# 
-# 
-# Enablers_plot = ggplot(data_domain, aes(y= reorder(construct, +quotes), x = quotes)) +
-#   geom_violin(aes(fill = PA_status), position = "dodge") + 
-#   facet_wrap(~human, nrow=1)
-# 
-# 
-# Enablers_plot = Enablers_plot + scale_y_discrete(labels=c("BR+" = "Behavioural regulation", 
-#                                                           "BaCap+" = "Beliefs about capabilities", 
-#                                                           "BaCon+" = "Beliefs about consequences", 
-#                                                           "ECR+" = "Environmental context and resources", 
-#                                                           "Emotion+" = "Emotion", 
-#                                                           "Goals+" = "Goals", 
-#                                                           "Intention+" = "Intentions", 
-#                                                           "Knowledge+" = "Knowledge", 
-#                                                           "MADP+" = "Memory, attention, and decision processes", 
-#                                                           "Optimism+" = "Optimism", 
-#                                                           "Reinforcement+" = "Reinforcement", 
-#                                                           "SI+" = "Social influences", 
-#                                                           "\nSPR+" = "Social, professional role and identity", 
-#                                                           "Skills+" = "Skills"
-# )) 
-# 
-# 
-# # changing palette 
-# Enablers_plot = Enablers_plot + scale_fill_brewer(palette = "Set1")+ scale_color_brewer(palette = "Set1")
-# 
-# #labeling axis
-# Enablers_plot = Enablers_plot + ggtitle("Enablers") + xlab("quotes, k") + ylab("Domain")
-# 
-# #labeling legend
-# Enablers_plot = Enablers_plot + guides(fill=guide_legend(title=""))
+
