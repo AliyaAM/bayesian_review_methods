@@ -94,10 +94,10 @@ enablers_data$PA_status_factor
 ################  plot Enablers: 
 
 plot = ggboxplot(enablers_data, x = "PA_status_factor", y = "percent_quotes", fill = "PA_status_factor") 
-plot = plot + stat_pvalue_manual(stat.test, hide.ns = TRUE)        
+plot = plot + stat_pvalue_manual(stat.test)        
 
 # adding ticks of the axis
-plot = plot +  scale_y_continuous(limits=c(0, 30), breaks = c(0, 5, 10, 15, 20, 25, 30))
+plot = plot +  scale_y_continuous(limits=c(0, 35), breaks = c(0, 5, 10, 15, 20, 25, 30, 35))
 plot = plot +  scale_x_discrete( breaks = "")
 
 #labeling axis
@@ -142,11 +142,11 @@ Enablers_plot = plot + facet_grid(vars(human_factor),
                                  
 Enablers_plot = Enablers_plot + theme(strip.text = element_text(size=5.4))
 
-                          
+print(Enablers_plot)                    
 
-# ggsave(file = paste(OUTPUT_ROOT, "/Enablers_plot.pdf",  sep=""), Enablers_plot, 
-#        #width=6, height=2, units="in", 
-#        scale=1)
+ ggsave(file = paste(OUTPUT_ROOT, "/Enablers_plot.pdf",  sep=""), Enablers_plot, 
+        #width=6, height=2, units="in", 
+        scale=1)
 
 
 
@@ -223,14 +223,14 @@ barriers_data$PA_status_factor
 ################  plot barriers: 
 
 plot_barrier = ggboxplot(barriers_data, x = "PA_status_factor", y = "percent_quotes", fill = "PA_status_factor") 
-plot_barrier = plot_barrier + stat_pvalue_manual(stat_test_barrier, hide.ns = TRUE)        
+plot_barrier = plot_barrier + stat_pvalue_manual(stat_test_barrier)        
 
 # adding ticks of the axis
-plot_barrier = plot_barrier +  scale_y_continuous(limits=c(0, 30), breaks = c(0, 5, 10, 15, 20, 25, 30))
+plot_barrier = plot_barrier +  scale_y_continuous(limits=c(0, 50), breaks = c(0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50))
 plot_barrier = plot_barrier +  scale_x_discrete( breaks = "")
 
 #labeling axis
-plot_barrier = plot_barrier + ggtitle("barriers") + ylab("% of quotes per case, k") + xlab("")
+plot_barrier = plot_barrier + ggtitle("Barriers") + ylab("% of quotes per case, k") + xlab("")
 
 #labeling legend
 plot_barrier = plot_barrier + guides(fill=guide_legend(title=""))
@@ -274,7 +274,7 @@ Barriers_plot = plot_barrier + facet_grid(vars(human_factor),
 
 Barriers_plot = Barriers_plot + theme(strip.text = element_text(size=5.4))
 
-
+print(Barriers_plot)
 
 ggsave(file = paste(OUTPUT_ROOT, "/Barriers_plot.pdf",  sep=""), Barriers_plot, 
        #width=6, height=2, units="in", 
