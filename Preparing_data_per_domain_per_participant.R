@@ -349,7 +349,7 @@ data_domain_Skillsenblr = select(data_domain, c("Cases",
                                              "Skillsenblr"))
 
 
-data_domain_Skillsenblr$quotes = data_domain_X.Skillsenblr$Skillsenblr
+data_domain_Skillsenblr$quotes = data_domain_Skillsenblr$Skillsenblr
 
 data_domain_Skillsenblr$construct = rep("Skills+", times = nrow(data_domain_Skillsenblr))
 
@@ -584,38 +584,69 @@ data_domain_Skillsbrrier = select(data_domain_Skillsbrrier, -c("Skillsbrrier"))
 ###########
 
 
+data_per_domain_per_participant = rbind(data_domain_BRenblr, 
+                                        data_domain_BaCapenblr, 
+                                        data_domain_BaConenblr, 
+                                        data_domain_ECRenblr, 
+                                        data_domain_Emotionenblr, 
+                                        data_domain_Goalsenblr, 
+                                        data_domain_Intentionenblr, 
+                                        data_domain_Knowledgeenblr, 
+                                        data_domain_MADPenblr, 
+                                        data_domain_Optimismenblr, 
+                                        data_domain_Reinforcementenblr, 
+                                        data_domain_SIenblr, 
+                                        data_domain_X.SPRenblr ,
+                                        data_domain_Skillsenblr,
+                                        
+                                        data_domain_BRbrrier, 
+                                        data_domain_BaCapbrrier, 
+                                        data_domain_BaConbrrier, 
+                                        data_domain_ECRbrrier, 
+                                        data_domain_Emotionbrrier,
+                                        data_domain_Goalsbrrier,
+                                        data_domain_Intentionbrrier, 
+                                        data_domain_Knowledgebrrier, 
+                                        data_domain_MADPbrrier, 
+                                        data_domain_Optimismbrrier, 
+                                        data_domain_Reinforcementbrrier, 
+                                        data_domain_SIbrrier, 
+                                        data_domain_SPRbrrier, 
+                                        data_domain_Skillsbrrier)
 
 
+write.csv(data_per_domain_per_participant, file = paste(DATA_ROOT, "data_per_domain_per_participant.csv", sep =""))
 
-
-
-Enablers_plot = ggplot(data_domain, aes(y= reorder(construct, +quotes), x = quotes)) +
-  geom_violin(aes(fill = PA_status), position = "dodge") + 
-  facet_wrap(~human, nrow=1)
-
-
-Enablers_plot = Enablers_plot + scale_y_discrete(labels=c("BR+" = "Behavioural regulation", 
-                                                          "BaCap+" = "Beliefs about capabilities", 
-                                                          "BaCon+" = "Beliefs about consequences", 
-                                                          "ECR+" = "Environmental context and resources", 
-                                                          "Emotion+" = "Emotion", 
-                                                          "Goals+" = "Goals", 
-                                                          "Intention+" = "Intentions", 
-                                                          "Knowledge+" = "Knowledge", 
-                                                          "MADP+" = "Memory, attention, and decision processes", 
-                                                          "Optimism+" = "Optimism", 
-                                                          "Reinforcement+" = "Reinforcement", 
-                                                          "SI+" = "Social influences", 
-                                                          "\nSPR+" = "Social, professional role and identity", 
-                                                          "Skills+" = "Skills"
-)) 
-
-
-# changing palette 
-Enablers_plot = Enablers_plot + scale_fill_brewer(palette = "Set1")+ scale_color_brewer(palette = "Set1")
-
-#labeling axis
-Enablers_plot = Enablers_plot + ggtitle("Enablers") + xlab("quotes, k") + ylab("Domain")
-
-#labeling legend
-Enablers_plot = Enablers_plot + guides(fill=guide_legend(title=""))
+          
+# 
+# 
+# Enablers_plot = ggplot(data_domain, aes(y= reorder(construct, +quotes), x = quotes)) +
+#   geom_violin(aes(fill = PA_status), position = "dodge") + 
+#   facet_wrap(~human, nrow=1)
+# 
+# 
+# Enablers_plot = Enablers_plot + scale_y_discrete(labels=c("BR+" = "Behavioural regulation", 
+#                                                           "BaCap+" = "Beliefs about capabilities", 
+#                                                           "BaCon+" = "Beliefs about consequences", 
+#                                                           "ECR+" = "Environmental context and resources", 
+#                                                           "Emotion+" = "Emotion", 
+#                                                           "Goals+" = "Goals", 
+#                                                           "Intention+" = "Intentions", 
+#                                                           "Knowledge+" = "Knowledge", 
+#                                                           "MADP+" = "Memory, attention, and decision processes", 
+#                                                           "Optimism+" = "Optimism", 
+#                                                           "Reinforcement+" = "Reinforcement", 
+#                                                           "SI+" = "Social influences", 
+#                                                           "\nSPR+" = "Social, professional role and identity", 
+#                                                           "Skills+" = "Skills"
+# )) 
+# 
+# 
+# # changing palette 
+# Enablers_plot = Enablers_plot + scale_fill_brewer(palette = "Set1")+ scale_color_brewer(palette = "Set1")
+# 
+# #labeling axis
+# Enablers_plot = Enablers_plot + ggtitle("Enablers") + xlab("quotes, k") + ylab("Domain")
+# 
+# #labeling legend
+# Enablers_plot = Enablers_plot + guides(fill=guide_legend(title=""))
