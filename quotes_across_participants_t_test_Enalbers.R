@@ -298,12 +298,6 @@ compare_means(Skillsenblr ~ PA_status,  data = data_ChatGPT,
 
 
 
-
-geom_violin
-
-
-
-
 # "BRbrrier", 
 # "BaCapbrrier",
 # "BaConbrrier",
