@@ -66,9 +66,9 @@ Summary_Results = rbind(Summary_Results, Summary_Results_Symptoms_distress)
 
 
 
-Results_Symptoms =   BayesUpdateStepByStep(x =x, Construct = "fewerPerceivedSymptoms")
+Results_Symptoms =   BayesUpdateStepByStep(x =x, Construct = "Symptoms")
 Results_BayesianMeta_Analysis = rbind(Results_BayesianMeta_Analysis, Results_Symptoms)
-Summary_Results_Symptoms = Summary_stats_table_qual_and_quant(x =x, Construct = "fewerPerceivedSymptoms")
+Summary_Results_Symptoms = Summary_stats_table_qual_and_quant(x =x, Construct = "Symptoms")
 Summary_Results = rbind(Summary_Results, Summary_Results_Symptoms)
 
 
@@ -149,7 +149,7 @@ Dysphoria_density_by_Construct = density_by_Construct(data = Results_BayesianMet
 NegativeAttitude_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "NegativeAttitude")
 PositiveAttitude_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "PositiveAttitude")
 Symptoms_distress_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "Symptoms_distress")
-Symptoms_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "fewerPerceivedSymptoms")
+Symptoms_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "Symptoms")
 SelfEfficacy_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "SelfEfficacy")
 
 
