@@ -250,7 +250,7 @@ Compare_distributions_plot = ggplot(d, aes(x = logOddsRatio,
 
   
   geom_density_ridges(stat = "identity",
-                      scale = 2) +
+                      scale = 3) +
   
   #prior: "#CC79A7"
   #posterior: "#D55E00"
@@ -286,7 +286,7 @@ Compare_distributions_plot = ggplot(d, aes(x = logOddsRatio,
          legend.text = element_text(size = 8), 
         legend.title = element_text(face = "bold", size = 8), 
         
-        plot.margin = margin(0.1, 0.1, 0.1, 0.1, "cm"),
+        plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"),
         panel.grid.major = element_line(colour = "grey", size = 0.2),
         panel.grid.minor = element_line(colour = "grey", size = 0.1))+
   theme(text = element_text(size = 10))   
