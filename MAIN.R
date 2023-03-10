@@ -48,10 +48,10 @@ DATA_ROOT = paste(directory, "proj/bayesian_review_methods/DATA/", sep = "")
 
 ########### Set the root location on the user's local machine to save output files.
 #OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/Human/", sep = "")
-OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/ChatGPT/", sep = "")
+#OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/ChatGPT/", sep = "")
 
-#x = read.csv(paste(DATA_ROOT, "input_Human_prior.csv", sep="")) # new qualitative data
-x = read.csv(paste(DATA_ROOT, "input_ChatGPT_prior.csv", sep="")) # new qualitative data
+x = read.csv(paste(DATA_ROOT, "input_Human_prior.csv", sep="")) # new qualitative data
+#x = read.csv(paste(DATA_ROOT, "input_ChatGPT_prior.csv", sep="")) # new qualitative data
 
 
 print(x)
