@@ -72,8 +72,8 @@ data_domains = subset(data, data$construct %in% c(construct_list_enablers))
 
 
 Enablers_plot = ggplot(data_domains, aes(y= reorder(construct, +quotes), x = quotes)) +
-                       geom_col(aes(fill = PA_status), position = "dodge") + 
-                       facet_wrap(~human, nrow=1)
+  geom_col(aes(fill = PA_status), position = "dodge") + 
+  facet_wrap(~human, nrow=1)
 
 
 Enablers_plot = Enablers_plot + scale_y_discrete(labels=c("BR+" = "Behavioural regulation", 
@@ -90,7 +90,7 @@ Enablers_plot = Enablers_plot + scale_y_discrete(labels=c("BR+" = "Behavioural r
                                                           "SI+" = "Social influences", 
                                                           "\nSPR+" = "Social, professional role and identity", 
                                                           "Skills+" = "Skills"
-                                                          )) 
+)) 
 
 
 # changing palette 
@@ -176,8 +176,8 @@ data_domains_barriers = subset(data, data$construct %in% c(construct_list_barrie
 
 
 Barriers_plot = ggplot(data_domains_barriers, aes(y= reorder(construct, +quotes), x = quotes)) +
-                       geom_col(aes(fill = PA_status), position = "dodge") + 
-                       facet_wrap(~human, nrow=1)
+  geom_col(aes(fill = PA_status), position = "dodge") + 
+  facet_wrap(~human, nrow=1)
 
 
 # The TDF domains and their descriptors are outlined in Table 1; the 14 domains are 1) knowledge, 2) skills, 3) social/professional role and identity, 4) beliefs about capabilities, 5) optimism, 6) beliefs about consequences, 7) reinforcement, 8) intentions, 9) goals, 10) memory, attention, and decision processes, 11) environment context and resources, 12) social influences, 13) emotion, and 14) behavioral regulation
@@ -196,7 +196,7 @@ Barriers_plot = Barriers_plot + scale_y_discrete(labels=c("BR-" = "Behavioural r
                                                           "SI-" = "Social influences", 
                                                           "SPR-" = "Social, professional role and identity", 
                                                           "Skills-" = "Skills"
-                                                          ))
+))
 Barriers_plot = Barriers_plot + scale_fill_brewer(palette = "Set1")+ scale_color_brewer(palette = "Set1")
 Barriers_plot = Barriers_plot + ggtitle("Barriers") + xlab("quotes, k") + ylab("Domain")
 Barriers_plot = Barriers_plot + guides(fill=guide_legend(title=""))
