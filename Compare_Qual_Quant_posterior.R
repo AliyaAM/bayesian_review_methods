@@ -21,7 +21,7 @@ Dysphoria_density_prior =  All_constructs_prior  %>% filter(Construct == "Dyspho
 NegativeAttitude_density_prior = All_constructs_prior  %>% filter(Construct == "NegativeAttitude")
 PositiveAttitude_density_prior = All_constructs_prior  %>% filter(Construct == "PositiveAttitude")
 Symptoms_distress_density_prior = All_constructs_prior  %>% filter(Construct== "Symptoms_distress")
-Symptoms_density_prior = All_constructs_prior  %>% filter(Construct== "Symptoms")
+Symptoms_density_prior = All_constructs_prior  %>% filter(Construct== "fewerPerceivedSymptoms")
 SelfEfficacy_density_prior = All_constructs_prior  %>% filter(Construct == "SelfEfficacy")
 
 
@@ -30,7 +30,7 @@ Dysphoria_density_likelihood  =  All_constructs_likelihood  %>% filter(Construct
 NegativeAttitude_density_likelihood  = All_constructs_likelihood  %>% filter(Construct == "NegativeAttitude")
 PositiveAttitude_density_likelihood  = All_constructs_likelihood  %>% filter(Construct == "PositiveAttitude")
 Symptoms_distress_density_likelihood  = All_constructs_likelihood  %>% filter(Construct== "Symptoms_distress")
-Symptoms_density_likelihood  = All_constructs_likelihood  %>% filter(Construct== "Symptoms")
+Symptoms_density_likelihood  = All_constructs_likelihood  %>% filter(Construct== "fewerPerceivedSymptoms")
 SelfEfficacy_density_likelihood  = All_constructs_likelihood  %>% filter(Construct == "SelfEfficacy")
 
 
@@ -39,7 +39,7 @@ Dysphoria_density_posterior =  All_constructs_posterior  %>% filter(Construct ==
 NegativeAttitude_density_posterior = All_constructs_posterior  %>% filter(Construct == "NegativeAttitude")
 PositiveAttitude_density_posterior  = All_constructs_posterior  %>% filter(Construct == "PositiveAttitude")
 Symptoms_distress_density_posterior = All_constructs_posterior  %>% filter(Construct== "Symptoms_distress")
-Symptoms_density_posterior = All_constructs_posterior  %>% filter(Construct== "Symptoms")
+Symptoms_density_posterior = All_constructs_posterior  %>% filter(Construct== "fewerPerceivedSymptoms")
 SelfEfficacy_density_posterior  = All_constructs_posterior  %>% filter(Construct == "SelfEfficacy")
 
 
@@ -75,15 +75,15 @@ height = c(rep(10, 1000),
            rep(190, 1000),
            rep(200, 1000),
            rep(210, 1000))
-           #  rep(220, 1000), 
-           #  rep(230, 1000), 
-           #  rep(240, 1000), 
-           #  rep(250, 1000), 
-           #  rep(260, 1000), 
-           #  rep(270, 1000), 
-           #  rep(280, 1000), 
-           #  rep(290, 1000),
-           #  rep(300, 1000))
+#  rep(220, 1000), 
+#  rep(230, 1000), 
+#  rep(240, 1000), 
+#  rep(250, 1000), 
+#  rep(260, 1000), 
+#  rep(270, 1000), 
+#  rep(280, 1000), 
+#  rep(290, 1000),
+#  rep(300, 1000))
 
 
 
@@ -91,37 +91,37 @@ height = c(rep(10, 1000),
 d <- data.frame(
   logOddsRatio = density_ALL_Construct$logOddsRatio, 
   
-   Construct = c(SocialSupport_density_prior$Construct,
-                        SocialSupport_density_likelihood$Construct,
-                        SocialSupport_density_posterior$Construct,
-                        
-                 
-                 Dysphoria_density_prior$Construct,
-                 Dysphoria_density_likelihood$Construct,
-                 Dysphoria_density_posterior$Construct,
-                        
-                        NegativeAttitude_density_prior$Construct,
-                        NegativeAttitude_density_likelihood$Construct,
-                        NegativeAttitude_density_posterior$Construct, 
-                        
-                        PositiveAttitude_density_prior$Construct,
-                        PositiveAttitude_density_likelihood$Construct,
-                        PositiveAttitude_density_posterior$Construct,
-                 
-                 Symptoms_distress_density_prior$Construct,
-                 Symptoms_distress_density_likelihood$Construct,
-                 Symptoms_distress_density_posterior$Construct,
-          
-                        Symptoms_density_prior$Construct,
-                        Symptoms_density_likelihood$Construct,
-                        Symptoms_density_posterior$Construct,
- 
-                        
-                        SelfEfficacy_density_prior$Construct,
-                        SelfEfficacy_density_likelihood$Construct,
-                        SelfEfficacy_density_posterior$Construct),
+  Construct = c(SocialSupport_density_prior$Construct,
+                SocialSupport_density_likelihood$Construct,
+                SocialSupport_density_posterior$Construct,
+                
+                
+                Dysphoria_density_prior$Construct,
+                Dysphoria_density_likelihood$Construct,
+                Dysphoria_density_posterior$Construct,
+                
+                NegativeAttitude_density_prior$Construct,
+                NegativeAttitude_density_likelihood$Construct,
+                NegativeAttitude_density_posterior$Construct, 
+                
+                PositiveAttitude_density_prior$Construct,
+                PositiveAttitude_density_likelihood$Construct,
+                PositiveAttitude_density_posterior$Construct,
+                
+                Symptoms_distress_density_prior$Construct,
+                Symptoms_distress_density_likelihood$Construct,
+                Symptoms_distress_density_posterior$Construct,
+                
+                Symptoms_density_prior$Construct,
+                Symptoms_density_likelihood$Construct,
+                Symptoms_density_posterior$Construct,
+                
+                
+                SelfEfficacy_density_prior$Construct,
+                SelfEfficacy_density_likelihood$Construct,
+                SelfEfficacy_density_posterior$Construct),
   
-
+  
   
   y = c(SocialSupport_density_prior$Prior_qual_density,
         SocialSupport_density_likelihood$Likelihood,
@@ -145,17 +145,17 @@ d <- data.frame(
         Symptoms_distress_density_likelihood$Likelihood,
         Symptoms_distress_density_posterior$posterior_QualplusQuant,
         
-
+        
         Symptoms_density_prior$Prior_qual_density,
         Symptoms_density_likelihood$Likelihood,
         Symptoms_density_posterior$posterior_QualplusQuant,
-
+        
         SelfEfficacy_density_prior$Prior_qual_density,
         SelfEfficacy_density_likelihood$Likelihood,
         SelfEfficacy_density_posterior$posterior_QualplusQuant),
   
-
-
+  
+  
   
   distribution = distribution, 
   
@@ -178,28 +178,79 @@ d$group_name = paste0(as.character(d$Construct)," ", as.character(d$distribution
 
 #colors from the set2: "#66C2A5" "#FC8D62" "#E78AC3"
 Compare_distributions_plot = ggplot(d, aes(x = logOddsRatio, 
-                                          y = Construct,
-                                          height = y, 
-                                          group = group_name, 
-                                          color = distribution,
-                                          fill = distribution)) +
+                                           y = Construct,
+                                           height = y, 
+                                           group = group_name, 
+                                           color = distribution,
+                                           fill = distribution)) +
   
-  scale_x_continuous(name = "log OR", breaks = c(-2.0, -1.9, -1.8, -1.7, -1.6,
-                                                 -1.5, -1.4, -1.3, -1.2, -1.1, 
-                                                 -1, -0.9, -0.8, -0.7, -0.6, 
-                                                 -0.5, -0.4, -0.3, -0.2, -0.1, 
-                                                 0, 0.1, 0.2, 0.3, 0.4, 
-                                                 0.5, 0.6, 0.7, 0.8, 0.9, 
-                                                 1, 1.1, 1.2, 1.3, 1.4, 
-                                                 1.5, 1.6, 1.7, 1.8, 1.9, 
-                                                 2, 2.1, 2.2, 2.3, 2.4, 
-                                                 2.5, 2.6, 2.7, 2.8, 2.9, 
-                                                 3),
-                     limits = c(-2, 3)) +
-
+  scale_x_continuous(name = "log OR", breaks = c(-3.0,
+                                                 #-2.9,
+                                                 -2.8,
+                                                 #-2.7, 
+                                                 -2.6,
+                                                 #-2.5,
+                                                 -2.4,
+                                                 #-2.3,
+                                                 -2.2,
+                                                 #-2.1,
+                                                 
+                                                 -2.0,
+                                                 #-1.9,
+                                                 -1.8,
+                                                 #-1.7, 
+                                                 -1.6,
+                                                 #-1.5,
+                                                 -1.4,
+                                                 #-1.3,
+                                                 -1.2,
+                                                 #-1.1, 
+                                                 -1, 
+                                                 #-0.9,
+                                                 -0.8,
+                                                 #-0.7,
+                                                 -0.6, 
+                                                 #-0.5,
+                                                 -0.4,
+                                                 #-0.3,
+                                                 -0.2,
+                                                 #-0.1, 
+                                                 0,
+                                                 #0.1,
+                                                 0.2,
+                                                 #0.3,
+                                                 0.4, 
+                                                 # 0.5,
+                                                 0.6, 
+                                                 #0.7,
+                                                 0.8,
+                                                 # 0.9, 
+                                                 1,
+                                                 # 1.1,
+                                                 1.2, 
+                                                 # 1.3,
+                                                 1.4, 
+                                                 #1.5,
+                                                 1.6,
+                                                 # 1.7,
+                                                 1.8,
+                                                 #1.9, 
+                                                 2),
+                     # # 2.1,
+                     #  2.2,
+                     # # 2.3,
+                     #  2.4, 
+                     # # 2.5,
+                     #  2.6, 
+                     #  #2.7, 
+                     #  2.8,
+                     # # 2.9, 
+                     #  3),
+                     limits = c(-3, 2)) +
+  
   
   geom_density_ridges(stat = "identity",
-                      scale = 3) +
+                      scale = 2) +
   
   #prior: "#CC79A7"
   #posterior: "#D55E00"
@@ -213,34 +264,34 @@ Compare_distributions_plot = ggplot(d, aes(x = logOddsRatio,
   #xlim(-3,3) +
   
   scale_y_discrete(labels=c(#"Age" =  "Age",
-                            #"Comorbidity" =  "Comorbidity",
-                            "SocialSupport"=  "Social Support",
-                            "Dysphoria" = "Dysphoria", 
-                            "NegativeAttitude"=  "Negative Attitude",
-                            "PositiveAttitude"=  "Positive Attitude",
-                            "Symptoms_distress" = "Symptoms distress", 
-                            # "6MWT"= "6MWT",
-                            # "PhysicalFunctioning"="Physical Functioning",
-                            "Symptoms"= "Perceived Symptoms",
-                            # "LVEF"="LVEF",
-                            "SelfEfficacy"="Self-efficacy"
-
-                            ))   + 
+    #"Comorbidity" =  "Comorbidity",
+    "SocialSupport"=  "Social Support",
+    "Dysphoria" = "Dysphoria", 
+    "NegativeAttitude"=  "Negative Attitude",
+    "PositiveAttitude"=  "Positive Attitude",
+    "Symptoms_distress" = "Symptoms distress", 
+    # "6MWT"= "6MWT",
+    # "PhysicalFunctioning"="Physical Functioning",
+    "fewerPerceivedSymptoms"= "Fewer Perceived Symptoms",
+    # "LVEF"="LVEF",
+    "SelfEfficacy"="Self-efficacy"
+    
+  ))   + 
   
   theme(legend.position = c("top"),
         legend.justification = c("right", "top"),
         legend.box.just = "right",
         legend.margin = margin(1, 1, 1, 1), 
-       
-         legend.text = element_text(size = 8), 
+        
+        legend.text = element_text(size = 8), 
         legend.title = element_text(face = "bold", size = 8), 
         
-        plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"),
+        plot.margin = margin(0.1, 0.1, 0.1, 0.1, "cm"),
         panel.grid.major = element_line(colour = "grey", size = 0.2),
         panel.grid.minor = element_line(colour = "grey", size = 0.1))+
   theme(text = element_text(size = 10))   
-  
- 
+
+
 
 
 

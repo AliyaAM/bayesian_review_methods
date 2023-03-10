@@ -66,9 +66,9 @@ Summary_Results = rbind(Summary_Results, Summary_Results_Symptoms_distress)
 
 
 
-Results_Symptoms =   BayesUpdateStepByStep(x =x, Construct = "Symptoms")
+Results_Symptoms =   BayesUpdateStepByStep(x =x, Construct = "fewerPerceivedSymptoms")
 Results_BayesianMeta_Analysis = rbind(Results_BayesianMeta_Analysis, Results_Symptoms)
-Summary_Results_Symptoms = Summary_stats_table_qual_and_quant(x =x, Construct = "Symptoms")
+Summary_Results_Symptoms = Summary_stats_table_qual_and_quant(x =x, Construct = "fewerPerceivedSymptoms")
 Summary_Results = rbind(Summary_Results, Summary_Results_Symptoms)
 
 
@@ -116,27 +116,27 @@ density_by_Construct = function(data, Construct){
                              filtered_data$variance_prior_elicitation)
   
   # posterior resulted from updating hyperprior with the results of the expert elicitaiton task 
-   Posterior_qual_only = dnorm(logOddsRatio, 
-                               filtered_data$Posterior_qual_only_mean,  
-                               filtered_data$Posterior_qual_only_variance)
-   
-  # likelihood (quantitative evidence only)
-   Likelihood = dnorm(logOddsRatio, 
-                      filtered_data$LOGOdds_Ratio_quant, 
-                      filtered_data$variance_quant)
-   
-   
-   # the posterior resulted from updating prior with likelihood 
-   posterior_QualplusQuant = dnorm(logOddsRatio, 
-                                   filtered_data$posterior_QualplusQuant_mean,
-                                   filtered_data$posterior_QualplusQuant_variance)
+  Posterior_qual_only = dnorm(logOddsRatio, 
+                              filtered_data$Posterior_qual_only_mean,  
+                              filtered_data$Posterior_qual_only_variance)
   
-   # the posterior resulted from updating hyperprior with prior and then with likelihood 
-   posterior_All = dnorm(logOddsRatio, 
-                         filtered_data$posterior_All_mean,
-                         filtered_data$posterior_All_variance)
-   
-    df = data.frame(logOddsRatio, Construct, Prior_qual_density, Posterior_qual_only, Likelihood, posterior_QualplusQuant, posterior_All)
+  # likelihood (quantitative evidence only)
+  Likelihood = dnorm(logOddsRatio, 
+                     filtered_data$LOGOdds_Ratio_quant, 
+                     filtered_data$variance_quant)
+  
+  
+  # the posterior resulted from updating prior with likelihood 
+  posterior_QualplusQuant = dnorm(logOddsRatio, 
+                                  filtered_data$posterior_QualplusQuant_mean,
+                                  filtered_data$posterior_QualplusQuant_variance)
+  
+  # the posterior resulted from updating hyperprior with prior and then with likelihood 
+  posterior_All = dnorm(logOddsRatio, 
+                        filtered_data$posterior_All_mean,
+                        filtered_data$posterior_All_variance)
+  
+  df = data.frame(logOddsRatio, Construct, Prior_qual_density, Posterior_qual_only, Likelihood, posterior_QualplusQuant, posterior_All)
   colnames(df) = c("logOddsRatio", "Construct", "Prior_qual_density", "Posterior_qual_only", "Likelihood",  "posterior_QualplusQuant", "posterior_All")
   return(df)
 }
@@ -149,7 +149,7 @@ Dysphoria_density_by_Construct = density_by_Construct(data = Results_BayesianMet
 NegativeAttitude_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "NegativeAttitude")
 PositiveAttitude_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "PositiveAttitude")
 Symptoms_distress_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "Symptoms_distress")
-Symptoms_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "Symptoms")
+Symptoms_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "fewerPerceivedSymptoms")
 SelfEfficacy_density_by_Construct = density_by_Construct(data = Results_BayesianMeta_Analysis, Construct = "SelfEfficacy")
 
 
@@ -160,9 +160,9 @@ height = c(rep(10, 1000),
            rep(50, 1000),
            rep(60, 1000),
            rep(70, 1000))
-           #rep(80, 1000), 
-           #rep(90, 1000),
-           #rep(100, 1000))
+#rep(80, 1000), 
+#rep(90, 1000),
+#rep(100, 1000))
 
 length(height)
 density_ALL_Construct = rbind(SocialSupport_density_by_Construct,
@@ -200,7 +200,7 @@ nrow(density_ALL_Construct)
 #plotting the results of the expert elicitation task 
 Plot_Prior_qual_density = ggplot(density_ALL_Construct, aes(x = logOddsRatio, y = Construct, height=Prior_qual_density, group = Construct)) +
   geom_density_ridges(stat = "identity", scale = 1) +
-xlim(-6,6) +
+  xlim(-6,6) +
   
   theme(plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"),
         panel.grid.major = element_line(colour = "grey", size = 0.2),
@@ -219,7 +219,7 @@ print(Plot_Prior_qual_density)
 #plotting posterior resulted from updating hyperprior with the results of the expert elicitaiton task 
 #Plot_Posterior_qual_only = ggplot(density_ALL_Construct, aes(x = logOddsRatio, y = Construct, height=Posterior_qual_only, group = Construct)) +
 #  geom_density_ridges(stat = "identity", scale = 1) +
- # xlim(-2, 2.5  )
+# xlim(-2, 2.5  )
 
 #print(Plot_Posterior_qual_only)
 
@@ -239,8 +239,8 @@ Plot_posterior_QualplusQuant = ggplot(density_ALL_Construct, aes(x = logOddsRati
   geom_density_ridges(stat = "identity", scale = 1) +
   xlim(-6,6) +
   theme(plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"),
-      panel.grid.major = element_line(colour = "grey", size = 0.2),
-      panel.grid.minor = element_line(colour = "grey", size = 0.1))+
+        panel.grid.major = element_line(colour = "grey", size = 0.2),
+        panel.grid.minor = element_line(colour = "grey", size = 0.1))+
   theme(text = element_text(size = 25))   
 
 print(Plot_posterior_QualplusQuant)

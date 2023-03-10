@@ -72,33 +72,33 @@ Active_inactive_Human$noX_n =   16 - Active_inactive_Human$total_n
 #############
 
 #Human self-efficacy: 
-  # BaCap+_selfEfficacy, 
-  # 1/BaCap-_selfEfficacy_ hlth_cndtns
-  # 1/BaCap-_selfEfficacy_older_age
-  # 1/ BaCap-_selfEfficacy_heart
-  # 1/BaCap-_selfEfficacy_prcvd_smptmsHF
+# BaCap+_selfEfficacy, 
+# 1/BaCap-_selfEfficacy_ hlth_cndtns
+# 1/BaCap-_selfEfficacy_older_age
+# 1/ BaCap-_selfEfficacy_heart
+# 1/BaCap-_selfEfficacy_prcvd_smptmsHF
 
 #Human social support: 
-  # SI+_social support_practical
-  # SI+_social_support_practical_compan
-  # SI+_social_support_emotional
-  
+# SI+_social support_practical
+# SI+_social_support_practical_compan
+# SI+_social_support_emotional
+
 #Human negative attitude: 
-  #Human: Reinforcement-_punishment, BaCon-_neg_expctncy_symptoms_HF_fatigue, MADP-_cognitive_load
+#Human: Reinforcement-_punishment, BaCon-_neg_expctncy_symptoms_HF_fatigue, MADP-_cognitive_load
 
 #Human positive attitude: 
-  #Human: Reinforcement+_positive_feedback, BaCon+_pos_expctncy_health
+#Human: Reinforcement+_positive_feedback, BaCon+_pos_expctncy_health
 
 #Human symptom distress
-  #Human: Emotion-_fear
-  
+#Human: Emotion-_fear
+
 #Human perceived symptoms
-  #Human: BaCap-_selfEfficacy_prcvd_smptmsHF
+#Human: BaCap-_selfEfficacy_prcvd_smptmsHF
 
 #Human dysphoria 
-  #Human: Emotion-_mood
-                                      
-                                      
+#Human: Emotion-_mood
+
+
 #  The first versio included: 
 
 # Active_inactive_Human$construct_item = case_when(Active_inactive_Human$construct == "BaCap+_selfEfficacy" ~ "SelfEfficacy", 
@@ -119,11 +119,11 @@ Active_inactive_Human$noX_n =   16 - Active_inactive_Human$total_n
 Active_inactive_Human_self_efficacy = data.frame(Active_inactive_Human)
 
 Active_inactive_Human_self_efficacy$construct_item = case_when(Active_inactive_Human$construct == "BaCap+_selfEfficacy" ~ "BaCap+_selfEfficacy",
-                                            Active_inactive_Human$construct ==  "BaCap-_selfEfficacy_ hlth_cndtns" ~ "BaCap+_selfEfficacy_ hlth_cndtns", # we are inverting the OR for these below therefore changing them from BaCap- to BaCap+
-                                            Active_inactive_Human$construct ==  "BaCap-_selfEfficacy_older_age" ~ "BaCap+_selfEfficacy_older_age", # we are inverting the OR for these below therefore changing them from BaCap- to BaCap+
-                                            # delete this as it is a bad estimate: #Active_inactive_Human$construct ==  "BaCap-_selfEfficacy_heart" ~ "BaCap+_selfEfficacy_heart", # we are inverting the OR for these below therefore changing them from BaCap- to BaCap+
-                                            Active_inactive_Human$construct ==  "BaCap-_selfEfficacy_prcvd_smptmsHF" ~ "BaCap+_selfEfficacy_prcvd_smptmsHF")  # we are inverting the OR for these below therefore changing them from BaCap- to BaCap+
-                                       
+                                                               Active_inactive_Human$construct ==  "BaCap-_selfEfficacy_ hlth_cndtns" ~ "BaCap+_selfEfficacy_ hlth_cndtns", # we are inverting the OR for these below therefore changing them from BaCap- to BaCap+
+                                                               Active_inactive_Human$construct ==  "BaCap-_selfEfficacy_older_age" ~ "BaCap+_selfEfficacy_older_age", # we are inverting the OR for these below therefore changing them from BaCap- to BaCap+
+                                                               # delete this as it is a bad estimate: #Active_inactive_Human$construct ==  "BaCap-_selfEfficacy_heart" ~ "BaCap+_selfEfficacy_heart", # we are inverting the OR for these below therefore changing them from BaCap- to BaCap+
+                                                               Active_inactive_Human$construct ==  "BaCap-_selfEfficacy_prcvd_smptmsHF" ~ "BaCap+_selfEfficacy_prcvd_smptmsHF")  # we are inverting the OR for these below therefore changing them from BaCap- to BaCap+
+
 
 x_Human_self_efficacy = Active_inactive_Human_self_efficacy[complete.cases(Active_inactive_Human_self_efficacy), ]
 print(x_Human_self_efficacy)
@@ -173,7 +173,7 @@ Active_inactive_Human_social_support_practical = data.frame(Active_inactive_Huma
 
 
 Active_inactive_Human_social_support_practical$construct_item = case_when(Active_inactive_Human$construct ==  "SI+_social_support_practical_plan" ~ "SI+_social_support_practical_plan",
-                                                          Active_inactive_Human$construct ==  "SI+_social_support_emotional" ~ "SI+_social_support_emotional") 
+                                                                          Active_inactive_Human$construct ==  "SI+_social_support_emotional" ~ "SI+_social_support_emotional") 
 
 
 x_Human_social_support_practical = Active_inactive_Human_social_support_practical[complete.cases(Active_inactive_Human_social_support_practical), ]
@@ -221,8 +221,8 @@ Active_inactive_Human_negative_attitude = data.frame(Active_inactive_Human)
 
 
 Active_inactive_Human_negative_attitude$construct_item = case_when(Active_inactive_Human$construct == "Reinforcement-_punishment" ~ "Reinforcement-_punishment",
-                                                                     Active_inactive_Human$construct ==  "BaCon-_neg_expctncy_symptoms_HF_fatigue" ~ "BaCon-_neg_expctncy_symptoms_HF_fatigue",
-                                                                     Active_inactive_Human$construct ==  " MADP-_cognitive_load" ~ " MADP-_cognitive_load") 
+                                                                   Active_inactive_Human$construct ==  "BaCon-_neg_expctncy_symptoms_HF_fatigue" ~ "BaCon-_neg_expctncy_symptoms_HF_fatigue",
+                                                                   Active_inactive_Human$construct ==  " MADP-_cognitive_load" ~ " MADP-_cognitive_load") 
 
 
 x_Human_negative_attitude = Active_inactive_Human_negative_attitude[complete.cases(Active_inactive_Human_negative_attitude), ]
@@ -274,7 +274,7 @@ Active_inactive_Human_positive_attitude = data.frame(Active_inactive_Human)
 
 
 Active_inactive_Human_positive_attitude$construct_item = case_when(Active_inactive_Human$construct == "Reinforcement+_positive_feedback" ~ "Reinforcement+_positive_feedback",
-                                                              Active_inactive_Human$construct ==  "BaCon+_pos_expctncy_health" ~ "BaCon+_pos_expctncy_health")
+                                                                   Active_inactive_Human$construct ==  "BaCon+_pos_expctncy_health" ~ "BaCon+_pos_expctncy_health")
 
 
 x_Human_positive_attitude = Active_inactive_Human_positive_attitude[complete.cases(Active_inactive_Human_positive_attitude), ]
@@ -397,7 +397,7 @@ perceived_symptoms_logOR <- escalc(measure="OR", ai=PriorExpert_N_PA_X, bi=Prior
 
 perceived_symptoms_logOR$yi
 # we need to invert the OR from belief statements that are phrased negatively 
-perceived_symptoms_logOR$logOR = perceived_symptoms_logOR$yi
+perceived_symptoms_logOR$logOR = c(perceived_symptoms_logOR$yi[1]/-1)
 perceived_symptoms_logOR$variance = perceived_symptoms_logOR$vi
 
 
@@ -409,7 +409,7 @@ perceived_symptoms_logOR$variance
 perceived_symptoms_logOR$logOR
 
 
-perceived_symptoms_logOR$pooled_construct_item = rep("perceived_symptoms_ma", times = nrow(perceived_symptoms_logOR))
+perceived_symptoms_logOR$pooled_construct_item = rep("fewer_perceived_symptoms_ma", times = nrow(perceived_symptoms_logOR))
 
 #######
 #######
@@ -475,35 +475,35 @@ Human_input_data_for_prior =  rbind(perceived_symptoms_logOR,
 
 
 self_efficacy_ma <- rma(yi = logOR, vi = variance, 
-                           data=Human_input_data_for_prior, 
-                           method = "REML", 
-                           subset=(pooled_construct_item=="self_efficacy_ma"))
+                        data=Human_input_data_for_prior, 
+                        method = "REML", 
+                        subset=(pooled_construct_item=="self_efficacy_ma"))
 
 
 
 
 
 perceived_symptoms_ma <- rma(yi = logOR, vi = variance, 
-                        data=Human_input_data_for_prior, 
-                        method = "REML", 
-                        subset=(pooled_construct_item=="perceived_symptoms_ma"))
+                             data=Human_input_data_for_prior, 
+                             method = "REML", 
+                             subset=(pooled_construct_item=="fewer_perceived_symptoms_ma"))
 
 
 
 
 
 dysphoria_ma <- rma(yi = logOR, vi = variance, 
-                             data=Human_input_data_for_prior, 
-                             method = "REML", 
-                             subset=(pooled_construct_item=="dysphoria_ma"))
+                    data=Human_input_data_for_prior, 
+                    method = "REML", 
+                    subset=(pooled_construct_item=="dysphoria_ma"))
 
 
 
 
 symptom_distress_ma <- rma(yi = logOR, vi = variance, 
-                    data=Human_input_data_for_prior, 
-                    method = "REML", 
-                    subset=(pooled_construct_item=="symptom_distress_ma"))
+                           data=Human_input_data_for_prior, 
+                           method = "REML", 
+                           subset=(pooled_construct_item=="symptom_distress_ma"))
 
 
 
@@ -511,9 +511,9 @@ symptom_distress_ma <- rma(yi = logOR, vi = variance,
 
 
 positive_attitude_ma <- rma(yi = logOR, vi = variance, 
-                           data=Human_input_data_for_prior, 
-                           method = "REML", 
-                           subset=(pooled_construct_item=="positive_attitude_ma"))
+                            data=Human_input_data_for_prior, 
+                            method = "REML", 
+                            subset=(pooled_construct_item=="positive_attitude_ma"))
 
 
 
@@ -526,9 +526,9 @@ negative_attitude_ma <- rma(yi = logOR, vi = variance,
 
 
 social_support_ma <- rma(yi = logOR, vi = variance, 
-                            data=Human_input_data_for_prior, 
-                            method = "REML", 
-                            subset=(pooled_construct_item=="social_support_ma"))
+                         data=Human_input_data_for_prior, 
+                         method = "REML", 
+                         subset=(pooled_construct_item=="social_support_ma"))
 
 
 Construct = c("SocialSupport",
@@ -536,7 +536,7 @@ Construct = c("SocialSupport",
               "PositiveAttitude", 
               "Symptoms_distress",
               "SelfEfficacy",
-              "Symptoms", 
+              "fewerPerceivedSymptoms", 
               "Dysphoria")
 
 
@@ -553,14 +553,13 @@ input_Human_prior$logOR_prior_elicitation = c(social_support_ma$beta,
 
 
 
-input_Human_prior$variance_prior_elicitation = c(social_support_ma$tau2,
-                                                  negative_attitude_ma$tau2,
-                                                  positive_attitude_ma$tau2,
-                                                  symptom_distress_ma$tau2,
-                                                  self_efficacy_ma$tau2,
-                                                  perceived_symptoms_ma$tau2,
-                                                  dysphoria_ma$tau2)
-
+input_Human_prior$variance_prior_elicitation = c(social_support_ma$pval,
+                                                 negative_attitude_ma$pval,
+                                                 positive_attitude_ma$pval,
+                                                 symptom_distress_ma$pval,
+                                                 self_efficacy_ma$pval,
+                                                 perceived_symptoms_ma$pval,
+                                                 dysphoria_ma$pval)
 
 
 input_Human_prior$participant_source = rep("human", times = nrow(input_Human_prior))

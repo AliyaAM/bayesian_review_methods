@@ -47,10 +47,11 @@ SOURCE_ROOT = paste(directory, "proj/bayesian_review_methods/", sep = "")
 DATA_ROOT = paste(directory, "proj/bayesian_review_methods/DATA/", sep = "")
 
 ########### Set the root location on the user's local machine to save output files.
-OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/", sep = "")
+#OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/Human/", sep = "")
+OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/ChatGPT/", sep = "")
 
-x = read.csv(paste(DATA_ROOT, "input_Human_prior.csv", sep="")) # new qualitative data
-#x = read.csv(paste(DATA_ROOT, "input_chatGPT.csv", sep="")) # new qualitative data
+#x = read.csv(paste(DATA_ROOT, "input_Human_prior.csv", sep="")) # new qualitative data
+x = read.csv(paste(DATA_ROOT, "input_ChatGPT_prior.csv", sep="")) # new qualitative data
 
 
 print(x)
@@ -58,21 +59,20 @@ print(x)
 #if(x$PriorExpert_N_PA_X == 0 || x$PriorExpert_N_PA_noX == 0 || x$PriorExpert_N_noPA_X == 0 || x$PriorExpert_N_noPA_noX == 0)
 #{
 
-  # x %>% dplyr::transmute(PriorExpert_N_PA_X = PriorExpert_N_PA_X + 0.5, 
-  #                 PriorExpert_N_PA_noX = PriorExpert_N_PA_noX + 0.5, 
-  #                 PriorExpert_N_noPA_X = PriorExpert_N_noPA_X + 0.5, 
-  #                 PriorExpert_N_noPA_noX = PriorExpert_N_noPA_noX + 0.5)
- 
- #}
-  
+# x %>% dplyr::transmute(PriorExpert_N_PA_X = PriorExpert_N_PA_X + 0.5, 
+#                 PriorExpert_N_PA_noX = PriorExpert_N_PA_noX + 0.5, 
+#                 PriorExpert_N_noPA_X = PriorExpert_N_noPA_X + 0.5, 
+#                 PriorExpert_N_noPA_noX = PriorExpert_N_noPA_noX + 0.5)
 
- logOR = log(x$PriorExpert_N_PA_X*x$PriorExpert_N_noPA_noX)/(x$PriorExpert_N_noPA_X*x$PriorExpert_N_PA_noX)
+#}
+
+
+logOR = log(x$PriorExpert_N_PA_X*x$PriorExpert_N_noPA_noX)/(x$PriorExpert_N_noPA_X*x$PriorExpert_N_PA_noX)
 
 
 
 
 print(x)
-
 
 
 #x = read.csv(paste(DATA_ROOT, "input.csv", sep="")) #to perform the analysis we require this data for all indexed functions which were indexed by the name of the included constructs (eg., self-efficacy, social support). This is done so the analysis is parsled out for each construct separately. 

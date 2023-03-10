@@ -72,11 +72,11 @@ ResultsBayesianUpdateQuant = rbind(ResultsBayesianUpdateQuant, QuantUpdate_Physi
 Summary_stats_table_PhysicalFunctioning= Summary_stats_table(data = data, Construct = "PhysicalFunctioning")
 Summary_statistics_table_quant_only = rbind(Summary_statistics_table_quant_only, Summary_stats_table_PhysicalFunctioning)
 
-QuantUpdate_Symptoms= BayesUpdate_Quant(data = data, Construct = "Symptoms")
+QuantUpdate_Symptoms= BayesUpdate_Quant(data = data, Construct = "fewerPerceivedSymptoms")
 ResultsBayesianUpdateQuant = rbind(ResultsBayesianUpdateQuant, QuantUpdate_Symptoms)
 
 
-Summary_stats_table_Symptoms = Summary_stats_table(data = data, Construct = "Symptoms")
+Summary_stats_table_Symptoms = Summary_stats_table(data = data, Construct = "fewerPerceivedSymptoms")
 Summary_statistics_table_quant_only = rbind(Summary_statistics_table_quant_only, Summary_stats_table_Symptoms)
 
 
@@ -321,8 +321,8 @@ density_by_Construct = function(data, Construct){
   
   # the posterior resulted from updating hyperprior with likelihood 
   posterior_Quant = dnorm(logOddsRatio, 
-                                  filtered_data$posterior_Quant_mean,
-                                  filtered_data$posterior_Quant_variance)
+                          filtered_data$posterior_Quant_mean,
+                          filtered_data$posterior_Quant_variance)
   
   
   df = data.frame(logOddsRatio, Construct, Likelihood, posterior_Quant)
@@ -339,7 +339,7 @@ NegativeAttitude_density_by_Construct = density_by_Construct(data = data, Constr
 PositiveAttitude_density_by_Construct = density_by_Construct(data = data, Construct = "PositiveAttitude")
 SixMWT_density_by_Construct = density_by_Construct(data = data, Construct = "6MWT")
 PhysicalFunctioning_density_by_Construct = density_by_Construct(data = data, Construct = "PhysicalFunctioning")
-Symptoms_density_by_Construct = density_by_Construct(data = data, Construct = "Symptoms")
+Symptoms_density_by_Construct = density_by_Construct(data = data, Construct = "fewerPerceivedSymptoms")
 LVEF_density_by_Construct = density_by_Construct(data = data, Construct = "LVEF")
 SelfEfficacy_density_by_Construct = density_by_Construct(data = data, Construct = "SelfEfficacy")
 Depression_density_by_Construct = density_by_Construct(data = data, Construct = "Depression")
@@ -401,36 +401,36 @@ height = c(rep(1, 1000),
 
 length(height)
 density_ALL_Construct_quant_only = rbind(Age_density_by_Construct,
-                                        Comorbidity_density_by_Construct,
-                                        SocialSupport_density_by_Construct,
-                                        NegativeAttitude_density_by_Construct,
-                                        PositiveAttitude_density_by_Construct,
-                                        SixMWT_density_by_Construct, 
-                                        PhysicalFunctioning_density_by_Construct,
-                                        Symptoms_density_by_Construct,
-                                        LVEF_density_by_Construct, 
-                                        SelfEfficacy_density_by_Construct,
-                                        Depression_density_by_Construct,
-                                        Digoxin_density_by_Construct,
-                                        Doppler_density_by_Construct,
-                                        Dysphoria_density_by_Construct,
-                                        Employment_density_by_Construct,
-                                        Ethnicity_density_by_Construct,
-                                        HFDuration_density_by_Construct,
-                                        HFrEF_Yes_density_by_Construct,
-                                        highproBNP_density_by_Construct,
-                                        Hostility_density_by_Construct,
-                                        Income_density_by_Construct,
-                                        LAV_density_by_Construct,
-                                        LVAD_density_by_Construct,
-                                        LVR_density_by_Construct,
-                                        Partner_density_by_Construct,
-                                        PeakVO2_density_by_Construct,
-                                        PerceivedExertion_density_by_Construct,
-                                        QoL_density_by_Construct,
-                                        RenalFunction_density_by_Construct,
-                                        Smoking_density_by_Construct,
-                                        Symptoms_distress_density_by_Construct)
+                                         Comorbidity_density_by_Construct,
+                                         SocialSupport_density_by_Construct,
+                                         NegativeAttitude_density_by_Construct,
+                                         PositiveAttitude_density_by_Construct,
+                                         SixMWT_density_by_Construct, 
+                                         PhysicalFunctioning_density_by_Construct,
+                                         Symptoms_density_by_Construct,
+                                         LVEF_density_by_Construct, 
+                                         SelfEfficacy_density_by_Construct,
+                                         Depression_density_by_Construct,
+                                         Digoxin_density_by_Construct,
+                                         Doppler_density_by_Construct,
+                                         Dysphoria_density_by_Construct,
+                                         Employment_density_by_Construct,
+                                         Ethnicity_density_by_Construct,
+                                         HFDuration_density_by_Construct,
+                                         HFrEF_Yes_density_by_Construct,
+                                         highproBNP_density_by_Construct,
+                                         Hostility_density_by_Construct,
+                                         Income_density_by_Construct,
+                                         LAV_density_by_Construct,
+                                         LVAD_density_by_Construct,
+                                         LVR_density_by_Construct,
+                                         Partner_density_by_Construct,
+                                         PeakVO2_density_by_Construct,
+                                         PerceivedExertion_density_by_Construct,
+                                         QoL_density_by_Construct,
+                                         RenalFunction_density_by_Construct,
+                                         Smoking_density_by_Construct,
+                                         Symptoms_distress_density_by_Construct)
 
 density_ALL_Construct_quant_only = cbind(density_ALL_Construct_quant_only, height)
 
@@ -488,7 +488,7 @@ Plot_Likelihood = ggplot(density_ALL_Construct_quant_only, aes(x = logOddsRatio,
                             "PositiveAttitude"=  "Positive Attitude",
                             "6MWT"= "6MWT",
                             "PhysicalFunctioning"="Physical Functioning",
-                            "Symptoms"= "Perceived Symptoms",
+                            "fewerPerceivedSymptoms"= "Fewer Perceived Symptoms",
                             "LVEF"="LVEF",
                             "SelfEfficacy"="Self-efficacy",
                             "Depression"="Depression",
@@ -516,7 +516,7 @@ Plot_Likelihood = ggplot(density_ALL_Construct_quant_only, aes(x = logOddsRatio,
   
   theme(plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"),
         panel.grid.major = element_line(colour = "grey", size = 0.2)) +
-        #panel.grid.minor = element_line(colour = "grey", size = 0.1)) +
+  #panel.grid.minor = element_line(colour = "grey", size = 0.1)) +
   theme(text = element_text(size = 10))   
 
 ggsave(file = paste(OUTPUT_ROOT, "/Plot_Likelihood.pdf",  sep=""),Plot_Likelihood, width=4, height=3, units="in", scale=3)
@@ -527,13 +527,13 @@ Plot_posterior_Quant = ggplot(density_ALL_Construct_quant_only, aes(x = logOddsR
   geom_density_ridges(stat = "identity", scale = 1) +
   
   scale_x_continuous(name = "log OR", breaks = c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 2), limits = c(-2, 3)) +
-
+  
   theme(plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"),
         panel.grid.major = element_line(colour = "grey", size = 0.2),
         panel.grid.minor = element_line(colour = "grey", size = 0.1)) +
   
   theme(text = element_text(size = 8))   
 
- print(Plot_posterior_Quant)
- 
+print(Plot_posterior_Quant)
+
 ggsave(file = paste(OUTPUT_ROOT, "/Plot_posterior_Quant.pdf",  sep=""),Plot_posterior_Quant, width=4, height=3, units="in", scale=3)

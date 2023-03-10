@@ -75,7 +75,7 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
   
   Summary_statistics_table_qual_quant = function(Construct, Total_N_hyperprior, Mean_probability_hyperprior, Variance_hyperprior, Log_Odds_hyperprior, 
                                                  logOR_prior_elicitation, variance_prior_elicitation,
-                                      LOGOdds_Ratio_quant, variance_quant) {
+                                                 LOGOdds_Ratio_quant, variance_quant) {
     
     Variance_hyperprior = Variance_hyperprior 
     Log_Odds_hyperprior = Log_Odds_hyperprior
@@ -92,7 +92,7 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
     summary_data = cbind(summary_data, Hyperprior_quantile_0.05)
     summary_data = cbind(summary_data, Hyperprior_quantile_0.95)
     
-
+    
     #On the basis of the results of the prior elicitation task we calculate the log OR for each construct
     logOR_prior_elicitation = logOR_prior_elicitation
     
@@ -147,14 +147,14 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
   }
   
   summary_data = Summary_statistics_table_qual_quant(Construct = Construct, 
-                                          Total_N_hyperprior = Total_N_hyperprior, 
-                                          Mean_probability_hyperprior = Mean_probability_hyperprior, 
-                                          Variance_hyperprior = Variance_hyperprior,
-                                          Log_Odds_hyperprior = Log_Odds_hyperprior, 
-                                          logOR_prior_elicitation = logOR_prior_elicitation, 
-                                          variance_prior_elicitation = variance_prior_elicitation,
-                                          LOGOdds_Ratio_quant = LOGOdds_Ratio_quant, 
-                                          variance_quant = variance_quant)
+                                                     Total_N_hyperprior = Total_N_hyperprior, 
+                                                     Mean_probability_hyperprior = Mean_probability_hyperprior, 
+                                                     Variance_hyperprior = Variance_hyperprior,
+                                                     Log_Odds_hyperprior = Log_Odds_hyperprior, 
+                                                     logOR_prior_elicitation = logOR_prior_elicitation, 
+                                                     variance_prior_elicitation = variance_prior_elicitation,
+                                                     LOGOdds_Ratio_quant = LOGOdds_Ratio_quant, 
+                                                     variance_quant = variance_quant)
   
   
   return(params = (data.frame(Construct = Construct, 
@@ -164,4 +164,3 @@ Summary_stats_table_qual_and_quant = function(x, Construct) {
 }
 
 
-  
