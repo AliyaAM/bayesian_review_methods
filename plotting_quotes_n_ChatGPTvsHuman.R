@@ -89,7 +89,9 @@ Enablers_plot = ggplot(data_domains, aes(y= reorder(construct, +quotes), x = quo
                        geom_col(aes(fill = PA_status), position = "dodge") + 
                        facet_wrap(~human, nrow=1)
 
-
+ggsave(file = paste(OUTPUT_ROOT, "/Enablers_plot.pdf",  sep=""), Enablers_plot, 
+       #width=6, height=2, units="in", 
+       scale=1)
 
 # 
 # 
@@ -121,3 +123,10 @@ data_domains_barriers = subset(data, data$construct %in% c(construct_list_barrie
 Barriers_plot = ggplot(data_domains_barriers, aes(y= reorder(construct, +quotes), x = quotes)) +
                        geom_col(aes(fill = PA_status), position = "dodge") + 
                        facet_wrap(~human, nrow=1)
+
+
+ggsave(file = paste(OUTPUT_ROOT, "/Barriers_plot.pdf",  sep=""), Barriers_plot, 
+       #width=6, height=2, units="in", 
+       scale=1)
+
+
