@@ -140,7 +140,6 @@ wrap_text <- function(x, chars = 10) {
 test = select(enablers_data, c(human, construct))
 
  
- df_pval3
  # df_pval4 <- enablers_data %>%
  #    rstatix::group_by(human_factor, reorder(construct_name, -quotes), .add = FALSE, .drop = FALSE) %>%
  #    rstatix::wilcox_test(percent_quotes ~ PA_status_factor) %>%
@@ -152,15 +151,15 @@ test = select(enablers_data, c(human, construct))
     
     
  
- Enablers_plot + stat_pvalue_manual(df_pval3,
-                      label = "{p}",
-                      colour = "PA_status_factor",
-                      fontface = "bold",
-                      #step.group.by = "human_factor",
-                      step.increase = 0.1,
-                      tip.length = 0,
-                      bracket.colour = "black",
-                      show.legend = FALSE)
+ # Enablers_plot + stat_pvalue_manual(df_pval3,
+ #                      label = "{p}",
+ #                      colour = "PA_status_factor",
+ #                      fontface = "bold",
+ #                      #step.group.by = "human_factor",
+ #                      step.increase = 0.1,
+ #                      tip.length = 0,
+ #                      bracket.colour = "black",
+ #                      show.legend = FALSE)
     # stat_pvalue_manual(df_pval4,
     #                    label = "{p}",
     #                    color = "black",
