@@ -135,7 +135,7 @@ Enablers_plot = plot + facet_grid(vars(human_factor), vars(factor(construct_name
                                                                                               "Intentions", # order the grid columns by percent quote (from largest to smallest)
                                                                                               "Memory, attention, and decision processes"))), # order the grid columns by percent quote (from largest to smallest)
                                  
-                                  labeller = as_labeller(wrap_text), as.table = FALSE)
+                                  labeller = as_labeller(wrap_text), as.table = TRUE)
 
 
                                  
