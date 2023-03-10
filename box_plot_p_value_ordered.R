@@ -120,7 +120,8 @@ wrap_text <- function(x, chars = 5) {
 
 
 
-Enablers_plot = plot + facet_grid(vars(human_factor), vars(factor(construct_name, levels = c("Beliefs about consequences", # order the grid columns by percent quote (from largest to smallest)
+Enablers_plot = plot + facet_grid(vars(human_factor), 
+                                  vars(factor(construct_name, levels = c("Beliefs about consequences", # order the grid columns by percent quote (from largest to smallest)
                                                                                               "Behavioural regulation", # order the grid columns by percent quote (from largest to smallest)
                                                                                               "Social influences", # order the grid columns by percent quote (from largest to smallest)
                                                                                               "Goals",  # order the grid columns by percent quote (from largest to smallest)
