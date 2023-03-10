@@ -67,10 +67,12 @@ enablers_data$human_factor = case_when(enablers_data$human == "Human participant
 enablers_data$human_factor = as.factor(enablers_data$human_factor)
 
 
-wrap_text <- function(x, chars = 10) {
-  x <- gsub("_", " ", x)
-  stringr::str_wrap(x, chars)
-}
+################ 
+################ 
+################ 
+################ 
+################ 
+################ Add t-test between Active/sedentary per domains: 
 
 
 stat.test <- enablers_data %>%
@@ -85,13 +87,18 @@ stat.test <- stat.test %>% add_xy_position(x = "PA_status_factor")
 enablers_data$percent_quotes
 enablers_data$PA_status_factor
 
+################ 
+################ 
+################ 
+################ 
+################  plot Enablers: 
+
 plot = ggboxplot(enablers_data, x = "PA_status_factor", y = "percent_quotes", fill = "PA_status_factor") 
 plot = plot + stat_pvalue_manual(stat.test, hide.ns = TRUE)        
 
+# adding ticks of the axis
 plot = plot +  scale_y_continuous(limits=c(0, 30), breaks = c(0, 5, 10, 15, 20, 25, 30))
 plot = plot +  scale_x_discrete( breaks = "")
-# changing palette 
-#Enablers_plot = Enablers_plot + scale_fill_brewer(palette = "Set1")+ scale_color_brewer(palette = "Set1")
 
 #labeling axis
 plot = plot + ggtitle("Enablers") + ylab("% of quotes per case, k") + xlab("")
@@ -99,42 +106,45 @@ plot = plot + ggtitle("Enablers") + ylab("% of quotes per case, k") + xlab("")
 #labeling legend
 plot = plot + guides(fill=guide_legend(title=""))
 
+# changing palette 
 plot = plot + scale_fill_brewer(palette = "Set1")+ scale_color_brewer(palette = "Set1")
 
 
-# levels = c("Beliefs about consequences", "Behavioural regulation", "Social influences",  "Goals",  "Environmental context and resources", "Reinforcement",  "Optimism", "Social, professional role and identity", "Emotion",  "Beliefs about capabilities", "Knowledge", "Skills", "Intentions", "Memory, attention, and decision processes") 
-# 
-# 
-# 
-# times = rep(levels, 
-#             times = 48)
-# 
-# 
-# facet_grid(~factor(team, levels=c('C', 'D', 'A', 'B')))
+
+# arrange in a grid and also make sure the labels' text is wrapped 
+
+wrap_text <- function(x, chars = 5) {
+  x <- gsub("_", "", x)
+  stringr::str_wrap(x, chars)
+}
 
 
 
-Enablers_plot = plot + facet_grid(vars(human_factor), vars(factor(construct_name, levels = c("Beliefs about consequences", 
-                                                                                              "Behavioural regulation",
-                                                                                              "Social influences", 
-                                                                                              "Goals", 
-                                                                                              "Environmental context and resources",
-                                                                                              "Reinforcement", 
-                                                                                              "Optimism",
-                                                                                              "Social, professional role and identity",
-                                                                                              "Emotion", 
-                                                                                              "Beliefs about capabilities",
-                                                                                              "Knowledge",
-                                                                                              "Skills",
-                                                                                              "Intentions", 
-                                                                                              "Memory, attention, and decision processes"))), 
-                                  labeller = as_labeller(wrap_text), as.table = FALSE)
+Enablers_plot = plot + facet_grid(vars(human_factor), vars(factor(construct_name, levels = c("Beliefs about consequences", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Behavioural regulation", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Social influences", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Goals",  # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Environmental context and resources", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Reinforcement", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Optimism", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Social, professional role and identity", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Emotion", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Beliefs about capabilities", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Knowledge", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Skills", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Intentions", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Memory, attention, and decision processes"))), # order the grid columns by percent quote (from largest to smallest)
                                  
+                                  labeller = as_labeller(wrap_text), as.table = FALSE)
+
+
+                                 
+Enablers_plot = Enablers_plot + theme(strip.text = element_text(size=6))
+
                           
 
-# Enablers_plot = Enablers_plot + theme(panel.grid.minor = element_blank(), #removes minor grid lines
-#                                       panel.grid.major = element_blank(),
-#                                       strip.text = element_text(size=9)) 
-
+ggsave(file = paste(OUTPUT_ROOT, "/Enablers_plot.pdf",  sep=""), Enablers_plot, 
+       #width=6, height=2, units="in", 
+       scale=1)
 
 
