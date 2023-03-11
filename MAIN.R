@@ -1,6 +1,6 @@
-#install.packages("RColorBrewer")
 
-library(tidyverse)
+
+#library(tidyverse)
 library(dplyr)
 library(assertthat)
 library(ggplot2)
@@ -9,10 +9,10 @@ library(reshape2)
 library(tibble)
 library(compute.es)
 library(metafor)
-library(bayesplot)
+#library(bayesplot)
 library(ggplot2)
 library(ggridges)
-library(rstan) 
+#library(rstan) 
 library(coda)
 library(bayestestR)
 library(HDInterval)
@@ -66,8 +66,6 @@ print(x)
 
 #}
 
-
-logOR = log(x$PriorExpert_N_PA_X*x$PriorExpert_N_noPA_noX)/(x$PriorExpert_N_noPA_X*x$PriorExpert_N_PA_noX)
 
 
 
