@@ -282,3 +282,178 @@ ggsave(file = paste(OUTPUT_ROOT, "/Barriers_plot.pdf",  sep=""), Barriers_plot,
 
 
 
+#######
+#######
+#######
+#######
+
+################ Add t-test between HUMAN PARTICIPANTS AND CHATGPT per domains: 
+
+
+stat.test_HumanvsChatGPT <- enablers_data %>%
+  group_by(PA_status_factor, construct_name) %>%
+  t_test(percent_quotes ~ human_factor) %>%
+  adjust_pvalue(method = "bonferroni") %>%
+  add_significance()
+stat.test_HumanvsChatGPT 
+
+
+stat.test_HumanvsChatGPT <- stat.test_HumanvsChatGPT %>% add_xy_position(x = "human_factor")
+
+stat.test_HumanvsChatGPT 
+
+################ 
+################ 
+################ 
+################ 
+
+
+
+plot_HumanvsChatGPT = ggboxplot(enablers_data, x = "human_factor", y = "percent_quotes", fill = "human_factor") 
+plot_HumanvsChatGPT = plot_HumanvsChatGPT + stat_pvalue_manual(stat.test_HumanvsChatGPT)        
+
+# adding ticks of the axis
+plot_HumanvsChatGPT = plot_HumanvsChatGPT +  scale_y_continuous(limits=c(0, 35), breaks = c(0, 5, 10, 15, 20, 25, 30, 35))
+plot_HumanvsChatGPT = plot_HumanvsChatGPT +  scale_x_discrete( breaks = "")
+
+#labeling axis
+plot_HumanvsChatGPT = plot_HumanvsChatGPT + ggtitle("Enablers") + ylab("% of quotes per case, k") + xlab("")
+
+#labeling legend
+plot_HumanvsChatGPT = plot_HumanvsChatGPT + guides(fill=guide_legend(title=""))
+
+# changing palette 
+plot_HumanvsChatGPT = plot_HumanvsChatGPT + scale_fill_brewer(palette = "Set2")+ scale_color_brewer(palette = "Set2")
+
+
+
+# arrange in a grid and also make sure the labels' text is wrapped 
+
+wrap_text <- function(x, chars = 5) {
+  x <- gsub("_", "", x)
+  stringr::str_wrap(x, chars)
+}
+
+
+
+Enablers_plot_HumanvsChatGPT = plot_HumanvsChatGPT + facet_grid(vars(PA_status_factor), 
+                                  vars(factor(construct_name, levels = c("Beliefs about consequences", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Behavioural regulation", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Social influences", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Goals",  # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Environmental context and resources", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Reinforcement", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Optimism", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Social, professional role and identity", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Emotion", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Beliefs about capabilities", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Knowledge", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Skills", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Intentions", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Memory, attention, and decision processes"))), # order the grid columns by percent quote (from largest to smallest)
+                                  
+                                  labeller = as_labeller(wrap_text), as.table = TRUE)
+
+
+
+Enablers_plot_HumanvsChatGPT = Enablers_plot_HumanvsChatGPT + theme(strip.text = element_text(size=5.4))
+
+print(Enablers_plot_HumanvsChatGPT)                    
+
+ggsave(file = paste(OUTPUT_ROOT, "/Enablers_plot_HumanvsChatGPT.pdf",  sep=""), Enablers_plot_HumanvsChatGPT, 
+       #width=6, height=2, units="in", 
+       scale=1)
+
+
+
+################ 
+################ 
+################ 
+################ 
+################ 
+################ Add t-test between Human and ChatGPT per domains (BARRIERS): 
+
+
+stat.test_HumanvsChatGPT_barrier <- barriers_data %>%
+  group_by(PA_status_factor, construct_name) %>%
+  t_test(percent_quotes ~ human_factor) %>%
+  adjust_pvalue(method = "bonferroni") %>%
+  add_significance()
+stat.test_HumanvsChatGPT_barrier 
+
+
+stat.test_HumanvsChatGPT_barrier <- stat.test_HumanvsChatGPT_barrier %>% add_xy_position(x = "human_factor")
+barriers_data$percent_quotes
+barriers_data$PA_status_factor
+
+################ 
+################ 
+################ 
+################ 
+################  plot barriers: 
+
+plot_HumanvsChatGPT_barrier= ggboxplot(barriers_data, x = "human_factor", y = "percent_quotes", fill = "human_factor") 
+plot_HumanvsChatGPT_barrier = plot_HumanvsChatGPT_barrier + stat_pvalue_manual(stat.test_HumanvsChatGPT_barrier)        
+
+# adding ticks of the axis
+plot_HumanvsChatGPT_barrier = plot_HumanvsChatGPT_barrier +  scale_y_continuous(limits=c(0, 50), breaks = c(0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50))
+plot_HumanvsChatGPT_barrier = plot_HumanvsChatGPT_barrier +  scale_x_discrete( breaks = "")
+
+#labeling axis
+plot_HumanvsChatGPT_barrier = plot_HumanvsChatGPT_barrier + ggtitle("Barriers") + ylab("% of quotes per case, k") + xlab("")
+
+#labeling legend
+plot_HumanvsChatGPT_barrier = plot_HumanvsChatGPT_barrier + guides(fill=guide_legend(title=""))
+
+# changing palette 
+plot_HumanvsChatGPT_barrier = plot_HumanvsChatGPT_barrier + scale_fill_brewer(palette = "Set2")+ scale_color_brewer(palette = "Set2")
+
+
+
+# arrange in a grid and also make sure the labels' text is wrapped 
+
+wrap_text <- function(x, chars = 5) {
+  x <- gsub("_", "", x)
+  stringr::str_wrap(x, chars)
+}
+
+
+
+Barriers_plot_HumanvsChatGPT = plot_HumanvsChatGPT_barrier + facet_grid(vars(PA_status_factor), 
+                                          vars(factor(construct_name, levels = c("Beliefs about capabilities", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Beliefs about consequences", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Environmental context and resources", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Goals",  # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Memory, attention, and decision processes", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Emotion", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Skills", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Behavioural regulation", # order the grid columns by percent quote (from largest to smallest) 
+                                                                                 "Social, professional role and identity", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Social influences", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Optimism", # order the grid columns by percent quote (from largest to smallest) 
+                                                                                 "Knowledge", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Reinforcement", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Intentions"))), # order the grid columns by percent quote (from largest to smallest)
+                                          
+                                          
+                                          labeller = as_labeller(wrap_text), as.table = TRUE)
+
+
+
+
+
+Barriers_plot_HumanvsChatGPT = Barriers_plot_HumanvsChatGPT + theme(strip.text = element_text(size=5.4))
+
+print(Barriers_plot_HumanvsChatGPT)
+
+ggsave(file = paste(OUTPUT_ROOT, "/Barriers_plot_HumanvsChatGPT.pdf",  sep=""), Barriers_plot_HumanvsChatGPT, 
+       #width=6, height=2, units="in", 
+       scale=1)
+
+
+
+#######
+#######
+#######
+#######
+
