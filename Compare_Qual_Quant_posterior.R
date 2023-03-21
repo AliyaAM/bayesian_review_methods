@@ -85,7 +85,7 @@ height = c(rep(10, 1000),
 #  rep(290, 1000),
 #  rep(300, 1000))
 
-
+min(density_ALL_Construct$logOddsRatio)
 
 
 d <- data.frame(
@@ -184,68 +184,35 @@ Compare_distributions_plot = ggplot(d, aes(x = logOddsRatio,
                                            color = distribution,
                                            fill = distribution)) +
   
-  scale_x_continuous(name = "log OR", breaks = c(-3.0,
-                                                 #-2.9,
+  scale_x_continuous(name = "log OR", breaks = c(-3.0, 
+                                           
                                                  -2.8,
-                                                 #-2.7, 
                                                  -2.6,
-                                                 #-2.5,
                                                  -2.4,
-                                                 #-2.3,
                                                  -2.2,
-                                                 #-2.1,
-                                                 
                                                  -2.0,
-                                                 #-1.9,
                                                  -1.8,
-                                                 #-1.7, 
                                                  -1.6,
-                                                 #-1.5,
                                                  -1.4,
-                                                 #-1.3,
                                                  -1.2,
-                                                 #-1.1, 
+                                                 
                                                  -1, 
-                                                 #-0.9,
                                                  -0.8,
-                                                 #-0.7,
                                                  -0.6, 
-                                                 #-0.5,
                                                  -0.4,
-                                                 #-0.3,
                                                  -0.2,
-                                                 #-0.1, 
                                                  0,
-                                                 #0.1,
+                                                 
                                                  0.2,
-                                                 #0.3,
                                                  0.4, 
-                                                 # 0.5,
                                                  0.6, 
-                                                 #0.7,
                                                  0.8,
-                                                 # 0.9, 
                                                  1,
-                                                 # 1.1,
                                                  1.2, 
-                                                 # 1.3,
                                                  1.4, 
-                                                 #1.5,
                                                  1.6,
-                                                 # 1.7,
                                                  1.8,
-                                                 #1.9, 
                                                  2),
-                     # # 2.1,
-                     #  2.2,
-                     # # 2.3,
-                     #  2.4, 
-                     # # 2.5,
-                     #  2.6, 
-                     #  #2.7, 
-                     #  2.8,
-                     # # 2.9, 
-                     #  3),
                      limits = c(-3, 2)) +
   
   
@@ -300,4 +267,7 @@ print(Compare_distributions_plot)
 
 
 ggsave(file = paste(OUTPUT_ROOT, "/Compare_distributions_plot.pdf",  sep=""),Compare_distributions_plot, width=6, height=2, units="in", scale=1)
+
+ggsave(file = paste(OUTPUT_ROOT, "/Compare_distributions_plot.eps",  sep=""),Compare_distributions_plot, width=6, height=2, units="in", scale=1)
+
 

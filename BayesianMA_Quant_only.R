@@ -3,14 +3,6 @@
 # this scripts performs Baesian meta-analysis of quantitative evidence separately for each construct 
 # the empirical hyperprior is updated with the quantitative findings 
 
-library(tidyverse)
-library(dplyr)
-library(assertthat)
-library(ggplot2)
-library(reshape2)  
-library(filenamer) # library for as.filename
-library(ggridges)
-
 
 
 source(paste(SOURCE_ROOT, "BayesUpdate_Quant.R", sep="")) # function that runs Bayesian meta-analysis of quantitative evidence

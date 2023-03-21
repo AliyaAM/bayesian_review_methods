@@ -19,6 +19,7 @@ library(HDInterval)
 library(assertthat)
 library(RColorBrewer)
 
+
 ## Set the root directory to look for source code.
 #SOURCE_ROOT = "/Users/aliyaamirova/proj/bayesian_meta_analysis/"
 

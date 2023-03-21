@@ -107,7 +107,7 @@ write.table(Summary_Results, file = paste(OUTPUT_ROOT, "Summary_Results_Bayesian
 
 density_by_Construct = function(data, Construct){
   index = data$Construct == Construct
-  logOddsRatio = seq( -2, 3 , length=1000)
+  logOddsRatio = seq( -3, 4 , length=1000)
   filtered_data = filter(data, Construct == data[index,]$Construct)
   
   # the results of the expert elicitation task 

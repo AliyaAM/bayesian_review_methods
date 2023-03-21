@@ -148,7 +148,10 @@ print(Enablers_plot)
         #width=6, height=2, units="in", 
         scale=1)
 
-
+ ggsave(file = paste(OUTPUT_ROOT, "/Enablers_plot.eps",  sep=""), Enablers_plot, 
+        #width=6, height=2, units="in", 
+        scale=1)
+ 
 
 
 ###########
@@ -281,7 +284,9 @@ ggsave(file = paste(OUTPUT_ROOT, "/Barriers_plot.pdf",  sep=""), Barriers_plot,
        scale=1)
 
 
-
+ggsave(file = paste(OUTPUT_ROOT, "/Barriers_plot.eps",  sep=""), Barriers_plot, 
+       #width=6, height=2, units="in", 
+       scale=1)
 #######
 #######
 #######
@@ -364,7 +369,9 @@ ggsave(file = paste(OUTPUT_ROOT, "/Enablers_plot_HumanvsChatGPT.pdf",  sep=""), 
        #width=6, height=2, units="in", 
        scale=1)
 
-
+ggsave(file = paste(OUTPUT_ROOT, "/Enablers_plot_HumanvsChatGPT.eps",  sep=""), Enablers_plot_HumanvsChatGPT, 
+       #width=6, height=2, units="in", 
+       scale=1)
 
 ################ 
 ################ 
@@ -450,7 +457,9 @@ ggsave(file = paste(OUTPUT_ROOT, "/Barriers_plot_HumanvsChatGPT.pdf",  sep=""), 
        #width=6, height=2, units="in", 
        scale=1)
 
-
+ggsave(file = paste(OUTPUT_ROOT, "/Barriers_plot_HumanvsChatGPT.eps",  sep=""), Barriers_plot_HumanvsChatGPT, 
+       #width=6, height=2, units="in", 
+       scale=1)
 
 #######
 #######

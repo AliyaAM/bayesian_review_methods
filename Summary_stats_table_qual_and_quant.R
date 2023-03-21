@@ -1,11 +1,6 @@
 
 #this function (BayesUpdateStepByStep) runs the Bayesian meta-analysis that combines qualitative and quantitative evidence 
 
-library(ggplot2)
-library(reshape2) 
-library(dplyr)
-library(tibble)
-
 
 
 # source(paste(SOURCE_ROOT, "ConvertEffectsizes.R", sep=""))   #### convert effect sizes from individual studies  (F-value, Binary (Absolute numbers and proportions), r coeffcient and SMD) into log odds ratios. All quantitative results are converted to log OR in order to be compatible with qualitative evidence, we treated all results as binary. 
