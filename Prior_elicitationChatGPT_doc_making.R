@@ -9,10 +9,10 @@ library(reshape2)
 library(tibble)
 library(compute.es)
 library(metafor)
-library(bayesplot)
+#library(bayesplot)
 library(ggplot2)
 library(ggridges)
-library(rstan) 
+#library(rstan) 
 library(coda)
 library(bayestestR)
 library(HDInterval)
@@ -55,6 +55,9 @@ OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/", sep = ""
 
 Active_inactive_ChatGPT = read.csv(paste(DATA_ROOT, "Active_inactive_ChatGPT_March06_FINAL.csv", sep =""))
 Active_inactive_ChatGPT = read.csv(paste(DATA_ROOT, "Active_inactive_ChatGPT_March06_FINAL.csv", sep =""))
+ChatGPT_perBS_perBot = read.csv(paste(DATA_ROOT, "ChatGPT_perBS_perBot_FINAL.csv", sep = "")) 
+
+
 
 
 Active_inactive_ChatGPT$active_n #construct present in active PA_X
@@ -595,7 +598,7 @@ input_ChatGPT_prior$variance_prior_elicitation = c(social_support_ma$pval,
 
 input_ChatGPT_prior$participant_source = rep("ChatGPT", times = nrow(input_ChatGPT_prior))
 
-write.csv(input_ChatGPT_prior, file = paste(DATA_ROOT, "input_ChatGPT_prior.csv", sep="")) # new qualitative data ChatGPT
+#write.csv(input_ChatGPT_prior, file = paste(DATA_ROOT, "input_ChatGPT_prior.csv", sep="")) # new qualitative data ChatGPT
 
 
 
