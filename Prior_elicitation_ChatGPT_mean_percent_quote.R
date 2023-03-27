@@ -79,13 +79,18 @@ ChatGPT_perBS_perBot = read.csv(paste(DATA_ROOT, "ChatGPT_perBS_perBot_FINAL.csv
 
 unique(ChatGPT_perBS_perBot$Cases)
 new_DF <- ChatGPT_perBS_perBot[rowSums(is.na(ChatGPT_perBS_perBot)) > 0,]
+ls(ChatGPT_perBS_perBot)
 
+for (i in 3:colnames(ChatGPT_perBS_perBot)){
+  
 
- ChatGPT_perBS_perBot = tibble(ChatGPT_perBS_perBot) %>% 
+  print(i)
+  
+  ChatGPT_perBS_perBot = tibble(ChatGPT_perBS_perBot) %>% 
   
   replace(is.na(.), 0) %>%
   mutate(sum_quotes_per_participant = rowSums(across(where(is.numeric)))) %>%
-  mutate(fraction_qts_per_par_SE = (BaCapenblr_selfEfficacy/sum_quotes_per_participant) + 0.001) %>% #if we change BaCapenblr_selfEfficacy to generic construct or index it somehow then we can run a function that goes through all constructs  
+  mutate(fraction_qts_per_par = (i/sum_quotes_per_participant) + 0.001) %>% #if we change BaCapenblr_selfEfficacy to generic construct or index it somehow then we can run a function that goes through all constructs  
   mutate(name = case_when( str_detect(Cases, 'William') ~ 'William',
                            str_detect(Cases, 'Patricia') ~ 'Patricia', 
                            str_detect(Cases, 'Mark') ~ 'Mark',
@@ -112,7 +117,7 @@ new_DF <- ChatGPT_perBS_perBot[rowSums(is.na(ChatGPT_perBS_perBot)) > 0,]
  
  
  long_data = ChatGPT_perBS_perBot %>%
-   select(name, PA_status, fraction_qts_per_par_SE) %>%
+   select(name, PA_status, fraction_qts_per_par) %>%
  
    gather("key", "fraction_present", -name, -PA_status) %>%
    mutate(fraction_not_present = (1-fraction_present) +  0.001) %>%
@@ -137,15 +142,13 @@ new_DF <- ChatGPT_perBS_perBot[rowSums(is.na(ChatGPT_perBS_perBot)) > 0,]
    OR_vector = c(OR_vector, OR_temp$fraction_present[1])
    OR_mean = mean(OR_vector)
    variance_OR = var(OR_vector)
- }
+   }
  
  OR_mean =  OR_mean
  variance_OR = variance_OR
- 
  OR_vector =  OR_vector
 
- 
-
+}
 # ChatGPT_perBS_perBot$Cases
 
 #we could produce the OR or each participant, or group by PA_status and produce OR all active vs all sedentary (average over)
