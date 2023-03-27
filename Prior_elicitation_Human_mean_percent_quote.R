@@ -32,8 +32,8 @@ print("we should reduce to those constructs that are measured using perceived la
 print("consider how to deal with constructs with more than one belief statements (aggregate/average...?)")
 print("decide on the variance for the prior")
 print("systematically include all constructs from quant and from qual")
-print("plot prior from chatGPT and ChatGPT prior next to each other")
-print("compare chatGPT and ChatGPT prior using prior–data conflict determination using data agreement criterion")
+print("plot prior from Human and Human prior next to each other")
+print("compare Human and Human prior using prior–data conflict determination using data agreement criterion")
 print("plot violin distributions for belief quotes etc...")
 print("check overleaf for to do list")
 
@@ -57,10 +57,7 @@ OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/", sep = ""
 
 ############ DATA
 
-#Active_inactive_ChatGPT = read.csv(paste(DATA_ROOT, "Active_inactive_ChatGPT_March06_FINAL.csv", sep =""))
-#Active_inactive_ChatGPT = read.csv(paste(DATA_ROOT, "Active_inactive_ChatGPT_March06_FINAL.csv", sep =""))
-
-ChatGPT_perBS_perBot = read.csv(paste(DATA_ROOT, "ChatGPT_perBS_perBot_FINAL.csv", sep = "")) 
+Human_perBS_perBot = read.csv(paste(DATA_ROOT, "Human_perBS_per_participant_FINAL.csv", sep = "")) 
 
 
 #############
@@ -75,64 +72,50 @@ ChatGPT_perBS_perBot = read.csv(paste(DATA_ROOT, "ChatGPT_perBS_perBot_FINAL.csv
 
 #############
 
-#ChatGPT self-efficacy: #BaCapenblr_selfEfficacy
+#Human self-efficacy: #BaCapenblr_selfEfficacy
 
-unique(ChatGPT_perBS_perBot$Cases)
-ChatGPT_perBS_perBot[rowSums(is.na(ChatGPT_perBS_perBot)) > 0,]
-ls(ChatGPT_perBS_perBot)
-ncol(ChatGPT_perBS_perBot)
 
-ChatGPT_perBS_perBot = tibble(ChatGPT_perBS_perBot) %>% 
+sedentary = subset(Human_perBS_perBot, Human_perBS_perBot$PA_status == 0)
+nrow(sedentary)
+  
+unique(Human_perBS_perBot$Cases)
+Human_perBS_perBot[rowSums(is.na(Human_perBS_perBot)) > 0,]
+ls(Human_perBS_perBot)
+ncol(Human_perBS_perBot)
+
+Human_perBS_perBot = tibble(Human_perBS_perBot) %>% 
   replace(is.na(.), 0) %>%
   mutate(sum_quotes_per_participant = rowSums(across(where(is.numeric)))) %>%
-  mutate(name = case_when( str_detect(Cases, 'William') ~ 'William',
-                           str_detect(Cases, 'Patricia') ~ 'Patricia', 
-                           str_detect(Cases, 'Mark') ~ 'Mark',
-                           str_detect(Cases, 'mark') ~ 'Mark',
-                           str_detect(Cases, 'David') ~ 'David', 
-                           str_detect(Cases, 'Linda') ~ 'Linda',
-                           str_detect(Cases, 'Muhammad') ~ 'Muhammad', 
-                           str_detect(Cases, 'Mary') ~ 'Mary',
-                           str_detect(Cases, 'Thomas') ~ 'Thomas', 
-                           str_detect(Cases, 'Robert') ~ 'Robert',
-                           str_detect(Cases, 'Nancy') ~ 'Nancy', 
-                           str_detect(Cases, 'John') ~ 'John',
-                           str_detect(Cases, 'john') ~ 'John',
-                           str_detect(Cases, 'Fares') ~ 'Fares', 
-                           str_detect(Cases, 'James') ~ 'James',
-                           str_detect(Cases, 'james') ~ 'James',
-                           str_detect(Cases, 'Michael') ~ 'Michael', 
-                           str_detect(Cases, 'Johan') ~ 'Johan',
-                           str_detect(Cases, 'Richard') ~ 'Richard'))
+  mutate(name = Cases)
 
 
 matrix_empty = matrix(nrow = 16, ncol = 0)
 OR_df = data.frame(matrix_empty) 
 
-for (i in colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158)])){
+for (i in colnames(Human_perBS_perBot[,c(-1, -127, -128)])){
   
   OR_vector = c()
   print(i)
   
-  x = unlist(as.vector(ChatGPT_perBS_perBot[,i]))
+  x = unlist(as.vector(Human_perBS_perBot[,i]))
   
   
   
-  ChatGPT_perBS_perBot$sum_quotes_per_participant
+  Human_perBS_perBot$sum_quotes_per_participant
   
-  ChatGPT_perBS_perBot = ChatGPT_perBS_perBot  %>% 
+  Human_perBS_perBot = Human_perBS_perBot  %>% 
     mutate(x_fraction = x/sum_quotes_per_participant + 0.001)
   
   print('got here')
   
   
-  long_data = ChatGPT_perBS_perBot %>%
+  long_data = Human_perBS_perBot %>%
     select(name, PA_status, x_fraction) %>%
     gather("key", 'x_fraction', -name, -PA_status) %>%
     mutate(fraction_not_present = 1 - x_fraction + 0.001) %>%
-    arrange(name, PA_status) %>%
-    group_by(name) %>%
-    group_split(name)
+    arrange(PA_status) %>%
+    group_by(PA_status) %>%
+    group_split(PA_status)
   
   
   for (j in 1:length(long_data)){
@@ -151,51 +134,17 @@ for (i in colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158)])){
   OR_df = cbind(OR_df, OR_vector)
   
   colnames(OR_df) = names_columns_OR_df
-  names_columns_OR_df = colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158, -159)])
+  names_columns_OR_df = colnames(Human_perBS_perBot[,c(-1, -157, -158, -159)])
   class(names_columns_OR_df)
   
   
 }
 
 # 
-write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_ChatGPT_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_Human_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
             col.names = TRUE, qmethod = c("escape", "double"),
             fileEncoding = "" )
 
 
-# ChatGPT_perBS_perBot$Cases
 
-#we could produce the OR or each participant, or group by PA_status and produce OR all active vs all sedentary (average over)
-
-
-# 1/BaCap-_selfEfficacy_prcvd_smptmsHF, 
-# 1/BaCap-_selfEfficacy_HF, 
-# 1/BaCap-_selfEfficacy_heart, 
-# 1/BaCap-_selfEfficacy_prcvd_smptms, 
-# 1/BaCap-_perceived_exertion, 
-# 1/BaCap-_selfEfficacy_hlth_cndtns_typePA, 
-# 1/BaCap-_selfEfficacy_ hlth_cndtns, 
-# 1/BaCap-_selfEfficacy_older_age
-
-
-#ChatGPT social support:  this is based on the examination of the scale used in the likelihood (Galagher et al., 2011)
-
-# SI+_social_support_practical_compan
-# SI+_social_support_emotional
-
-#ChatGPT negative attitude: this is based on the examination of the scale used in the likelihood (Pozehl et al., 2018)
-# BaCon-_neg_expctncy_sympcomrbd
-
-#ChatGPT Positive attitude: this is based on the examination of the scale used in the likelihood (Pozehl et al., 2018)
-#ChatGPT: BaCon+_pos_expctncy_health, 
-
-#ChatGPT symptom distress
-#ChatGPT: Emotion-_fear
-
-#ChatGPT perceived symptoms
-#ChatGPT: BaCap-_selfEfficacy_prcvd_smptmsHF, BaCap-_selfEfficacy_prcvd_smptms
-
-
-#ChatGPT Symptom dysphoria 
-#ChatGPT: Emotion-_negative_emotions, Emotion-_mood
