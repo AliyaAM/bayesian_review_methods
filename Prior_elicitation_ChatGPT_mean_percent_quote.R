@@ -150,14 +150,12 @@ for (i in colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158)])){
 
   OR_df = cbind(OR_df, OR_vector)
   
-  colnames(OR_df) = names_columns_OR_df
-  names_columns_OR_df = colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158, -159)])
-  class(names_columns_OR_df)
-
-  
 }
 
-# 
+colnames(OR_df) = names_columns_OR_df
+names_columns_OR_df = colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158, -159)])
+class(names_columns_OR_df)
+
  write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_ChatGPT_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
            eol = "\r", na = "NA", dec = ".", row.names = FALSE,
            col.names = TRUE, qmethod = c("escape", "double"),
@@ -199,4 +197,3 @@ for (i in colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158)])){
 
 #ChatGPT Symptom dysphoria 
 #ChatGPT: Emotion-_negative_emotions, Emotion-_mood
-
