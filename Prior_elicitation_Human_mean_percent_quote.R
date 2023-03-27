@@ -41,8 +41,8 @@ print("check overleaf for to do list")
 ########### DIRECTORY
 
 #directory = "/Users/aliyaamirova/"
-#directory = "/Users/aliya/my_docs/"
-directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
+directory = "/Users/aliya/my_docs/"
+#directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
 
 
 ###########  source root 
@@ -128,6 +128,8 @@ for (i in colnames(Human_perBS_perBot[,c(-1, -127, -128)])){
   
 
   OR_df = cbind(OR_df, OR_temp)
+  print("decide on how to obtain variance for ORs for each construct in the human prior because it is only a single number")
+  #variance = mean_fraction_sedentary-mean_fraction_active
 
 }
 
