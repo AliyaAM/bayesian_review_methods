@@ -23,12 +23,13 @@ library(RColorBrewer)
 ## Set the root directory to look for source code.
 #SOURCE_ROOT = "/Users/aliyaamirova/proj/bayesian_meta_analysis/"
 
+print("decide on how to obtain variance for ORs for each construct in the human prior because it is only a single number")
+
 print("include mean quote as the statitic for the prior contingency table")
 print("check carefully for quotes on how much physical activty each participant did")
 
 print("we should reduce to those constructs that are measured using perceived latent variables (self-efficacy, positive attitude, negative attitude, perceived social support (CHECK THIS ONE), symptom distress")
 print("consider how to deal with constructs with more than one belief statements (aggregate/average...?)")
-print("decide on the variance for the prior")
 print("systematically include all constructs from quant and from qual")
 print("plot prior from chatGPT and human prior next to each other")
 print("compare chatGPT and human prior using prior–data conflict determination using data agreement criterion")
@@ -48,14 +49,16 @@ SOURCE_ROOT = paste(directory, "proj/bayesian_review_methods/", sep = "")
 DATA_ROOT = paste(directory, "proj/bayesian_review_methods/DATA/", sep = "")
 
 ########### Set the root location on the user's local machine to save output files.
-OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/Human/", sep = "")
+#OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/Human/", sep = "")
 #OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/ChatGPT/", sep = "")
 
-x = read.csv(paste(DATA_ROOT, "input_Human_prior.csv", sep="")) # new qualitative data
-#x = read.csv(paste(DATA_ROOT, "input_ChatGPT_prior.csv", sep="")) # new qualitative data
+OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/ChatGPT/results_matched_characters/", sep = "")
+
+###### old prior (using mta-analysis to pool varius belief statements underlying the construct): 
+#x = read.csv(paste(DATA_ROOT, "input_Human_prior.csv", sep="")) # new qualitative data
+x = read.csv(paste(DATA_ROOT, "input_ChatGPT_prior_from_mean_quotes.csv", sep="")) # new qualitative data
 
 
-print(x)
 
 #if(x$PriorExpert_N_PA_X == 0 || x$PriorExpert_N_PA_noX == 0 || x$PriorExpert_N_noPA_X == 0 || x$PriorExpert_N_noPA_noX == 0)
 #{

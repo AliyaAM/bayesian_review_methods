@@ -42,11 +42,11 @@ print("check overleaf for to do list")
 
 #directory = "/Users/aliyaamirova/"
 #directory = "/Users/aliya/my_docs/"
-directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
+#directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
 
 
 ###########  source root 
-SOURCE_ROOT = paste(directory, "proj/bayesian_review_methods/", sep = "")
+#SOURCE_ROOT = paste(directory, "proj/bayesian_review_methods/", sep = "")
 
 ###########  data root
 DATA_ROOT = paste(directory, "proj/bayesian_review_methods/DATA/", sep = "")
