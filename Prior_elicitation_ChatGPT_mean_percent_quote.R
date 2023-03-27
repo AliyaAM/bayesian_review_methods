@@ -80,6 +80,7 @@ ChatGPT_perBS_perBot = read.csv(paste(DATA_ROOT, "ChatGPT_perBS_perBot_FINAL.csv
 unique(ChatGPT_perBS_perBot$Cases)
 ChatGPT_perBS_perBot[rowSums(is.na(ChatGPT_perBS_perBot)) > 0,]
 ls(ChatGPT_perBS_perBot)
+ncol(ChatGPT_perBS_perBot)
 
 ChatGPT_perBS_perBot = tibble(ChatGPT_perBS_perBot) %>% 
   replace(is.na(.), 0) %>%
@@ -105,12 +106,17 @@ ChatGPT_perBS_perBot = tibble(ChatGPT_perBS_perBot) %>%
                          str_detect(Cases, 'Richard') ~ 'Richard'))
 
 
-for (i in colnames(ChatGPT_perBS_perBot[,c(-1)])){
-  
-  OR_vector = c()
+matrix_empty = matrix(nrow = 16, ncol = 0)
+OR_df = data.frame(matrix_empty) 
+
+for (i in colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158)])){
+
+    OR_vector = c()
   print(i)
   
-  x = as.vector(ChatGPT_perBS_perBot[,i])
+  x = unlist(as.vector(ChatGPT_perBS_perBot[,i]))
+
+  
   
   ChatGPT_perBS_perBot$sum_quotes_per_participant
 
@@ -138,11 +144,11 @@ for (i in colnames(ChatGPT_perBS_perBot[,c(-1)])){
     print(long_data[[j]][2,5])
     print(long_data[[j]][1,4])
     OR_temp = (long_data[[j]][2,4]*long_data[[j]][1,5])/(long_data[[j]][2,5]*long_data[[j]][1,4])
+    OR_vector = c(OR_vector, OR_temp$x_fraction[1])
+    
   }
   
-  OR_vector = c(OR_vector, OR_temp$x[i])
-  fraction_construct_name = rep(i , times = 16)
-  cbind(fraction_construct_name, OR_vector)
+  OR_df = cbind(OR_df, OR_vector) 
   
   
 }
