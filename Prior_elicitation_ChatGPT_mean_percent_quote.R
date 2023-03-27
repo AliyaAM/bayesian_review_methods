@@ -147,17 +147,22 @@ for (i in colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158)])){
     OR_vector = c(OR_vector, OR_temp$x_fraction[1])
     
   }
+
+  OR_df = cbind(OR_df, OR_vector)
   
-  OR_df = cbind(OR_df, OR_vector) 
-  
+  colnames(OR_df) = names_columns_OR_df
+  names_columns_OR_df = colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158, -159)])
+  class(names_columns_OR_df)
+
   
 }
 
+# 
+ write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_ChatGPT_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+           eol = "\r", na = "NA", dec = ".", row.names = FALSE,
+           col.names = TRUE, qmethod = c("escape", "double"),
+           fileEncoding = "" )
 
-
-
-OR_mean = mean(OR_vector)
-variance_OR = var(OR_vector)
 
 # ChatGPT_perBS_perBot$Cases
 
