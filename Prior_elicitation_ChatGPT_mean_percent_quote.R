@@ -78,77 +78,81 @@ ChatGPT_perBS_perBot = read.csv(paste(DATA_ROOT, "ChatGPT_perBS_perBot_FINAL.csv
 #ChatGPT self-efficacy: #BaCapenblr_selfEfficacy
 
 unique(ChatGPT_perBS_perBot$Cases)
-new_DF <- ChatGPT_perBS_perBot[rowSums(is.na(ChatGPT_perBS_perBot)) > 0,]
+ChatGPT_perBS_perBot[rowSums(is.na(ChatGPT_perBS_perBot)) > 0,]
 ls(ChatGPT_perBS_perBot)
 
-for (i in 3:colnames(ChatGPT_perBS_perBot)){
-  
-
-  print(i)
-  
-  ChatGPT_perBS_perBot = tibble(ChatGPT_perBS_perBot) %>% 
-  
+ChatGPT_perBS_perBot = tibble(ChatGPT_perBS_perBot) %>% 
   replace(is.na(.), 0) %>%
   mutate(sum_quotes_per_participant = rowSums(across(where(is.numeric)))) %>%
-  mutate(fraction_qts_per_par = (i/sum_quotes_per_participant) + 0.001) %>% #if we change BaCapenblr_selfEfficacy to generic construct or index it somehow then we can run a function that goes through all constructs  
   mutate(name = case_when( str_detect(Cases, 'William') ~ 'William',
-                           str_detect(Cases, 'Patricia') ~ 'Patricia', 
-                           str_detect(Cases, 'Mark') ~ 'Mark',
-                           str_detect(Cases, 'mark') ~ 'Mark',
-                           str_detect(Cases, 'David') ~ 'David', 
-                           str_detect(Cases, 'Linda') ~ 'Linda',
-                           str_detect(Cases, 'Muhammad') ~ 'Muhammad', 
-                           str_detect(Cases, 'Mary') ~ 'Mary',
-                           str_detect(Cases, 'Thomas') ~ 'Thomas', 
-                           str_detect(Cases, 'Robert') ~ 'Robert',
-                           str_detect(Cases, 'Nancy') ~ 'Nancy', 
-                           str_detect(Cases, 'John') ~ 'John',
-                           str_detect(Cases, 'john') ~ 'John',
-                           str_detect(Cases, 'Fares') ~ 'Fares', 
-                           str_detect(Cases, 'James') ~ 'James',
-                           str_detect(Cases, 'james') ~ 'James',
-                           str_detect(Cases, 'Michael') ~ 'Michael', 
-                           str_detect(Cases, 'Johan') ~ 'Johan',
-                           str_detect(Cases, 'Richard') ~ 'Richard'))
- 
- 
- rf <- ChatGPT_perBS_perBot %>% rowwise(PA_status)
- 
- 
- 
- long_data = ChatGPT_perBS_perBot %>%
-   select(name, PA_status, fraction_qts_per_par) %>%
- 
-   gather("key", "fraction_present", -name, -PA_status) %>%
-   mutate(fraction_not_present = (1-fraction_present) +  0.001) %>%
-   arrange(name, PA_status) %>%
-   group_by(name) %>%
-   group_split(name)
- 
- 
- OR_vector= c()
- 
- class(long_data)
-   
- for (i in 1:length(long_data)){
-   print(i)
-   
-   print(long_data[[i]][2,4])
-   print(long_data[[i]][1,5])
-   print(long_data[[i]][2,5])
-   print(long_data[[i]][1,4])
-                                             
-   OR_temp = (long_data[[i]][2,4]*long_data[[i]][1,5])/(long_data[[i]][2,5]*long_data[[i]][1,4])
-   OR_vector = c(OR_vector, OR_temp$fraction_present[1])
-   OR_mean = mean(OR_vector)
-   variance_OR = var(OR_vector)
-   }
- 
- OR_mean =  OR_mean
- variance_OR = variance_OR
- OR_vector =  OR_vector
+                         str_detect(Cases, 'Patricia') ~ 'Patricia', 
+                         str_detect(Cases, 'Mark') ~ 'Mark',
+                         str_detect(Cases, 'mark') ~ 'Mark',
+                         str_detect(Cases, 'David') ~ 'David', 
+                         str_detect(Cases, 'Linda') ~ 'Linda',
+                         str_detect(Cases, 'Muhammad') ~ 'Muhammad', 
+                         str_detect(Cases, 'Mary') ~ 'Mary',
+                         str_detect(Cases, 'Thomas') ~ 'Thomas', 
+                         str_detect(Cases, 'Robert') ~ 'Robert',
+                         str_detect(Cases, 'Nancy') ~ 'Nancy', 
+                         str_detect(Cases, 'John') ~ 'John',
+                         str_detect(Cases, 'john') ~ 'John',
+                         str_detect(Cases, 'Fares') ~ 'Fares', 
+                         str_detect(Cases, 'James') ~ 'James',
+                         str_detect(Cases, 'james') ~ 'James',
+                         str_detect(Cases, 'Michael') ~ 'Michael', 
+                         str_detect(Cases, 'Johan') ~ 'Johan',
+                         str_detect(Cases, 'Richard') ~ 'Richard'))
 
+
+for (i in colnames(ChatGPT_perBS_perBot[,c(-1)])){
+  
+  OR_vector = c()
+  print(i)
+  
+  x = as.vector(ChatGPT_perBS_perBot[,i])
+  
+  ChatGPT_perBS_perBot$sum_quotes_per_participant
+
+  ChatGPT_perBS_perBot = ChatGPT_perBS_perBot  %>% 
+    mutate(x_fraction = x/sum_quotes_per_participant + 0.001)
+
+  print('got here')
+  
+
+  long_data = ChatGPT_perBS_perBot %>%
+    select(name, PA_status, x_fraction) %>%
+    gather("key", 'x_fraction', -name, -PA_status) %>%
+    mutate(fraction_not_present = 1 - x_fraction + 0.001) %>%
+    arrange(name, PA_status) %>%
+    group_by(name) %>%
+    group_split(name)
+
+
+  for (j in 1:length(long_data)){
+
+    print(j)
+
+    print(long_data[[j]][2,4])
+    print(long_data[[j]][1,5])
+    print(long_data[[j]][2,5])
+    print(long_data[[j]][1,4])
+    OR_temp = (long_data[[j]][2,4]*long_data[[j]][1,5])/(long_data[[j]][2,5]*long_data[[j]][1,4])
+  }
+  
+  OR_vector = c(OR_vector, OR_temp$x[i])
+  fraction_construct_name = rep(i , times = 16)
+  cbind(fraction_construct_name, OR_vector)
+  
+  
 }
+
+
+
+
+OR_mean = mean(OR_vector)
+variance_OR = var(OR_vector)
+
 # ChatGPT_perBS_perBot$Cases
 
 #we could produce the OR or each participant, or group by PA_status and produce OR all active vs all sedentary (average over)
