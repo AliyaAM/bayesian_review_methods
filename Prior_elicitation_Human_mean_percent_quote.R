@@ -89,7 +89,7 @@ Human_perBS_perBot = tibble(Human_perBS_perBot) %>%
   mutate(name = Cases)
 
 
-matrix_empty = matrix(nrow = 16, ncol = 0)
+matrix_empty = matrix(nrow = 1, ncol = 0)
 OR_df = data.frame(matrix_empty) 
 
 for (i in colnames(Human_perBS_perBot[,c(-1, -127, -128)])){
@@ -117,28 +117,24 @@ for (i in colnames(Human_perBS_perBot[,c(-1, -127, -128)])){
     group_by(PA_status) %>%
     group_split(PA_status)
   
+  mean_fraction_sedentary = mean(long_data[[1]]$x_fraction) 
+  mean_fraction_not_present_sedentary = mean(long_data[[1]]$fraction_not_present) 
   
-  for (j in 1:length(long_data)){
-    
-    print(j)
-    
-    print(long_data[[j]][2,4])
-    print(long_data[[j]][1,5])
-    print(long_data[[j]][2,5])
-    print(long_data[[j]][1,4])
-    OR_temp = (long_data[[j]][2,4]*long_data[[j]][1,5])/(long_data[[j]][2,5]*long_data[[j]][1,4])
-    OR_vector = c(OR_vector, OR_temp$x_fraction[1])
-    
-  }
+  mean_fraction_active = mean(long_data[[2]]$x_fraction) 
+  mean_fraction_not_present_active = mean(long_data[[2]]$fraction_not_present) 
   
-  OR_df = cbind(OR_df, OR_vector)
+  OR_temp = (mean_fraction_active*mean_fraction_not_present_sedentary)/(mean_fraction_not_present_active*mean_fraction_sedentary)
+  #OR_temp = (active_present*sedentary_not_present)/(active_not_present*sedentary_present)
   
-  colnames(OR_df) = names_columns_OR_df
-  names_columns_OR_df = colnames(Human_perBS_perBot[,c(-1, -157, -158, -159)])
-  class(names_columns_OR_df)
-  
-  
+
+  OR_df = cbind(OR_df, OR_temp)
+
 }
+
+colnames(OR_df) = names_columns_OR_df
+names_columns_OR_df = colnames(Human_perBS_perBot[,c(-1, -127, -128, -129)])
+class(names_columns_OR_df)
+
 
 # 
 write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_Human_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
