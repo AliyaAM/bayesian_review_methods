@@ -42,7 +42,7 @@ print("check overleaf for to do list")
 
 #directory = "/Users/aliyaamirova/"
 #directory = "/Users/aliya/my_docs/"
-#directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
+directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
 
 
 ###########  source root 
@@ -62,8 +62,8 @@ OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/", sep = ""
 
 ChatGPT_perBS_perBot = read.csv(paste(DATA_ROOT, "ChatGPT_perBS_perBot_FINAL.csv", sep = "")) 
 
-
 #############
+
 
 #fraction of quotes concerning 'construct' when 'participant' was active 
 #fraction of quotes concerning 'construct' when 'participant' was sedentary
@@ -73,6 +73,7 @@ ChatGPT_perBS_perBot = read.csv(paste(DATA_ROOT, "ChatGPT_perBS_perBot_FINAL.csv
 
 #OR = from the contingency table of the above 
 
+
 #############
 ############# concatenate into the same vector these below before calculating fractions/contingencies: 
 
@@ -80,17 +81,51 @@ ChatGPT_perBS_perBot = read.csv(paste(DATA_ROOT, "ChatGPT_perBS_perBot_FINAL.csv
 # SI+_social_support_practical_compan
 # SI+_social_support_emotional
 
+ChatGPT_perBS_perBot$SIenblr_social_support_practical_compan
+ChatGPT_perBS_perBot$SIenblr_social_support_emotional
+
+  
 #ChatGPT negative attitude: this is based on the examination of the scale used in the likelihood (Pozehl et al., 2018)
 # BaCon-_neg_expctncy_sympcomrbd
+###### this two below alone: 
+ChatGPT_perBS_perBot$BaConbrrier_neg_expctncy_sympcomrbd
+ChatGPT_perBS_perBot$BaConbrrier_neg_expctncy_symptoms_HF
+###### OR:
+ChatGPT_perBS_perBot$BaConbrrier
+
 
 #ChatGPT Positive attitude: this is based on the examination of the scale used in the likelihood (Pozehl et al., 2018)
 #ChatGPT: BaCon+_pos_expctncy_health, 
+###### this two below only: 
+ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_health
+ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_cardio_health
+###### OR: 
+ChatGPT_perBS_perBot$BaConenblr
+###### which also includes: 
+###### ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_health
+###### ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_cardio_health
+###### ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_HFmanage
+###### ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_RAmanage
+###### ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_mobility
+###### ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_mood
+
+
+
 
 #ChatGPT symptom distress
 #ChatGPT: Emotion-_fear
+ChatGPT_perBS_perBot$Emotionbrrier_fear
+###### OR 
+ChatGPT_perBS_perBot$Emotionbrrier
 
-#ChatGPT self-efficacy: 
+##### 
+
+
 #BaCap+_selfEfficacy, 
+ChatGPT_perBS_perBot$BaCapenblr_selfEfficacy
+###### OR 
+ChatGPT_perBS_perBot$BaCapbrrier # remember to flip this one 
+###### which also includes: 
 # 1/BaCap-_selfEfficacy_prcvd_smptmsHF, 
 # 1/BaCap-_selfEfficacy_HF, 
 # 1/BaCap-_selfEfficacy_heart, 
@@ -102,73 +137,107 @@ ChatGPT_perBS_perBot = read.csv(paste(DATA_ROOT, "ChatGPT_perBS_perBot_FINAL.csv
 
 
 #ChatGPT perceived symptoms
+ChatGPT_perBS_perBot$BaCapbrrier_selfEfficacy_prcvd_smptmsHF
+ChatGPT_perBS_perBot$BaCapbrrier_selfEfficacy_prcvd_smptms
 #ChatGPT: BaCap-_selfEfficacy_prcvd_smptmsHF, BaCap-_selfEfficacy_prcvd_smptms
 
 #ChatGPT Symptom dysphoria 
 #ChatGPT: Emotion-_negative_emotions, Emotion-_mood
+ChatGPT_perBS_perBot$Emotionbrrier_negative_emotions
+ChatGPT_perBS_perBot$Emotionbrrier_mood
 
-unique(ChatGPT_perBS_perBot$Cases)
-ChatGPT_perBS_perBot[rowSums(is.na(ChatGPT_perBS_perBot)) > 0,]
-ls(ChatGPT_perBS_perBot)
-ncol(ChatGPT_perBS_perBot)
 
-ChatGPT_perBS_perBot = tibble(ChatGPT_perBS_perBot) %>% 
+matrix_new_data = matrix(nrow = 32, ncol = 0)
+new_data_merged_BS = data.frame(matrix_new_data)
+
+new_data_merged_BS$Cases = ChatGPT_perBS_perBot$Cases
+new_data_merged_BS$PA_status = ChatGPT_perBS_perBot$PA_status
+new_data_merged_BS$SocialSupport = ChatGPT_perBS_perBot$SIenblr_social_support_practical_compan + ChatGPT_perBS_perBot$SIenblr_social_support_emotional
+new_data_merged_BS$SocialSupport1 = ChatGPT_perBS_perBot$SIenblr_social_support_emotional
+new_data_merged_BS$SocialSupport2 = ChatGPT_perBS_perBot$SIenblr_social_support_practical_compan
+new_data_merged_BS$NegativeAttitude = ChatGPT_perBS_perBot$BaConbrrier_neg_expctncy_sympcomrbd + ChatGPT_perBS_perBot$BaConbrrier_neg_expctncy_symptoms_HF
+new_data_merged_BS$NegativeAttitude1 = ChatGPT_perBS_perBot$BaConbrrier_neg_expctncy_sympcomrbd
+new_data_merged_BS$NegativeAttitude2 = ChatGPT_perBS_perBot$BaConbrrier_neg_expctncy_symptoms_HF
+new_data_merged_BS$NegAt_BaConbrrier = ChatGPT_perBS_perBot$BaConbrrier
+new_data_merged_BS$PositiveAttitude = ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_health + ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_cardio_health
+new_data_merged_BS$PositiveAttitude1 = ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_health 
+new_data_merged_BS$PositiveAttitude2 = ChatGPT_perBS_perBot$BaConenblr_pos_expctncy_cardio_health
+new_data_merged_BS$PosAt_BaConenblr = ChatGPT_perBS_perBot$BaConenblr 
+new_data_merged_BS$SymptomsDistress = ChatGPT_perBS_perBot$Emotionbrrier_fear
+new_data_merged_BS$Symp_Dis_Emotionbrrier = ChatGPT_perBS_perBot$Emotionbrrier
+new_data_merged_BS$SelfEfficacy = ChatGPT_perBS_perBot$BaCapenblr_selfEfficacy
+new_data_merged_BS$SE_BaCapbrrier = ChatGPT_perBS_perBot$BaCapbrrier
+new_data_merged_BS$PerceivedSymptoms = ChatGPT_perBS_perBot$BaCapbrrier_selfEfficacy_prcvd_smptmsHF + ChatGPT_perBS_perBot$BaCapbrrier_selfEfficacy_prcvd_smptms 
+new_data_merged_BS$PerceivedSymptoms1 = ChatGPT_perBS_perBot$BaCapbrrier_selfEfficacy_prcvd_smptmsHF
+new_data_merged_BS$PerceivedSymptoms2 = ChatGPT_perBS_perBot$BaCapbrrier_selfEfficacy_prcvd_smptms
+new_data_merged_BS$Dysphoria = ChatGPT_perBS_perBot$Emotionbrrier_negative_emotions + ChatGPT_perBS_perBot$Emotionbrrier_mood
+new_data_merged_BS$Dysphoria1 = ChatGPT_perBS_perBot$Emotionbrrier_negative_emotions
+new_data_merged_BS$Dysphoria2 = ChatGPT_perBS_perBot$Emotionbrrier_mood
+
+
+
+unique(new_data_merged_BS$Cases)
+new_data_merged_BS[rowSums(is.na(new_data_merged_BS)) > 0,]
+ls(new_data_merged_BS)
+ncol(new_data_merged_BS)
+
+new_data_merged_BS = tibble(new_data_merged_BS) %>% 
   replace(is.na(.), 0) %>%
   mutate(sum_quotes_per_participant = rowSums(across(where(is.numeric)))) %>%
   mutate(name = case_when( str_detect(Cases, 'William') ~ 'William',
-                         str_detect(Cases, 'Patricia') ~ 'Patricia', 
-                         str_detect(Cases, 'Mark') ~ 'Mark',
-                         str_detect(Cases, 'mark') ~ 'Mark',
-                         str_detect(Cases, 'David') ~ 'David', 
-                         str_detect(Cases, 'Linda') ~ 'Linda',
-                         str_detect(Cases, 'Muhammad') ~ 'Muhammad', 
-                         str_detect(Cases, 'Mary') ~ 'Mary',
-                         str_detect(Cases, 'Thomas') ~ 'Thomas', 
-                         str_detect(Cases, 'Robert') ~ 'Robert',
-                         str_detect(Cases, 'Nancy') ~ 'Nancy', 
-                         str_detect(Cases, 'John') ~ 'John',
-                         str_detect(Cases, 'john') ~ 'John',
-                         str_detect(Cases, 'Fares') ~ 'Fares', 
-                         str_detect(Cases, 'James') ~ 'James',
-                         str_detect(Cases, 'james') ~ 'James',
-                         str_detect(Cases, 'Michael') ~ 'Michael', 
-                         str_detect(Cases, 'Johan') ~ 'Johan',
-                         str_detect(Cases, 'Richard') ~ 'Richard'))
+                           str_detect(Cases, 'Patricia') ~ 'Patricia', 
+                           str_detect(Cases, 'Mark') ~ 'Mark',
+                           str_detect(Cases, 'mark') ~ 'Mark',
+                           str_detect(Cases, 'David') ~ 'David', 
+                           str_detect(Cases, 'Linda') ~ 'Linda',
+                           str_detect(Cases, 'Muhammad') ~ 'Muhammad', 
+                           str_detect(Cases, 'Mary') ~ 'Mary',
+                           str_detect(Cases, 'Thomas') ~ 'Thomas', 
+                           str_detect(Cases, 'Robert') ~ 'Robert',
+                           str_detect(Cases, 'Nancy') ~ 'Nancy', 
+                           str_detect(Cases, 'John') ~ 'John',
+                           str_detect(Cases, 'john') ~ 'John',
+                           str_detect(Cases, 'Fares') ~ 'Fares', 
+                           str_detect(Cases, 'James') ~ 'James',
+                           str_detect(Cases, 'james') ~ 'James',
+                           str_detect(Cases, 'Michael') ~ 'Michael', 
+                           str_detect(Cases, 'Johan') ~ 'Johan',
+                           str_detect(Cases, 'Richard') ~ 'Richard'))
 
 
 matrix_empty = matrix(nrow = 16, ncol = 0)
-OR_df = data.frame(matrix_empty) 
 
-for (i in colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158)])){
+OR_df_merged_BS = data.frame(matrix_empty) 
 
-    OR_vector = c()
+
+for (i in colnames(new_data_merged_BS[,c(-1, -25)])){
+  
+  OR_vector = c()
   print(i)
   
-  x = unlist(as.vector(ChatGPT_perBS_perBot[,i]))
-
+  x = unlist(as.vector(new_data_merged_BS[,i]))
+  class(x)
   
   
-  ChatGPT_perBS_perBot$sum_quotes_per_participant
-
-  ChatGPT_perBS_perBot = ChatGPT_perBS_perBot  %>% 
+  new_data_merged_BS$sum_quotes_per_participant
+  
+  new_data_merged_BS = new_data_merged_BS  %>% 
     mutate(x_fraction = x/sum_quotes_per_participant + 0.001)
-
-  print('got here')
   
-
-  long_data = ChatGPT_perBS_perBot %>%
+  
+  long_data = new_data_merged_BS %>%
     select(name, PA_status, x_fraction) %>%
     gather("key", 'x_fraction', -name, -PA_status) %>%
     mutate(fraction_not_present = 1 - x_fraction + 0.001) %>%
     arrange(name, PA_status) %>%
     group_by(name) %>%
     group_split(name)
-
-
+  
+  
   for (j in 1:length(long_data)){
-
+    
     print(j)
-
+    
     print(long_data[[j]][2,4])
     print(long_data[[j]][1,5])
     print(long_data[[j]][2,5])
@@ -177,14 +246,103 @@ for (i in colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158)])){
     OR_vector = c(OR_vector, OR_temp$x_fraction[1])
     
   }
-
-  OR_df = cbind(OR_df, OR_vector)
+  
+  OR_df_merged_BS = cbind(OR_df_merged_BS, OR_vector)
   
 }
-
-colnames(OR_df) = names_columns_OR_df
-names_columns_OR_df = colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158, -159)])
+names_columns_OR_df = colnames(new_data_merged_BS[,c(-1, -25, -26)])
 class(names_columns_OR_df)
+colnames(OR_df_merged_BS) = names_columns_OR_df
+
+
+write.table(OR_df_merged_BS, file = paste(OUTPUT_ROOT, "OR_df_merged_BS_ChatGPT_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+          eol = "\r", na = "NA", dec = ".", row.names = FALSE,
+          col.names = TRUE, qmethod = c("escape", "double"),
+          fileEncoding = "" )
+
+
+####################################
+####################################
+####################################
+####################################
+
+# 
+# unique(ChatGPT_perBS_perBot$Cases)
+# ChatGPT_perBS_perBot[rowSums(is.na(ChatGPT_perBS_perBot)) > 0,]
+# ls(ChatGPT_perBS_perBot)
+# ncol(ChatGPT_perBS_perBot)
+# 
+# ChatGPT_perBS_perBot = tibble(ChatGPT_perBS_perBot) %>% 
+#   replace(is.na(.), 0) %>%
+#   mutate(sum_quotes_per_participant = rowSums(across(where(is.numeric)))) %>%
+#   mutate(name = case_when( str_detect(Cases, 'William') ~ 'William',
+#                          str_detect(Cases, 'Patricia') ~ 'Patricia', 
+#                          str_detect(Cases, 'Mark') ~ 'Mark',
+#                          str_detect(Cases, 'mark') ~ 'Mark',
+#                          str_detect(Cases, 'David') ~ 'David', 
+#                          str_detect(Cases, 'Linda') ~ 'Linda',
+#                          str_detect(Cases, 'Muhammad') ~ 'Muhammad', 
+#                          str_detect(Cases, 'Mary') ~ 'Mary',
+#                          str_detect(Cases, 'Thomas') ~ 'Thomas', 
+#                          str_detect(Cases, 'Robert') ~ 'Robert',
+#                          str_detect(Cases, 'Nancy') ~ 'Nancy', 
+#                          str_detect(Cases, 'John') ~ 'John',
+#                          str_detect(Cases, 'john') ~ 'John',
+#                          str_detect(Cases, 'Fares') ~ 'Fares', 
+#                          str_detect(Cases, 'James') ~ 'James',
+#                          str_detect(Cases, 'james') ~ 'James',
+#                          str_detect(Cases, 'Michael') ~ 'Michael', 
+#                          str_detect(Cases, 'Johan') ~ 'Johan',
+#                          str_detect(Cases, 'Richard') ~ 'Richard'))
+# 
+# 
+# matrix_empty = matrix(nrow = 16, ncol = 0)
+# OR_df = data.frame(matrix_empty) 
+# 
+# for (i in colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158)])){
+# 
+#     OR_vector = c()
+#   print(i)
+#   
+#   x = unlist(as.vector(ChatGPT_perBS_perBot[,i]))
+# 
+#   
+#   
+#   ChatGPT_perBS_perBot$sum_quotes_per_participant
+# 
+#   ChatGPT_perBS_perBot = ChatGPT_perBS_perBot  %>% 
+#     mutate(x_fraction = x/sum_quotes_per_participant + 0.001)
+# 
+# 
+#   long_data = ChatGPT_perBS_perBot %>%
+#     select(name, PA_status, x_fraction) %>%
+#     gather("key", 'x_fraction', -name, -PA_status) %>%
+#     mutate(fraction_not_present = 1 - x_fraction + 0.001) %>%
+#     arrange(name, PA_status) %>%
+#     group_by(name) %>%
+#     group_split(name)
+# 
+# 
+#   for (j in 1:length(long_data)){
+# 
+#     print(j)
+# 
+#     print(long_data[[j]][2,4])
+#     print(long_data[[j]][1,5])
+#     print(long_data[[j]][2,5])
+#     print(long_data[[j]][1,4])
+#     OR_temp = (long_data[[j]][2,4]*long_data[[j]][1,5])/(long_data[[j]][2,5]*long_data[[j]][1,4])
+#     OR_vector = c(OR_vector, OR_temp$x_fraction[1])
+#     
+#   }
+# 
+#   OR_df = cbind(OR_df, OR_vector)
+#   
+# }
+# 
+# colnames(OR_df) = names_columns_OR_df
+# names_columns_OR_df = colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158, -159)])
+# class(names_columns_OR_df)
 
  # write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_ChatGPT_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
  #           eol = "\r", na = "NA", dec = ".", row.names = FALSE,

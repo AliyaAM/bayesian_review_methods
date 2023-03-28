@@ -80,8 +80,7 @@ print("rerun below if data for the CHatGPT prior changes (ie., belief statements
 
 ########## DATA FOR THE PRIOR: OR FOR BEING PRESENT IN CHARACTERS THAT ARE ACTIVE: 
 
-OR_df_ChatGPT_prior = read.csv(paste(directory, "proj/bayesian_review_methods/RESULTS/OR_df_ChatGPT_prior.csv", sep="")) 
-### OR_df_merged_BS = read.csv(paste(directory, "proj/bayesian_review_methods/RESULTS/OR_df_merged_BS.csv", sep="")) 
+OR_df_merged_BS = read.csv(paste(directory, "proj/bayesian_review_methods/RESULTS/OR_df_merged_BS.csv", sep="")) 
 
 
 
@@ -94,30 +93,45 @@ OR_df_ChatGPT_prior = read.csv(paste(directory, "proj/bayesian_review_methods/RE
 print("try with different constructs, if mulptiple BS/cosntruscts are present for the same construct in likelihood")
 
 
+ls(OR_df_merged_BS)
+SocialSupport_mean = mean(OR_df_merged_BS$SocialSupport) 
+SocialSupport_var = var(OR_df_merged_BS$SocialSupport) 
 
-SocialSupport1_mean = mean(OR_df_ChatGPT_prior$SIenblr_social_support_emotional) 
-SocialSupport1_var = var(OR_df_ChatGPT_prior$SIenblr_social_support_emotional) 
+SocialSupport1_mean = mean(OR_df_merged_BS$SocialSupport1) 
+SocialSupport1_var = var(OR_df_merged_BS$SocialSupport1) 
 
-SocialSupport2_mean = mean(OR_df_ChatGPT_prior$SIenblr_social_support_practical_compan) 
-SocialSupport2_var = var(OR_df_ChatGPT_prior$SIenblr_social_support_practical_compan) 
+SocialSupport2_mean = mean(OR_df_merged_BS$SocialSupport2) 
+SocialSupport2_var = var(OR_df_merged_BS$SocialSupport2) 
 
 
 #ChatGPT negative attitude: this is based on the examination of the scale used in the likelihood (Pozehl et al., 2018)
 # BaCon-_neg_expctncy_sympcomrbd
 
-NegativeAttitude_mean = mean(OR_df_ChatGPT_prior$BaConbrrier_neg_expctncy_sympcomrbd)
-NegativeAttitude_var = var(OR_df_ChatGPT_prior$BaConbrrier_neg_expctncy_sympcomrbd)
+NegativeAttitude_mean = mean(OR_df_merged_BS$NegativeAttitude)
+NegativeAttitude_var = var(OR_df_merged_BS$NegativeAttitude)
+
+
+NegativeAttitude_mean = mean(OR_df_merged_BS$NegativeAttitude1)
+NegativeAttitude_var = var(OR_df_merged_BS$NegativeAttitude1)
+
+NegativeAttitude_mean = mean(OR_df_merged_BS$NegativeAttitude2)
+NegativeAttitude_var = var(OR_df_merged_BS$NegativeAttitude2)
+
 
 #ChatGPT Positive attitude: this is based on the examination of the scale used in the likelihood (Pozehl et al., 2018)
 #ChatGPT: BaCon+_pos_expctncy_health, 
 
-PositiveAttitude_mean = mean(OR_df_ChatGPT_prior$BaConenblr_pos_expctncy_health)
-PositiveAttitude_var = var(OR_df_ChatGPT_prior$BaConenblr_pos_expctncy_health)
+PositiveAttitude_mean = mean(OR_df_merged_BS$PositiveAttitude)
+PositiveAttitude_var = var(OR_df_merged_BS$PositiveAttitude)
+
+PositiveAttitude_mean = mean(OR_df_merged_BS$PositiveAttitude1)
+PositiveAttitude_var = var(OR_df_merged_BS$PositiveAttitude1)
+
 
 #ChatGPT symptom distress
 #ChatGPT: Emotion-_fear
-Symptoms_distress_mean = mean(OR_df_ChatGPT_prior$Emotionbrrier_fear)
-Symptoms_distress_var = var(OR_df_ChatGPT_prior$Emotionbrrier_fear)
+Symptoms_distress_mean = mean(OR_df_merged_BS$Emotionbrrier_fear)
+Symptoms_distress_var = var(OR_df_merged_BS$Emotionbrrier_fear)
 
 
 #ChatGPT self-efficacy: 
@@ -130,34 +144,34 @@ Symptoms_distress_var = var(OR_df_ChatGPT_prior$Emotionbrrier_fear)
 # 1/BaCap-_selfEfficacy_hlth_cndtns_typePA, 
 # 1/BaCap-_selfEfficacy_ hlth_cndtns, 
 # 1/BaCap-_selfEfficacy_older_age
-OR_df_ChatGPT_prior$BaCapenblr_selfEfficacy
-OR_df_ChatGPT_prior$BaCapbrrier_selfEfficacy_.hlth_cndtns
-OR_df_ChatGPT_prior$BaCapbrrier_selfEfficacy_heart
-OR_df_ChatGPT_prior$BaCapbrrier_selfEfficacy_HF
-OR_df_ChatGPT_prior$BaCapbrrier_selfEfficacy_hlth_cndtns_typePA
-OR_df_ChatGPT_prior$BaCapbrrier_selfEfficacy_prcvd_smptms
-OR_df_ChatGPT_prior$BaCapbrrier_selfEfficacy_prcvd_smptmsHF
-OR_df_ChatGPT_prior$BaCapbrrier_selfEfficacy_older_age
-OR_df_ChatGPT_prior$BaCapbrrier_perceived_exertion
+OR_df_merged_BS$BaCapenblr_selfEfficacy
+OR_df_merged_BS$BaCapbrrier_selfEfficacy_.hlth_cndtns
+OR_df_merged_BS$BaCapbrrier_selfEfficacy_heart
+OR_df_merged_BS$BaCapbrrier_selfEfficacy_HF
+OR_df_merged_BS$BaCapbrrier_selfEfficacy_hlth_cndtns_typePA
+OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptms
+OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptmsHF
+OR_df_merged_BS$BaCapbrrier_selfEfficacy_older_age
+OR_df_merged_BS$BaCapbrrier_perceived_exertion
 
 
-SelfEfficacy_mean = mean(OR_df_ChatGPT_prior$BaCapenblr_selfEfficacy)
-SelfEfficacy_var = var(OR_df_ChatGPT_prior$BaCapenblr_selfEfficacy)
-  
+SelfEfficacy_mean = mean(OR_df_merged_BS$BaCapenblr_selfEfficacy)
+SelfEfficacy_var = var(OR_df_merged_BS$BaCapenblr_selfEfficacy)
+
 #ChatGPT perceived symptoms
 #ChatGPT: BaCap-_selfEfficacy_prcvd_smptmsHF, BaCap-_selfEfficacy_prcvd_smptms
-OR_df_ChatGPT_prior$BaCapbrrier_selfEfficacy_prcvd_smptmsHF
+OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptmsHF
 
-fewerPerceivedSymptoms_mean = mean(1/OR_df_ChatGPT_prior$BaCapbrrier_selfEfficacy_prcvd_smptmsHF)
-fewerPerceivedSymptoms_var = var(1/OR_df_ChatGPT_prior$BaCapbrrier_selfEfficacy_prcvd_smptmsHF)
+fewerPerceivedSymptoms_mean = mean(1/OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptmsHF)
+fewerPerceivedSymptoms_var = var(1/OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptmsHF)
 
 #ChatGPT Symptom dysphoria 
 #ChatGPT: Emotion-_negative_emotions, Emotion-_mood
-OR_df_ChatGPT_prior$Emotionbrrier_negative_emotions
-OR_df_ChatGPT_prior$Emotionbrrier_mood
+OR_df_merged_BS$Emotionbrrier_negative_emotions
+OR_df_merged_BS$Emotionbrrier_mood
 
-Dysphoria_mean = mean(OR_df_ChatGPT_prior$Emotionbrrier_negative_emotions)
-Dysphoria_var = var(OR_df_ChatGPT_prior$Emotionbrrier_negative_emotions)
+Dysphoria_mean = mean(OR_df_merged_BS$Emotionbrrier_negative_emotions)
+Dysphoria_var = var(OR_df_merged_BS$Emotionbrrier_negative_emotions)
 
 
 logOR_prior_elicitation = c(SocialSupport1_mean,
