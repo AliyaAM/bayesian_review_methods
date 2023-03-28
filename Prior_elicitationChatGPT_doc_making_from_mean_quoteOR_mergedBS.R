@@ -40,7 +40,9 @@ print("check overleaf for to do list")
 ########### DIRECTORY
 
 #directory = "/Users/aliyaamirova/"
-directory = "/Users/aliya/my_docs/"
+#directory = "/Users/aliya/my_docs/"
+directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
+
 
 ###########  source root 
 SOURCE_ROOT = paste(directory, "proj/bayesian_review_methods/", sep = "")
@@ -60,18 +62,6 @@ OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/ChatGPT/res
 #the cosntruct names that are used throughout the rest of the code: 
 
 
-Construct =c("SocialSupport",          
-             "NegativeAttitude",      
-             "PositiveAttitude",      
-             "Symptoms_distress",
-             "SelfEfficacy",
-             "fewerPerceivedSymptoms",
-             "Dysphoria") 
-
-
-##### participant_source: 
-
-participant_source = rep("ChatGPT", times = 7)
 
 
 print("rerun below if data for the CHatGPT prior changes (ie., belief statements and counts")
@@ -80,7 +70,7 @@ print("rerun below if data for the CHatGPT prior changes (ie., belief statements
 
 ########## DATA FOR THE PRIOR: OR FOR BEING PRESENT IN CHARACTERS THAT ARE ACTIVE: 
 
-OR_df_merged_BS = read.csv(paste(directory, "proj/bayesian_review_methods/RESULTS/OR_df_merged_BS.csv", sep="")) 
+OR_df_merged_BS = read.csv(paste(directory, "proj/bayesian_review_methods/RESULTS/OR_df_merged_BS_ChatGPT_prior.csv", sep="")) 
 
 
 
@@ -111,11 +101,11 @@ NegativeAttitude_mean = mean(OR_df_merged_BS$NegativeAttitude)
 NegativeAttitude_var = var(OR_df_merged_BS$NegativeAttitude)
 
 
-NegativeAttitude_mean = mean(OR_df_merged_BS$NegativeAttitude1)
-NegativeAttitude_var = var(OR_df_merged_BS$NegativeAttitude1)
+NegativeAttitude1_mean = mean(OR_df_merged_BS$NegativeAttitude1)
+NegativeAttitude1_var = var(OR_df_merged_BS$NegativeAttitude1)
 
-NegativeAttitude_mean = mean(OR_df_merged_BS$NegativeAttitude2)
-NegativeAttitude_var = var(OR_df_merged_BS$NegativeAttitude2)
+NegativeAttitude2_mean = mean(OR_df_merged_BS$NegativeAttitude2)
+NegativeAttitude2_var = var(OR_df_merged_BS$NegativeAttitude2)
 
 
 #ChatGPT Positive attitude: this is based on the examination of the scale used in the likelihood (Pozehl et al., 2018)
@@ -124,15 +114,21 @@ NegativeAttitude_var = var(OR_df_merged_BS$NegativeAttitude2)
 PositiveAttitude_mean = mean(OR_df_merged_BS$PositiveAttitude)
 PositiveAttitude_var = var(OR_df_merged_BS$PositiveAttitude)
 
-PositiveAttitude_mean = mean(OR_df_merged_BS$PositiveAttitude1)
-PositiveAttitude_var = var(OR_df_merged_BS$PositiveAttitude1)
+PositiveAttitude1_mean = mean(OR_df_merged_BS$PositiveAttitude1)
+PositiveAttitude1_var = var(OR_df_merged_BS$PositiveAttitude1)
 
+PositiveAttitude2_mean = mean(OR_df_merged_BS$PositiveAttitude2)
+PositiveAttitude2_var = var(OR_df_merged_BS$PositiveAttitude2)
 
 #ChatGPT symptom distress
 #ChatGPT: Emotion-_fear
-Symptoms_distress_mean = mean(OR_df_merged_BS$Emotionbrrier_fear)
-Symptoms_distress_var = var(OR_df_merged_BS$Emotionbrrier_fear)
 
+Symptoms_distress_mean = mean(OR_df_merged_BS$SymptomsDistress)
+Symptoms_distress_var = var(OR_df_merged_BS$SymptomsDistress)
+
+
+Symp_Dis_Emotionbrrier_mean = mean(OR_df_merged_BS$Symp_Dis_Emotionbrrier)
+Symp_Dis_Emotionbrrier_var = var(OR_df_merged_BS$Symp_Dis_Emotionbrrier)
 
 #ChatGPT self-efficacy: 
 #BaCap+_selfEfficacy, 
@@ -144,57 +140,140 @@ Symptoms_distress_var = var(OR_df_merged_BS$Emotionbrrier_fear)
 # 1/BaCap-_selfEfficacy_hlth_cndtns_typePA, 
 # 1/BaCap-_selfEfficacy_ hlth_cndtns, 
 # 1/BaCap-_selfEfficacy_older_age
-OR_df_merged_BS$BaCapenblr_selfEfficacy
-OR_df_merged_BS$BaCapbrrier_selfEfficacy_.hlth_cndtns
-OR_df_merged_BS$BaCapbrrier_selfEfficacy_heart
-OR_df_merged_BS$BaCapbrrier_selfEfficacy_HF
-OR_df_merged_BS$BaCapbrrier_selfEfficacy_hlth_cndtns_typePA
-OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptms
-OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptmsHF
-OR_df_merged_BS$BaCapbrrier_selfEfficacy_older_age
-OR_df_merged_BS$BaCapbrrier_perceived_exertion
+# OR_df_merged_BS$BaCapenblr_selfEfficacy
+# OR_df_merged_BS$BaCapbrrier_selfEfficacy_.hlth_cndtns
+# OR_df_merged_BS$BaCapbrrier_selfEfficacy_heart
+# OR_df_merged_BS$BaCapbrrier_selfEfficacy_HF
+# OR_df_merged_BS$BaCapbrrier_selfEfficacy_hlth_cndtns_typePA
+# OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptms
+# OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptmsHF
+# OR_df_merged_BS$BaCapbrrier_selfEfficacy_older_age
+# OR_df_merged_BS$BaCapbrrier_perceived_exertion
 
 
-SelfEfficacy_mean = mean(OR_df_merged_BS$BaCapenblr_selfEfficacy)
-SelfEfficacy_var = var(OR_df_merged_BS$BaCapenblr_selfEfficacy)
+SelfEfficacy_mean = mean(OR_df_merged_BS$SelfEfficacy)
+SelfEfficacy_var = var(OR_df_merged_BS$SelfEfficacy)
+
+SE_BaCapbrrier_mean = mean(1/OR_df_merged_BS$SE_BaCapbrrier)
+SE_BaCapbrrier_var = var(1/OR_df_merged_BS$SE_BaCapbrrier)
 
 #ChatGPT perceived symptoms
 #ChatGPT: BaCap-_selfEfficacy_prcvd_smptmsHF, BaCap-_selfEfficacy_prcvd_smptms
-OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptmsHF
 
-fewerPerceivedSymptoms_mean = mean(1/OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptmsHF)
-fewerPerceivedSymptoms_var = var(1/OR_df_merged_BS$BaCapbrrier_selfEfficacy_prcvd_smptmsHF)
+fewerPerceivedSymptoms_mean = mean(1/OR_df_merged_BS$PerceivedSymptoms) 
+fewerPerceivedSymptoms_var = var(1/OR_df_merged_BS$PerceivedSymptoms)
+
+fewerPerceivedSymptoms1_mean = mean(1/OR_df_merged_BS$PerceivedSymptoms1)
+fewerPerceivedSymptoms1_var = var(1/OR_df_merged_BS$PerceivedSymptoms1)
+
+fewerPerceivedSymptoms2_mean = mean(1/OR_df_merged_BS$PerceivedSymptoms2)
+fewerPerceivedSymptoms2_var = mean(1/OR_df_merged_BS$PerceivedSymptoms2)
 
 #ChatGPT Symptom dysphoria 
 #ChatGPT: Emotion-_negative_emotions, Emotion-_mood
-OR_df_merged_BS$Emotionbrrier_negative_emotions
-OR_df_merged_BS$Emotionbrrier_mood
-
-Dysphoria_mean = mean(OR_df_merged_BS$Emotionbrrier_negative_emotions)
-Dysphoria_var = var(OR_df_merged_BS$Emotionbrrier_negative_emotions)
 
 
-logOR_prior_elicitation = c(SocialSupport1_mean,
+
+Dysphoria_mean = mean(OR_df_merged_BS$Dysphoria)
+Dysphoria_var = var(OR_df_merged_BS$Dysphoria)
+
+Dysphoria1_mean = mean(OR_df_merged_BS$Dysphoria1)
+Dysphoria1_var = var(OR_df_merged_BS$Dysphoria1)
+
+Dysphoria2_mean = mean(OR_df_merged_BS$Dysphoria2)
+Dysphoria2_var = var(OR_df_merged_BS$Dysphoria2)
+
+
+logOR_prior_elicitation = c(SocialSupport_mean, 
+                            SocialSupport1_mean,
+                            SocialSupport2_mean,
+                            
                             NegativeAttitude_mean, 
-                            PositiveAttitude_mean, 
+                            NegativeAttitude1_mean,
+                            NegativeAttitude2_mean, 
+                            
+                            PositiveAttitude_mean,
+                            PositiveAttitude1_mean,
+                            PositiveAttitude2_mean, 
+                            
                             Symptoms_distress_mean,
+                            Symp_Dis_Emotionbrrier_mean, 
+                            
                             SelfEfficacy_mean, 
+                            SE_BaCapbrrier_mean, 
+                            
                             fewerPerceivedSymptoms_mean, 
-                            Dysphoria_mean) 
+                            fewerPerceivedSymptoms1_mean, 
+                            fewerPerceivedSymptoms2_mean,
+                            
+                            Dysphoria_mean, 
+                            Dysphoria1_mean, 
+                            Dysphoria2_mean) 
 
-variance_prior_elicitation = c(SocialSupport1_var,
+variance_prior_elicitation = c(SocialSupport_var, 
+                               SocialSupport1_var,
+                               SocialSupport2_var,
+                               
                                NegativeAttitude_var, 
-                               PositiveAttitude_var, 
+                               NegativeAttitude1_var,
+                               NegativeAttitude2_var, 
+                               
+                               PositiveAttitude_var,
+                               PositiveAttitude1_var,
+                               PositiveAttitude2_var, 
+                               
                                Symptoms_distress_var,
+                               Symp_Dis_Emotionbrrier_var, 
+                               
                                SelfEfficacy_var, 
+                               SE_BaCapbrrier_var, 
+                               
                                fewerPerceivedSymptoms_var, 
-                               Dysphoria_mean)
+                               fewerPerceivedSymptoms1_var, 
+                               fewerPerceivedSymptoms2_var,
+                               
+                               Dysphoria_var,
+                               Dysphoria1_var, 
+                               Dysphoria2_var)
 
 
-input_ChatGPT_prior_from_mean_quotes = data.frame(Construct,
-                                                  logOR_prior_elicitation, 
-                                                  variance_prior_elicitation,
-                                                  participant_source) 
+Construct =c("SocialSupport",   
+             "SocialSupport1",  
+             "SocialSupport2",  
+             
+             "NegativeAttitude",  
+             "NegativeAttitude1",  
+             "NegativeAttitude2",  
+             
+             "PositiveAttitude", 
+             "PositiveAttitude1",
+             "PositiveAttitude2",
+             
+             "Symptoms_distress",
+             'Symp_Dis_Emotionbrrier', 
+             
+             "SelfEfficacy",
+             'SE_BaCapbrrier_var', 
+             
+             "fewerPerceivedSymptoms",
+             "fewerPerceivedSymptoms1",
+             "fewerPerceivedSymptoms2",
+             
+             "Dysphoria", 
+             "Dysphoria1", 
+             "Dysphoria2") 
 
-write.csv(input_ChatGPT_prior_from_mean_quotes, paste(DATA_ROOT, "input_ChatGPT_prior_from_mean_quotes.csv", sep="")) # new qualitative data
+
+##### participant_source: 
+
+participant_source = rep("ChatGPT", times = 19)
+
+
+
+input_ChatGPT_prior_from_mean_quotes_merge_BS = data.frame(Construct,
+                                                          logOR_prior_elicitation, 
+                                                          variance_prior_elicitation,
+                                                          participant_source) 
+
+write.csv(input_ChatGPT_prior_from_mean_quotes_merge_BS, paste(DATA_ROOT, "input_ChatGPT_prior_from_mean_quotes_merge_BS.csv", sep="")) # new qualitative data
 
