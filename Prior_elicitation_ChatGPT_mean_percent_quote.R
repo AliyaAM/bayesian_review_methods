@@ -74,8 +74,38 @@ ChatGPT_perBS_perBot = read.csv(paste(DATA_ROOT, "ChatGPT_perBS_perBot_FINAL.csv
 #OR = from the contingency table of the above 
 
 #############
+############# concatenate into the same vector these below before calculating fractions/contingencies: 
 
-#ChatGPT self-efficacy: #BaCapenblr_selfEfficacy
+#ChatGPT social support:  this is based on the examination of the scale used in the likelihood (Galagher et al., 2011)
+# SI+_social_support_practical_compan
+# SI+_social_support_emotional
+
+#ChatGPT negative attitude: this is based on the examination of the scale used in the likelihood (Pozehl et al., 2018)
+# BaCon-_neg_expctncy_sympcomrbd
+
+#ChatGPT Positive attitude: this is based on the examination of the scale used in the likelihood (Pozehl et al., 2018)
+#ChatGPT: BaCon+_pos_expctncy_health, 
+
+#ChatGPT symptom distress
+#ChatGPT: Emotion-_fear
+
+#ChatGPT self-efficacy: 
+#BaCap+_selfEfficacy, 
+# 1/BaCap-_selfEfficacy_prcvd_smptmsHF, 
+# 1/BaCap-_selfEfficacy_HF, 
+# 1/BaCap-_selfEfficacy_heart, 
+# 1/BaCap-_selfEfficacy_prcvd_smptms, 
+# 1/BaCap-_perceived_exertion, 
+# 1/BaCap-_selfEfficacy_hlth_cndtns_typePA, 
+# 1/BaCap-_selfEfficacy_ hlth_cndtns, 
+# 1/BaCap-_selfEfficacy_older_age
+
+
+#ChatGPT perceived symptoms
+#ChatGPT: BaCap-_selfEfficacy_prcvd_smptmsHF, BaCap-_selfEfficacy_prcvd_smptms
+
+#ChatGPT Symptom dysphoria 
+#ChatGPT: Emotion-_negative_emotions, Emotion-_mood
 
 unique(ChatGPT_perBS_perBot$Cases)
 ChatGPT_perBS_perBot[rowSums(is.na(ChatGPT_perBS_perBot)) > 0,]
@@ -156,10 +186,10 @@ colnames(OR_df) = names_columns_OR_df
 names_columns_OR_df = colnames(ChatGPT_perBS_perBot[,c(-1, -157, -158, -159)])
 class(names_columns_OR_df)
 
- write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_ChatGPT_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
-           eol = "\r", na = "NA", dec = ".", row.names = FALSE,
-           col.names = TRUE, qmethod = c("escape", "double"),
-           fileEncoding = "" )
+ # write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_ChatGPT_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+ #           eol = "\r", na = "NA", dec = ".", row.names = FALSE,
+ #           col.names = TRUE, qmethod = c("escape", "double"),
+ #           fileEncoding = "" )
 
 
 # ChatGPT_perBS_perBot$Cases
