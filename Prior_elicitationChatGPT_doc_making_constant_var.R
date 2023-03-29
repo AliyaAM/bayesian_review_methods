@@ -152,7 +152,7 @@ Symp_Dis_Emotionbrrier_var = var
 # OR_df_merged_BS$BaCapbrrier_perceived_exertion
 
 
-SelfEfficacy_mean = mean(OR_df_merged_BS$SelfEfficacy)
+SelfEfficacy_mean = mean(1/OR_df_merged_BS$BaCapbrrier)
 SelfEfficacy_var = var
 
 SE_BaCapbrrier_mean = mean(1/OR_df_merged_BS$SE_BaCapbrrier)
