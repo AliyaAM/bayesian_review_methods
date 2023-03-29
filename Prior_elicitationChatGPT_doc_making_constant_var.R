@@ -87,7 +87,7 @@ print("try with different constructs, if mulptiple BS/cosntruscts are present fo
 var = 0.1
 
 ls(OR_df_merged_BS)
-SocialSupport_mean = mean(OR_df_merged_BS$SocialSupport1) 
+SocialSupport_mean = mean(OR_df_merged_BS$SocialSupport2) 
 SocialSupport_var = var
 
 SocialSupport1_mean = mean(OR_df_merged_BS$SocialSupport1) 
@@ -114,7 +114,7 @@ NegativeAttitude2_var = var
 #ChatGPT Positive attitude: this is based on the examination of the scale used in the likelihood (Pozehl et al., 2018)
 #ChatGPT: BaCon+_pos_expctncy_health, 
 
-PositiveAttitude_mean = mean(OR_df_merged_BS$PositiveAttitude1)
+PositiveAttitude_mean = mean(OR_df_merged_BS$PositiveAttitude)
 PositiveAttitude_var = var
 
 PositiveAttitude1_mean = mean(OR_df_merged_BS$PositiveAttitude1)
@@ -154,7 +154,7 @@ Symp_Dis_Emotionbrrier_var = var
 # OR_df_merged_BS$BaCapbrrier_perceived_exertion
 
 
-SelfEfficacy_mean = mean(OR_df_merged_BS$SE_BaCapbrrier)*-1
+SelfEfficacy_mean = mean(OR_df_merged_BS$SelfEfficacy1)
 SelfEfficacy_var = var
 
 SE_BaCapbrrier_mean = mean(OR_df_merged_BS$SE_BaCapbrrier)

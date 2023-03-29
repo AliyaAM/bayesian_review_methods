@@ -168,6 +168,7 @@ new_data_merged_BS$SymptomsDistress = ChatGPT_perBS_perBot$Emotionbrrier_fear
 new_data_merged_BS$Symp_Dis_Emotionbrrier = ChatGPT_perBS_perBot$Emotionbrrier
 new_data_merged_BS$SelfEfficacy = ChatGPT_perBS_perBot$BaCapenblr_selfEfficacy
 new_data_merged_BS$SE_BaCapbrrier = ChatGPT_perBS_perBot$BaCapbrrier
+new_data_merged_BS$SelfEfficacy1 = ChatGPT_perBS_perBot$BaCapenblr_selfEfficacy - ChatGPT_perBS_perBot$BaCapbrrier
 new_data_merged_BS$PerceivedSymptoms = ChatGPT_perBS_perBot$BaCapbrrier_selfEfficacy_prcvd_smptmsHF + ChatGPT_perBS_perBot$BaCapbrrier_selfEfficacy_prcvd_smptms 
 new_data_merged_BS$PerceivedSymptoms1 = ChatGPT_perBS_perBot$BaCapbrrier_selfEfficacy_prcvd_smptmsHF
 new_data_merged_BS$PerceivedSymptoms2 = ChatGPT_perBS_perBot$BaCapbrrier_selfEfficacy_prcvd_smptms
@@ -212,7 +213,7 @@ SMD_df_merged_BS = data.frame(matrix_empty)
 SE_df_merged_BS = data.frame(matrix_empty) 
 
 
-for (i in colnames(new_data_merged_BS[,c(-1, -25)])){
+for (i in colnames(new_data_merged_BS[,c(-1, -26)])){
   
   SMD_vector = c()
   SE_vector = c()
@@ -261,12 +262,12 @@ for (i in colnames(new_data_merged_BS[,c(-1, -25)])){
   
 }
 
-names_columns_SMD_df = colnames(new_data_merged_BS[,c(-1, -25, -26)])
+names_columns_SMD_df = colnames(new_data_merged_BS[,c(-1, -26, -27)])
 class(names_columns_SMD_df)
 colnames(SMD_df_merged_BS) = names_columns_SMD_df
 
 
-names_columns_SE_df = colnames(new_data_merged_BS[,c(-1, -25, -26)])
+names_columns_SE_df = colnames(new_data_merged_BS[,c(-1, -26, -27)])
 class(names_columns_SE_df)
 colnames(SE_df_merged_BS) = names_columns_SE_df
 
@@ -300,7 +301,7 @@ write.table(SMD_df_merged_BS, file = paste(OUTPUT_ROOT, "SMD2OR_df_merged_BS_Cha
    OR_df = cbind(OR_df, OR_vector)
    }
 
- names_columns_OR_df = colnames(new_data_merged_BS[,c(-1, -25, -26)])
+ names_columns_OR_df = colnames(new_data_merged_BS[,c(-1, -26, -27)])
  class(names_columns_OR_df)
  colnames(OR_df) = names_columns_OR_df
  
