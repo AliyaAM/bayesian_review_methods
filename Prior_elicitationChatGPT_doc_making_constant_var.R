@@ -249,7 +249,7 @@ Construct =c("SocialSupport",
              "PositiveAttitude", 
              "PositiveAttitude1",
              "PositiveAttitude2",
-             
+              
              "Symptoms_distress",
              'Symp_Dis_Emotionbrrier', 
              
@@ -278,3 +278,6 @@ input_ChatGPT_prior_from_mean_quotes_merge_BS = data.frame(Construct,
 
 write.csv(input_ChatGPT_prior_from_mean_quotes_merge_BS, paste(DATA_ROOT, "input_ChatGPT_prior_from_mean_quotes_merge_BS_cosntant_var.csv", sep="")) # new qualitative data
 
+#added priod distributions based on the corresponding BS where we add up the counts for BSs before calculating the OR (active vs inactive), now we set the var to constant = 0.1 
+#added priod distributions based on the corresponding BS where we add up the counts for BSs before calculating the OR (active vs inactive), now we set the var to constant = 0.1 
+#added priod distributions based on the corresponding BS where we add up the counts for BSs before calculating the OR (active vs inactive), now we set the var to constant = 0.1 
