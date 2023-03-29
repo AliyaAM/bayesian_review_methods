@@ -154,22 +154,22 @@ Symp_Dis_Emotionbrrier_var = var
 # OR_df_merged_BS$BaCapbrrier_perceived_exertion
 
 
-SelfEfficacy_mean = mean(1/OR_df_merged_BS$BaCapbrrier)
+SelfEfficacy_mean = mean(OR_df_merged_BS$SelfEfficacy)
 SelfEfficacy_var = var
 
-SE_BaCapbrrier_mean = mean(1/OR_df_merged_BS$SE_BaCapbrrier)
+SE_BaCapbrrier_mean = mean(OR_df_merged_BS$SE_BaCapbrrier)
 SE_BaCapbrrier_var = var
 
 #ChatGPT perceived symptoms
 #ChatGPT: BaCap-_selfEfficacy_prcvd_smptmsHF, BaCap-_selfEfficacy_prcvd_smptms
 
-fewerPerceivedSymptoms_mean = mean(1/OR_df_merged_BS$PerceivedSymptoms) 
+fewerPerceivedSymptoms_mean = 1/mean(OR_df_merged_BS$PerceivedSymptoms) 
 fewerPerceivedSymptoms_var = var
 
-fewerPerceivedSymptoms1_mean = mean(1/OR_df_merged_BS$PerceivedSymptoms1)
+fewerPerceivedSymptoms1_mean = 1/mean(OR_df_merged_BS$PerceivedSymptoms1)
 fewerPerceivedSymptoms1_var = var
 
-fewerPerceivedSymptoms2_mean = mean(1/OR_df_merged_BS$PerceivedSymptoms2)
+fewerPerceivedSymptoms2_mean = 1/mean(OR_df_merged_BS$PerceivedSymptoms2)
 fewerPerceivedSymptoms2_var = var
 
 #ChatGPT Symptom dysphoria 
