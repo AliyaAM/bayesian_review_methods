@@ -70,7 +70,9 @@ print("rerun below if data for the CHatGPT prior changes (ie., belief statements
 
 ########## DATA FOR THE PRIOR: OR FOR BEING PRESENT IN CHARACTERS THAT ARE ACTIVE: 
 
-OR_df_merged_BS = read.csv(paste(directory, "proj/bayesian_review_methods/RESULTS/OR_df_merged_BS_ChatGPT_prior.csv", sep="")) 
+#OR_df_merged_BS = read.csv(paste(directory, "proj/bayesian_review_methods/RESULTS/OR_df_merged_BS_ChatGPT_prior.csv", sep="")) 
+OR_df_merged_BS = read.csv(paste(directory, "proj/bayesian_review_methods/RESULTS/OR_df_merged_BS_ChatGPT_prior_fromSMD.csv", sep="")) 
+
 
 
 
@@ -276,7 +278,7 @@ input_ChatGPT_prior_from_mean_quotes_merge_BS = data.frame(Construct,
                                                            variance_prior_elicitation,
                                                            participant_source) 
 
-write.csv(input_ChatGPT_prior_from_mean_quotes_merge_BS, paste(DATA_ROOT, "input_ChatGPT_prior_from_mean_quotes_merge_BS_cosntant_var.csv", sep="")) # new qualitative data
+write.csv(input_ChatGPT_prior_from_mean_quotes_merge_BS, paste(DATA_ROOT, "input_ChatGPT_prior_from_mean_quotes_merge_BS_cosntant_var_from_SMD.csv", sep="")) # new qualitative data
 
 #added priod distributions based on the corresponding BS where we add up the counts for BSs before calculating the OR (active vs inactive), now we set the var to constant = 0.1 
 #added priod distributions based on the corresponding BS where we add up the counts for BSs before calculating the OR (active vs inactive), now we set the var to constant = 0.1 

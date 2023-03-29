@@ -209,11 +209,13 @@ new_data_merged_BS = tibble(new_data_merged_BS) %>%
 matrix_empty = matrix(nrow = 16, ncol = 0)
 
 SMD_df_merged_BS = data.frame(matrix_empty) 
+SE_df_merged_BS = data.frame(matrix_empty) 
 
 
 for (i in colnames(new_data_merged_BS[,c(-1, -25)])){
   
   SMD_vector = c()
+  SE_vector = c()
   print(i)
   
   x = unlist(as.vector(new_data_merged_BS[,i]))
@@ -247,11 +249,15 @@ for (i in colnames(new_data_merged_BS[,c(-1, -25)])){
     
     SMD_temp = (long_data[[j]][2,4] - long_data[[j]][1,4])/(sd(both_means)+0.001)
     
+    SE_temp = (sd(both_means) + 0.001 * sqrt(2))
+    
     SMD_vector = c(SMD_vector, SMD_temp$x_fraction[1])
+    SE_vector = c(SE_vector, SE_temp)
     
   }
   
   SMD_df_merged_BS = cbind(SMD_df_merged_BS, SMD_vector)
+  SE_df_merged_BS = cbind(SE_df_merged_BS, SE_vector)
   
 }
 
@@ -260,10 +266,60 @@ class(names_columns_SMD_df)
 colnames(SMD_df_merged_BS) = names_columns_SMD_df
 
 
+names_columns_SE_df = colnames(new_data_merged_BS[,c(-1, -25, -26)])
+class(names_columns_SE_df)
+colnames(SE_df_merged_BS) = names_columns_SE_df
+
+
+
 write.table(SMD_df_merged_BS, file = paste(OUTPUT_ROOT, "SMD2OR_df_merged_BS_ChatGPT_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
             col.names = TRUE, qmethod = c("escape", "double"),
             fileEncoding = "" )
+
+    
+ OR_df = data.frame(matrix_empty) 
+ 
+ for (col in colnames(SMD_df_merged_BS)){
+   
+   print(col)
+   OR_vector = c()
+   
+   for (row in 1:length(SMD_df_merged_BS[,col])){
+     
+     print(row)
+     
+     value_temp = SMD_df_merged_BS[row, col]
+     
+     OR = meta::smd2or(smd = value_temp, se.smd = 0.001, backtransf = FALSE)
+     
+     OR_vector = c(OR_vector, OR$data$lnOR)
+     
+     }
+   
+   OR_df = cbind(OR_df, OR_vector)
+   }
+
+ names_columns_OR_df = colnames(new_data_merged_BS[,c(-1, -25, -26)])
+ class(names_columns_OR_df)
+ colnames(OR_df) = names_columns_OR_df
+ 
+ 
+ 
+ write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_merged_BS_ChatGPT_prior_fromSMD.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
+             col.names = TRUE, qmethod = c("escape", "double"),
+             fileEncoding = "" )
+# 
+# 
+# lapply(SMD_df_merged_BS, smd2or(smd = SMD_df_merged_BS,
+#                                     se.smd = SE_df_merged_BS,
+#                                     #studlab,
+#                                     data = NULL,
+#                                     subset = NULL,
+#                                     exclude = NULL,
+#                                     method = "HH",
+#                                     backtransf = gs("backtransf")))
 
 
 ####################################
