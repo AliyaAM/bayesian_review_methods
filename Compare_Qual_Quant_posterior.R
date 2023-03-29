@@ -184,8 +184,10 @@ Compare_distributions_plot = ggplot(d, aes(x = logOddsRatio,
                                            color = distribution,
                                            fill = distribution)) +
   
-  scale_x_continuous(name = "log OR", breaks = c(-3.0, 
-                                           
+  scale_x_continuous(name = "log OR", 
+                     
+                     breaks = c(-3.0,
+
                                                  -2.8,
                                                  -2.6,
                                                  -2.4,
@@ -195,25 +197,25 @@ Compare_distributions_plot = ggplot(d, aes(x = logOddsRatio,
                                                  -1.6,
                                                  -1.4,
                                                  -1.2,
-                                                 
-                                                 -1, 
+
+                                                 -1,
                                                  -0.8,
-                                                 -0.6, 
+                                                 -0.6,
                                                  -0.4,
                                                  -0.2,
                                                  0,
-                                                 
+
                                                  0.2,
-                                                 0.4, 
-                                                 0.6, 
+                                                 0.4,
+                                                 0.6,
                                                  0.8,
                                                  1,
-                                                 1.2, 
-                                                 1.4, 
+                                                 1.2,
+                                                 1.4,
                                                  1.6,
                                                  1.8,
                                                  2),
-                     limits = c(-15, 25)) +
+                     limits = c(-3, 2)) +
   
   
   geom_density_ridges(stat = "identity",
