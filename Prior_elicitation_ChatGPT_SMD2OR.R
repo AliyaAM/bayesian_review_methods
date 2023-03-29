@@ -18,6 +18,7 @@ library(bayestestR)
 library(HDInterval)
 library(assertthat)
 library(RColorBrewer)
+library(meta)
 
 ## Set the root directory to look for source code.
 #SOURCE_ROOT = "/Users/aliyaamirova/proj/bayesian_meta_analysis/"
@@ -41,8 +42,8 @@ print("check overleaf for to do list")
 ########### DIRECTORY
 
 #directory = "/Users/aliyaamirova/"
-#directory = "/Users/aliya/my_docs/"
-directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
+directory = "/Users/aliya/my_docs/"
+#directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
 
 
 ###########  source root 
@@ -207,12 +208,12 @@ new_data_merged_BS = tibble(new_data_merged_BS) %>%
 
 matrix_empty = matrix(nrow = 16, ncol = 0)
 
-OR_df_merged_BS = data.frame(matrix_empty) 
+SMD_df_merged_BS = data.frame(matrix_empty) 
 
 
 for (i in colnames(new_data_merged_BS[,c(-1, -25)])){
   
-  OR_vector = c()
+  SMD_vector = c()
   print(i)
   
   x = unlist(as.vector(new_data_merged_BS[,i]))
@@ -228,7 +229,7 @@ for (i in colnames(new_data_merged_BS[,c(-1, -25)])){
   long_data = new_data_merged_BS %>%
     select(name, PA_status, x_fraction) %>%
     gather("key", 'x_fraction', -name, -PA_status) %>%
-    mutate(fraction_not_present = 1 - x_fraction + 0.001) %>%
+    #mutate(fraction_not_present = 1 - x_fraction + 0.001) %>%
     arrange(name, PA_status) %>%
     group_by(name) %>%
     group_split(name)
@@ -239,23 +240,27 @@ for (i in colnames(new_data_merged_BS[,c(-1, -25)])){
     print(j)
     
     print(long_data[[j]][2,4])
-    print(long_data[[j]][1,5])
-    print(long_data[[j]][2,5])
+
     print(long_data[[j]][1,4])
-    OR_temp = (long_data[[j]][2,4]*long_data[[j]][1,5])/(long_data[[j]][2,5]*long_data[[j]][1,4])
-    OR_vector = c(OR_vector, OR_temp$x_fraction[1])
+    
+    both_means = unlist(c(long_data[[j]][2,4],long_data[[j]][1,4]))
+    
+    SMD_temp = (long_data[[j]][2,4] - long_data[[j]][1,4])/(sd(both_means)+0.001)
+    
+    SMD_vector = c(SMD_vector, SMD_temp$x_fraction[1])
     
   }
   
-  OR_df_merged_BS = cbind(OR_df_merged_BS, OR_vector)
+  SMD_df_merged_BS = cbind(SMD_df_merged_BS, SMD_vector)
   
 }
-names_columns_OR_df = colnames(new_data_merged_BS[,c(-1, -25, -26)])
-class(names_columns_OR_df)
-colnames(OR_df_merged_BS) = names_columns_OR_df
+
+names_columns_SMD_df = colnames(new_data_merged_BS[,c(-1, -25, -26)])
+class(names_columns_SMD_df)
+colnames(SMD_df_merged_BS) = names_columns_SMD_df
 
 
-write.table(OR_df_merged_BS, file = paste(OUTPUT_ROOT, "OR_df_merged_BS_ChatGPT_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+write.table(SMD_df_merged_BS, file = paste(OUTPUT_ROOT, "SMD2OR_df_merged_BS_ChatGPT_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
             col.names = TRUE, qmethod = c("escape", "double"),
             fileEncoding = "" )
