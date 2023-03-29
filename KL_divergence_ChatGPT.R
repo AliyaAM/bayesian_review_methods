@@ -36,7 +36,7 @@ ChatGPT_Dysphoria_KL = KL(Dysphoria_data_divergence)
 
 NegativeAttitude_data = subset(data, data$Construct == "NegativeAttitude")
 NegativeAttitude_data_divergence  = rbind(NegativeAttitude_data$Prior_qual_density, NegativeAttitude_data$Likelihood)
-ChatGPT_NegativeAttitude_KL = KL(NegativeAttitude_data_divergence )
+ChatGPT_NegativeAttitude_KL = KL(NegativeAttitude_data_divergence)
 
 
 PositiveAttitude_data = subset(data, data$Construct == "PositiveAttitude")
@@ -46,7 +46,7 @@ ChatGPT_PositiveAttitude_KL = KL(PositiveAttitude_data_divergence)
 
 Symptoms_distress_data = subset(data, data$Construct == "Symptoms_distress")
 Symptoms_distress_data_divergence  = rbind(Symptoms_distress_data$Prior_qual_density, Symptoms_distress_data$Likelihood)
-ChatGPT_Symptoms_distress_KL = KL(Symptoms_distress_data_divergence )
+ChatGPT_Symptoms_distress_KL = KL(Symptoms_distress_data_divergence)
 
 
 fewerPerceivedSymptoms_data = subset(data, data$Construct == "fewerPerceivedSymptoms")

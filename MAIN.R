@@ -18,6 +18,8 @@ library(bayestestR)
 library(HDInterval)
 library(assertthat)
 library(RColorBrewer)
+library(philentropy)
+
 
 
 ## Set the root directory to look for source code.
