@@ -3,17 +3,13 @@
 #directory = "/Users/aliyaamirova/"
 directory = "/Users/aliya/my_docs/"
 
-OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/CHatGPTvsHuman", sep = "")
+OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/CHatGPTvsHuman/Mean_percentage_quote/from_SMD_and_n_contingency/", sep = "")
 
+# Human_distributions = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/Human/Results_BayesianMeta_Analysis_data_qual_quant.csv")
+# ChatGPT_distributions  = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/ChatGPT/Results_BayesianMeta_Analysis_data_qual_quant.csv")
 
-KLDChatGPT_prior_data = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/ChatGPT/KLD_ChatGPT.csv")
-
-KLDHuman_prior_data = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/Human/KLD_human.csv")
-
-
-Human_distributions = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/Human/Results_BayesianMeta_Analysis_data_qual_quant.csv")
-
-ChatGPT_distributions  = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/ChatGPT/Results_BayesianMeta_Analysis_data_qual_quant.csv")
+Human_distributions = read.csv(paste(directory, "proj/bayesian_review_methods/RESULTS/Human/BS_merged_for_constructs/constant_var/from_n_contingency_tbl/Results_BayesianMeta_Analysis_data_qual_quant.csv", sep = ""))
+ChatGPT_distributions = read.csv(paste(directory, 'proj/bayesian_review_methods/RESULTS/ChatGPT/results_matched_characters/BS_merged_for_constructs/constant_var/from_SMD/Results_BayesianMeta_Analysis_data_qual_quant.csv', sep=""))
 
 
 list_of_included_constructs = unique(ChatGPT_distributions$Construct)
