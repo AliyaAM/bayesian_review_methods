@@ -55,7 +55,7 @@ DATA_ROOT = paste(directory, "proj/bayesian_review_methods/DATA/", sep = "")
 #OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/Human/", sep = "")
 #OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/ChatGPT/", sep = "")
 
-OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/ChatGPT/results_matched_characters/BS_merged_for_constructs/constant_var/from_SMD/", sep = "")
+OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/Human/results_matched_characters/BS_merged_for_constructs/constant_var/from_SMD/", sep = "")
 
 ###### old prior (using mta-analysis to pool varius belief statements underlying the construct): 
 #x = read.csv(paste(DATA_ROOT, "input_Human_prior.csv", sep="")) #  qualitative data (human)
