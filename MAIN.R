@@ -54,15 +54,19 @@ DATA_ROOT = paste(directory, "proj/bayesian_review_methods/DATA/", sep = "")
 ########### Set the root location on the user's local machine to save output files.
 #OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/Human/", sep = "")
 #OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/ChatGPT/", sep = "")
+#OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/Human/BS_merged_for_constructs/constant_var/from_n_contingency_tbl/", sep = "")
 
-OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/Human/BS_merged_for_constructs/constant_var/from_n_contingency_tbl/", sep = "")
+OUTPUT_ROOT = paste(directory, 'proj/bayesian_review_methods/RESULTS/ChatGPT/results_matched_characters/BS_merged_for_constructs/constant_var/from_SMD/', sep="")
 
 ###### old prior (using mta-analysis to pool varius belief statements underlying the construct): 
 #x = read.csv(paste(DATA_ROOT, "input_Human_prior.csv", sep="")) #  qualitative data (human)
 #x = read.csv(paste(DATA_ROOT, "input_ChatGPT_prior_from_mean_quotes.csv", sep="")) # new qualitative data from mean quote 
 #x = read.csv(paste(DATA_ROOT, "input_Human_prior_from_mean_quotes_merge_BS_cosntant_var_from_SMD.csv", sep="")) # new qualitative data from mean quote merged BS if more than one is present with constant var
 #x = read.csv(paste(DATA_ROOT, "input_Human_prior_from_mean_quotes_merge_BS_cosntant_var_from_meanquote.csv", sep="")) # new qualitative data from mean quote merged BS if more than one is present with constant var
-x = read.csv(paste(DATA_ROOT, "input_Human_prior_constant_var.csv", sep="")) # new qualitative data from mean quote merged BS if more than one is present with constant var
+
+x = read.csv(paste(DATA_ROOT, "input_ChatGPT_prior_from_mean_quotes_merge_BS_cosntant_var_from_SMD.csv", sep="")) # new qualitative data with constant var with OR calculated from SMD in mean percentage quote between active and sedentary characters 
+#x = read.csv(paste(DATA_ROOT, "input_Human_prior_constant_var.csv", sep="")) # new qualitative data with constant var with OR calculated from contingency table (HUMAN)
+
 
 
 #if(x$PriorExpert_N_PA_X == 0 || x$PriorExpert_N_PA_noX == 0 || x$PriorExpert_N_noPA_X == 0 || x$PriorExpert_N_noPA_noX == 0)
