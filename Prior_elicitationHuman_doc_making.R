@@ -562,9 +562,13 @@ input_Human_prior$variance_prior_elicitation = c(social_support_ma$pval,
                                                  dysphoria_ma$pval)
 
 
+
+input_Human_prior$variance_prior_elicitation = c(rep(0.1), times = nrow(input_Human_prior))
+
+
 input_Human_prior$participant_source = rep("human", times = nrow(input_Human_prior))
 
-write.csv(input_Human_prior, file = paste(DATA_ROOT, "input_Human_prior.csv", sep="")) # new qualitative data human
+write.csv(input_Human_prior, file = paste(DATA_ROOT, "input_Human_prior_constant_var.csv", sep="")) # new qualitative data human
 
 
 
