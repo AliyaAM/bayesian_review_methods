@@ -58,7 +58,7 @@ OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/", sep = ""
 
 ############ DATA
 
-Human_perBS_perBot = read.csv(paste(DATA_ROOT, "Human_perBS_per_participant_FINAL.csv", sep = "")) 
+Human_perBS_per_participant = read.csv(paste(DATA_ROOT, "Human_perBS_per_participant_FINAL.csv", sep = "")) 
 
 
 #############
@@ -73,18 +73,55 @@ Human_perBS_perBot = read.csv(paste(DATA_ROOT, "Human_perBS_per_participant_FINA
 
 #############
 
+matrix_new_data = matrix(nrow = 16, ncol = 0)
+new_data_merged_BS_human = data.frame(matrix_new_data)
+
+ls(Human_perBS_per_participant)
+
+new_data_merged_BS_human$Cases = Human_perBS_per_participant$Cases
+new_data_merged_BS_human$PA_status = Human_perBS_per_participant$PA_status
+new_data_merged_BS_human$SocialSupport = Human_perBS_per_participant$SIenblr_social_support_emotional + Human_perBS_per_participant$SIenblr_social_support_practical_plan
+new_data_merged_BS_human$SocialSupport1 = Human_perBS_per_participant$SIenblr_social_support_emotional
+new_data_merged_BS_human$SocialSupport2 = Human_perBS_per_participant$SIenblr_social_support_practical_plan
+
+
+new_data_merged_BS_human$NegativeAttitude = Human_perBS_per_participant$BaConbrrier_lack_pos_pos_expctncy + Human_perBS_per_participant$BaConbrrier_neg_expctncy_symptoms_HF_fatigue + Human_perBS_per_participant$BaConbrrier_neg_expctncy_symptoms_HF_tightchest + Human_perBS_per_participant$BaConbrrier_neg_expctncy_symptoms_HF_dyspnoea + Human_perBS_per_participant$BaConbrrier_neg_expctncy_symptoms_HF_oedema + Human_perBS_per_participant$BaConbrrier_risk_heart
+new_data_merged_BS_human$NegativeAttitude1 = Human_perBS_per_participant$BaConbrrier_lack_pos_pos_expctncy
+new_data_merged_BS_human$NegativeAttitude2 = Human_perBS_per_participant$BaConbrrier_neg_expctncy_symptoms_HF_fatigue + Human_perBS_per_participant$BaConbrrier_neg_expctncy_symptoms_HF_tightchest + Human_perBS_per_participant$BaConbrrier_neg_expctncy_symptoms_HF_dyspnoea + Human_perBS_per_participant$BaConbrrier_neg_expctncy_symptoms_HF_oedema
+new_data_merged_BS_human$NegAt_BaConbrrier = Human_perBS_per_participant$BaConbrrier
+
+new_data_merged_BS_human$PositiveAttitude = Human_perBS_per_participant$BaConenblr_pos_expctncy_health + Human_perBS_per_participant$BaConenblr_pos_expctncy_cardio_health
+new_data_merged_BS_human$PositiveAttitude1 = Human_perBS_per_participant$BaConenblr_pos_expctncy_health 
+new_data_merged_BS_human$PositiveAttitude2 = Human_perBS_per_participant$BaConenblr_pos_expctncy_cardio_health
+new_data_merged_BS_human$PosAt_BaConenblr = Human_perBS_per_participant$BaConenblr 
+
+new_data_merged_BS_human$SymptomsDistress = Human_perBS_per_participant$Emotionbrrier_fear
+new_data_merged_BS_human$SymptomsDistress1 = Human_perBS_per_participant$MADPbrrier_symptom_hypervigilance
+new_data_merged_BS_human$Symp_Dis_Emotionbrrier = Human_perBS_per_participant$Emotionbrrier
+
+new_data_merged_BS_human$SelfEfficacy = Human_perBS_per_participant$BaCapenblr_selfEfficacy
+new_data_merged_BS_human$SE_BaCapbrrier = Human_perBS_per_participant$BaCapbrrier
+
+new_data_merged_BS_human$SelfEfficacy1 = Human_perBS_per_participant$BaCapenblr_selfEfficacy - Human_perBS_per_participant$BaCapbrrier
+
+new_data_merged_BS_human$PerceivedSymptoms = Human_perBS_per_participant$BaCapbrrier_selfEfficacy_prcvd_smptmsHF 
+
+new_data_merged_BS_human$Dysphoria =  Human_perBS_per_participant$Emotionbrrier_mood
+new_data_merged_BS_human$Emotionbrrier = Human_perBS_per_participant$Emotionbrrier
+new_data_merged_BS_human$Dysphoria1 = Human_perBS_per_participant$Emotionbrrier_mood + Human_perBS_per_participant$Emotionbrrier
+
 #Human self-efficacy: #BaCapenblr_selfEfficacy
 
 
-sedentary = subset(Human_perBS_perBot, Human_perBS_perBot$PA_status == 0)
+sedentary = subset(new_data_merged_BS_human, new_data_merged_BS_human$PA_status == 0)
 nrow(sedentary)
   
-unique(Human_perBS_perBot$Cases)
-Human_perBS_perBot[rowSums(is.na(Human_perBS_perBot)) > 0,]
-ls(Human_perBS_perBot)
-ncol(Human_perBS_perBot)
+unique(new_data_merged_BS_human$Cases)
+new_data_merged_BS_human[rowSums(is.na(new_data_merged_BS_human)) > 0,]
+ls(new_data_merged_BS_human)
+ncol(new_data_merged_BS_human)
 
-Human_perBS_perBot = tibble(Human_perBS_perBot) %>% 
+new_data_merged_BS_human = tibble(new_data_merged_BS_human) %>% 
   replace(is.na(.), 0) %>%
   mutate(sum_quotes_per_participant = rowSums(across(where(is.numeric)))) %>%
   mutate(name = Cases)
@@ -96,24 +133,24 @@ OR_df = data.frame(matrix_empty)
 SMD_df_merged_BS = data.frame(matrix_empty) 
 SE_df_merged_BS = data.frame(matrix_empty) 
 
-for (i in colnames(Human_perBS_perBot[,c(-1, -127, -128)])){
+for (i in colnames(new_data_merged_BS_human[,c(-1, -25)])){
   
 
   print(i)
   
-  x = unlist(as.vector(Human_perBS_perBot[,i]))
+  x = unlist(as.vector(new_data_merged_BS_human[,i]))
   
   
   
-  Human_perBS_perBot$sum_quotes_per_participant
+  new_data_merged_BS_human$sum_quotes_per_participant
   
-  Human_perBS_perBot = Human_perBS_perBot  %>% 
+  new_data_merged_BS_human = new_data_merged_BS_human  %>% 
     mutate(x_fraction = x/sum_quotes_per_participant + 0.001)
   
   print('got here')
   
   
-  long_data = Human_perBS_perBot %>%
+  long_data = new_data_merged_BS_human %>%
     select(name, PA_status, x_fraction) %>%
     gather("key", 'x_fraction', -name, -PA_status) %>%
     mutate(fraction_not_present = 1 - x_fraction + 0.001) %>%
@@ -146,7 +183,7 @@ for (i in colnames(Human_perBS_perBot[,c(-1, -127, -128)])){
 
 }
 
-names_columns_df = colnames(Human_perBS_perBot[,c(-1, -127, -128, -129)])
+names_columns_df = colnames(new_data_merged_BS_human[,c(-1, -25, -26)])
 class(names_columns_df)
 
 colnames(SMD_df_merged_BS) = names_columns_df
@@ -183,7 +220,7 @@ for (col in colnames(SMD_df_merged_BS)){
   OR_df_from_SMD = cbind(OR_df_from_SMD, OR_vector)
 }
 
-names_columns_OR_df = colnames(Human_perBS_perBot[,c(-1, -127, -128, -129)])
+names_columns_OR_df = colnames(new_data_merged_BS_human[,c(-1, -25, -26)])
 class(names_columns_OR_df)
 colnames(OR_df_from_SMD) = names_columns_OR_df
 
