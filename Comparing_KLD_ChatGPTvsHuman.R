@@ -1,7 +1,8 @@
 
 
 #directory = "/Users/aliyaamirova/"
-directory = "/Users/aliya/my_docs/"
+#directory = "/Users/aliya/my_docs/"
+directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
 
 OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/CHatGPTvsHuman/Mean_percentage_quote/from_SMD_and_n_contingency/", sep = "")
 
