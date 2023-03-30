@@ -18,6 +18,7 @@ library(bayestestR)
 library(HDInterval)
 library(assertthat)
 library(RColorBrewer)
+library(meta)
 
 ## Set the root directory to look for source code.
 #SOURCE_ROOT = "/Users/aliyaamirova/proj/bayesian_meta_analysis/"
@@ -41,8 +42,8 @@ print("check overleaf for to do list")
 ########### DIRECTORY
 
 #directory = "/Users/aliyaamirova/"
-directory = "/Users/aliya/my_docs/"
-#directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
+#directory = "/Users/aliya/my_docs/"
+directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
 
 
 ###########  source root 
@@ -90,11 +91,14 @@ Human_perBS_perBot = tibble(Human_perBS_perBot) %>%
 
 
 matrix_empty = matrix(nrow = 1, ncol = 0)
+
 OR_df = data.frame(matrix_empty) 
+SMD_df_merged_BS = data.frame(matrix_empty) 
+SE_df_merged_BS = data.frame(matrix_empty) 
 
 for (i in colnames(Human_perBS_perBot[,c(-1, -127, -128)])){
   
-  OR_vector = c()
+
   print(i)
   
   x = unlist(as.vector(Human_perBS_perBot[,i]))
@@ -129,20 +133,69 @@ for (i in colnames(Human_perBS_perBot[,c(-1, -127, -128)])){
 
   OR_df = cbind(OR_df, OR_temp)
   print("decide on how to obtain variance for ORs for each construct in the human prior because it is only a single number")
+  
+  both_means = c(mean_fraction_active, mean_fraction_sedentary)
+  
+  SMD_temp = (mean_fraction_active - mean_fraction_sedentary)/(sd(both_means)+0.001)
+  SE_temp = (sd(both_means) + 0.001 * sqrt(2))
+  
+  SMD_df_merged_BS = cbind(SMD_df_merged_BS, SMD_temp)
+  SE_df_merged_BS = cbind(SE_df_merged_BS, SE_temp)
+
   #variance = mean_fraction_sedentary-mean_fraction_active
 
 }
 
-colnames(OR_df) = names_columns_OR_df
-names_columns_OR_df = colnames(Human_perBS_perBot[,c(-1, -127, -128, -129)])
-class(names_columns_OR_df)
+names_columns_df = colnames(Human_perBS_perBot[,c(-1, -127, -128, -129)])
+class(names_columns_df)
+
+colnames(SMD_df_merged_BS) = names_columns_df
+colnames(SE_df_merged_BS) = names_columns_df
+colnames(OR_df) = names_columns_df
 
 
-# 
-write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_Human_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+write.table(SMD_df_merged_BS, file = paste(OUTPUT_ROOT, "SMD2OR_df_merged_BS_Human_prior_ALL.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
             col.names = TRUE, qmethod = c("escape", "double"),
             fileEncoding = "" )
 
+# # 
+# write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_Human_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+#             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
+#             col.names = TRUE, qmethod = c("escape", "double"),
+#             fileEncoding = "" )
 
 
+
+OR_df_from_SMD = data.frame(matrix_empty) 
+
+for (col in colnames(SMD_df_merged_BS)){
+  
+  print(col)
+  OR_vector = c()
+  
+  for (row in 1:length(SMD_df_merged_BS[,col])){
+    
+    print(row)
+    
+    value_temp = SMD_df_merged_BS[row, col]
+    
+    OR = meta::smd2or(smd = value_temp, se.smd = 0.001, backtransf = FALSE)
+    
+    OR_vector = c(OR_vector, OR$data$lnOR)
+    
+  }
+  
+  OR_df_from_SMD = cbind(OR_df_from_SMD, OR_vector)
+}
+
+names_columns_OR_df = colnames(Human_perBS_perBot[,c(-1, -127, -128, -129)])
+class(names_columns_OR_df)
+colnames(OR_df_from_SMD) = names_columns_OR_df
+
+
+
+write.table(OR_df_from_SMD, file = paste(OUTPUT_ROOT, "OR_df_merged_BS_ChatGPT_prior_fromSMD_ALL.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+            eol = "\r", na = "NA", dec = ".", row.names = FALSE,
+            col.names = TRUE, qmethod = c("escape", "double"),
+            fileEncoding = "" )
