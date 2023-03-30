@@ -38,7 +38,9 @@ print("check overleaf for to do list")
 ########### DIRECTORY
 
 #directory = "/Users/aliyaamirova/"
-directory = "/Users/aliya/my_docs/"
+#directory = "/Users/aliya/my_docs/"
+directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
+
 
 ###########  source root 
 SOURCE_ROOT = paste(directory, "proj/bayesian_review_methods/", sep = "")
@@ -563,7 +565,7 @@ input_Human_prior$variance_prior_elicitation = c(social_support_ma$pval,
 
 
 
-input_Human_prior$variance_prior_elicitation = c(rep(0.1), times = nrow(input_Human_prior))
+input_Human_prior$variance_prior_elicitation = rep(0.1, times = nrow(input_Human_prior))
 
 
 input_Human_prior$participant_source = rep("human", times = nrow(input_Human_prior))
