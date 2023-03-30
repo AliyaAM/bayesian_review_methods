@@ -164,7 +164,7 @@ for (i in colnames(new_data_merged_BS_human[,c(-1, -25)])){
   mean_fraction_active = mean(long_data[[2]]$x_fraction) 
   mean_fraction_not_present_active = mean(long_data[[2]]$fraction_not_present) 
   
-  OR_temp = log(mean_fraction_active*mean_fraction_not_present_sedentary)/(mean_fraction_not_present_active*mean_fraction_sedentary)
+  OR_temp = log((mean_fraction_active*mean_fraction_not_present_sedentary)/(mean_fraction_not_present_active*mean_fraction_sedentary))
   #OR_temp = (active_present*sedentary_not_present)/(active_not_present*sedentary_present)
   
 
