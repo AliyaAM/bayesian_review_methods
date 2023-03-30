@@ -4,18 +4,19 @@ library(ggthemes) # Load
 
 
 #directory = "/Users/aliyaamirova/"
-directory = "/Users/aliya/my_docs/"
+#directory = "/Users/aliya/my_docs/"
+directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
 
-#OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/CHatGPTvsHuman", sep = "")
+OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/CHatGPTvsHuman/Mean_percentage_quote/from_SMD_and_n_contingency/", sep = "")
 
+KLDChatGPT_prior_data = read.csv(paste(directory, 'proj/bayesian_review_methods/RESULTS/ChatGPT/results_matched_characters/BS_merged_for_constructs/constant_var/from_SMD/KLD_ChatGPT.csv', sep=""))
+KLDHuman_prior_data = read.csv(paste(directory, "proj/bayesian_review_methods/RESULTS/Human/BS_merged_for_constructs/constant_var/from_n_contingency_tbl/KLD_human.csv", sep = ""))
 
-KLDChatGPT_prior_data = read.csv(paste(OUTPUT_ROOT, "KLD_ChatGPT.csv", sep=""))
-
-KLDHuman_prior_data = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/Human/KLD_human.csv")
+#KLDHuman_prior_data = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/Human/KLD_human.csv")
 
 data = rbind(KLDChatGPT_prior_data, KLDHuman_prior_data)
 
-CHatGPTvsHuman_prior = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/CHatGPTvsHuman/KLD_human_vs_ChatGPT.csv")
+#CHatGPTvsHuman_prior = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/CHatGPTvsHuman/KLD_human_vs_ChatGPT.csv")
 
 
 
