@@ -164,7 +164,7 @@ for (i in colnames(new_data_merged_BS_human[,c(-1, -25)])){
   mean_fraction_active = mean(long_data[[2]]$x_fraction) 
   mean_fraction_not_present_active = mean(long_data[[2]]$fraction_not_present) 
   
-  OR_temp = (mean_fraction_active*mean_fraction_not_present_sedentary)/(mean_fraction_not_present_active*mean_fraction_sedentary)
+  OR_temp = log(mean_fraction_active*mean_fraction_not_present_sedentary)/(mean_fraction_not_present_active*mean_fraction_sedentary)
   #OR_temp = (active_present*sedentary_not_present)/(active_not_present*sedentary_present)
   
 
@@ -192,6 +192,11 @@ colnames(OR_df) = names_columns_df
 
 
 write.table(SMD_df_merged_BS, file = paste(OUTPUT_ROOT, "SMD2OR_df_merged_BS_Human_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+            eol = "\r", na = "NA", dec = ".", row.names = FALSE,
+            col.names = TRUE, qmethod = c("escape", "double"),
+            fileEncoding = "" )
+
+write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_merged_BS_Human_prior_from_meanquote.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
             col.names = TRUE, qmethod = c("escape", "double"),
             fileEncoding = "" )
