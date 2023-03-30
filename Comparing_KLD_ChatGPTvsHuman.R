@@ -6,7 +6,7 @@ directory = "/Users/aliya/my_docs/"
 OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/CHatGPTvsHuman", sep = "")
 
 
-KLDChatGPT_prior_data = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/ChatGPT/KLD_ChatGPT/.csv")
+KLDChatGPT_prior_data = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/ChatGPT/KLD_ChatGPT.csv")
 
 KLDHuman_prior_data = read.csv("/Users/aliya/my_docs/proj/bayesian_review_methods/RESULTS/Human/KLD_human.csv")
 
