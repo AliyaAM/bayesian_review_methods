@@ -40,8 +40,8 @@ print("check overleaf for to do list")
 ########### DIRECTORY
 
 #directory = "/Users/aliyaamirova/"
-directory = "/Users/aliya/my_docs/"
-#directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
+#directory = "/Users/aliya/my_docs/"
+directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
 
 
 ###########  source root 
@@ -87,48 +87,37 @@ var = 0.1
 ls(OR_df_merged_BS)
 SocialSupport_mean = OR_df_merged_BS$SocialSupport2
 SocialSupport_var = var
-
 SocialSupport1_mean = OR_df_merged_BS$SocialSupport1
 SocialSupport1_var = var
-
 SocialSupport2_mean = OR_df_merged_BS$SocialSupport2
 SocialSupport2_var = var
 
 
 NegativeAttitude_mean = OR_df_merged_BS$NegativeAttitude
 NegativeAttitude_var = var
-
-
 NegativeAttitude1_mean = OR_df_merged_BS$NegativeAttitude1
 NegativeAttitude1_var = var
-
 NegativeAttitude2_mean = OR_df_merged_BS$NegativeAttitude2
 NegativeAttitude2_var = var
 
 
 PositiveAttitude_mean = OR_df_merged_BS$PositiveAttitude
 PositiveAttitude_var = var
-
 PositiveAttitude1_mean = OR_df_merged_BS$PositiveAttitude1
 PositiveAttitude1_var = var
-
 PositiveAttitude2_mean = OR_df_merged_BS$PositiveAttitude2
 PositiveAttitude2_var = var
 
 Symptoms_distress_mean = OR_df_merged_BS$SymptomsDistress
 Symptoms_distress_var = var
-
-
 Symp_Dis_Emotionbrrier_mean = OR_df_merged_BS$Symp_Dis_Emotionbrrier
 Symp_Dis_Emotionbrrier_var = var
 
 
 SelfEfficacy_mean = OR_df_merged_BS$SelfEfficacy
 SelfEfficacy_var = var
-
 SelfEfficacy1_mean = OR_df_merged_BS$SelfEfficacy1
 SelfEfficacy1_var = var
-
 SE_BaCapbrrier_mean = OR_df_merged_BS$SE_BaCapbrrier
 SE_BaCapbrrier_var = var
 
@@ -141,10 +130,8 @@ fewerPerceivedSymptoms_var = var
 
 Dysphoria_mean = OR_df_merged_BS$Dysphoria
 Dysphoria_var = var
-
 Dysphoria1_mean = OR_df_merged_BS$Dysphoria1
 Dysphoria1_var = var
-
 Emotionbrrier_mean = OR_df_merged_BS$Emotionbrrier
 Emotionbrrier_var = var
 
@@ -229,7 +216,7 @@ Construct =c('SocialSupport',
 
 ##### participant_source: 
 
-participant_source = rep("Human", times = 19)
+participant_source = rep("Human", times = 18)
 
 
 
@@ -238,7 +225,7 @@ input_Human_prior_from_mean_quotes_merge_BS = data.frame(Construct,
                                                            variance_prior_elicitation,
                                                            participant_source) 
 
-#write.csv(input_Human_prior_from_mean_quotes_merge_BS, paste(DATA_ROOT, "input_Human_prior_from_mean_quotes_merge_BS_cosntant_var_from_SMD.csv", sep="")) # new qualitative data
+write.csv(input_Human_prior_from_mean_quotes_merge_BS, paste(DATA_ROOT, "input_Human_prior_from_mean_quotes_merge_BS_cosntant_var_from_SMD.csv", sep="")) # new qualitative data
 
 #added priod distributions based on the corresponding BS where we add up the counts for BSs before calculating the OR (active vs inactive), now we set the var to constant = 0.1 
 #added priod distributions based on the corresponding BS where we add up the counts for BSs before calculating the OR (active vs inactive), now we set the var to constant = 0.1 
