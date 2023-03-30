@@ -60,7 +60,8 @@ OUTPUT_ROOT = paste(directory, "proj/bayesian_review_methods/RESULTS/Human/BS_me
 ###### old prior (using mta-analysis to pool varius belief statements underlying the construct): 
 #x = read.csv(paste(DATA_ROOT, "input_Human_prior.csv", sep="")) #  qualitative data (human)
 #x = read.csv(paste(DATA_ROOT, "input_ChatGPT_prior_from_mean_quotes.csv", sep="")) # new qualitative data from mean quote 
-x = read.csv(paste(DATA_ROOT, "input_Human_prior_from_mean_quotes_merge_BS_cosntant_var_from_SMD.csv", sep="")) # new qualitative data from mean quote merged BS if more than one is present with constant var
+#x = read.csv(paste(DATA_ROOT, "input_Human_prior_from_mean_quotes_merge_BS_cosntant_var_from_SMD.csv", sep="")) # new qualitative data from mean quote merged BS if more than one is present with constant var
+x = read.csv(paste(DATA_ROOT, "input_Human_prior_from_mean_quotes_merge_BS_cosntant_var_from_meanquote.csv", sep="")) # new qualitative data from mean quote merged BS if more than one is present with constant var
 
 
 #if(x$PriorExpert_N_PA_X == 0 || x$PriorExpert_N_PA_noX == 0 || x$PriorExpert_N_noPA_X == 0 || x$PriorExpert_N_noPA_noX == 0)
