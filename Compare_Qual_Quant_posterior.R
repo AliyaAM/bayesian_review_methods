@@ -215,7 +215,7 @@ Compare_distributions_plot = ggplot(d, aes(x = logOddsRatio,
                      #                             1.6,
                      #                             1.8,
                      #                             2),
-                     limits = c(-6, 3)) +
+                     limits = c(-2, 3)) +
   
   
   geom_density_ridges(stat = "identity",
