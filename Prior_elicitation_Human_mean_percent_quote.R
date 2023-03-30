@@ -226,7 +226,7 @@ colnames(OR_df_from_SMD) = names_columns_OR_df
 
 
 
-write.table(OR_df_from_SMD, file = paste(OUTPUT_ROOT, "OR_df_merged_BS_ChatGPT_prior_fromSMD.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+write.table(OR_df_from_SMD, file = paste(OUTPUT_ROOT, "OR_df_merged_BS_Human_prior_fromSMD.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
             col.names = TRUE, qmethod = c("escape", "double"),
             fileEncoding = "" )
