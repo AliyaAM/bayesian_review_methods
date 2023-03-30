@@ -154,16 +154,10 @@ colnames(SE_df_merged_BS) = names_columns_df
 colnames(OR_df) = names_columns_df
 
 
-write.table(SMD_df_merged_BS, file = paste(OUTPUT_ROOT, "SMD2OR_df_merged_BS_Human_prior_ALL.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+write.table(SMD_df_merged_BS, file = paste(OUTPUT_ROOT, "SMD2OR_df_merged_BS_Human_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
             col.names = TRUE, qmethod = c("escape", "double"),
             fileEncoding = "" )
-
-# # 
-# write.table(OR_df, file = paste(OUTPUT_ROOT, "OR_df_Human_prior.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
-#             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
-#             col.names = TRUE, qmethod = c("escape", "double"),
-#             fileEncoding = "" )
 
 
 
@@ -195,7 +189,7 @@ colnames(OR_df_from_SMD) = names_columns_OR_df
 
 
 
-write.table(OR_df_from_SMD, file = paste(OUTPUT_ROOT, "OR_df_merged_BS_ChatGPT_prior_fromSMD_ALL.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
+write.table(OR_df_from_SMD, file = paste(OUTPUT_ROOT, "OR_df_merged_BS_ChatGPT_prior_fromSMD.csv", sep=""), append = FALSE, quote = TRUE, sep = ", ",
             eol = "\r", na = "NA", dec = ".", row.names = FALSE,
             col.names = TRUE, qmethod = c("escape", "double"),
             fileEncoding = "" )
