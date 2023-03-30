@@ -44,11 +44,11 @@ SelfEfficacy_density_posterior  = All_constructs_posterior  %>% filter(Construct
 
 
 
-prior_name = rep("Qualitative evidence", times = 1000)
+prior_name = rep("Prior belief", times = 1000)
 
-likelihood_name = rep("Quantitative evidence", times = 1000)
+likelihood_name = rep("Empirical evidence", times = 1000)
 
-posterior_name = rep("Posterior (Qual + QUANT)", times = 1000)
+posterior_name = rep("Posterior", times = 1000)
 
 
 distribution = c(prior_name, likelihood_name, posterior_name)

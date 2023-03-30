@@ -10,6 +10,8 @@ library(rstatix)
 
 #directory = "/Users/aliyaamirova/"
 directory = "/Users/aliya/my_docs/"
+directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
+
 
 ###########  source root 
 SOURCE_ROOT = paste(directory, "proj/bayesian_review_methods/", sep = "")
@@ -94,7 +96,7 @@ enablers_data$PA_status_factor
 ################  plot Enablers: 
 
 plot = ggboxplot(enablers_data, x = "PA_status_factor", y = "percent_quotes", fill = "PA_status_factor") 
-plot = plot + stat_pvalue_manual(stat.test)        
+plot = plot + stat_pvalue_manual(stat.test, hide.ns = TRUE)        
 
 # adding ticks of the axis
 plot = plot +  scale_y_continuous(limits=c(0, 35), breaks = c(0, 5, 10, 15, 20, 25, 30, 35))
@@ -160,11 +162,11 @@ print(Enablers_plot)
 
 
 
-############## plotting enablers ############## 
-############## plotting enablers ############## 
-############## plotting enablers ############## 
-############## plotting enablers ############## 
-############## plotting enablers ############## 
+############## plotting barriers ############## 
+############## plotting barriers ############## 
+############## plotting barriers ############## 
+############## plotting barriers ############## 
+############## plotting barriers ############## 
 
 barriers_data = subset(data_per_domain_per_case, valence == "Barrier")
 
@@ -226,7 +228,7 @@ barriers_data$PA_status_factor
 ################  plot barriers: 
 
 plot_barrier = ggboxplot(barriers_data, x = "PA_status_factor", y = "percent_quotes", fill = "PA_status_factor") 
-plot_barrier = plot_barrier + stat_pvalue_manual(stat_test_barrier)        
+plot_barrier = plot_barrier + stat_pvalue_manual(stat_test_barrier, hide.ns = TRUE)        
 
 # adding ticks of the axis
 plot_barrier = plot_barrier +  scale_y_continuous(limits=c(0, 50), breaks = c(0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50))
@@ -315,7 +317,7 @@ stat.test_HumanvsChatGPT
 
 
 plot_HumanvsChatGPT = ggboxplot(enablers_data, x = "human_factor", y = "percent_quotes", fill = "human_factor") 
-plot_HumanvsChatGPT = plot_HumanvsChatGPT + stat_pvalue_manual(stat.test_HumanvsChatGPT)        
+plot_HumanvsChatGPT = plot_HumanvsChatGPT + stat_pvalue_manual(stat.test_HumanvsChatGPT, hide.ns = TRUE)        
 
 # adding ticks of the axis
 plot_HumanvsChatGPT = plot_HumanvsChatGPT +  scale_y_continuous(limits=c(0, 35), breaks = c(0, 5, 10, 15, 20, 25, 30, 35))
@@ -400,7 +402,7 @@ barriers_data$PA_status_factor
 ################  plot barriers: 
 
 plot_HumanvsChatGPT_barrier= ggboxplot(barriers_data, x = "human_factor", y = "percent_quotes", fill = "human_factor") 
-plot_HumanvsChatGPT_barrier = plot_HumanvsChatGPT_barrier + stat_pvalue_manual(stat.test_HumanvsChatGPT_barrier)        
+plot_HumanvsChatGPT_barrier = plot_HumanvsChatGPT_barrier + stat_pvalue_manual(stat.test_HumanvsChatGPT_barrier, hide.ns = TRUE)        
 
 # adding ticks of the axis
 plot_HumanvsChatGPT_barrier = plot_HumanvsChatGPT_barrier +  scale_y_continuous(limits=c(0, 50), breaks = c(0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50))

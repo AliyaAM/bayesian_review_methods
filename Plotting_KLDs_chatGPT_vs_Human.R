@@ -43,7 +43,7 @@ KLD_plot_divergene_from_data <- ggplot(data, aes(x = KLD, y = reorder(new_Constr
             position = position_dodge(width = 0.9), size = 3)
 
 #labeling axis
-KLD_plot_divergene_from_data = KLD_plot_divergene_from_data + ggtitle("KL divergence between prior distributions: Human and CHatGPT") + ylab("") + xlab("KLD")
+KLD_plot_divergene_from_data = KLD_plot_divergene_from_data + ggtitle("KL divergence between prior beliefs: Human and ChatGPT") + ylab("") + xlab("KLD")
 
 #labeling legend
 KLD_plot_divergene_from_data = KLD_plot_divergene_from_data + guides(fill=guide_legend(title=""))
