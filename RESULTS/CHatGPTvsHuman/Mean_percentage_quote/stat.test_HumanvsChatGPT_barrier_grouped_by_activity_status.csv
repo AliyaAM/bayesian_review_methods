@@ -1,0 +1,29 @@
+,construct_name,PA_status_factor,.y.,group1,group2,n1,n2,statistic,df,p,p.adj,p.adj.signif
+1,Behavioural regulation,Active,percent_quotes,ChatGPT,Human,16,7,0.08,8.42,0.9350,1.0000,ns
+2,Behavioural regulation,Sedentary,percent_quotes,ChatGPT,Human,16,9,0.10,10.02,0.9210,1.0000,ns
+3,Beliefs about capabilities,Active,percent_quotes,ChatGPT,Human,16,7,-0.19,9.54,0.8510,1.0000,ns
+4,Beliefs about capabilities,Sedentary,percent_quotes,ChatGPT,Human,16,9,-0.02,10.94,0.9860,1.0000,ns
+5,Beliefs about consequences,Active,percent_quotes,ChatGPT,Human,16,7,4.92,20.84,0.0001,0.0019,**
+6,Beliefs about consequences,Sedentary,percent_quotes,ChatGPT,Human,16,9,-0.36,9.19,0.7240,1.0000,ns
+7,Emotion,Active,percent_quotes,ChatGPT,Human,16,7,1.04,7.84,0.3300,1.0000,ns
+8,Emotion,Sedentary,percent_quotes,ChatGPT,Human,16,9,-0.30,9.52,0.7740,1.0000,ns
+9,Environmental context and resources,Active,percent_quotes,ChatGPT,Human,16,7,0.10,7.03,0.9260,1.0000,ns
+10,Environmental context and resources,Sedentary,percent_quotes,ChatGPT,Human,16,9,-0.25,9.10,0.8090,1.0000,ns
+11,Goals,Active,percent_quotes,ChatGPT,Human,16,7,-0.97,6.39,0.3650,1.0000,ns
+12,Goals,Sedentary,percent_quotes,ChatGPT,Human,16,9,-0.70,9.74,0.5030,1.0000,ns
+13,Intentions,Active,percent_quotes,ChatGPT,Human,16,7,-1.49,6.00,0.1870,1.0000,ns
+14,Intentions,Sedentary,percent_quotes,ChatGPT,Human,16,9,-1.89,8.00,0.0960,1.0000,ns
+15,Knowledge,Active,percent_quotes,ChatGPT,Human,16,7,-1.25,6.79,0.2530,1.0000,ns
+16,Knowledge,Sedentary,percent_quotes,ChatGPT,Human,16,9,-1.98,8.35,0.0816,1.0000,ns
+17,"Memory, attention, and decision processes",Active,percent_quotes,ChatGPT,Human,16,7,-0.91,6.82,0.3930,1.0000,ns
+18,"Memory, attention, and decision processes",Sedentary,percent_quotes,ChatGPT,Human,16,9,2.57,22.36,0.0175,0.4550,ns
+19,Optimism,Active,percent_quotes,ChatGPT,Human,16,7,1.39,15.00,0.1840,1.0000,ns
+20,Optimism,Sedentary,percent_quotes,ChatGPT,Human,16,9,0.93,16.30,0.3650,1.0000,ns
+21,Reinforcement,Active,percent_quotes,ChatGPT,Human,16,7,NA,NA,NA,NA,
+22,Reinforcement,Sedentary,percent_quotes,ChatGPT,Human,16,9,-2.05,8.59,0.0719,1.0000,ns
+23,Skills,Active,percent_quotes,ChatGPT,Human,16,7,1.12,7.69,0.2970,1.0000,ns
+24,Skills,Sedentary,percent_quotes,ChatGPT,Human,16,9,6.20,15.00,0.0000,0.0004,***
+25,Social influences,Active,percent_quotes,ChatGPT,Human,16,7,-1.51,6.01,0.1820,1.0000,ns
+26,Social influences,Sedentary,percent_quotes,ChatGPT,Human,16,9,-3.17,8.35,0.0124,0.3224,ns
+27,"Social, professional role and identity",Active,percent_quotes,ChatGPT,Human,16,7,NA,NA,NA,NA,
+28,"Social, professional role and identity",Sedentary,percent_quotes,ChatGPT,Human,16,9,-1.10,8.05,0.3020,1.0000,ns

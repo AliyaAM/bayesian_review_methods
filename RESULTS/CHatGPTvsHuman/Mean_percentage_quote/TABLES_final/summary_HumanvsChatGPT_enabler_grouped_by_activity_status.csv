@@ -1,0 +1,29 @@
+,Silicon sample,,,Human sample,,,statistic,df,p,p.adj,p.adj.signif
+Behavioural regulation,Active,17.05,3.89,Active,10.82,5.95,2.54,8.33,0.0337,0.9436,ns
+,Sedentary,9.91,4.76,Sedentary,8.25,7.66,0.59,11.56,0.567,1,ns
+Beliefs about capabilities,Active,1.95,1.38,Active,0.67,1.15,2.31,13.75,0.0372,1,ns
+,Sedentary,0.22,0.61,Sedentary,0,0,1.45,15,0.168,1,ns
+Beliefs about consequences,Active,16.55,3.57,Active,10.39,6.58,2.33,7.6,0.0495,1,ns
+,Sedentary,13.76,5.24,Sedentary,4.26,4.13,5,20.23,0.0001,0.0019,**
+Emotion,Active,1.11,0.75,Active,0,0,5.91,15,0,0.0008,***
+,Sedentary,1.55,0.67,Sedentary,0,0,9.21,15,0,0,****
+Environmental context and resources,Active,4.98,3.24,Active,6.5,3.91,-0.9,9.79,0.389,1,ns
+,Sedentary,1.88,2.07,Sedentary,7.82,5.08,-3.35,9.53,0.0078,0.2195,ns
+Goals,Active,9.25,3.48,Active,14.53,8.81,-1.53,6.83,0.17,1,ns
+,Sedentary,2.47,2.32,Sedentary,2.14,3.58,0.25,11.9,0.805,1,ns
+Intentions,Active,0.46,0.63,Active,1.68,2.65,-1.21,6.3,0.271,1,ns
+,Sedentary,1.12,1.11,Sedentary,0.34,1.01,1.8,18.1,0.0885,1,ns
+Knowledge,Active,0.79,1.29,Active,1.51,2.21,-0.81,7.84,0.444,1,ns
+,Sedentary,0.88,1.22,Sedentary,0.94,1.41,-0.1,14.78,0.924,1,ns
+"Memory, attention, and decision processes",Active,0.19,0.4,Active,0.35,0.92,-0.45,7.02,0.669,1,ns
+,Sedentary,0.09,0.36,Sedentary,0,0,1,15,0.333,1,ns
+Optimism,Active,3.4,2.71,Active,3.4,1.45,0,19.81,1,1,ns
+,Sedentary,3.05,1.91,Sedentary,1.23,2.82,1.72,12.24,0.11,1,ns
+Reinforcement,Active,5.3,4.37,Active,6.39,5.42,-0.47,9.59,0.65,1,ns
+,Sedentary,1.68,1.62,Sedentary,2.55,3.41,-0.72,10.08,0.49,1,ns
+Skills,Active,1.12,1.14,Active,0.48,0.85,1.48,15.41,0.158,1,ns
+,Sedentary,0.87,1.14,Sedentary,0.93,2.78,-0.06,9.55,0.956,1,ns
+Social influences,Active,8.8,3.31,Active,6.52,7.85,0.74,6.95,0.482,1,ns
+,Sedentary,11.52,3.49,Sedentary,3.61,5.19,4.08,12.16,0.0015,0.0417,*
+"Social, professional role and identity",Active,0.66,1.03,Active,9.23,7.57,-2.98,6.1,0.0241,0.6748,ns
+,Sedentary,0.18,0.71,Sedentary,1.38,2.17,-1.61,8.99,0.142,1,ns

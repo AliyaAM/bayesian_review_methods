@@ -78,16 +78,29 @@ enablers_data$human_factor = as.factor(enablers_data$human_factor)
 
 
 stat.test <- enablers_data %>%
-  group_by(human_factor, construct_name) %>%
+  group_by(construct_name, human_factor) %>%
   t_test(percent_quotes ~ PA_status_factor) %>%
   adjust_pvalue(method = "bonferroni") %>%
   add_significance()
 stat.test 
 
+write.csv(stat.test, file = paste(OUTPUT_ROOT, "stat.test_enablers_activevssedent_grouped_by_hstatus.csv", sep = ""))
 
 stat.test <- stat.test %>% add_xy_position(x = "PA_status_factor")
 enablers_data$percent_quotes
 enablers_data$PA_status_factor
+
+summary_stats_enablers_data <- enablers_data %>%
+  group_by(construct_name, PA_status_factor, human_factor) %>%
+  summarise(
+    mean_percent_quotes = mean(percent_quotes, na.rm = TRUE),
+    sd_percent_quotes = sd(percent_quotes, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+print(summary_stats_enablers_data)
+write.csv(summary_stats_enablers_data, file = paste(OUTPUT_ROOT, "summary_stats_enablers_activevssedent_grouped_by_hstatus.csv", sep = ""))
+
 
 ################ 
 ################ 
@@ -206,20 +219,32 @@ barriers_data$human_factor = as.factor(barriers_data$human_factor)
 ################ 
 ################ 
 ################ 
-################ Add t-test between Active/sedentary per domains: 
+################ Add t-test between Active/sedentary per domains (barrier): 
 
 
 stat_test_barrier <- barriers_data %>%
-  group_by(human_factor, construct_name) %>%
+  group_by(construct_name, human_factor) %>%
   t_test(percent_quotes ~ PA_status_factor) %>%
   adjust_pvalue(method = "bonferroni") %>%
   add_significance()
-stat_test_barrier 
+stat_test_barrier
 
+write.csv(stat_test_barrier, file = paste(OUTPUT_ROOT, "stat.test_barriers_activevssedent_grouped_by_hstatus.csv", sep = ""))
 
 stat_test_barrier <- stat_test_barrier %>% add_xy_position(x = "PA_status_factor")
-barriers_data$percent_quotes
-barriers_data$PA_status_factor
+
+
+summary_stats_barriers_data <- barriers_data %>%
+  group_by(construct_name, PA_status_factor, human_factor) %>%
+  summarise(
+    mean_percent_quotes = mean(percent_quotes, na.rm = TRUE),
+    sd_percent_quotes = sd(percent_quotes, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+print(summary_stats_barriers_data)
+write.csv(summary_stats_barriers_data, file = paste(OUTPUT_ROOT, "summary_stats_barriers_activevssedent_grouped_by_hstatus.csv", sep = ""))
+
 
 ################ 
 ################ 

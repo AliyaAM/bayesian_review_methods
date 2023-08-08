@@ -10,7 +10,8 @@ library(rstatix)
 ########### DIRECTORY
 
 #directory = "/Users/aliyaamirova/"
-directory = "/Users/aliya/my_docs/"
+#directory = "/Users/aliya/my_docs/"
+directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
 
 ###########  source root 
 SOURCE_ROOT = paste(directory, "proj/bayesian_review_methods/", sep = "")
@@ -124,16 +125,63 @@ stat.test_HumanvsChatGPT <- enablers_data %>%
   group_by(construct_name) %>%
   t_test(percent_quotes ~ human_factor) %>%
   adjust_pvalue(method = "bonferroni") %>%
-  add_significance()
+  add_significance() 
 stat.test_HumanvsChatGPT 
 
 
-stat.test_HumanvsChatGPT <- stat.test_HumanvsChatGPT %>% add_xy_position(x = "human_factor")
+#stat.test_HumanvsChatGPT <- stat.test_HumanvsChatGPT %>% add_xy_position(x = "human_factor")
 
+write.csv(stat.test_HumanvsChatGPT, file = paste(OUTPUT_ROOT, "stat.test_HumanvsChatGPT_enabler.csv", sep = ""))
+
+
+
+summary_stats <- enablers_data %>%
+  group_by(construct_name, human_factor) %>%
+  summarise(
+    mean_percent_quotes = mean(percent_quotes, na.rm = TRUE),
+    sd_percent_quotes = sd(percent_quotes, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+print(summary_stats)
+
+write.csv(summary_stats, file = paste(OUTPUT_ROOT, "summary_HumanvsChatGPT_enabler.csv", sep = ""))
 
 
 ################ 
 ################ 
+
+################ Add t-test between HUMAN PARTICIPANTS AND CHATGPT per domains (grouped by activity status)
+
+
+stat.test_HumanvsChatGPT__grouped_by_activity_status <- enablers_data %>%
+  group_by(construct_name, PA_status_factor) %>%
+  t_test(percent_quotes ~ human_factor) %>%
+  adjust_pvalue(method = "bonferroni") %>%
+  add_significance() 
+stat.test_HumanvsChatGPT__grouped_by_activity_status 
+
+print(stat.test_HumanvsChatGPT__grouped_by_activity_status)
+
+
+#stat.test_HumanvsChatGPT__grouped_by_activity_status <- stat.test_HumanvsChatGPT__grouped_by_activity_status %>% add_xy_position(x = "human_factor")
+
+write.csv(stat.test_HumanvsChatGPT__grouped_by_activity_status, file = paste(OUTPUT_ROOT, "stat.test_HumanvsChatGPT_enabler_grouped_by_activity_status.csv", sep = ""))
+
+
+
+summary_stats__grouped_by_activity_status <- enablers_data %>%
+  group_by(construct_name, human_factor, PA_status_factor) %>%
+  summarise(
+    mean_percent_quotes = mean(percent_quotes, na.rm = TRUE),
+    sd_percent_quotes = sd(percent_quotes, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+print(summary_stats__grouped_by_activity_status)
+
+write.csv(summary_stats__grouped_by_activity_status, file = paste(OUTPUT_ROOT, "summary_HumanvsChatGPT_enabler_grouped_by_activity_status.csv", sep = ""))
+
 ################ 
 ################ 
 
@@ -211,12 +259,60 @@ stat.test_HumanvsChatGPT_barrier <- barriers_data %>%
 stat.test_HumanvsChatGPT_barrier 
 
 
-stat.test_HumanvsChatGPT_barrier <- stat.test_HumanvsChatGPT_barrier %>% add_xy_position(x = "human_factor")
+#stat.test_HumanvsChatGPT_barrier <- stat.test_HumanvsChatGPT_barrier %>% add_xy_position(x = "human_factor")
+
+write.csv(stat.test_HumanvsChatGPT_barrier, file = paste(OUTPUT_ROOT, "stat.test_HumanvsChatGPT_barrier.csv", sep = ""))
+
 barriers_data$percent_quotes
 barriers_data$PA_status_factor
 
+
+summary_stats_barrier <- barriers_data %>%
+  group_by(construct_name, human_factor) %>%
+  summarise(
+    mean_percent_quotes = mean(percent_quotes, na.rm = TRUE),
+    sd_percent_quotes = sd(percent_quotes, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+print(summary_stats_barrier)
+write.csv(summary_stats_barrier, file = paste(OUTPUT_ROOT, "summary_HumanvsChatGPT_barrier.csv", sep = ""))
+
+
 ################ 
 ################ 
+
+################ Add t-test between Human and ChatGPT per domains (BARRIERS) grouped by activity status: 
+
+
+stat.test_HumanvsChatGPT_barrier_grouped_by_activity_status <- barriers_data %>%
+  group_by(construct_name, PA_status_factor) %>%
+  t_test(percent_quotes ~ human_factor) %>%
+  adjust_pvalue(method = "bonferroni") %>%
+  add_significance()
+stat.test_HumanvsChatGPT_barrier_grouped_by_activity_status 
+
+
+#stat.test_HumanvsChatGPT_barrier_grouped_by_activity_status <- stat.test_HumanvsChatGPT_barrier_grouped_by_activity_status %>% add_xy_position(x = "human_factor")
+
+write.csv(stat.test_HumanvsChatGPT_barrier_grouped_by_activity_status, file = paste(OUTPUT_ROOT, "stat.test_HumanvsChatGPT_barrier_grouped_by_activity_status.csv", sep = ""))
+
+barriers_data$percent_quotes
+barriers_data$PA_status_factor
+
+
+summary_stats_barrier_grouped_by_activity_status <- barriers_data %>%
+  group_by(construct_name, human_factor, PA_status_factor) %>%
+  summarise(
+    mean_percent_quotes = mean(percent_quotes, na.rm = TRUE),
+    sd_percent_quotes = sd(percent_quotes, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+print(summary_stats_barrier_grouped_by_activity_status)
+write.csv(summary_stats_barrier_grouped_by_activity_status, file = paste(OUTPUT_ROOT, "summary_stats_barrier_grouped_by_activity_status.csv", sep = ""))
+
+
 ################ 
 ################ 
 ################  plot barriers: 
