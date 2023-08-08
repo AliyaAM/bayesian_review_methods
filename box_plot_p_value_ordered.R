@@ -5,7 +5,7 @@ library(dplyr)
 library(survminer)
 library(ggpubr)
 library(rstatix)
-
+  
 ########### DIRECTORY
 
 #directory = "/Users/aliyaamirova/"
