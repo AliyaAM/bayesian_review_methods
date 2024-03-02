@@ -1,29 +1,17 @@
-,construct_name,PA_status_factor,.y.,group1,group2,n1,n2,statistic,df,p,p.adj,p.adj.signif
-1,Behavioural regulation,Active,percent_quotes,ChatGPT,Human,16,7,0.08,8.42,0.9350,1.0000,ns
-2,Behavioural regulation,Sedentary,percent_quotes,ChatGPT,Human,16,9,0.10,10.02,0.9210,1.0000,ns
-3,Beliefs about capabilities,Active,percent_quotes,ChatGPT,Human,16,7,-0.19,9.54,0.8510,1.0000,ns
-4,Beliefs about capabilities,Sedentary,percent_quotes,ChatGPT,Human,16,9,-0.02,10.94,0.9860,1.0000,ns
-5,Beliefs about consequences,Active,percent_quotes,ChatGPT,Human,16,7,4.92,20.84,0.0001,0.0019,**
-6,Beliefs about consequences,Sedentary,percent_quotes,ChatGPT,Human,16,9,-0.36,9.19,0.7240,1.0000,ns
-7,Emotion,Active,percent_quotes,ChatGPT,Human,16,7,1.04,7.84,0.3300,1.0000,ns
-8,Emotion,Sedentary,percent_quotes,ChatGPT,Human,16,9,-0.30,9.52,0.7740,1.0000,ns
-9,Environmental context and resources,Active,percent_quotes,ChatGPT,Human,16,7,0.10,7.03,0.9260,1.0000,ns
-10,Environmental context and resources,Sedentary,percent_quotes,ChatGPT,Human,16,9,-0.25,9.10,0.8090,1.0000,ns
-11,Goals,Active,percent_quotes,ChatGPT,Human,16,7,-0.97,6.39,0.3650,1.0000,ns
-12,Goals,Sedentary,percent_quotes,ChatGPT,Human,16,9,-0.70,9.74,0.5030,1.0000,ns
-13,Intentions,Active,percent_quotes,ChatGPT,Human,16,7,-1.49,6.00,0.1870,1.0000,ns
-14,Intentions,Sedentary,percent_quotes,ChatGPT,Human,16,9,-1.89,8.00,0.0960,1.0000,ns
-15,Knowledge,Active,percent_quotes,ChatGPT,Human,16,7,-1.25,6.79,0.2530,1.0000,ns
-16,Knowledge,Sedentary,percent_quotes,ChatGPT,Human,16,9,-1.98,8.35,0.0816,1.0000,ns
-17,"Memory, attention, and decision processes",Active,percent_quotes,ChatGPT,Human,16,7,-0.91,6.82,0.3930,1.0000,ns
-18,"Memory, attention, and decision processes",Sedentary,percent_quotes,ChatGPT,Human,16,9,2.57,22.36,0.0175,0.4550,ns
-19,Optimism,Active,percent_quotes,ChatGPT,Human,16,7,1.39,15.00,0.1840,1.0000,ns
-20,Optimism,Sedentary,percent_quotes,ChatGPT,Human,16,9,0.93,16.30,0.3650,1.0000,ns
-21,Reinforcement,Active,percent_quotes,ChatGPT,Human,16,7,NA,NA,NA,NA,
-22,Reinforcement,Sedentary,percent_quotes,ChatGPT,Human,16,9,-2.05,8.59,0.0719,1.0000,ns
-23,Skills,Active,percent_quotes,ChatGPT,Human,16,7,1.12,7.69,0.2970,1.0000,ns
-24,Skills,Sedentary,percent_quotes,ChatGPT,Human,16,9,6.20,15.00,0.0000,0.0004,***
-25,Social influences,Active,percent_quotes,ChatGPT,Human,16,7,-1.51,6.01,0.1820,1.0000,ns
-26,Social influences,Sedentary,percent_quotes,ChatGPT,Human,16,9,-3.17,8.35,0.0124,0.3224,ns
-27,"Social, professional role and identity",Active,percent_quotes,ChatGPT,Human,16,7,NA,NA,NA,NA,
-28,"Social, professional role and identity",Sedentary,percent_quotes,ChatGPT,Human,16,9,-1.10,8.05,0.3020,1.0000,ns
+"","construct_name","PA_status_factor",".y.","group1","group2","n1","n2","statistic","df","p","p.adj","p.adj.signif"
+"1","BR","Active","percent_quotes","ChatGPT","Human",16,7,0.0834535279221741,8.41811456015206,0.935,1,"ns"
+"2","BR","Sedentary","percent_quotes","ChatGPT","Human",16,9,0.101536466485894,10.0210199442379,0.921,1,"ns"
+"3","BaCap","Active","percent_quotes","ChatGPT","Human",16,7,-0.192526808063261,9.54438792308838,0.851,1,"ns"
+"4","BaCap","Sedentary","percent_quotes","ChatGPT","Human",16,9,-0.0177347202420852,10.9369018818151,0.986,1,"ns"
+"5","BaCon","Active","percent_quotes","ChatGPT","Human",16,7,4.91719972855318,20.8352908816438,7.45e-05,0.0011175,"**"
+"6","BaCon","Sedentary","percent_quotes","ChatGPT","Human",16,9,-0.364494263525728,9.18776540092393,0.724,1,"ns"
+"7","ECR","Active","percent_quotes","ChatGPT","Human",16,7,0.0957483134741468,7.02628347443071,0.926,1,"ns"
+"8","ECR","Sedentary","percent_quotes","ChatGPT","Human",16,9,-0.248339117147899,9.10172818641903,0.809,1,"ns"
+"9","MADP","Active","percent_quotes","ChatGPT","Human",16,7,-0.911314760956101,6.82366951847207,0.393,1,"ns"
+"10","MADP","Sedentary","percent_quotes","ChatGPT","Human",16,9,2.56580008680349,22.3551506075478,0.0175,0.2625,"ns"
+"11","SI","Active","percent_quotes","ChatGPT","Human",16,7,-1.50971182906318,6.01051035183788,0.182,1,"ns"
+"12","SI","Sedentary","percent_quotes","ChatGPT","Human",16,9,-3.17298263994611,8.3502958675817,0.0124,0.186,"ns"
+"13","SPR","Active","percent_quotes","ChatGPT","Human",16,7,NA,NA,NA,NA,""
+"14","SPR","Sedentary","percent_quotes","ChatGPT","Human",16,9,-1.10292759188162,8.04668782356955,0.302,1,"ns"
+"15",NA,"Active","percent_quotes","ChatGPT","Human",112,49,-0.478480343071613,58.0345003284103,0.634,1,"ns"
+"16",NA,"Sedentary","percent_quotes","ChatGPT","Human",112,63,-1.38104844846328,80.9231616375064,0.171,1,"ns"

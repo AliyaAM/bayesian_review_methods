@@ -1,29 +1,29 @@
-,construct_name,human_factor,.y.,group1,group2,n1,n2,statistic,df,p,p.adj,p.adj.signif
-1,Behavioural regulation,ChatGPT,percent_quotes,Active,Sedentary,16,16,-1.19,26.55,0.2440,1.0000,ns
-2,Behavioural regulation,Human,percent_quotes,Active,Sedentary,7,9,-0.40,12.08,0.6990,1.0000,ns
-3,Beliefs about capabilities,ChatGPT,percent_quotes,Active,Sedentary,16,16,-4.53,28.39,0.0001,0.0026,**
-4,Beliefs about capabilities,Human,percent_quotes,Active,Sedentary,7,9,-1.97,12.87,0.0713,1.0000,ns
-5,Beliefs about consequences,ChatGPT,percent_quotes,Active,Sedentary,16,16,-1.43,26.64,0.1640,1.0000,ns
-6,Beliefs about consequences,Human,percent_quotes,Active,Sedentary,7,9,-1.95,8.27,0.0859,1.0000,ns
-7,Emotion,ChatGPT,percent_quotes,Active,Sedentary,16,16,-1.36,21.93,0.1880,1.0000,ns
-8,Emotion,Human,percent_quotes,Active,Sedentary,7,9,-1.13,10.34,0.2850,1.0000,ns
-9,Environmental context and resources,ChatGPT,percent_quotes,Active,Sedentary,16,16,-4.21,21.12,0.0004,0.0104,*
-10,Environmental context and resources,Human,percent_quotes,Active,Sedentary,7,9,-1.39,10.59,0.1920,1.0000,ns
-11,Goals,ChatGPT,percent_quotes,Active,Sedentary,16,16,-1.68,22.67,0.1060,1.0000,ns
-12,Goals,Human,percent_quotes,Active,Sedentary,7,9,-0.29,13.86,0.7730,1.0000,ns
-13,Intentions,ChatGPT,percent_quotes,Active,Sedentary,16,16,NA,NA,NA,NA,
-14,Intentions,Human,percent_quotes,Active,Sedentary,7,9,-1.23,10.24,0.2480,1.0000,ns
-15,Knowledge,ChatGPT,percent_quotes,Active,Sedentary,16,16,-0.61,24.22,0.5460,1.0000,ns
-16,Knowledge,Human,percent_quotes,Active,Sedentary,7,9,-1.58,9.76,0.1450,1.0000,ns
-17,"Memory, attention, and decision processes",ChatGPT,percent_quotes,Active,Sedentary,16,16,-2.36,20.43,0.0284,0.7668,ns
-18,"Memory, attention, and decision processes",Human,percent_quotes,Active,Sedentary,7,9,1.27,9.17,0.2340,1.0000,ns
-19,Optimism,ChatGPT,percent_quotes,Active,Sedentary,16,16,-1.94,23.00,0.0645,1.0000,ns
-20,Optimism,Human,percent_quotes,Active,Sedentary,7,9,-1.00,8.00,0.3470,1.0000,ns
-21,Reinforcement,ChatGPT,percent_quotes,Active,Sedentary,16,16,-1.40,15.00,0.1810,1.0000,ns
-22,Reinforcement,Human,percent_quotes,Active,Sedentary,7,9,-2.36,8.00,0.0461,1.0000,ns
-23,Skills,ChatGPT,percent_quotes,Active,Sedentary,16,16,-1.69,25.10,0.1040,1.0000,ns
-24,Skills,Human,percent_quotes,Active,Sedentary,7,9,1.31,6.00,0.2380,1.0000,ns
-25,Social influences,ChatGPT,percent_quotes,Active,Sedentary,16,16,-1.46,16.96,0.1640,1.0000,ns
-26,Social influences,Human,percent_quotes,Active,Sedentary,7,9,-0.92,12.17,0.3740,1.0000,ns
-27,"Social, professional role and identity",ChatGPT,percent_quotes,Active,Sedentary,16,16,-2.54,15.00,0.0228,0.6156,ns
-28,"Social, professional role and identity",Human,percent_quotes,Active,Sedentary,7,9,-1.24,8.00,0.2500,1.0000,ns
+"","construct_name","human_factor",".y.","group1","group2","n1","n2","statistic","df","p","p.adj","p.adj.signif"
+"1","BCap","Human","percent_quotes","Active","Sedentary",7,9,-1.96561904034645,12.8693744544438,0.0713,1,"ns"
+"2","BCap","LLM","percent_quotes","Active","Sedentary",16,16,-4.52885147577204,28.3920037293011,9.77e-05,0.0026379,"**"
+"3","BCon","Human","percent_quotes","Active","Sedentary",7,9,-1.94931739222304,8.26855507591988,0.0859,1,"ns"
+"4","BCon","LLM","percent_quotes","Active","Sedentary",16,16,-1.43097487782174,26.6400435584906,0.164,1,"ns"
+"5","BR","Human","percent_quotes","Active","Sedentary",7,9,-0.395569242632973,12.0829503329895,0.699,1,"ns"
+"6","BR","LLM","percent_quotes","Active","Sedentary",16,16,-1.19274697185375,26.5545587294027,0.244,1,"ns"
+"7","ECR","Human","percent_quotes","Active","Sedentary",7,9,-1.39255738085097,10.586242589956,0.192,1,"ns"
+"8","ECR","LLM","percent_quotes","Active","Sedentary",16,16,-4.2149969137686,21.1157284915693,0.000385,0.010395,"*"
+"9","Emtns","Human","percent_quotes","Active","Sedentary",7,9,-1.12704825548381,10.3364759897581,0.285,1,"ns"
+"10","Emtns","LLM","percent_quotes","Active","Sedentary",16,16,-1.3598766699561,21.9337795098295,0.188,1,"ns"
+"11","Gs","Human","percent_quotes","Active","Sedentary",7,9,-0.29457188266855,13.8648930551948,0.773,1,"ns"
+"12","Gs","LLM","percent_quotes","Active","Sedentary",16,16,-1.68494635081374,22.6654046913234,0.106,1,"ns"
+"13","Is","Human","percent_quotes","Active","Sedentary",7,9,-1.22574390428691,10.2449336213624,0.248,1,"ns"
+"14","Is","LLM","percent_quotes","Active","Sedentary",16,16,NA,NA,NA,NA,""
+"15","Knls","Human","percent_quotes","Active","Sedentary",7,9,-1.58266359929347,9.75686130560377,0.145,1,"ns"
+"16","Knls","LLM","percent_quotes","Active","Sedentary",16,16,-0.612248585779588,24.2245668603835,0.546,1,"ns"
+"17","MADP","Human","percent_quotes","Active","Sedentary",7,9,1.27386394293366,9.17429259998069,0.234,1,"ns"
+"18","MADP","LLM","percent_quotes","Active","Sedentary",16,16,-2.35932571523569,20.4319982274839,0.0284,0.7668,"ns"
+"19","Optm","Human","percent_quotes","Active","Sedentary",7,9,-1,8,0.347,1,"ns"
+"20","Optm","LLM","percent_quotes","Active","Sedentary",16,16,-1.94218750525915,22.9986355721255,0.0645,1,"ns"
+"21","Rnfrt","Human","percent_quotes","Active","Sedentary",7,9,-2.35857224285744,8,0.0461,1,"ns"
+"22","Rnfrt","LLM","percent_quotes","Active","Sedentary",16,16,-1.4042695394367,15,0.181,1,"ns"
+"23","SI","Human","percent_quotes","Active","Sedentary",7,9,-0.922171647134933,12.1667657308737,0.374,1,"ns"
+"24","SI","LLM","percent_quotes","Active","Sedentary",16,16,-1.45608533962061,16.9641841266163,0.164,1,"ns"
+"25","SPR","Human","percent_quotes","Active","Sedentary",7,9,-1.24149109905504,8,0.25,1,"ns"
+"26","SPR","LLM","percent_quotes","Active","Sedentary",16,16,-2.53622543437786,15,0.0228,0.6156,"ns"
+"27","Skls","Human","percent_quotes","Active","Sedentary",7,9,1.30968656577285,6,0.238,1,"ns"
+"28","Skls","LLM","percent_quotes","Active","Sedentary",16,16,-1.68778570443025,25.1009392486472,0.104,1,"ns"

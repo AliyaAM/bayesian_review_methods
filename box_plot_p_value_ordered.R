@@ -10,7 +10,7 @@ library(rstatix)
 
 #directory = "/Users/aliyaamirova/"
 directory = "/Users/aliya/my_docs/"
-directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
+#directory = "/Users/k2147340/OneDrive - King's College London/Documents/"
 
 
 ###########  source root 
@@ -39,20 +39,20 @@ data_per_domain_per_case = read.csv(paste(DATA_ROOT, "data_quote_percentage.csv"
 enablers_data = subset(data_per_domain_per_case, valence == "Enabler")
 
 
-enablers_data$construct_name = case_when(enablers_data$construct == "BR+" ~ "Behavioural regulation", 
-                                         enablers_data$construct ==  "BaCap+" ~ "Beliefs about capabilities", 
-                                         enablers_data$construct ==  "BaCon+" ~ "Beliefs about consequences", 
-                                         enablers_data$construct ==   "ECR+" ~ "Environmental context and resources", 
-                                         enablers_data$construct ==  "Emotion+"  ~ "Emotion", 
-                                         enablers_data$construct ==  "Goals+" ~ "Goals", 
-                                         enablers_data$construct ==  "Intention+" ~ "Intentions", 
-                                         enablers_data$construct == "Knowledge+" ~ "Knowledge", 
-                                         enablers_data$construct ==  "MADP+" ~ "Memory, attention, and decision processes", 
-                                         enablers_data$construct ==  "Optimism+" ~ "Optimism", 
-                                         enablers_data$construct == "Reinforcement+" ~ "Reinforcement", 
-                                         enablers_data$construct ==  "SI+" ~ "Social influences", 
-                                         enablers_data$construct == "SPR+" ~ "Social, professional role and identity", 
-                                         enablers_data$construct ==  "Skills+" ~ "Skills") 
+enablers_data$construct_name = case_when(enablers_data$construct == "BR+" ~ "BR", 
+                                         enablers_data$construct ==  "BaCap+" ~ "BCap", 
+                                         enablers_data$construct ==  "BaCon+" ~ "BCon", 
+                                         enablers_data$construct ==   "ECR+" ~ "ECR", 
+                                         enablers_data$construct ==  "Emotion+"  ~ "Emtns", 
+                                         enablers_data$construct ==  "Goals+" ~ "Gs", 
+                                         enablers_data$construct ==  "Intention+" ~ "Is", 
+                                         enablers_data$construct == "Knowledge+" ~ "Knls", 
+                                         enablers_data$construct ==  "MADP+" ~ "MADP", 
+                                         enablers_data$construct ==  "Optimism+" ~ "Optm", 
+                                         enablers_data$construct == "Reinforcement+" ~ "Rnfrt", 
+                                         enablers_data$construct ==  "SI+" ~ "SI", 
+                                         enablers_data$construct == "SPR+" ~ "SPR", 
+                                         enablers_data$construct ==  "Skills+" ~ "Skls") 
 
 
 
@@ -63,7 +63,7 @@ enablers_data$PA_status_factor = case_when(enablers_data$PA_status == 1 ~ "Activ
 enablers_data$PA_status_factor = as.factor(enablers_data$PA_status_factor)
 
 enablers_data$human_factor = case_when(enablers_data$human == "Human participants" ~ "Human", 
-                                       enablers_data$human == "Chat GPT characters" ~ "ChatGPT")
+                                       enablers_data$human == "Chat GPT characters" ~ "LLM")
 
 
 enablers_data$human_factor = as.factor(enablers_data$human_factor)
@@ -136,22 +136,25 @@ wrap_text <- function(x, chars = 5) {
 
 
 Enablers_plot = plot + facet_grid(vars(human_factor), 
-                                  vars(factor(construct_name, levels = c("Beliefs about consequences", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Behavioural regulation", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Social influences", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Goals",  # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Environmental context and resources", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Reinforcement", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Optimism", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Social, professional role and identity", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Emotion", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Beliefs about capabilities", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Knowledge", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Skills", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Intentions", # order the grid columns by percent quote (from largest to smallest)
-                                                                                              "Memory, attention, and decision processes"))), # order the grid columns by percent quote (from largest to smallest)
+                                  vars(factor(construct_name, levels = c("BCon", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "BR", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "SI", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Gs",  # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "ECR", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Rnfrt", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Optm", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "SPR", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Emtns", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "BCap", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Knls", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Skls", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "Is", # order the grid columns by percent quote (from largest to smallest)
+                                                                                              "MADP"))), # order the grid columns by percent quote (from largest to smallest)
                                  
-                                  labeller = as_labeller(wrap_text), as.table = TRUE)
+                                  labeller = as_labeller(wrap_text), as.table = TRUE)+                    
+  theme(strip.text.x = element_text(size = 9.5, face = "bold"), # Adjust size and face here
+        axis.text.x = element_blank())
+
 
 
                                  
@@ -183,21 +186,21 @@ print(Enablers_plot)
 
 barriers_data = subset(data_per_domain_per_case, valence == "Barrier")
 
-
-barriers_data$construct_name = case_when(barriers_data$construct == "BR-" ~ "Behavioural regulation", 
-                                         barriers_data$construct ==  "BaCap-" ~ "Beliefs about capabilities", 
-                                         barriers_data$construct ==  "BaCon-" ~ "Beliefs about consequences", 
-                                         barriers_data$construct ==   "ECR-" ~ "Environmental context and resources", 
-                                         barriers_data$construct ==  "Emotion-"  ~ "Emotion", 
-                                         barriers_data$construct ==  "Goals-" ~ "Goals", 
-                                         barriers_data$construct ==  "Intention-" ~ "Intentions", 
-                                         barriers_data$construct == "Knowledge-" ~ "Knowledge", 
-                                         barriers_data$construct ==  "MADP-" ~ "Memory, attention, and decision processes", 
-                                         barriers_data$construct ==  "Optimism-" ~ "Optimism", 
-                                         barriers_data$construct == "Reinforcement-" ~ "Reinforcement", 
-                                         barriers_data$construct ==  "SI-" ~ "Social influences", 
-                                         barriers_data$construct == "SPR-" ~ "Social, professional role and identity", 
-                                         barriers_data$construct ==  "Skills-" ~ "Skills") 
+ 
+ barriers_data$construct_name = case_when(barriers_data$construct == "BR-" ~ "BR", 
+                                          barriers_data$construct ==  "BaCap-" ~ "BCap", 
+                                          barriers_data$construct ==  "BaCon-" ~ "BCon", 
+                                          barriers_data$construct ==   "ECR-" ~ "ECR", 
+                                          barriers_data$construct ==  "Emotion-"  ~ "Emtns", 
+                                          barriers_data$construct ==  "Goals-" ~ "Gs", 
+                                          barriers_data$construct ==  "Intention-" ~ "Is", 
+                                          barriers_data$construct == "Knowledge-" ~ "Knls", 
+                                          barriers_data$construct ==  "MADP-" ~ "MADP", 
+                                          barriers_data$construct ==  "Optimism-" ~ "Optm", 
+                                          barriers_data$construct == "Reinforcement-" ~ "Rnfrt", 
+                                          barriers_data$construct ==  "SI-" ~ "SI", 
+                                          barriers_data$construct == "SPR-" ~ "SPR", 
+                                          barriers_data$construct ==  "Skills-" ~ "Skls") 
 
 
 
@@ -208,7 +211,7 @@ barriers_data$PA_status_factor = case_when(barriers_data$PA_status == 1 ~ "Activ
 barriers_data$PA_status_factor = as.factor(barriers_data$PA_status_factor)
 
 barriers_data$human_factor = case_when(barriers_data$human == "Human participants" ~ "Human", 
-                                       barriers_data$human == "Chat GPT characters" ~ "ChatGPT")
+                                       barriers_data$human == "Chat GPT characters" ~ "LLM")
 
 
 barriers_data$human_factor = as.factor(barriers_data$human_factor)
@@ -280,23 +283,25 @@ wrap_text <- function(x, chars = 5) {
 
 
 Barriers_plot = plot_barrier + facet_grid(vars(human_factor), 
-                                  vars(factor(construct_name, levels = c("Beliefs about capabilities", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Beliefs about consequences", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Environmental context and resources", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Goals",  # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Memory, attention, and decision processes", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Emotion", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Skills", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Behavioural regulation", # order the grid columns by percent quote (from largest to smallest) 
-                                                                         "Social, professional role and identity", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Social influences", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Optimism", # order the grid columns by percent quote (from largest to smallest) 
-                                                                         "Knowledge", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Reinforcement", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Intentions"))), # order the grid columns by percent quote (from largest to smallest)
+                                  vars(factor(construct_name, levels = c("BCap", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "BCon", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "ECR", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Gs",  # order the grid columns by percent quote (from largest to smallest)
+                                                                         "MADP", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Emtns", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Skls", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "BR", # order the grid columns by percent quote (from largest to smallest) 
+                                                                         "SPR", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "SI", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Optm", # order the grid columns by percent quote (from largest to smallest) 
+                                                                         "Knls", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Rnfrt", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Is"))), # order the grid columns by percent quote (from largest to smallest)
                                                   
-                                  
-                                  labeller = as_labeller(wrap_text), as.table = TRUE)
+                                  labeller = as_labeller(wrap_text), as.table = TRUE)+
+  theme(strip.text.x = element_text(size = 9.5, face = "bold"), # Adjust size and face here
+        axis.text.x = element_blank())
+
 
 
 
@@ -369,22 +374,25 @@ wrap_text <- function(x, chars = 5) {
 
 
 Enablers_plot_HumanvsChatGPT = plot_HumanvsChatGPT + facet_grid(vars(PA_status_factor), 
-                                  vars(factor(construct_name, levels = c("Beliefs about consequences", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Behavioural regulation", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Social influences", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Goals",  # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Environmental context and resources", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Reinforcement", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Optimism", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Social, professional role and identity", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Emotion", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Beliefs about capabilities", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Knowledge", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Skills", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Intentions", # order the grid columns by percent quote (from largest to smallest)
-                                                                         "Memory, attention, and decision processes"))), # order the grid columns by percent quote (from largest to smallest)
+                                  vars(factor(construct_name, levels = c("BCon", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "BR", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "SI", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Gs",  # order the grid columns by percent quote (from largest to smallest)
+                                                                         "ECR", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Rnfrt", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Optm", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "SPR", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Emtns", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "BCap", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Knls", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Skls", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "Is", # order the grid columns by percent quote (from largest to smallest)
+                                                                         "MADP"))), # order the grid columns by percent quote (from largest to smallest)
                                   
-                                  labeller = as_labeller(wrap_text), as.table = TRUE)
+                                  labeller = as_labeller(wrap_text), as.table = TRUE) +                    
+  theme(strip.text.x = element_text(size = 9.5, face = "bold"), # Adjust size and face here
+        axis.text.x = element_blank())
+
 
 
 
@@ -454,23 +462,26 @@ wrap_text <- function(x, chars = 5) {
 
 
 Barriers_plot_HumanvsChatGPT = plot_HumanvsChatGPT_barrier + facet_grid(vars(PA_status_factor), 
-                                          vars(factor(construct_name, levels = c("Beliefs about capabilities", # order the grid columns by percent quote (from largest to smallest)
-                                                                                 "Beliefs about consequences", # order the grid columns by percent quote (from largest to smallest)
-                                                                                 "Environmental context and resources", # order the grid columns by percent quote (from largest to smallest)
-                                                                                 "Goals",  # order the grid columns by percent quote (from largest to smallest)
-                                                                                 "Memory, attention, and decision processes", # order the grid columns by percent quote (from largest to smallest)
-                                                                                 "Emotion", # order the grid columns by percent quote (from largest to smallest)
-                                                                                 "Skills", # order the grid columns by percent quote (from largest to smallest)
-                                                                                 "Behavioural regulation", # order the grid columns by percent quote (from largest to smallest) 
-                                                                                 "Social, professional role and identity", # order the grid columns by percent quote (from largest to smallest)
-                                                                                 "Social influences", # order the grid columns by percent quote (from largest to smallest)
-                                                                                 "Optimism", # order the grid columns by percent quote (from largest to smallest) 
-                                                                                 "Knowledge", # order the grid columns by percent quote (from largest to smallest)
-                                                                                 "Reinforcement", # order the grid columns by percent quote (from largest to smallest)
-                                                                                 "Intentions"))), # order the grid columns by percent quote (from largest to smallest)
+                                          vars(factor(construct_name, levels = c("BCap", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "BCon", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "ECR", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Gs",  # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "MADP", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Emtns", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Skls", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "BR", # order the grid columns by percent quote (from largest to smallest) 
+                                                                                 "SPR", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "SI", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Optm", # order the grid columns by percent quote (from largest to smallest) 
+                                                                                 "Knls", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Rnfrt", # order the grid columns by percent quote (from largest to smallest)
+                                                                                 "Is"))), # order the grid columns by percent quote (from largest to smallest)
                                           
                                           
-                                          labeller = as_labeller(wrap_text), as.table = TRUE)
+                                          labeller = as_labeller(wrap_text), as.table = TRUE)+ 
+  theme(strip.text.x = element_text(size = 9.5, face = "bold"), # Adjust size and face here
+        axis.text.x = element_blank())
+
 
 
 

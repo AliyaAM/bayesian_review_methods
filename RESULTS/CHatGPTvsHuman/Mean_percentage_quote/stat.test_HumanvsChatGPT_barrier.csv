@@ -1,15 +1,57 @@
-"","construct_name",".y.","group1","group2","n1","n2","statistic","df","p","p.adj","p.adj.signif"
-"1","Behavioural regulation","percent_quotes","ChatGPT","Human",32,16,0.079840252854952,18.9833849922008,0.937,1,"ns"
-"2","Beliefs about capabilities","percent_quotes","ChatGPT","Human",32,16,-0.293929902147615,23.0000628777042,0.771,1,"ns"
-"3","Beliefs about consequences","percent_quotes","ChatGPT","Human",32,16,0.393714176452191,17.3248545515468,0.699,1,"ns"
-"4","Emotion","percent_quotes","ChatGPT","Human",32,16,-0.0186441017841772,17.6006525666986,0.985,1,"ns"
-"5","Environmental context and resources","percent_quotes","ChatGPT","Human",32,16,-0.319408454185916,17.6395641367684,0.753,1,"ns"
-"6","Goals","percent_quotes","ChatGPT","Human",32,16,-1.22416840443745,17.3829328668865,0.237,1,"ns"
-"7","Intentions","percent_quotes","ChatGPT","Human",32,16,-2.20357384569498,15,0.0436,0.6104,"ns"
-"8","Knowledge","percent_quotes","ChatGPT","Human",32,16,-2.16503464651363,15.5847008428519,0.0463,0.6482,"ns"
-"9","Memory, attention, and decision processes","percent_quotes","ChatGPT","Human",32,16,0.991810983257598,27.944426228484,0.33,1,"ns"
-"10","Optimism","percent_quotes","ChatGPT","Human",32,16,1.1093593921615,32.4266819417186,0.275,1,"ns"
-"11","Reinforcement","percent_quotes","ChatGPT","Human",32,16,-1.88278685875731,15.7327964571384,0.0784,1,"ns"
-"12","Skills","percent_quotes","ChatGPT","Human",32,16,4.36906281337883,33.6053225863261,0.000113,0.001582,"**"
-"13","Social influences","percent_quotes","ChatGPT","Human",32,16,-3.35769995955694,15.2903028655707,0.00422,0.05908,"ns"
-"14","Social, professional role and identity","percent_quotes","ChatGPT","Human",32,16,-1.10290938057014,15.0790687779904,0.287,1,"ns"
+"","PA_status","construct",".y.","group1","group2","n1","n2","statistic","df","p","p.adj","p.adj.signif","y.position"
+"1",0,"BR+","percent_quotes","Chat GPT characters","Human participants",16,9,0.589452498254768,11.5606847034471,0.567,1,"ns",44.4444444444444
+"2",1,"BR+","percent_quotes","Chat GPT characters","Human participants",16,7,2.53877430878763,8.33242372512871,0.0337,1,"ns",44.4444444444444
+"3",0,"BR-","percent_quotes","Chat GPT characters","Human participants",16,9,0.101536466485894,10.0210199442379,0.921,1,"ns",44.4444444444444
+"4",1,"BR-","percent_quotes","Chat GPT characters","Human participants",16,7,0.0834535279221741,8.41811456015206,0.935,1,"ns",44.4444444444444
+"5",0,"BaCap+","percent_quotes","Chat GPT characters","Human participants",16,9,1.44982300815199,15,0.168,1,"ns",44.4444444444444
+"6",1,"BaCap+","percent_quotes","Chat GPT characters","Human participants",16,7,2.30591863667852,13.7476341071425,0.0372,1,"ns",44.4444444444444
+"7",0,"BaCap-","percent_quotes","Chat GPT characters","Human participants",16,9,-0.0177347202420852,10.9369018818151,0.986,1,"ns",44.4444444444444
+"8",1,"BaCap-","percent_quotes","Chat GPT characters","Human participants",16,7,-0.192526808063261,9.54438792308838,0.851,1,"ns",44.4444444444444
+"9",0,"BaCon+","percent_quotes","Chat GPT characters","Human participants",16,9,5.00008900787998,20.2295654012534,6.65e-05,0.003591,"**",44.4444444444444
+"10",1,"BaCon+","percent_quotes","Chat GPT characters","Human participants",16,7,2.33396399801195,7.60036219473841,0.0495,1,"ns",44.4444444444444
+"11",0,"BaCon-","percent_quotes","Chat GPT characters","Human participants",16,9,-0.364494263525728,9.18776540092393,0.724,1,"ns",44.4444444444444
+"12",1,"BaCon-","percent_quotes","Chat GPT characters","Human participants",16,7,4.91719972855318,20.8352908816438,7.45e-05,0.004023,"**",44.4444444444444
+"13",0,"ECR+","percent_quotes","Chat GPT characters","Human participants",16,9,-3.35263913441306,9.52630846101952,0.00784,0.42336,"ns",44.4444444444444
+"14",1,"ECR+","percent_quotes","Chat GPT characters","Human participants",16,7,-0.901776564283786,9.79392577205932,0.389,1,"ns",44.4444444444444
+"15",0,"ECR-","percent_quotes","Chat GPT characters","Human participants",16,9,-0.248339117147899,9.10172818641903,0.809,1,"ns",44.4444444444444
+"16",1,"ECR-","percent_quotes","Chat GPT characters","Human participants",16,7,0.0957483134741468,7.02628347443071,0.926,1,"ns",44.4444444444444
+"17",0,"Emotion+","percent_quotes","Chat GPT characters","Human participants",16,9,9.21238532648416,15,1.45e-07,7.83e-06,"****",44.4444444444444
+"18",1,"Emotion+","percent_quotes","Chat GPT characters","Human participants",16,7,5.90885174575581,15,2.87e-05,0.0015498,"**",44.4444444444444
+"19",0,"Emotion-","percent_quotes","Chat GPT characters","Human participants",16,9,-0.295889704676293,9.5210311166812,0.774,1,"ns",44.4444444444444
+"20",1,"Emotion-","percent_quotes","Chat GPT characters","Human participants",16,7,1.03887162991234,7.83939008151581,0.33,1,"ns",44.4444444444444
+"21",0,"Goals+","percent_quotes","Chat GPT characters","Human participants",16,9,0.252644455785579,11.8955846065402,0.805,1,"ns",44.4444444444444
+"22",1,"Goals+","percent_quotes","Chat GPT characters","Human participants",16,7,-1.53299898269309,6.83383780931369,0.17,1,"ns",44.4444444444444
+"23",0,"Goals-","percent_quotes","Chat GPT characters","Human participants",16,9,-0.695377828111864,9.74415464894553,0.503,1,"ns",44.4444444444444
+"24",1,"Goals-","percent_quotes","Chat GPT characters","Human participants",16,7,-0.974646036748282,6.38981110063992,0.365,1,"ns",44.4444444444444
+"25",0,"Intention+","percent_quotes","Chat GPT characters","Human participants",16,9,1.80032660764687,18.09946505703,0.0885,1,"ns",44.4444444444444
+"26",1,"Intention+","percent_quotes","Chat GPT characters","Human participants",16,7,-1.20515700643336,6.30364388030186,0.271,1,"ns",44.4444444444444
+"27",0,"Intention-","percent_quotes","Chat GPT characters","Human participants",16,9,-1.88606311734926,8,0.096,1,"ns",44.4444444444444
+"28",1,"Intention-","percent_quotes","Chat GPT characters","Human participants",16,7,-1.48836073916163,6,0.187,1,"ns",44.4444444444444
+"29",0,"Knowledge+","percent_quotes","Chat GPT characters","Human participants",16,9,-0.0966600584579911,14.7756197749781,0.924,1,"ns",44.4444444444444
+"30",1,"Knowledge+","percent_quotes","Chat GPT characters","Human participants",16,7,-0.805188291534138,7.83946084905312,0.444,1,"ns",44.4444444444444
+"31",0,"Knowledge-","percent_quotes","Chat GPT characters","Human participants",16,9,-1.97936906917379,8.34641696967164,0.0816,1,"ns",44.4444444444444
+"32",1,"Knowledge-","percent_quotes","Chat GPT characters","Human participants",16,7,-1.24749242027419,6.79473672018839,0.253,1,"ns",44.4444444444444
+"33",0,"MADP+","percent_quotes","Chat GPT characters","Human participants",16,9,1,15,0.333,1,"ns",44.4444444444444
+"34",1,"MADP+","percent_quotes","Chat GPT characters","Human participants",16,7,-0.445355231923871,7.02023375934579,0.669,1,"ns",44.4444444444444
+"35",0,"MADP-","percent_quotes","Chat GPT characters","Human participants",16,9,2.56580008680349,22.3551506075478,0.0175,0.945,"ns",44.4444444444444
+"36",1,"MADP-","percent_quotes","Chat GPT characters","Human participants",16,7,-0.911314760956101,6.82366951847207,0.393,1,"ns",44.4444444444444
+"37",0,"Optimism+","percent_quotes","Chat GPT characters","Human participants",16,9,1.72327675013854,12.2429600888418,0.11,1,"ns",44.4444444444444
+"38",1,"Optimism+","percent_quotes","Chat GPT characters","Human participants",16,7,0.000376263100391357,19.8137752299065,1,1,"ns",44.4444444444444
+"39",0,"Optimism-","percent_quotes","Chat GPT characters","Human participants",16,9,0.931320092193264,16.2975835570594,0.365,1,"ns",44.4444444444444
+"40",1,"Optimism-","percent_quotes","Chat GPT characters","Human participants",16,7,1.39405385670258,15,0.184,1,"ns",44.4444444444444
+"41",0,"Reinforcement+","percent_quotes","Chat GPT characters","Human participants",16,9,-0.715685834522942,10.0760777759218,0.49,1,"ns",44.4444444444444
+"42",1,"Reinforcement+","percent_quotes","Chat GPT characters","Human participants",16,7,-0.468513476734855,9.59195459041869,0.65,1,"ns",44.4444444444444
+"43",0,"Reinforcement-","percent_quotes","Chat GPT characters","Human participants",16,9,-2.05156159288318,8.59418365086868,0.0719,1,"ns",44.4444444444444
+"44",1,"Reinforcement-","percent_quotes","Chat GPT characters","Human participants",16,7,NA,NA,NA,NA,"",44.4444444444444
+"45",0,"SI+","percent_quotes","Chat GPT characters","Human participants",16,9,4.07678645853545,12.1603795097315,0.00149,0.08046,"ns",44.4444444444444
+"46",1,"SI+","percent_quotes","Chat GPT characters","Human participants",16,7,0.74265960028435,6.95372843255779,0.482,1,"ns",44.4444444444444
+"47",0,"SI-","percent_quotes","Chat GPT characters","Human participants",16,9,-3.17298263994611,8.3502958675817,0.0124,0.6696,"ns",44.4444444444444
+"48",1,"SI-","percent_quotes","Chat GPT characters","Human participants",16,7,-1.50971182906318,6.01051035183788,0.182,1,"ns",44.4444444444444
+"49",0,"SPR+","percent_quotes","Chat GPT characters","Human participants",16,9,-1.60787985070259,8.98503494205792,0.142,1,"ns",44.4444444444444
+"50",1,"SPR+","percent_quotes","Chat GPT characters","Human participants",16,7,-2.98205066754607,6.09819717037473,0.0241,1,"ns",44.4444444444444
+"51",0,"SPR-","percent_quotes","Chat GPT characters","Human participants",16,9,-1.10292759188162,8.04668782356955,0.302,1,"ns",44.4444444444444
+"52",1,"SPR-","percent_quotes","Chat GPT characters","Human participants",16,7,NA,NA,NA,NA,"",44.4444444444444
+"53",0,"Skills+","percent_quotes","Chat GPT characters","Human participants",16,9,-0.0570826903261414,9.54791679416552,0.956,1,"ns",44.4444444444444
+"54",1,"Skills+","percent_quotes","Chat GPT characters","Human participants",16,7,1.48481439119258,15.4061362287028,0.158,1,"ns",44.4444444444444
+"55",0,"Skills-","percent_quotes","Chat GPT characters","Human participants",16,9,6.20458778564698,15,1.69e-05,0.0009126,"***",44.4444444444444
+"56",1,"Skills-","percent_quotes","Chat GPT characters","Human participants",16,7,1.11917264352277,7.69104620262879,0.297,1,"ns",44.4444444444444
